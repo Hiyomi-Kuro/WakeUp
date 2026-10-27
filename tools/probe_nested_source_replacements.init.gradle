@@ -1,0 +1,61 @@
+import java.util.zip.ZipFile
+
+gradle.projectsEvaluated {
+    def root = gradle.rootProject.projectDir
+    def logFile = new File(root, 'docs/build-diagnostics-round-6055.log')
+    def sourceRoot = new File(root, 'app/src/main/java')
+    def targets = new TreeSet<String>()
+    logFile.eachLine('UTF-8') { line ->
+        def marker = 'app\\src\\main\\java\\'
+        def offset = line.indexOf(marker)
+        if (offset < 0) {
+            marker = 'app/src/main/java/'
+            offset = line.indexOf(marker)
+        }
+        if (offset >= 0 && line.contains(': error:')) {
+            def relative = line.substring(offset + marker.length()).split(':', 2)[0].replace('\\', '/')
+            targets.add(relative.substring(0, relative.length() - 5) + '.class')
+        }
+    }
+
+    def compileTask = gradle.rootProject.findProject(':app').tasks.named('compileDebugJavaWithJavac').get()
+    def classpath = compileTask.classpath.files
+    def configuration = gradle.rootProject.findProject(':app').configurations.getByName('debugCompileClasspath')
+    def componentByArtifactBase = [:].withDefault { [] }
+    configuration.incoming.artifacts.artifacts.each { artifact ->
+        def base = artifact.file.name.replaceFirst(/\.[^.]+$/, '')
+        componentByArtifactBase[base] << artifact.id.componentIdentifier.displayName
+    }
+    def auditFile = new File(root, 'docs/nested-source-replacement-audit.tsv')
+    auditFile.parentFile.mkdirs()
+    auditFile.withWriter('UTF-8') { audit ->
+        audit.println('source\tdescriptor\tstatus\tprovider\tcoordinate')
+    println 'NESTED SOURCE CLASS REPLACEMENT AUDIT'
+    targets.each { target ->
+        def found = []
+        classpath.each { entry ->
+            if (entry.isDirectory()) {
+                if (new File(entry, target).isFile()) found << entry.absolutePath
+            } else if (entry.isFile() && (entry.name.endsWith('.jar') || entry.name.endsWith('.zip'))) {
+                try {
+                    def zip = new ZipFile(entry)
+                    try {
+                        if (zip.getEntry(target) != null) found << entry.absolutePath
+                    } finally { zip.close() }
+                } catch (Exception ignored) { }
+            }
+        }
+        def provider = found ? found.collect { new File(it).name }.unique() : []
+        def matches = provider.collectMany { name ->
+            def base = name.replaceFirst(/\.[^.]+$/, '').replaceFirst(/-api$/, '')
+            componentByArtifactBase[base].unique()
+        }.unique()
+        if (found && matches.size() != 1) {
+            throw new GradleException("Could not prove one resolved Maven coordinate for ${target}: ${provider} -> ${matches}")
+        }
+        def row = (found ? 'FOUND\t' : 'MISSING\t') + target + (found ? '\t' + provider.join(';') + '\t' + matches[0] : '\t\t')
+        println(row)
+        audit.println((target.replace('.class', '.java')) + '\t' + target + '\t' + (found ? 'FOUND' : 'MISSING') + '\t' + provider.join(';') + '\t' + (found ? matches[0] : ''))
+    }
+    }
+}

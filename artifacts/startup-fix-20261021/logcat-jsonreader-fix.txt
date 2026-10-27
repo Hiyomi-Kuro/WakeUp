@@ -1,0 +1,96 @@
+--------- beginning of main
+10-21 04:02:00.977  7459  7459 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-21 04:02:00.981  7459  7459 I AndroidRuntime: Using default boot image
+10-21 04:02:00.981  7459  7459 I AndroidRuntime: Leaving lock profiling enabled
+10-21 04:02:01.062  7459  7459 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+10-21 04:02:01.110  7459  7459 I AndroidRuntime: VM exiting with result code 0.
+10-21 04:02:01.629  7482  7482 I WUSDebug: Splash onCreate launching initializer
+10-21 04:02:01.633  7482  7482 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@54a60d3, Dispatchers.Main.immediate] block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 04:02:01.633  7482  7482 I WUSDebug: CoroutineStart.invoke block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1 mode=DEFAULT
+10-21 04:02:01.633  7482  7482 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 04:02:01.634  7482  7482 I WUSDebug: startCoroutineCancellable enter block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 04:02:01.634  7482  7482 I WUSDebug: resume dispatch target=Dispatchers.Main.immediate context=[o00O0000{Active}@5db410, Dispatchers.Main.immediate]
+10-21 04:02:01.635  7482  7482 I WUSDebug: startCoroutineCancellable returned block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 04:02:01.635  7482  7482 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 04:02:01.635  7482  7482 I WUSDebug: launch helper returned active=false job=o00O0000{Completed}@5db410
+10-21 04:02:01.635  7482  7482 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@54a60d3, Dispatchers.Main] block=com.kaori.wakeupschedule.SplashActivity$AnonymousClass1
+10-21 04:02:01.635  7482  7482 I WUSDebug: CoroutineStart.invoke block=com.kaori.wakeupschedule.SplashActivity$AnonymousClass1 mode=DEFAULT
+10-21 04:02:01.635  7482  7482 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 04:02:01.635  7482  7482 I WUSDebug: startCoroutineCancellable enter block=com.kaori.wakeupschedule.SplashActivity$AnonymousClass1
+10-21 04:02:01.635  7482  7482 I WUSDebug: resume dispatch target=Dispatchers.Main context=[o00O0000{Active}@abc910e, Dispatchers.Main]
+10-21 04:02:01.635  7482  7482 I WUSDebug: dispatcher queued continuation
+10-21 04:02:01.635  7482  7482 I WUSDebug: startCoroutineCancellable returned block=com.kaori.wakeupschedule.SplashActivity$AnonymousClass1
+10-21 04:02:01.635  7482  7482 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 04:02:01.635  7482  7482 I WUSDebug: launch helper returned active=true job=o00O0000{Active}@abc910e
+10-21 04:02:01.743  7482  7482 I WUSDebug: Splash coroutine entered, label=0
+10-21 04:02:01.748  7482  7482 I WUSDebug: migration method entered, label=0
+10-21 04:02:01.748  7482  7482 I WUSDebug: migration returned, suspended=false
+10-21 04:02:01.889  7482  7482 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@ef4114e, Dispatchers.Main.immediate] block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 04:02:01.889  7482  7482 I WUSDebug: CoroutineStart.invoke block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1 mode=DEFAULT
+10-21 04:02:01.889  7482  7482 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 04:02:01.889  7482  7482 I WUSDebug: startCoroutineCancellable enter block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 04:02:01.889  7482  7482 I WUSDebug: resume dispatch target=Dispatchers.Main.immediate context=[o00O0000{Active}@b85526f, Dispatchers.Main.immediate]
+10-21 04:02:01.889  7482  7482 I WUSDebug: event loop queued continuation
+10-21 04:02:01.889  7482  7482 I WUSDebug: startCoroutineCancellable returned block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 04:02:01.889  7482  7482 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 04:02:01.889  7482  7482 I WUSDebug: launch helper returned active=true job=o00O0000{Active}@b85526f
+10-21 04:02:01.889  7482  7482 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@ef4114e, Dispatchers.Main.immediate] block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 04:02:01.889  7482  7482 I WUSDebug: CoroutineStart.invoke block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1 mode=DEFAULT
+10-21 04:02:01.889  7482  7482 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 04:02:01.889  7482  7482 I WUSDebug: startCoroutineCancellable enter block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 04:02:01.889  7482  7482 I WUSDebug: resume dispatch target=Dispatchers.Main.immediate context=[o00O0000{Active}@7bc1b7c, Dispatchers.Main.immediate]
+10-21 04:02:01.889  7482  7482 I WUSDebug: event loop queued continuation
+10-21 04:02:01.889  7482  7482 I WUSDebug: startCoroutineCancellable returned block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 04:02:01.889  7482  7482 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 04:02:01.889  7482  7482 I WUSDebug: launch helper returned active=true job=o00O0000{Active}@7bc1b7c
+10-21 04:02:01.943  7482  7482 I WUSDebug: widget init query type=MODERN_COMPACT_MIUI ids=0 dataLength=18 firstCode=123 lastCode=125 data={"has_init":false}
+10-21 04:02:01.944  7482  7482 I WUSDebug: literal has_init JSON parsed=false
+10-21 04:02:01.946  7482  7482 I WUSDebug: widget init query type=MODERN_MIUI ids=0 dataLength=18 firstCode=123 lastCode=125 data={"has_init":false}
+10-21 04:02:01.946  7482  7482 I WUSDebug: literal has_init JSON parsed=false
+10-21 04:02:01.973  7482  7482 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@ef4114e, Dispatchers.Main.immediate] block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 04:02:01.973  7482  7482 I WUSDebug: CoroutineStart.invoke block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1 mode=DEFAULT
+10-21 04:02:01.973  7482  7482 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 04:02:01.973  7482  7482 I WUSDebug: startCoroutineCancellable enter block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 04:02:01.973  7482  7482 I WUSDebug: resume dispatch target=Dispatchers.Main.immediate context=[o00O0000{Active}@40e8465, Dispatchers.Main.immediate]
+10-21 04:02:01.973  7482  7482 I WUSDebug: event loop queued continuation
+10-21 04:02:01.973  7482  7482 I WUSDebug: startCoroutineCancellable returned block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 04:02:01.973  7482  7482 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 04:02:01.973  7482  7482 I WUSDebug: launch helper returned active=true job=o00O0000{Active}@40e8465
+10-21 04:02:02.019  7482  7482 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: FATAL EXCEPTION: main
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: Process: com.kaori.wakeupschedule, PID: 7482
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: java.lang.ClassCastException: androidx.appcompat.widget.LinearLayoutCompat cannot be cast to androidx.fragment.app.o000000O
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at androidx.fragment.app.o000000.onViewAttachedToWindow(o000000.java:41)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.View.dispatchAttachedToWindow(View.java:20823)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3490)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3497)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3497)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3497)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2682)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2186)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:8833)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1047)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.Choreographer.doCallbacks(Choreographer.java:845)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.Choreographer.doFrame(Choreographer.java:780)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1032)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8085)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+10-21 04:02:02.020  7482  7482 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1091)
+10-21 04:02:02.088  7482  7565 E AndroidRuntime: FATAL EXCEPTION: Thread-4
+10-21 04:02:02.088  7482  7565 E AndroidRuntime: Process: com.kaori.wakeupschedule, PID: 7482
+10-21 04:02:02.088  7482  7565 E AndroidRuntime: java.lang.ClassCastException: o00O0oOO.o00O0 cannot be cast to o00O0oOO.o00O00o0
+10-21 04:02:02.088  7482  7565 E AndroidRuntime: 	at o00O0oOO.o00O00o0.OooO0O0(o00O00o0.java:31)
+10-21 04:02:02.088  7482  7565 E AndroidRuntime: 	at o0OOO0o.OooO0o.run(OooO0o.java:100)
+10-21 04:02:02.088  7482  7565 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:920)
+10-21 04:02:02.089  7482  7566 E AndroidRuntime: FATAL EXCEPTION: Thread-5
+10-21 04:02:02.089  7482  7566 E AndroidRuntime: Process: com.kaori.wakeupschedule, PID: 7482
+10-21 04:02:02.089  7482  7566 E AndroidRuntime: java.lang.ClassCastException: o00O0oOO.o00O0 cannot be cast to o00O0oOO.o00O00o0
+10-21 04:02:02.089  7482  7566 E AndroidRuntime: 	at o00O0oOO.o00O00o0.OooO0O0(o00O00o0.java:31)
+10-21 04:02:02.089  7482  7566 E AndroidRuntime: 	at o0OOO0o.OooO0o.run(OooO0o.java:100)
+10-21 04:02:02.089  7482  7566 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:920)

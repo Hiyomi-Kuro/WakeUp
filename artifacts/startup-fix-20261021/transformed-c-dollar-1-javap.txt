@@ -1,0 +1,2 @@
+class com.huawei.agconnect.core.a.c$1 {
+}

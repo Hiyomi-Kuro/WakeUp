@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application
+        android:allowBackup="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            tools:replace="android:configChanges" />
+        <receiver
+            android:name="com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver"
+            tools:node="remove" />
+    </application>
+</manifest>

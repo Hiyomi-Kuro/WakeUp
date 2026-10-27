@@ -1,0 +1,59 @@
+package com.huawei.hms.hatool;
+
+import android.os.Build;
+import android.text.TextUtils;
+import java.util.HashMap;
+import java.util.Map;
+
+public class v {
+    public static f1 a(String str, String str2) {
+        f1 f1Var = new f1();
+        f1Var.a(a1.a().a(str, str2));
+        return f1Var;
+    }
+
+    public static C0014r b(String str, String str2) {
+        z.c("hmsSdk", "generate UploadData EventModelHandlerBase");
+        y.d().a(str, str2);
+        if (!TextUtils.isEmpty(y.d().a())) {
+            return new C0014r(y.d().c());
+        }
+        z.f("hmsSdk", "event chifer is empty");
+        return null;
+    }
+
+    public static Map<String, String> c(String str, String str2) {
+        HashMap map = new HashMap();
+        map.put("App-Id", b.f());
+        map.put("App-Ver", b.g());
+        map.put("Sdk-Name", "hianalytics");
+        map.put("Sdk-Ver", "2.2.0.313");
+        map.put("Device-Type", Build.MODEL);
+        map.put("servicetag", str);
+        z.a("hmsSdk", "sendData RequestId : %s", str2);
+        map.put("Request-Id", str2);
+        return map;
+    }
+
+    public static g1 a(String str, String str2, String str3, String str4) {
+        g1 g1Var = new g1();
+        g1Var.a(str);
+        g1Var.b(b.f());
+        g1Var.e(str2);
+        g1Var.c(str4);
+        StringBuffer stringBuffer = new StringBuffer("hmshi");
+        stringBuffer.append(str3);
+        stringBuffer.append("qrt");
+        g1Var.d(stringBuffer.toString());
+        return g1Var;
+    }
+
+    public static h1 a(String str, String str2, String str3) {
+        h1 h1Var = new h1();
+        h1Var.c(b.j());
+        h1Var.e(b.l());
+        h1Var.a(str3);
+        h1Var.b(a1.a().b(str2, str));
+        return h1Var;
+    }
+}

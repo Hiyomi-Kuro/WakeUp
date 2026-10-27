@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-10-24T15:25:46+08:00",
+  "requested_logical_display_id": 0,
+  "app_logical_display_id": 5,
+  "app_physical_display_id": 4619826948029188612,
+  "pid": "7320",
+  "start_output": "Starting: Intent { cmp=com.kaori.wakeupschedule/.SplashActivity }",
+  "activity_summary": [
+    "topResumedActivity=ActivityRecord{ea7640e u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3538}",
+    "Resumed: ActivityRecord{ea7640e u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3538}",
+    "ResumedActivity: ActivityRecord{ea7640e u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3538}"
+  ],
+  "window_summary": [
+    "mDisplayId=5 rootTaskId=3538 mSession=Session{bb5080c 7320:u0a10043} mClient=android.os.BinderProxy@2b426d4",
+    "mViewVisibility=0x4 mHaveFrame=true mObscured=false",
+    "mHasSurface=false isReadyForDisplay()=false mWindowRemovalAllowed=false",
+    "surface=[0,0][0,0]",
+    "mDrawState=NO_SURFACE       mLastHidden=false",
+    "isOnScreen=false",
+    "isVisible=false",
+    "mDisplayId=5 rootTaskId=3538 mSession=Session{bb5080c 7320:u0a10043} mClient=android.os.BinderProxy@78b9b6a"
+  ],
+  "screenshot": "D:\\Download\\AndroidStudioProjects\\WakeUP\\docs\\phase8-mumu-evidence\\diagnostic-default-display-app-5.png"
+}

@@ -1,0 +1,5 @@
+gradle.projectsEvaluated {
+    def appProject = gradle.rootProject.project(':app')
+    def compileTask = appProject.tasks.named('compileDebugJavaWithJavac').get()
+    compileTask.onlyIf { false }
+}

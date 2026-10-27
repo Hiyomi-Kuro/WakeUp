@@ -1,0 +1,7 @@
+
+package: name='com.kaori.wakeupschedule' versionCode='247' versionName='6.0.06' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+sdkVersion:'21'
+targetSdkVersion:'34'
+launchable-activity: name='com.kaori.wakeupschedule.SplashActivity'  label='' icon=''
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'
+

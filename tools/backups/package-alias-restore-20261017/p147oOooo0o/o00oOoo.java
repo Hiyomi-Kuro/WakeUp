@@ -1,0 +1,13 @@
+package p147oOooo0o;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface o00oOoo {
+    boolean hasBody() default false;
+
+    String method();
+
+    String path() default "";
+}

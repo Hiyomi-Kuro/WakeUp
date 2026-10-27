@@ -1,0 +1,10 @@
+gradle.taskGraph.whenReady { graph ->
+  def task = graph.allTasks.find { it.path == ':app:compileDebugJavaWithJavac' }
+  if (task != null) {
+    def output = new File(task.project.projectDir, 'artifacts/startup-fix-20261021/compile-classpath.txt')
+    output.parentFile.mkdirs()
+    output.setText(task.classpath.asPath, 'UTF-8')
+    println('COMPILE_CP_ENTRIES=' + task.classpath.files.size())
+    println('COMPILE_CP_FILE=' + output.absolutePath)
+  }
+}

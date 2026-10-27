@@ -1,0 +1,60 @@
+{
+  "phase": 12,
+  "capturedAtLocal": "2026-10-27T05:13:26.7834644+08:00",
+  "officialApkDecision": "No new official APK built; the already installed phase11/phase10 APK was retained.",
+  "officialPackage": {
+    "packageName": "com.kaori.wakeupschedule",
+    "versionCode": 247,
+    "versionName": "6.0.06",
+    "firstInstallTime": "2026-10-20 23:55:07"
+  },
+  "artifacts": [
+    {
+      "path": "app-debug.apk",
+      "sizeBytes": 20621152,
+      "sha256": "EAD4D9EFF8C98AC1DC0D97FE6009E04635E2A64B900ED953541CC50446B9ED69"
+    },
+    {
+      "path": "app/build/outputs/apk/debug/app-debug.apk",
+      "sizeBytes": 20621152,
+      "sha256": "EAD4D9EFF8C98AC1DC0D97FE6009E04635E2A64B900ED953541CC50446B9ED69"
+    },
+    {
+      "path": "installed base.apk",
+      "sizeBytes": 20621152,
+      "sha256": "EAD4D9EFF8C98AC1DC0D97FE6009E04635E2A64B900ED953541CC50446B9ED69"
+    }
+  ],
+  "signing": {
+    "verified": true,
+    "signerCount": 1,
+    "signerSha256": "b8849d6e0146f3fa8c95e5911f444372b6693162142e1aa93d1700a2da3be088",
+    "v1": true,
+    "v2": true,
+    "v3": false,
+    "v31": false
+  },
+  "checks": {
+    "rootEqualsBuildOutput": true,
+    "rootEqualsInstalledBase": true,
+    "officialApkBuiltThisPhase": false,
+    "officialApkInstalledThisPhase": false,
+    "firstInstallTimePreserved": true,
+    "signerConsistent": true,
+    "fixtureInstalledSeparately": true,
+    "fixtureUninstalled": true
+  },
+  "fixture": {
+    "packageName": "com.kaori.phase12fixture",
+    "sha256": "118DF27013F719A9E1DD5B8E72395B99C7929E0AD1AA44B2193815E53FA87B6F",
+    "installedForPagerVerification": true,
+    "uninstalledExitCode": 0,
+    "packagePathAbsentAfterRemoval": true
+  },
+  "notes": [
+    "This is a reuse-baseline audit, not a new build result.",
+    "Official APK DEX/Manifest/ABI/package audit was not repeated because no official APK was built or replaced.",
+    "Historical JUnit 8/8 was not rerun in this phase. See phase12-baseline-apksigner-final.txt for signer verification.",
+    "The separate pager fixture APK is test-only and has been uninstalled."
+  ]
+}

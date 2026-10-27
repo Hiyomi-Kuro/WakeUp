@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="customizedColors">
+        <item>@color/red</item>
+        <item>@color/pink</item>
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/purple</item>
+        <item>@color/orange</item>
+        <item>@color/deepOrange</item>
+        <item>@color/lightBlue</item>
+        <item>@color/ruri</item>
+    </array>
+    <string-array name="day_night_setting">
+        <item>Light Mode</item>
+        <item>Dark Mode</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="main_weekdays">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tues</item>
+        <item>Wed</item>
+        <item>Thur</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+    <string-array name="quickSideBarLetters">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <string-array name="silence_mode_setting">
+        <item>无</item>
+        <item>静音模式</item>
+        <item>振动模式</item>
+    </string-array>
+    <string-array name="weekdays">
+        <item>Mon</item>
+        <item>Tues</item>
+        <item>Wed</item>
+        <item>Thur</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+</resources>

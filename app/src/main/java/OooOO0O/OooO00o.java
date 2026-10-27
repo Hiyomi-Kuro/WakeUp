@@ -1,0 +1,163 @@
+package OooOO0O;
+
+import android.content.res.ColorStateList;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Outline;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.drawable.Drawable;
+
+public final class OooO00o extends Drawable {
+
+    /* JADX INFO: renamed from: OooO, reason: collision with root package name */
+    public PorterDuffColorFilter f368OooO;
+
+    /* JADX INFO: renamed from: OooO00o, reason: collision with root package name */
+    public float f369OooO00o;
+
+    /* JADX INFO: renamed from: OooO0O0, reason: collision with root package name */
+    public final Paint f370OooO0O0;
+
+    /* JADX INFO: renamed from: OooO0OO, reason: collision with root package name */
+    public final RectF f371OooO0OO;
+
+    /* JADX INFO: renamed from: OooO0Oo, reason: collision with root package name */
+    public final Rect f372OooO0Oo;
+
+    /* JADX INFO: renamed from: OooO0o0, reason: collision with root package name */
+    public float f374OooO0o0;
+
+    /* JADX INFO: renamed from: OooO0oo, reason: collision with root package name */
+    public ColorStateList f376OooO0oo;
+
+    /* JADX INFO: renamed from: OooOO0, reason: collision with root package name */
+    public ColorStateList f377OooOO0;
+
+    /* JADX INFO: renamed from: OooO0o, reason: collision with root package name */
+    public boolean f373OooO0o = false;
+
+    /* JADX INFO: renamed from: OooO0oO, reason: collision with root package name */
+    public boolean f375OooO0oO = true;
+
+    /* JADX INFO: renamed from: OooOO0O, reason: collision with root package name */
+    public PorterDuff.Mode f378OooOO0O = PorterDuff.Mode.SRC_IN;
+
+    public OooO00o(float f, ColorStateList colorStateList) {
+        this.f369OooO00o = f;
+        Paint paint = new Paint(5);
+        this.f370OooO0O0 = paint;
+        colorStateList = colorStateList == null ? ColorStateList.valueOf(0) : colorStateList;
+        this.f376OooO0oo = colorStateList;
+        paint.setColor(colorStateList.getColorForState(getState(), this.f376OooO0oo.getDefaultColor()));
+        this.f371OooO0OO = new RectF();
+        this.f372OooO0Oo = new Rect();
+    }
+
+    public final PorterDuffColorFilter OooO00o(ColorStateList colorStateList, PorterDuff.Mode mode) {
+        if (colorStateList == null || mode == null) {
+            return null;
+        }
+        return new PorterDuffColorFilter(colorStateList.getColorForState(getState(), 0), mode);
+    }
+
+    public final void OooO0O0(Rect rect) {
+        if (rect == null) {
+            rect = getBounds();
+        }
+        RectF rectF = this.f371OooO0OO;
+        rectF.set(rect.left, rect.top, rect.right, rect.bottom);
+        Rect rect2 = this.f372OooO0Oo;
+        rect2.set(rect);
+        if (this.f373OooO0o) {
+            rect2.inset((int) Math.ceil(OooO0O0.OooO00o(this.f374OooO0o0, this.f369OooO00o, this.f375OooO0oO)), (int) Math.ceil(OooO0O0.OooO0O0(this.f374OooO0o0, this.f369OooO00o, this.f375OooO0oO)));
+            rectF.set(rect2);
+        }
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final void draw(Canvas canvas) {
+        boolean z;
+        Paint paint = this.f370OooO0O0;
+        if (this.f368OooO == null || paint.getColorFilter() != null) {
+            z = false;
+        } else {
+            paint.setColorFilter(this.f368OooO);
+            z = true;
+        }
+        RectF rectF = this.f371OooO0OO;
+        float f = this.f369OooO00o;
+        canvas.drawRoundRect(rectF, f, f, paint);
+        if (z) {
+            paint.setColorFilter(null);
+        }
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final int getOpacity() {
+        return -3;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final void getOutline(Outline outline) {
+        outline.setRoundRect(this.f372OooO0Oo, this.f369OooO00o);
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final boolean isStateful() {
+        ColorStateList colorStateList;
+        ColorStateList colorStateList2 = this.f377OooOO0;
+        return (colorStateList2 != null && colorStateList2.isStateful()) || ((colorStateList = this.f376OooO0oo) != null && colorStateList.isStateful()) || super.isStateful();
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final void onBoundsChange(Rect rect) {
+        super.onBoundsChange(rect);
+        OooO0O0(rect);
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final boolean onStateChange(int[] iArr) {
+        PorterDuff.Mode mode;
+        ColorStateList colorStateList = this.f376OooO0oo;
+        int colorForState = colorStateList.getColorForState(iArr, colorStateList.getDefaultColor());
+        Paint paint = this.f370OooO0O0;
+        boolean z = colorForState != paint.getColor();
+        if (z) {
+            paint.setColor(colorForState);
+        }
+        ColorStateList colorStateList2 = this.f377OooOO0;
+        if (colorStateList2 == null || (mode = this.f378OooOO0O) == null) {
+            return z;
+        }
+        this.f368OooO = OooO00o(colorStateList2, mode);
+        return true;
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final void setAlpha(int i) {
+        this.f370OooO0O0.setAlpha(i);
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final void setColorFilter(ColorFilter colorFilter) {
+        this.f370OooO0O0.setColorFilter(colorFilter);
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final void setTintList(ColorStateList colorStateList) {
+        this.f377OooOO0 = colorStateList;
+        this.f368OooO = OooO00o(colorStateList, this.f378OooOO0O);
+        invalidateSelf();
+    }
+
+    @Override // android.graphics.drawable.Drawable
+    public final void setTintMode(PorterDuff.Mode mode) {
+        this.f378OooOO0O = mode;
+        this.f368OooO = OooO00o(this.f377OooOO0, mode);
+        invalidateSelf();
+    }
+}

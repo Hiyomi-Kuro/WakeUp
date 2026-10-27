@@ -1,0 +1,563 @@
+{
+  "audited_at": "2026-10-24",
+  "artifact": {
+    "built_apk": "D:\\Download\\AndroidStudioProjects\\WakeUP\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+    "project_root_copy": "D:\\Download\\AndroidStudioProjects\\WakeUP\\app-debug.apk",
+    "size_bytes": 20620420,
+    "sha256": "314805b92dd4e2b36d7f790e9fa5b256cb657955dd57d280f8e746eef0e53327",
+    "root_copy_sha256": "314805b92dd4e2b36d7f790e9fa5b256cb657955dd57d280f8e746eef0e53327",
+    "root_copy_byte_identical": true
+  },
+  "build": {
+    "command": ".\\gradlew.bat clean assembleDebug --no-daemon --console=plain -I artifacts/startup-fix-20261021/compile-recovered-workdatabase.init.gradle",
+    "exit_code": 0,
+    "log": "docs/phase8-build-evidence/phase8-clean-assemble-after-collection-jdk17.log",
+    "duration": "4m 42s",
+    "warning": "D8 emitted an unexpected Kotlin metadata rewrite warning for androidx.activity.result.OooO; assembly completed successfully.",
+    "jdk": "17.0.20.101-hotspot",
+    "environment_attempt_note": "The first post-collection invocation inherited JDK 11 and was rejected before Gradle tasks; the successful clean test and assemble used JDK 17."
+  },
+  "identity": {
+    "package": "com.kaori.wakeupschedule",
+    "version_code": 247,
+    "version_name": "6.0.06",
+    "min_sdk": 21,
+    "target_sdk": 34,
+    "debuggable": "true"
+  },
+  "archive": {
+    "zip_crc": "passed",
+    "zip_entries": 1294,
+    "resources_arsc": true,
+    "resource_entries": 1158,
+    "assets": 13
+  },
+  "resources": {
+    "resources_arsc": true,
+    "resource_entries": 1158,
+    "original_stable_ids": 6348,
+    "mismatches": 0,
+    "component_class_presence": "all non-alias manifest component classes are in DEX",
+    "application": "com.kaori.wakeupschedule.App",
+    "components": [
+      {
+        "kind": "receiver",
+        "name": "com.kaori.wakeupschedule.today_appwidget.TodayListAppWidget",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "com.kaori.wakeupschedule.today_appwidget.TodayAndNextDayAppWidget",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.settings.ModifyScheduleToolActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "provider",
+        "name": "com.kaori.wakeupschedule.ScheduleContentProvider",
+        "in_dex": true,
+        "authority": "com.kaori.wakeupschedule.provider"
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.clock.ClockActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.schedule_appwidget.WidgetStyleConfigActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.suda_life.SudaLifeActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.schedule_import.LoginWebActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.schedule.ScheduleActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.course_add.AddCourseActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.settings.SettingsActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.settings.TimeSettingsActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "com.kaori.wakeupschedule.schedule_appwidget.ScheduleAppWidget",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "service",
+        "name": "com.kaori.wakeupschedule.schedule_appwidget.ScheduleAppWidgetService",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "service",
+        "name": "com.kaori.wakeupschedule.today_appwidget.TodayColorfulService",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "service",
+        "name": "com.kaori.wakeupschedule.today_appwidget.TodayModernService",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.intro.AboutActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.DonateActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.SplashActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.schedule_manage.ScheduleManageActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.schedule_settings.ScheduleSettingsActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.schedule_appwidget.WeekScheduleAppWidgetConfigActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "com.kaori.wakeupschedule.today_appwidget.TodayCourseAppWidget",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.schedule_import.SchoolListActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.settings.AdvancedSettingsActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.kaori.wakeupschedule.intro.IntroYoungActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "com.kaori.wakeupschedule.today_appwidget.TodayListAppWidgetMIUI",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "com.kaori.wakeupschedule.today_appwidget.TodayModernAppWidgetMIUI",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "provider",
+        "name": "androidx.startup.InitializationProvider",
+        "in_dex": true,
+        "authority": "com.kaori.wakeupschedule.androidx-startup"
+      },
+      {
+        "kind": "service",
+        "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "service",
+        "name": "androidx.work.impl.background.systemjob.SystemJobService",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "service",
+        "name": "androidx.work.impl.foreground.SystemForegroundService",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "service",
+        "name": "androidx.room.MultiInstanceInvalidationService",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "service",
+        "name": "com.huawei.agconnect.core.ServiceDiscovery",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "receiver",
+        "name": "com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "provider",
+        "name": "com.huawei.hms.analytics.provider.AnalyticsInitializeProvider",
+        "in_dex": true,
+        "authority": "com.kaori.wakeupschedule.AnalyticsKitInitializeProvider"
+      },
+      {
+        "kind": "receiver",
+        "name": "androidx.profileinstaller.ProfileInstallReceiver",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "provider",
+        "name": "com.huawei.hms.aaid.InitProvider",
+        "in_dex": true,
+        "authority": "com.kaori.wakeupschedule.aaidinitprovider"
+      },
+      {
+        "kind": "provider",
+        "name": "com.huawei.agconnect.core.provider.AGConnectInitializeProvider",
+        "in_dex": true,
+        "authority": "com.kaori.wakeupschedule.AGCInitializeProvider"
+      },
+      {
+        "kind": "activity",
+        "name": "com.huawei.hms.activity.BridgeActivity",
+        "in_dex": true,
+        "authority": null
+      },
+      {
+        "kind": "activity",
+        "name": "com.huawei.hms.activity.EnableServiceActivity",
+        "in_dex": true,
+        "authority": null
+      }
+    ],
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.VIBRATE",
+      "android.permission.ACCESS_NOTIFICATION_POLICY",
+      "android.permission.SCHEDULE_EXACT_ALARM",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+      "com.hihonor.brain.permission.KIT_SERVICE_ACCESS",
+      "android.permission.WAKE_LOCK",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.FOREGROUND_SERVICE",
+      "com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA",
+      "com.google.android.gms.permission.AD_ID"
+    ]
+  },
+  "dex": {
+    "files": [
+      "classes.dex",
+      "classes2.dex",
+      "classes3.dex"
+    ],
+    "per_file_integrity": [
+      {
+        "name": "classes.dex",
+        "classes": 7615,
+        "sha1_valid": true,
+        "adler32_valid": true,
+        "placeholder_strings": 1
+      },
+      {
+        "name": "classes2.dex",
+        "classes": 6553,
+        "sha1_valid": true,
+        "adler32_valid": true,
+        "placeholder_strings": 1
+      },
+      {
+        "name": "classes3.dex",
+        "classes": 5590,
+        "sha1_valid": true,
+        "adler32_valid": true,
+        "placeholder_strings": 1
+      }
+    ],
+    "classes": 19758,
+    "cross_dex_duplicates": [],
+    "active_placeholders": 0,
+    "missing_recovered_source_outputs": [],
+    "required_classes": {
+      "Lcom/kaori/wakeupschedule/App;": true,
+      "Lcom/kaori/wakeupschedule/schedule_import/LoginWebFragment;": true,
+      "Lcom/kaori/wakeupschedule/settings/ModifyScheduleToolActivity$save$1;": true,
+      "Landroidx/window/layout/WindowInfoTrackerImpl$windowLayoutInfo$1;": true,
+      "Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;": true,
+      "Landroidx/fragment/app/strictmode/FragmentStrictMode$Flag;": true
+    },
+    "prebuilt_dex_apk_inputs": []
+  },
+  "native": {
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "libraries": [
+      "lib/arm64-v8a/libsqlcipher.so",
+      "lib/armeabi-v7a/libsqlcipher.so",
+      "lib/x86/libsqlcipher.so",
+      "lib/x86_64/libsqlcipher.so"
+    ],
+    "source": "enumerated from final APK ZIP",
+    "abi_libraries": {
+      "arm64-v8a": [
+        "lib/arm64-v8a/libsqlcipher.so"
+      ],
+      "armeabi-v7a": [
+        "lib/armeabi-v7a/libsqlcipher.so"
+      ],
+      "x86": [
+        "lib/x86/libsqlcipher.so"
+      ],
+      "x86_64": [
+        "lib/x86_64/libsqlcipher.so"
+      ]
+    }
+  },
+  "signer": {
+    "apksigner_verify_exit_code": 0,
+    "v1": true,
+    "v2": true,
+    "signer_count": 1,
+    "certificate_sha256": "b8849d6e0146f3fa8c95e5911f444372b6693162142e1aa93d1700a2da3be088",
+    "installed_package_certificate_sha256": "b8849d6e0146f3fa8c95e5911f444372b6693162142e1aa93d1700a2da3be088",
+    "compatible_with_installed_package": true
+  },
+  "junit": {
+    "task": "testDebugUnitTest",
+    "post_build_run_exit_code": 0,
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "suites": [
+      {
+        "name": "com.kaori.wakeupschedule.ConstraintLayoutSolverRegressionTest",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "cases": [
+          "commonConstraintModesKeepExpectedFramesAcrossRepeatedPasses"
+        ]
+      },
+      {
+        "name": "kotlinx.coroutines.internal.UnconfinedEventLoopTest",
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "cases": [
+          "nestedUnconfinedResumesDrainInOrderAndBalanceUseCount",
+          "dispatchedResumeBalancesImmediateEventLoopUseCount",
+          "immediateResumeExceptionsBalanceUseCountAndAllowLaterTasks",
+          "cancellableStartBalancesImmediateEventLoopUseCount",
+          "queuedFailureDoesNotStopDrainOrLeakUseCount"
+        ]
+      }
+    ],
+    "log": "docs/phase8-test-evidence/phase8-test-after-final-assemble-jdk17.log",
+    "evidence_xml": [
+      "docs/phase8-test-evidence/phase8-after-collection-com.kaori.wakeupschedule.ConstraintLayoutSolverRegressionTest.xml",
+      "docs/phase8-test-evidence/phase8-after-collection-kotlinx.coroutines.internal.UnconfinedEventLoopTest.xml"
+    ]
+  },
+  "emulator_install": {
+    "install_method": "adb install -r",
+    "install_exit_code": 0,
+    "package": "com.kaori.wakeupschedule",
+    "version_code": 247,
+    "version_name": "6.0.06",
+    "apk_signing_version": 2,
+    "signer_sha256": "b8849d6e0146f3fa8c95e5911f444372b6693162142e1aa93d1700a2da3be088",
+    "first_install_time_before_and_after": "2026-10-20 23:55:07",
+    "last_update_time_after": "2026-10-24 15:15:03",
+    "installed_base_apk_sha256": "314805b92dd4e2b36d7f790e9fa5b256cb657955dd57d280f8e746eef0e53327"
+  },
+  "audit_tool": {
+    "path": "tools/audit_native_apk.py",
+    "log": "docs/phase8-build-evidence/phase8-static-audit-after-collection.log",
+    "exit_code": 0,
+    "assertions": "ZIP CRC, DEX checksums, duplicates, placeholders, required classes, recovered-source outputs, manifest component classes, resource IDs"
+  },
+  "runtime_verification": {
+    "emu_index": 0,
+    "android_version": "12.0",
+    "adb_endpoint": "127.0.0.1:16384",
+    "package": "com.kaori.wakeupschedule",
+    "installed_sha256": "314805b92dd4e2b36d7f790e9fa5b256cb657955dd57d280f8e746eef0e53327",
+    "cold_starts": [
+      {
+        "visual_result": "black",
+        "run": 1,
+        "screenshot": "docs/phase8-mumu-evidence/cold-start-01-display-3.png",
+        "pid": "6489",
+        "activity": "com.kaori.wakeupschedule/.schedule.ScheduleActivity",
+        "logical_display_id": 3,
+        "elapsed_seconds": 8.22,
+        "physical_display_id": "4619826888814064386"
+      },
+      {
+        "visual_result": "black",
+        "run": 2,
+        "screenshot": "docs/phase8-mumu-evidence/cold-start-02-display-4.png",
+        "pid": "7122",
+        "activity": "com.kaori.wakeupschedule/.schedule.ScheduleActivity",
+        "logical_display_id": 4,
+        "elapsed_seconds": 8.11,
+        "physical_display_id": "4619827144452474627"
+      },
+      {
+        "visual_result": "black",
+        "run": 3,
+        "screenshot": "docs/phase8-mumu-evidence/cold-start-03-display-6.png",
+        "pid": "7562",
+        "activity": "com.kaori.wakeupschedule/.schedule.ScheduleActivity",
+        "logical_display_id": 6,
+        "elapsed_seconds": 7.94,
+        "physical_display_id": "4619827203584079877"
+      }
+    ],
+    "diagnostic_window": {
+      "is_on_screen": false,
+      "draw_state": "NO_SURFACE",
+      "pid": "8099",
+      "view_visibility": "0x4",
+      "logical_display_id": 7,
+      "has_surface": false
+    },
+    "back_navigation": {
+      "pid_unchanged": true,
+      "command": "adb shell input -d 7 keyevent 4",
+      "evidence": "docs/phase8-mumu-evidence/safe-back-display-scoped.txt",
+      "resumed_activity_unchanged": true,
+      "result": "no visible navigation"
+    },
+    "target_startup_error_scan": "no matches for fatal/linkage/resource/ANR patterns in the three run logcats",
+    "privacy_or_data_decision": "none made",
+    "visible_ui_acceptance": "not passed: screenshots are black and app window has no Surface"
+  },
+  "cleanup_verification": {
+    "moved_from_project_disposable_files": 77,
+    "moved_from_project_disposable_bytes": 42272230,
+    "central_total_files": 140,
+    "central_total_bytes": 266578924,
+    "manifest": "D:/Download/AndroidStudioProjects/WakeUP/_codex_disposable/cleanup-manifest.csv",
+    "active_reference_scan": "no active references to sibling disposable files",
+    "robolectric_cache": "app/build/robolectric-m2",
+    "post_collection_clean_test_exit_code": 0,
+    "post_collection_clean_assemble_exit_code": 0,
+    "auto_deleted": false,
+    "manual_deletion": "safe after preserving project docs and root APK"
+  }
+}

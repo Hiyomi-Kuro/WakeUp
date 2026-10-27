@@ -1,0 +1,31 @@
+timestamp=2026-10-24T15:28:33.8087944+08:00 command=mumu-cli control -v 0 tool func -n go_back command_exit_code=0 command_output=
+{
+  "errcode": 0,
+  "errmsg": ""
+}
+before:
+7562
+    topResumedActivity=ActivityRecord{a7262df u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3539}
+      topResumedActivity=ActivityRecord{76850b8 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+  ResumedActivity: ActivityRecord{a7262df u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3539}
+  Display: mDisplayId=6 rootTasks=1
+  Display: mDisplayId=0 rootTasks=4
+  Display: mDisplayId=7 rootTasks=0
+  Window #0 Window{54249e2 u0 com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity}:
+    mBaseLayer=21000 mSubLayer=0    mToken=ActivityRecord{a7262df u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3539}
+    mActivityRecord=ActivityRecord{a7262df u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3539}
+    mViewVisibility=0x4 mHaveFrame=true mObscured=false
+    mHasSurface=false isReadyForDisplay()=false mWindowRemovalAllowed=false
+after:
+7562
+    topResumedActivity=ActivityRecord{a7262df u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3539}
+      topResumedActivity=ActivityRecord{76850b8 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+  ResumedActivity: ActivityRecord{a7262df u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3539}
+  Display: mDisplayId=6 rootTasks=1
+  Display: mDisplayId=0 rootTasks=4
+  Display: mDisplayId=7 rootTasks=0
+  Window #0 Window{54249e2 u0 com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity}:
+    mBaseLayer=21000 mSubLayer=0    mToken=ActivityRecord{a7262df u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3539}
+    mActivityRecord=ActivityRecord{a7262df u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3539}
+    mViewVisibility=0x4 mHaveFrame=true mObscured=false
+    mHasSurface=false isReadyForDisplay()=false mWindowRemovalAllowed=false

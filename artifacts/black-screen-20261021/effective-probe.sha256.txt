@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : 9628E7D093CC1B04FD53299DE57915DF0CDCAA368A8946CC7B17D645E3E68932
+Path      : D:\Download\AndroidStudioProjects\WakeUP\app\build\outputs\apk\debug\app-debug.apk
+

@@ -1,0 +1,78 @@
+{
+  "generatedAtLocal": "2026-10-27T05:13:26.7714640+08:00",
+  "timeFieldMeaning": "fileLastWriteTimeLocal is workspace file timestamp, not device capture time; raw capture timestamps are recorded in _codex_disposable/phase12-20261027/raw.",
+  "screenshots": [
+    {
+      "name": "phase12-bottomsheet-after-back-state5-still-visible.png",
+      "sizeBytes": 130230,
+      "sha256": "6AB31133090D857978FDFA8B0D4896A2AAB4E9A6273128C43FF451EE64B7E4AC",
+      "fileLastWriteTimeLocal": "2026-10-27T04:32:26.4663473+08:00"
+    },
+    {
+      "name": "phase12-bottomsheet-after-layout-settle.png",
+      "sizeBytes": 130230,
+      "sha256": "6AB31133090D857978FDFA8B0D4896A2AAB4E9A6273128C43FF451EE64B7E4AC",
+      "fileLastWriteTimeLocal": "2026-10-27T04:30:05.3366034+08:00"
+    },
+    {
+      "name": "phase12-bottomsheet-after-more-tap.png",
+      "sizeBytes": 85536,
+      "sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B",
+      "fileLastWriteTimeLocal": "2026-10-27T04:25:09.3708060+08:00"
+    },
+    {
+      "name": "phase12-cascade-popup-window-no-visible-content.png",
+      "sizeBytes": 85536,
+      "sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B",
+      "fileLastWriteTimeLocal": "2026-10-27T05:06:16.5010473+08:00"
+    },
+    {
+      "name": "phase12-cold-start-1.png",
+      "sizeBytes": 85536,
+      "sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B",
+      "fileLastWriteTimeLocal": "2026-10-27T04:49:59.8634529+08:00"
+    },
+    {
+      "name": "phase12-cold-start-2.png",
+      "sizeBytes": 85536,
+      "sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B",
+      "fileLastWriteTimeLocal": "2026-10-27T04:50:04.4278847+08:00"
+    },
+    {
+      "name": "phase12-cold-start-3.png",
+      "sizeBytes": 85536,
+      "sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B",
+      "fileLastWriteTimeLocal": "2026-10-27T04:50:08.7552760+08:00"
+    },
+    {
+      "name": "phase12-host-display-topmost-window.png",
+      "sizeBytes": 47014,
+      "sha256": "9EF105DD8D45B9625F8CE7127F98AC897D713009FFE5C3D56A5F7BE846A131A5",
+      "fileLastWriteTimeLocal": "2026-10-27T04:14:14.3735297+08:00"
+    },
+    {
+      "name": "phase12-pager-fixture-page1-return.png",
+      "sizeBytes": 46518,
+      "sha256": "0680886C5F0C4A7D7F625F1ECC3638B79FAFA096CFBC7FB62C2FBA7F4FBBF224",
+      "fileLastWriteTimeLocal": "2026-10-27T04:45:24.4136461+08:00"
+    },
+    {
+      "name": "phase12-pager-fixture-page1.png",
+      "sizeBytes": 46518,
+      "sha256": "0680886C5F0C4A7D7F625F1ECC3638B79FAFA096CFBC7FB62C2FBA7F4FBBF224",
+      "fileLastWriteTimeLocal": "2026-10-27T04:45:16.6133854+08:00"
+    },
+    {
+      "name": "phase12-pager-fixture-page2.png",
+      "sizeBytes": 46809,
+      "sha256": "B8F7EDE422BF29C4152A4CE82771B19E0DBB66D8D0246ABE2810A4A9D9706F3F",
+      "fileLastWriteTimeLocal": "2026-10-27T04:45:20.5398185+08:00"
+    },
+    {
+      "name": "phase12-target-before-interactions.png",
+      "sizeBytes": 85536,
+      "sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B",
+      "fileLastWriteTimeLocal": "2026-10-27T04:09:40.5650031+08:00"
+    }
+  ]
+}

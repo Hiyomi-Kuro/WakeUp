@@ -1,0 +1,35 @@
+RENAME	androidx/appcompat/widget/ActionMenuView.java	LinearLayoutCompat.LayoutParams generateLayoutParams(AttributeSet attributeSet)	LinearLayoutCompat.LayoutParams OooO(AttributeSet attributeSet)	OooO
+RENAME	androidx/appcompat/widget/ActionMenuView.java	LinearLayoutCompat.LayoutParams generateDefaultLayoutParams()	LinearLayoutCompat.LayoutParams OooO0oo()	OooO0oo
+RENAME	androidx/appcompat/widget/ActionMenuView.java	LinearLayoutCompat.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams)	LinearLayoutCompat.LayoutParams OooOO0(ViewGroup.LayoutParams layoutParams)	OooOO0
+RENAME	org/jsoup/parser/Oooo0.java	o000oOoO OooO0o()	o000oOoO OooOOOo()	OooOOOo
+REMOVE	o00OOO00/OooOOOO.java	public final Object clone() {	Smali clone()Ljava/lang/Object;; covariant typed source retained
+REMOVE	o00OOO00/OooOO0.java	public final Object clone() {	Smali clone()Ljava/lang/Object;; covariant typed source retained
+REMOVE	o00OOO00/OooO.java	public final Object clone() {	Smali clone()Ljava/lang/Object;; covariant typed source retained
+REMOVE	o00OOO00/o000oOoO.java	public final Object clone() {	Smali clone()Ljava/lang/Object;; covariant typed source retained
+REMOVE	o00OOO00/OooOO0O.java	public final Object clone() {	Smali clone()Ljava/lang/Object;; covariant typed source retained
+REMOVE	retrofit2/o0O0O00.java	public final Object clone() {	Smali clone()Ljava/lang/Object;; covariant typed source retained
+REMOVE	o00OOO00/OooO0o.java	public final OooOo clone() {	More-specific Oooo0 clone retained
+REMOVE	o00OOO00/OooO0o.java	public final Object clone() {	Smali clone()Ljava/lang/Object;; Oooo0 covariant source retained
+REMOVE	com/google/android/material/appbar/AppBarLayout.java	public final ViewGroup.LayoutParams generateDefaultLayoutParams() {	Smali also has LinearLayout.LayoutParams; retain covariant source
+REMOVE	com/google/android/material/appbar/AppBarLayout.java	public final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {	Smali bridge generated from covariant LinearLayout return
+REMOVE	com/google/android/material/appbar/AppBarLayout.java	public final ViewGroup.LayoutParams generateLayoutParams(AttributeSet attributeSet) {	Smali also has LinearLayout.LayoutParams; retain covariant source
+REMOVE	com/google/android/material/appbar/CollapsingToolbarLayout.java	public final ViewGroup.LayoutParams generateDefaultLayoutParams() {	Smali also has FrameLayout.LayoutParams; retain covariant source
+REMOVE	com/google/android/material/datepicker/MaterialCalendarGridView.java	public final Adapter getAdapter() {	Smali ListAdapter source emits Adapter bridge
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Editable append(CharSequence charSequence) {	Smali has Editable bridge for SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Editable delete(int i, int i2) {	Smali has Editable bridge for SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Editable insert(int i, CharSequence charSequence) {	Smali has Editable bridge for SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final /* bridge */ /* synthetic */ Editable replace(int i, int i2, CharSequence charSequence) {	Smali bridge generated from SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final /* bridge */ /* synthetic */ Editable replace(int i, int i2, CharSequence charSequence, int i3, int i4) {	Smali bridge generated from SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Appendable append(CharSequence charSequence) {	Smali has Appendable bridge for SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Editable insert(int i, CharSequence charSequence, int i2, int i3) {	Smali has Editable bridge for SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Editable append(char c) {	Smali has Editable bridge for SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Appendable append(char c) {	Smali has Appendable bridge for SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Editable append(CharSequence charSequence, int i, int i2) {	Smali has Editable bridge for SpannableStringBuilder override
+REMOVE	androidx/emoji2/text/o0OO00O.java	public final Appendable append(CharSequence charSequence, int i, int i2) {	Smali has Appendable bridge for SpannableStringBuilder override
+REMOVE	androidx/fragment/app/o00.java	public final /* bridge */ /* synthetic */ Appendable append(CharSequence charSequence) {	Smali bridge delegates to Writer.append
+REMOVE	androidx/fragment/app/o00.java	public final /* bridge */ /* synthetic */ Appendable append(CharSequence charSequence, int i, int i2) {	Smali bridge delegates to Writer.append
+REMOVE	kotlin/collections/EmptyList.java	public /* bridge */ /* synthetic */ Object remove(int i) {	Smali Object bridge generated from Void return override
+REMOVE	kotlin/jvm/internal/MutablePropertyReference1.java	public /* bridge */ /* synthetic */ o0000Ooo getGetter() {	Smali erased covariant bridge
+REMOVE	kotlin/jvm/internal/MutablePropertyReference1.java	public /* bridge */ /* synthetic */ o00000O0 getSetter() {	Smali erased covariant bridge
+REMOVE	kotlin/jvm/internal/PropertyReference0.java	public /* bridge */ /* synthetic */ o0000Ooo getGetter() {	Smali erased covariant bridge
+BODY_FIX	org/jsoup/parser/Oooo0.java	bridge and super call restored to OooOOOo per Smali

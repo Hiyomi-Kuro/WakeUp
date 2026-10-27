@@ -1,0 +1,550 @@
+--------- beginning of main
+10-21 02:00:57.376 10726 10726 I logcat  : type=1400 audit(0.0:30549): avc: denied { write } for name="logd" dev="tmpfs" ino=11968 scontext=u:r:init:s0 tcontext=u:object_r:logd_socket:s0 tclass=sock_file permissive=1
+10-21 02:00:57.550  1070  1083 D nemuinit: start name: cmd, operation: 0:am start -W -n com.kaori.wakeupschedule/.SplashActivity, id: 1610612773
+10-21 02:00:57.562 10729 10729 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+--------- beginning of system
+10-21 02:00:57.564  1310  2664 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.kaori.wakeupschedule/.SplashActivity} from uid 0, pid 10729
+10-21 02:00:57.566  1310  2664 E ActivityTaskManager: [KeepAlive] created display id:13 , ph-yid:local:4619827106603731468, for pkg com.kaori.wakeupschedule
+10-21 02:00:57.566  1310  2664 E ActivityTaskManager: [KeepAlive] null options , create options to set displayId for newTask
+10-21 02:00:57.566  1310  2664 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=3482 attached=false
+10-21 02:00:57.563  1310  1310 I android.anim: type=1400 audit(0.0:30550): avc: denied { read } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+10-21 02:00:57.570  1310  1310 I Binder:1310_16: type=1400 audit(0.0:30551): avc: denied { transfer } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+10-21 02:00:57.576  1310  2664 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10043; state: DISABLED
+10-21 02:00:57.576  1310  2664 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10043; state: DISABLED
+10-21 02:00:57.577  1310  2664 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10043; state: DISABLED
+10-21 02:00:57.577  1310  2664 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10043; state: DISABLED
+10-21 02:00:57.577  1310  2664 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10043; state: DISABLED
+10-21 02:00:57.578  1310  2664 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10043; state: ENABLED
+10-21 02:00:57.581  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:57.576  8775  8775 I ndroid.markdown: type=1400 audit(0.0:30552): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+10-21 02:00:57.586  1495  1495 I ll.splashscreen: type=1400 audit(0.0:30553): avc: denied { getattr } for path="/system/system_ext/priv-app/SystemUI/SystemUI.apk" dev="sda6" ino=4411 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+10-21 02:00:57.596  1310  1330 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10043; state: DISABLED
+10-21 02:00:57.598  1310  1340 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10043; state: ENABLED
+10-21 02:00:57.603  1137  1137 D Zygote  : Forked child process 10732
+10-21 02:00:57.604  1310  1340 I ActivityManager: Start proc 10732:com.kaori.wakeupschedule/u0a43 for top-activity {com.kaori.wakeupschedule/com.kaori.wakeupschedule.SplashActivity}
+10-21 02:00:57.604 10732 10732 I Zygote  : fakeProductInfoIfNeed callded! com.kaori.wakeupschedule
+10-21 02:00:57.605 10732 10732 I Zygote  : fake Product info com.kaori.wakeupschedule not matched any pattern
+10-21 02:00:57.605 10732 10732 I Zygote  : fakeProductInfoFromProperties callded! com.kaori.wakeupschedule
+10-21 02:00:57.606 10732 10732 E NemuAppNameUtil: save data success
+10-21 02:00:57.620 10732 10732 E linker  : do_dlopen failed
+10-21 02:00:57.620 10732 10732 E linker  : load selected hp /system/etc/mumu-configs/shared_libs/libhp12_x86_64.so failed
+10-21 02:00:57.620 10732 10732 E linker  : library "/system/etc/mumu-configs/shared_libs/libhp12_x86_64.so" ("/system/etc/mumu-configs/shared_libs/libhp12_x86_64.so") needed or dlopened by "/apex/com.android.art/lib64/libnativebridge.so" is not accessible for the namespace: [name="com_android_art", ld_library_paths="", default_library_paths="/apex/com.android.art/lib64", permitted_paths="/apex/com.android.art/lib64:/system/lib64:/data:/apex/com.android.art/javalib"]
+10-21 02:00:57.620 10732 10732 E linker  : do_dlopen failed
+10-21 02:00:57.620 10732 10732 E linker  : load origin hp /system/etc/mumu-configs/shared_libs/libhp12_x86_64.so failed
+10-21 02:00:57.621  1495  1665 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 02:00:57.621 10732 10732 E linker  : hp entrace has not been loaded, ignored
+10-21 02:00:57.627 10732 10732 W nativebridge: LLLog DoRedirectTranslator not is_gte
+10-21 02:00:57.627 10732 10732 W nativebridge: Failed to bind-mount /system/etc/cpuinfo.x86_64.txt as /proc/cpuinfo: No such file or directory
+10-21 02:00:57.628 10732 10732 W nativebridge: Failed to bind-mount /system/lib64/x86_64/cpuinfo as /proc/cpuinfo: No such file or directory
+10-21 02:00:57.628 10732 10732 I Zygote  : seccomp disabled by setenforce 0
+10-21 02:00:57.632 10732 10732 I .wakeupschedul: Late-enabling -Xcheck:jni
+10-21 02:00:57.633  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:57.635  1495 10733 D ndroid.systemu: Features: 0 0 0
+10-21 02:00:57.635  1495 10733 E ndroid.systemu: vulkan version is 4211003
+10-21 02:00:57.635  1495 10733 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 02:00:57.637  1495 10733 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 02:00:57.646 10732 10732 W .wakeupschedul: Unexpected CPU variant for X86 using defaults: x86_64
+10-21 02:00:57.646 10732 10732 V libnb   : enter native_bridge2_initialize /data/user/0/com.kaori.wakeupschedule/code_cache arm64
+10-21 02:00:57.649  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:57.650  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:57.651 10732 10732 E libnb   : The translator implementation library has not been set.
+10-21 02:00:57.661 10732 10732 E libnb   : get_callbacks native_handle 0x80a2ccbb5c3ac86d: 1 libnb:/system/lib64/libhoudini.so
+10-21 02:00:57.661 10732 10732 I libnb   : Found /system/lib64/libhoudini.so version 6
+10-21 02:00:57.661 10732 10732 D HP      : no libmumuhooker.so
+10-21 02:00:57.662 10732 10732 D houdini : [10732] Intel Bridge Technology for Netease internal evaluation only, Copyright(C) Intel Corp. 2012-2025.
+10-21 02:00:57.662 10732 10732 D houdini : [10732] Use permitted only under a valid evaluation software license agreement - all other rights reserved.
+10-21 02:00:57.662 10732 10732 D houdini : [10732] Initialize library(version: 12.0.1_z.Netease_ev4 RELEASE)... successfully.
+10-21 02:00:57.662 10732 10732 W HP      : x_initialize private_dir:/data/user/0/com.kaori.wakeupschedule/code_cache instruction_set:arm64 getMethodShorty:0x71001c73c340 ret:1
+10-21 02:00:57.669  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:57.673  1158  1225 I adbd    : jdwp connection from 10732
+10-21 02:00:57.675 10732 10732 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-21 02:00:57.680  1310  2655 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+10-21 02:00:57.680  7181  7328 E PlayCommon: [81] Failed to connect to server for server timestamp: java.net.SocketTimeoutException: failed to connect to play.googleapis.com/172.217.112.4 (port 443) from /10.0.2.15 (port 36528) after 40000ms
+10-21 02:00:57.682  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:57.684 10732 10747 E ashmem  : memfd: ro.vndk.version not defined or invalid (), this is mandated since P.
+10-21 02:00:57.684  1310  2655 D RecentTaskMonitor: onTaskFocusChanged [FALSE] 3478
+10-21 02:00:57.684  1310  2655 D RecentTaskMonitor: onTaskFocusChanged [TRUE] 3482 ignoreTFC false
+10-21 02:00:57.689 10732 10732 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10043; state: ENABLED
+10-21 02:00:57.696  1310  1330 D RecentTaskMonitor: VAddressShellNotifier#notifyOpenTab :{"uri":"player\/tab","need_response":false,"params":{"id":"task:3482","displayId":13,"userId":0,"name":"WakeUp课程表","originName":"WakeUp课程表","packageName":"com.kaori.wakeupschedule","launcher":false,"newTask":true,"icon":"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAAAMnSURBVEiJnZXPaxRJFMc\/Vd2zHTPpCVlNxsRZQn4haFyUEQOCgjcP3pZcPLh\/wP4fufoPiKcFL0H2pAh7dZAsBFzCMJEQCCHEXdToZDKZTHfX20P19HSmkzjZB0VXvar6fuvVe\/VtdVCp3NLwh3Kcn0QppZQCrW1TCpXqH\/P1jlM+pbWg9Ve0\/tVV8CfwoxjT3WQMACiFACruA9351FeMObZGQCmREeB3rWDEegVEEGMQEbs55ev0iecTX\/w9aQ3G+LpzwDQJxlgiYwiaTZqfPlmA00DT45RPjFGaXhPh88YGfz17xva7d9S3t\/n7xQsau7tdgBPIMiRxyxAYYxgYHubi7Cz\/Vqt8fP+egeFhtt6+\/V\/XpY8fXqi9esWXzU2m792j\/OQJhStXOPr2jfGbNy1AFCGtFgTBsUhOuy43TaCUYmRyku2VFcauXcPL5ymVy4RBwM7KCqO5HO7WVjfaoSHC27fPrK7MFV2en+fizAzrr1\/T3NtDRLg0Pc1koYDTAXdduH8fvbCAu7cHYQhhmBRGOhK3l+CfahWAKAxZe\/mSobExJkolioWCLbeBAXj8GPJ5e3BA7+7iPH1KNDWFefDAvos4kmwE16\/TqteRMOTnxUUu37jBYLvdreWJiQS8Y+74OCwuYsrlTFWpw0pFekk6laEdB3I5vFIJ5fvw\/DnMzcHDhwCsrq6yvLzM0tISEoYE6+udZCbSkX0HcbK14wCQm5lBFYuwtmYnG41ESoIgQGsLYQ4PkSjqL4K0eXfuEG5u4r55g5J46aNHMDWVDpmjWg1arY7YdYXvewRJVK0WP1QqqIMD65ifh4UF+y6qVdqjo3DhQkZhM1V0monjgO+D50GzCRsbsLMDnodSCrfVIpydtYtTCts3AZ1K8jzbei0IuncPidSfmOSM7e\/j1GqcdZdmcPBEqe+PIJ9HHx1BFNmNveC5HFGx2PsvyGrRqaY1wd27AOQ+fMCp15MpAdpXr4LjdMlTmtR\/DmIL5uYIGw1Uuw2ui\/F9C5YwWhKJSc5NgFKI75+Zj3QkWkS+nJukH7NJPtDKmF8EPsLZhzovPLAP\/PYfkV0RvJ640IUAAAAASUVORK5CYII=","canChangeAppOrientation":false,"canReceiveFile":false,"pid":10732,"uid":10043,"action":"open"}}
+10-21 02:00:57.701  1310  1330 I RecentTaskMonitor: notify sub display opened to input: 13
+10-21 02:00:57.702  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 570
+10-21 02:00:57.708  1070 10749 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.708  1070 10749 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.845 10732 10732 I Typeface: Preloading /system/fonts/Roboto-Regular.ttf
+10-21 02:00:57.863 10732 10732 I Typeface: Preloading /system/fonts/NotoSansSC-Regular.otf
+10-21 02:00:57.863 10732 10732 I Typeface: Preloading /system/fonts/NotoSansSC-Bold.otf
+10-21 02:00:57.897  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:00:57.944  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, id: 571
+10-21 02:00:57.945  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 572
+10-21 02:00:57.947  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, id: 573
+10-21 02:00:57.952  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, id: 574
+10-21 02:00:57.952  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 575
+10-21 02:00:57.953  1310  1397 I InputReader: Device reconfigured: id=3, name='Xiaomi Input', size 1080x1920, orientation 0, mode 1, display id 13
+10-21 02:00:57.953  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, id: 576
+10-21 02:00:57.953  1070 10752 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.953  1070 10752 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.956  1070 10750 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.956  1070 10750 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.957  1070 10754 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.957  1070 10754 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.957  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 577
+10-21 02:00:57.960  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, id: 578
+10-21 02:00:57.960  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 579
+10-21 02:00:57.960  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, id: 580
+10-21 02:00:57.960  1070 10755 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.960  1070 10755 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.961  1070 10753 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.961  1070 10751 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.961  1070 10758 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.961  1070 10758 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.961  1070 10751 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.961  1070 10753 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.961  1070 10757 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.961  1070 10757 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.961  1070 10759 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.kaori.wakeupschedule","pid":10732,"uid":10043}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.961  1070 10759 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:57.962  1070 10756 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:57.962  1070 10756 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.130 10732 10732 V GraphicsEnvironment: ANGLE Developer option for 'com.kaori.wakeupschedule' set to: 'default'
+10-21 02:00:58.130 10732 10732 V GraphicsEnvironment: ANGLE GameManagerService for com.kaori.wakeupschedule: false
+10-21 02:00:58.130 10732 10732 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-21 02:00:58.132 10732 10732 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+10-21 02:00:58.133 10732 10732 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+10-21 02:00:58.141 10732 10732 W HMSSDK_PushPreferences: get new sharedPreferences failed,start to get from context. 
+10-21 02:00:58.142 10732 10732 I AGConnectProvider: AGConnectInitializeProvider#onCreate
+10-21 02:00:58.142 10732 10732 I AGConnectInstance: AGConnectInstance#initialize
+10-21 02:00:58.142 10732 10732 W AGC_Instance: agc sdk initialize
+10-21 02:00:58.142 10732 10732 I AGC_Registrar: getServices
+10-21 02:00:58.145 10732 10732 I AGC_Registrar: services:3
+10-21 02:00:58.146 10732 10732 D AGC_Instance: AGConnectInstanceImpl init
+10-21 02:00:58.146 10732 10732 D AGC_ServiceRepository: addService start
+10-21 02:00:58.146 10732 10732 D AGC_ServiceRepository: addService end
+10-21 02:00:58.146 10732 10732 D AGC_ServiceRepository: addService start
+10-21 02:00:58.146 10732 10732 D AGC_Instance: AGConnectInstanceImpl init end
+10-21 02:00:58.146 10732 10732 I AGC_Instance: initFinish callback start
+10-21 02:00:58.147 10732 10732 I [AGC_LOG]AGConnectCrashRegistrar: AGCInitFinishCallback
+10-21 02:00:58.148 10732 10732 I AGC_Instance: AGC SDK initialize end
+10-21 02:00:58.157 10732 10732 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+10-21 02:00:58.175 10732 10732 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: FATAL EXCEPTION: main
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: Process: com.kaori.wakeupschedule, PID: 10732
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider androidx.startup.InitializationProvider: androidx.startup.StartupException: java.lang.ClassCastException: androidx.work.impl.WorkManagerImplExtKt$WorkManagerImpl$1 cannot be cast to kotlin.jvm.functions.Function6
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7679)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7191)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6962)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.app.ActivityThread.access$1600(ActivityThread.java:260)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2140)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8085)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1091)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: Caused by: androidx.startup.StartupException: java.lang.ClassCastException: androidx.work.impl.WorkManagerImplExtKt$WorkManagerImpl$1 cannot be cast to kotlin.jvm.functions.Function6
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.startup.AppInitializer.doInitialize(AppInitializer.java:187)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.startup.AppInitializer.discoverAndInitialize(AppInitializer.java:238)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.startup.AppInitializer.discoverAndInitialize(AppInitializer.java:206)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.startup.InitializationProvider.onCreate(InitializationProvider.java:45)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2410)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2380)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7674)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	... 11 more
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: Caused by: java.lang.ClassCastException: androidx.work.impl.WorkManagerImplExtKt$WorkManagerImpl$1 cannot be cast to kotlin.jvm.functions.Function6
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.work.impl.WorkManagerImplExtKt.createWorkManager$default(WorkManagerImplExt.kt:43)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.work.impl.WorkManagerImplExtKt.createWorkManager(Unknown Source:20)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.work.impl.WorkManagerImpl.initialize(WorkManagerImpl.java:206)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.work.WorkManager.initialize(WorkManager.java:210)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.work.WorkManagerInitializer.create(WorkManagerInitializer.java:39)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.work.WorkManagerInitializer.create(WorkManagerInitializer.java:30)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	at androidx.startup.AppInitializer.doInitialize(AppInitializer.java:180)
+10-21 02:00:58.175 10732 10732 E AndroidRuntime: 	... 17 more
+10-21 02:00:58.176 10732 10732 E [AGC_LOG]AGConnectCrashHandler: exception catch:'java.lang.RuntimeException: Unable to get provider androidx.startup.InitializationProvider: androidx.startup.StartupException: java.lang.ClassCastException: androidx.work.impl.WorkManagerImplExtKt$WorkManagerImpl$1 cannot be cast to kotlin.jvm.functions.Function6' from thread main
+10-21 02:00:58.177 10732 10732 W .wakeupschedul: Unresolved exception class when finding catch block: com.huawei.android.util.NoExtAPIException
+10-21 02:00:58.177 10732 10732 W Emui10RootDetect: NoClassDefFoundError : Failed resolution of: Lcom/huawei/android/os/BuildEx$VERSION;
+10-21 02:00:58.184 10732 10732 I HMSSDK_o: The local secret is already in separate file mode.
+10-21 02:00:58.184 10732 10732 W .wakeupschedul: Accessing hidden method Landroid/app/SharedPreferencesImpl;-><init>(Ljava/io/File;I)V (unsupported, reflection, allowed)
+10-21 02:00:58.188 10732 10732 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-21 02:00:58.189 10732 10732 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-21 02:00:58.190 10732 10732 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-21 02:00:58.190 10732 10732 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-21 02:00:58.192 10732 10767 I HMSSDK_HMSPackageManager: enter asyncOnceCheckMDMState
+10-21 02:00:58.192 10732 10732 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-21 02:00:58.193 10732 10732 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-21 02:00:58.194 10732 10732 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-21 02:00:58.194 10732 10732 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-21 02:00:58.195 10732 10732 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-21 02:00:58.195 10732 10732 D AGC_ConfigImpl: initConfigReader
+10-21 02:00:58.196 10732 10732 D AGC_FlexibleDecrypt: init
+10-21 02:00:58.196 10732 10732 D AGC_Keys: build aes key, iterationCount:1
+10-21 02:00:58.197 10732 10732 D AGC_Keys: build aes key end
+10-21 02:00:58.201 10732 10732 I HMSSDK_HianalyticsExist: In isHianalyticsExist, Failed to find class HiAnalyticsConfig.
+10-21 02:00:58.202 10732 10732 I HMSSDK_HianalyticsExist: hianalytics exist: false
+10-21 02:00:58.202 10732 10732 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :false
+10-21 02:00:58.204 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getVendorCountryCode|41|countryCode by ro.hw.country is: UNKNOWN
+10-21 02:00:58.205 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getSimCountryCode|76|countryCode by SimCountryIso is: 
+10-21 02:00:58.205 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getRegionSettingCountryCode|33|countryCode by system's region setting is: CN
+10-21 02:00:58.205 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getLocaleCountryCode|73|other Android 9.0 upper， get countryCode form Locale.getDefault().getCountry()
+10-21 02:00:58.205 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|init|49|get issue_country code from LOCALE_INFO
+10-21 02:00:58.205 10732 10732 I HMSSDK_HMSBIInitializer: Builder->biInitFlag : start initHaSDK
+10-21 02:00:58.206 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getVendorCountryCode|41|countryCode by ro.hw.country is: UNKNOWN
+10-21 02:00:58.206 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getSimCountryCode|76|countryCode by SimCountryIso is: 
+10-21 02:00:58.206 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getRegionSettingCountryCode|33|countryCode by system's region setting is: CN
+10-21 02:00:58.206 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getLocaleCountryCode|73|other Android 9.0 upper， get countryCode form Locale.getDefault().getCountry()
+10-21 02:00:58.206 10732 10732 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|init|49|get issue_country code from LOCALE_INFO
+10-21 02:00:58.207 10732 10768 I HMSSDK_HMSBIInitializer: Start to query GRS
+10-21 02:00:58.207 10732 10768 I NetworkKit_GrsClientManager: AsyncTask #1|null|com.huawei.hms.framework.network.grs.d|a|95|grsClientImpl == null, and new GrsClientImpl
+10-21 02:00:58.209 10732 10768 I NetworkKit_c: AsyncTask #1|null|com.huawei.hms.framework.network.grs.c|<init>|87|GrsClient Instance is init, GRS SDK version: 6.0.2.300, GrsBaseInfoParam: app_name=null, reg_country=null, ser_country=null, issue_country=CN
+10-21 02:00:58.210 10732 10771 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.e.c|a|25|ContextHolder.getAppContext() from GRS is:null
+10-21 02:00:58.211 10732 10771 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.e.c|a|25|ContextHolder.getAppContext() from GRS is:null
+10-21 02:00:58.212 10732 10771 I NetworkKit_LocalManagerProxy: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.b|a|55|appConfigName is: null
+10-21 02:00:58.215 10732 10771 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_analyticsKit.json, sucess.
+10-21 02:00:58.216 10732 10771 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_opendevicesdk.json, sucess.
+10-21 02:00:58.217 10732 10771 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_opensdkService.json, sucess.
+10-21 02:00:58.218 10732 10771 I NetworkKit_GrsRequestInfo: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.g.k.c|e|75|post service list is:{"services":["com.huawei.hms.opendevicesdk","com.huawei.cloud.opensdkhianalytics","com.huawei.cloud.hms.analytics"]}
+10-21 02:00:58.219 10732 10771 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.c$a|call|294|postList is:{*s*r*i*e*"*[*c*m*h*a*e*.*m*.*p*n*e*i*e*d*"*"*o*.*u*w*i*c*o*d*o*e*s*k*i*n*l*t*c*"*"*o*.*u*w*i*c*o*d*h*s*a*a*y*i*s*]*
+10-21 02:00:58.219 10732 10771 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.c$a|call|324|currentServices:{*s*r*i*e*"*[*c*m*h*a*e*.*m*.*p*n*e*i*e*d*"*"*o*.*u*w*i*c*o*d*o*e*s*k*i*n*l*t*c*"*"*o*.*u*w*i*c*o*d*h*s*a*a*y*i*s*]*
+10-21 02:00:58.219 10732 10771 I NetworkKit_PLSharedPreferences: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|PLSharedPreferences.java|com.huawei.hms.framework.common.PLSharedPreferences|getAll|234|sp size 4
+10-21 02:00:58.219 10732 10768 I NetworkKit_e: AsyncTask #1|null|com.huawei.hms.framework.network.grs.h.e|a|30|isSpExpire false.
+10-21 02:00:58.219 10732 10768 I NetworkKit_a: AsyncTask #1|null|com.huawei.hms.framework.network.grs.a|a|20|GrsClientManager.getUrlsLocal: Get URL from GRS Server Cache
+10-21 02:00:58.219 10732 10768 I NetworkKit_a: AsyncTask #1|null|com.huawei.hms.framework.network.grs.a|a|66|GrsClientManager.ayncGetGrsUrl：Return [com.huawei.cloud.opensdkhianalytics][ROOTV2] Url: h*t*s*/*m*t*i*s*-*r*n*d*.*b*n*c*o*d*c*:*4*
+10-21 02:00:58.227 10732 10768 I HMSSDK_HMSBIInitializer: BI URL acquired successfully
+10-21 02:00:58.235 10732 10778 I [AGC_LOG]UploadFile: uploadTask start
+10-21 02:00:58.243 10732 10778 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 02:00:58.243 10732 10778 D AGC_ConfigImpl: getRoutePolicy
+10-21 02:00:58.251 10732 10778 I SecurityComp10200303: SecureX509SingleInstance: get assets bks
+10-21 02:00:58.258 10732 10778 I SecurityComp10200303: SX509TM: loadBksCA
+10-21 02:00:58.258 10732 10778 I SecurityComp10200303: SX509TM:  get bks from assets 
+10-21 02:00:58.263 10732 10778 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (unsupported,core-platform-api, reflection, allowed)
+10-21 02:00:58.263 10732 10778 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (unsupported,core-platform-api, reflection, allowed)
+10-21 02:00:58.263 10732 10778 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (unsupported,core-platform-api, reflection, allowed)
+10-21 02:00:58.317 10732 10786 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 02:00:58.323 10732 10786 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 02:00:58.323 10732 10786 I [AGC_LOG]UploadFile: upload finished
+10-21 02:00:58.323 10732 10786 E [AGC_LOG]UploadFile: upload failed
+10-21 02:00:58.325  1310 10787 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+10-21 02:00:58.325  1310  1951 W ActivityTaskManager:   Force finishing activity com.kaori.wakeupschedule/.SplashActivity
+10-21 02:00:58.326  1310  1951 D RecentTaskMonitor: onTaskFocusChanged [FALSE] 3482
+10-21 02:00:58.326  1310  1951 D RecentTaskMonitor: onTaskFocusChanged [TRUE] 3478 ignoreTFC false
+10-21 02:00:58.327  1157  1402 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 02:00:58.333  1465  1465 D DropboxReceiver: dropbox tag: data_app_crash
+10-21 02:00:58.333  1465  1465 D DropboxReceiver: dropbox time: 1792519258326
+10-21 02:00:58.333  1310  1339 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+10-21 02:00:58.333  1465  6376 D DropboxReceiver: dropbox gz file  /data/system/dropbox/data_app_crash@1792519258326.txt.gz not exist
+10-21 02:00:58.333  1465  6376 D DropboxReceiver: dropbox file: /data/system/dropbox/data_app_crash@1792519258326.txt is to be tracked
+10-21 02:00:58.333  1465  6376 D DropboxReceiver: Last Crash Time: 0 Current Crash Time: 1792519258326
+10-21 02:00:58.333  1465  6376 D DropboxReceiver: shortTimeMultiException: false
+10-21 02:00:58.333  1465  6376 D DropboxReceiver: run: packageName = com.kaori.wakeupschedule   
+10-21 02:00:58.334 10732 10732 I Process : Sending signal. PID: 10732 SIG: 9
+10-21 02:00:58.342  1310  1330 D RecentTaskMonitor: VAddressShellNotifier#notifyOpenTab :{"uri":"player\/tab","need_response":false,"params":{"id":"task:3478","displayId":9,"userId":0,"name":"Markdown","originName":"Markdown","packageName":"com.android.markdown","launcher":false,"newTask":false,"icon":"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAAAMHSURBVEiJtZNLaJxVFMd\/597vPr5vPhsnVfsAM0SM0lqpj0JAHTDWB2gVN7aCgmkVoRsXCqW48LFypW58ICIIdRVEUehGkeJCN8VNxIXoIm2ahraxTSZpzCQz33ExQTTOZJK0Hrhc7uGe\/+\/c\/71X0jQdNMYcE5EBrmKo6pSqDkuWZWPGmMrVFP8H5ILkeV4A8n8AADXrEd+75yAfHvmN+3c\/v9YSSda689lH3+SRew5RNOHAg69xZmKM36e+61pnurYghsP732Xf0CGcFxIvXL7U5PE73qKc9V0ZwIjl1ReP8VD1AD5aXBBElLnpgp5Nm3n63vfxSWnjgO033MTgnUP4KPgoJEGYnymwrrWubL2N4aFPVgWsege7Bu7DBcEYUMA0hZmpAhcEmwhG4NbKIIkNNJr19QOe2\/9yyxYLKDTqSmNJcVGwtgUGCK60foARR2Oh5buxgipo0cQFQ+LAuhZAEPKszOWFi+11OgF6\/U6++uAsP\/\/wBy5A4sBFQywJLgh+ebgI\/dt2d3ShI+DmTU8gonz\/5QTnxuf\/7ri8xeJ8C+LS1vxY9TAuiWsHXOMq9F1bxTjFOOXH45OIUYyFvFdwsSUcosFHQ\/+NO3hq79G2AMnzXFcm797yErds3oexrbVzwtTsGLO1P0EhBEf\/wHYefvIutDAs1ZWzk6c5+t4DLDUWup9ga347zrc6jKkFgblaHUHw3mOtY+LURY6PnASaGAsnfvrsP+IA1nv\/xspkcCUq1+8hpAkhTTBWmalNE2MkTVNijIQQaCwqF87NsmDG+ejzV9pa1PaZ\/nJ+hCwrUd15EO8dtdoi3ntijHjvl09hERFmLy3y9cjrbcU7WqQUnDz1KaNnvqDUEyi0QQiBEAJpmpJlGaVSiSzLsK7g9PnRjoCOH021ybej79DTm9OYHPgXIISA9x6AE7++jVJ0BLR9RSvDiscnJcpZH3l6HdvKO6juGqa+NMfH3zzD9PzElQHaFi67u1r3AEZVJzcCUIqu4qo6Y1T1BVUd3wiki3hNVY\/8BX5L5jw\/dfaOAAAAAElFTkSuQmCC","canChangeAppOrientation":false,"canReceiveFile":true,"pid":8775,"uid":10116,"action":"open"}}
+10-21 02:00:58.350  1310  1330 I RecentTaskMonitor: notify sub display opened to input: 9
+10-21 02:00:58.351  1310  5932 I ActivityManager: Process com.kaori.wakeupschedule (pid 10732) has died: prcp TOP 
+10-21 02:00:58.352  1137  1137 I Zygote  : Process 10732 exited due to signal 9 (Killed)
+10-21 02:00:58.354  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 581
+10-21 02:00:58.355  1310  5932 D RecentTaskMonitor: closeTabFromShell for 3482
+10-21 02:00:58.356  1310  1330 I RecentTaskMonitor: notify sub display closed to input: 13
+10-21 02:00:58.356  1310  1330 D RecentTaskMonitor: VAddressShellNotifier#notifyCloseTab :{"uri":"player\/tab","need_response":false,"params":{"id":"task:3482","action":"close"}}
+10-21 02:00:58.357  1070 10793 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.357  1070 10793 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.357  1310  1330 I RecentTaskMonitor: broadcast tab closed in android as it's closed task taskId: 3482, elapseTime: 660
+10-21 02:00:58.358  1310  1341 I libprocessgroup: Successfully killed process cgroup uid 10043 pid 10732 in 0ms
+10-21 02:00:58.359  1157  1157 I SurfaceFlinger: onComposerHalHotplug(13, connected)
+10-21 02:00:58.359  1157  1157 E HWComposer: getDisplayConnectionType: getDisplayConnectionType failed for display 4619827293253378061: Unsupported (8)
+10-21 02:00:58.359  1465  1465 W System.err: android.content.pm.PackageManager$NameNotFoundException: app.lawnchair
+10-21 02:00:58.359  1157  1157 W HwcComposer: getPerFrameMetadataKeys failed with 8
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:241)
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:213)
+10-21 02:00:58.359  1465  1465 W System.err: 	at com.netease.nemu_vapi_android.proxy.LauncherProxy.getLauncherPkgName(LauncherProxy.java:32)
+10-21 02:00:58.359  1465  1465 W System.err: 	at com.netease.nemu_vapi_android.receiver.ReceiverContainer.onTaskClosed(ReceiverContainer.java:161)
+10-21 02:00:58.359  1465  1465 W System.err: 	at com.netease.nemu_vapi_android.receiver.ReceiverContainer.access$100(ReceiverContainer.java:30)
+10-21 02:00:58.359  1465  1465 W System.err: 	at com.netease.nemu_vapi_android.receiver.ReceiverContainer$3.onReceive(ReceiverContainer.java:71)
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0$LoadedApk$ReceiverDispatcher$Args(LoadedApk.java:1679)
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.os.Looper.loop(Looper.java:288)
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8085)
+10-21 02:00:58.359  1465  1465 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 02:00:58.359  1465  1465 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+10-21 02:00:58.359  1465  1465 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1091)
+10-21 02:00:58.359  1157  1157 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 02:00:58.359  1465  1465 W System.err: android.content.pm.PackageManager$NameNotFoundException: com.mumu.launcher
+10-21 02:00:58.359  1157  1157 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 02:00:58.359  1465  1465 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:241)
+10-21 02:00:58.360  1465  1465 W System.err: 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:213)
+10-21 02:00:58.361  1465  1465 W System.err: 	at com.netease.nemu_vapi_android.proxy.LauncherProxy.getLauncherPkgName(LauncherProxy.java:41)
+10-21 02:00:58.361  1465  1465 W System.err: 	at com.netease.nemu_vapi_android.receiver.ReceiverContainer.onTaskClosed(ReceiverContainer.java:161)
+10-21 02:00:58.361  1465  1465 W System.err: 	at com.netease.nemu_vapi_android.receiver.ReceiverContainer.access$100(ReceiverContainer.java:30)
+10-21 02:00:58.361  1465  1465 W System.err: 	at com.netease.nemu_vapi_android.receiver.ReceiverContainer$3.onReceive(ReceiverContainer.java:71)
+10-21 02:00:58.361  1465  1465 W System.err: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0$LoadedApk$ReceiverDispatcher$Args(LoadedApk.java:1679)
+10-21 02:00:58.361  1465  1465 W System.err: 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-21 02:00:58.361  1465  1465 W System.err: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-21 02:00:58.361  1465  1465 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-21 02:00:58.361  1465  1465 W System.err: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-21 02:00:58.361  1465  1465 W System.err: 	at android.os.Looper.loop(Looper.java:288)
+10-21 02:00:58.361  1465  1465 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8085)
+10-21 02:00:58.361  1465  1465 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 02:00:58.361  1465  1465 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+10-21 02:00:58.361  1465  1465 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1091)
+10-21 02:00:58.363  1465  1465 D Watchdog: CrashBehavior: call notifyClosing: error is java.lang.NoSuchMethodException: android.app.ActivityManager.getCrashBehaviorDataAndClean [class java.lang.String]
+10-21 02:00:58.363  1465  1465 D Watchdog: ignore events AppExit: {"app_name":"WakeUp课程表","app_package":"com.kaori.wakeupschedule","event_duration":0,"failure_reason":"","status_code":0}
+10-21 02:00:58.363  1157  1157 I SurfaceFlinger: Dispatching display hotplug event displayId=4619827293253378061, connected=1
+10-21 02:00:58.363  1157  1255 W EventThread: Failed dispatching Hotplug{displayId=4619827293253378061, connected} for Connection{0x744801e4e110, VSyncRequest::None}
+10-21 02:00:58.363  1157  1256 W EventThread: Failed dispatching Hotplug{displayId=4619827293253378061, connected} for Connection{0x744801e4c310, VSyncRequest::None}
+10-21 02:00:58.363  1465  2102 D Watchdog: upload event v2: ExitApp	json:{"amp_name":"WakeUp课程表","ampid":0,"app_name":"WakeUp课程表","app_package":"com.kaori.wakeupschedule","crash_infos":"","duration":0,"error_code":0,"error_msg":"ok","is_remote_control":0,"module_name":"androidApp","mpid":"0","product_version":"6.6.4.0","token":"39be5121-46eb-4ab7-b655-ff3bedc0e9d4","uuid":"ac67f562-35be-45c9-85a2-666c849b9fd3","version":"6.6.4.0"}
+10-21 02:00:58.364  1157  1402 D SurfaceFlinger: Physical display 13 plugined successfully
+10-21 02:00:58.388  1310  1349 E svma    : can not get the logical display
+10-21 02:00:58.391  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/apps","method":"GET","params":{}}, id: 582
+10-21 02:00:58.392  1465  2102 D Watchdog: upload event: {"architecture":"x86_64","channel":"gw-win","country":"zh-CN","engine":"NEMUX","fchannel":"gw-win","language":"zh-Hans","mpid":"0","package":"mumu","product":"MuMu6.0","product_version":"6.6.4.0","usage":"0","uuid":"ac67f562-35be-45c9-85a2-666c849b9fd3","version":"6.6.4.0","x":{"app_elapse":0,"app_name":"WakeUp课程表","app_package":"com.kaori.wakeupschedule","error":{"code":0,"msg":"ok"},"extra":{"amp_name":"WakeUp课程表","ampid":0,"is_remote_control":0},"token":"39be5121-46eb-4ab7-b655-ff3bedc0e9d4"}}	type: ExitAPP	sign: CmzcwhILJz3fkH+9n/bLJG+xZmc=	uid: 1000	json:{"app_elapse":0,"app_name":"WakeUp课程表","app_package":"com.kaori.wakeupschedule","error":{"code":0,"msg":"ok"},"extra":{"amp_name":"WakeUp课程表","ampid":0,"is_remote_control":0},"token":"39be5121-46eb-4ab7-b655-ff3bedc0e9d4"}
+10-21 02:00:58.394  1157  1402 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 4619827293253378061: Unsupported (8)
+10-21 02:00:58.396  1310  1330 I DisplayDeviceRepository: Display device added: DisplayDeviceInfo{"HDMI 屏幕": uniqueId="local:4619827293253378061", 1080 x 1920, modeId 27, defaultModeId 27, supportedModes [{id=27, width=1080, height=1920, fps=60.000004, alternativeRefreshRates=[15.000001]}, {id=28, width=1080, height=1920, fps=15.000001, alternativeRefreshRates=[60.000004]}], colorMode 0, supportedColorModes [0], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, gameContentTypeSupported false, density 320, 320.0 x 320.0 dpi, appVsyncOff 1000000, presDeadline 16666666, touch EXTERNAL, rotation 0, type EXTERNAL, address {port=13, model=0x401cec724205a0, physicalDisplayId=4619827293253378061}, deviceProductInfo DeviceProductInfo{name=mumuscreen013, manufacturerPnpId=GGL, productId=1, modelYear=null, manufactureDate=ManufactureDate{week=27, year=2006}, connectionToSinkType=0}, state UNKNOWN, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_OWN_CONTENT_ONLY}
+10-21 02:00:58.398  1310  1330 I LogicalDisplayMapper: Applying layout: [{addr: {port=0, model=0x401ceced0008c5, physicalDisplayId=4619827820427265280}, dispId: 0(ON)}], Previous layout: [{addr: {port=0, model=0x401ceced0008c5, physicalDisplayId=4619827820427265280}, dispId: 0(ON)}]
+10-21 02:00:58.398  1310  1330 I LogicalDisplayMapper: Adding new display: 14: DisplayInfo{"HDMI 屏幕", displayId 14", displayGroupId -1, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_TRUSTED, real 1080 x 1920, largest app 1080 x 1920, smallest app 1080 x 1920, appVsyncOff 1000000, presDeadline 16666666, mode 27, defaultMode 27, modes [{id=27, width=1080, height=1920, fps=60.000004, alternativeRefreshRates=[15.000001]}, {id=28, width=1080, height=1920, fps=15.000001, alternativeRefreshRates=[60.000004]}], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, userDisabledHdrTypes [], minimalPostProcessingSupported false, rotation 0, state UNKNOWN, type EXTERNAL, uniqueId "local:4619827293253378061", app 1080 x 1920, density 320 (320.0 x 320.0) dpi, layerStack 14, colorMode 0, supportedColorModes [0], address {port=13, model=0x401cec724205a0, physicalDisplayId=4619827293253378061}, deviceProductInfo DeviceProductInfo{name=mumuscreen013, manufacturerPnpId=GGL, productId=1, modelYear=null, manufactureDate=ManufactureDate{week=27, year=2006}, connectionToSinkType=0}, removeMode 0, refreshRateOverride 0.0, brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5}
+10-21 02:00:58.398  1310  1330 I LogicalDisplayMapper: Setting new display group 0 for display 14, from previous group: null
+10-21 02:00:58.399  1310  1330 W DisplayPowerController[14]: Screen brightness nits configuration is unavailable; falling back
+10-21 02:00:58.402  1310  1310 I InputDispatcher: Created monitor PointerEventDispatcher14 for display 14, gesture=false, pid=1310
+10-21 02:00:58.393  1310  1310 I android.display: type=1400 audit(0.0:30671): avc: denied { read } for name="product" dev="tmpfs" ino=9135 scontext=u:r:system_server:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+10-21 02:00:58.407  1760  2178 D Ganliang: onDisplayAdded 14
+10-21 02:00:58.409  1465  6377 D Watchdog: prepare upload logcat: /storage/emulated/0/Android/data/com.netease.nemu_vapi_android.nemu/cache/data_app_crash@1792519258326.gzip
+10-21 02:00:58.410  1070 10796 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/apps","method":"GET","params":{}}, res: {"errcode":0,"message":"OK","return":{"active":"com.android.markdown","installed":[{"appName":"Tailscale","packageName":"com.tailscale.ipn","version":"1.102.3-t9329c3677-gaea8f60c0","versionCode":297862600},{"appName":"京东读书","packageName":"com.jd.app.reader","version":"4.50.4","versionCode":4500400},{"appName":"Android Dex","packageName":"com.example.androiddex","version":"1.0","versionCode":1},{"appName":"掌上MuMu","packageName":"com.mumu.remote","version":"1.6.0","versionCode":10600},{"appName":"阿里云盘","packageName":"com.alicloud.databox","version":"6.12.2","versionCode":271},{"appName":"Nova Launcher","packageName":"com.teslacoilsw.launcher","version":"8.1.1","versionCode":81001},{"appName":"Xmind","packageName":"net.xmind.doughnut","version":"24.01.14278","versionCode":278},{"appName":"原子加速器","packageName":"net.lab.flying","version":"6.1.1","versionCode":6110},
+10-21 02:00:58.411  1760 10799 D Ganliang: checkAndHandleStatus displayStatus: 0 nextReportTime: 1792143432153
+10-21 02:00:58.411  1070 10796 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.412  1310  1352 V DisplayPowerController[14]: Brightness [0.05] reason changing to: 'manual [ dim ]', previous reason: '0'.
+10-21 02:00:58.412  1713 10798 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+10-21 02:00:58.406  1760  1760 I QQ_COMMON: type=1400 audit(0.0:30672): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:untrusted_app:s0:c113,c256,c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+10-21 02:00:58.419  1760 10799 D Ganliang: setSecure scene:2 displayCount:4
+10-21 02:00:58.419  1760 10799 D Ganliang: reportStatus: [] scene: 2 screenCnt：4
+10-21 02:00:58.419  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.419  1157  1157 D SurfaceFlinger: Setting power mode 2 on display 4619827293253378061
+10-21 02:00:58.419  1157  1157 D SurfaceFlinger: Finished setting power mode 2 on display 4619827293253378061
+10-21 02:00:58.420  1310  1330 I DisplayDeviceRepository: Display device changed state: "HDMI 屏幕", ON
+10-21 02:00:58.423  1713 10798 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+10-21 02:00:58.426  1310  1310 I WindowManager: Override config changes=20005df8 {0.0 ?mcc?mnc ?localeList ?layoutDir sw540dp w540dp h960dp 320dpi lrg long port ?uimode ?night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} ?fontWeightAdjustment} for displayId=14
+10-21 02:00:58.426  1495  1495 W DisplayController: Skipping Display Configuration change on non-added display.
+10-21 02:00:58.416  1136  1136 I Dns_100_1000: type=1400 audit(0.0:30673): avc: denied { getattr } for laddr=10.0.2.15 lport=58265 faddr=115.236.122.147 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+10-21 02:00:58.429  1310 10801 E DisplayDeviceConfig: requesting nits when no mapping exists.
+10-21 02:00:58.416  1157  1157 I surfaceflinger: type=1400 audit(0.0:30674): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+10-21 02:00:58.432  1310 10801 E DisplayDeviceConfig: requesting nits when no mapping exists.
+10-21 02:00:58.434  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.435  1310  1328 V WindowManager: Display 14 state is now (2), so update layer mirroring?
+10-21 02:00:58.435  1310  1328 V WindowManager: Display 14 state is now (2), so update layer mirroring?
+10-21 02:00:58.438  1310  1330 I InputManager-JNI: Viewport [0] to add: local:4619827820427265280, isActive: true
+10-21 02:00:58.438  1310  1330 I InputManager-JNI: Viewport [1] to add: local:4619826992212769800, isActive: true
+10-21 02:00:58.438  1310  1330 I InputManager-JNI: Viewport [2] to add: local:4619827106603731468, isActive: true
+10-21 02:00:58.438  1310  1330 I InputManager-JNI: Viewport [3] to add: local:4619827293253378061, isActive: true
+10-21 02:00:58.438  1310  1339 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+10-21 02:00:58.439  1310  1397 I InputReader: Reconfiguring input devices, changes=DISPLAY_INFO | 
+10-21 02:00:58.440  1310  1339 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+10-21 02:00:58.416  1157  1157 I surfaceflinger: type=1400 audit(0.0:30675): avc: denied { transfer } for scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+10-21 02:00:58.449  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.453  1465  2102 D Watchdog: upload server response: {"errcode": 100, "errmsg": "ok"}
+10-21 02:00:58.453  1465  2102 D Watchdog: upload result: true
+10-21 02:00:58.465  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.481  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.501  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.515  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.527  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, id: 583
+10-21 02:00:58.528  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 584
+10-21 02:00:58.529  1070 10805 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.529  1070 10805 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.529  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, id: 585
+10-21 02:00:58.531  1070 10804 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.531  1070 10804 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.531  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.532  1070 10806 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.532  1070 10806 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.534  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, id: 586
+10-21 02:00:58.534  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 587
+10-21 02:00:58.537  1070 10807 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.537  1070 10807 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.537  1070 10808 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.537  1070 10808 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.538  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, id: 588
+10-21 02:00:58.538  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 589
+10-21 02:00:58.539  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, id: 590
+10-21 02:00:58.539  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 591
+10-21 02:00:58.539  1070  1083 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, id: 592
+10-21 02:00:58.539  1070 10810 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.539  1070 10810 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.540  1070 10809 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.540  1070 10809 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.541  1070 10812 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.541  1070 10812 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.541  1070 10811 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.542  1070 10811 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.542  1070 10813 D nemuinit: Proxy: use callback: 1465, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.android.markdown","pid":8775,"uid":10116}}, res: {"errcode":0,"message":"OK"}
+10-21 02:00:58.542  1070 10813 D nemuinit: Proxy: finish handleNemuInitMessage
+10-21 02:00:58.548  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.565  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.581  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.598  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.615  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.632  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.649  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.665  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.666  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.681  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.698  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.715  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:58.719  1310  2655 W InputManager-JNI: Input channel object 'cbf34b2 Splash Screen com.kaori.wakeupschedule (client)' was disposed without first being removed with the input manager!
+10-21 02:00:58.764  1465  6377 D Watchdog: upload file: /storage/emulated/0/Android/data/com.netease.nemu_vapi_android.nemu/cache/data_app_crash@1792519258326.gzip 2 server response: {"errcode": 100, "errmsg": "ok", "url": "https://nemu.fp.ps.netease.com/file/6ad7ac5d520d4f2f030d53e3lJjPb68H07/attachment/xck7TPI9QbIvhQ0b.gzip"}
+10-21 02:00:58.764  1465  6377 D Watchdog: prepare upload log: /data/system/dropbox/data_app_crash@1792519258326.txt
+10-21 02:00:58.827  1310  1330 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{c677c26 u0 com.kaori.wakeupschedule/.SplashActivity t3482 f} isExiting}
+10-21 02:00:58.879  1465  6377 D Watchdog: upload file: /data/system/dropbox/data_app_crash@1792519258326.txt 2 server response: {"errcode": 100, "errmsg": "ok", "url": "https://nemu.fp.ps.netease.com/file/6ad7ac5d774e1275abe61b604Di93yCl07/attachment/flKKy8LsqOThJw7N.txt"}
+10-21 02:00:58.880  1465  6377 D Watchdog: ignore events AppCrash: {"app_name":"WakeUp课程表","app_package":"com.kaori.wakeupschedule","event_duration":10318,"failure_reason":"https://nemu.fp.ps.netease.com/file/6ad7ac5d774e1275abe61b604Di93yCl07/attachment/flKKy8LsqOThJw7N.txt","log_url":"https://nemu.fp.ps.netease.com/file/6ad7ac5d520d4f2f030d53e3lJjPb68H07/attachment/xck7TPI9QbIvhQ0b.gzip","status_code":0}
+10-21 02:00:58.880  1465  2102 D Watchdog: upload event v2: AppCrash	json:{"app_event_type":"Crash","app_name":"WakeUp课程表","app_package":"com.kaori.wakeupschedule","app_version_code":247,"app_version_name":"6.0.06","duration":10318,"error_code":0,"error_msg":"ok","is_remote_control":0,"log_url":"https://nemu.fp.ps.netease.com/file/6ad7ac5d774e1275abe61b604Di93yCl07/attachment/flKKy8LsqOThJw7N.txt","logcat_url":"https://nemu.fp.ps.netease.com/file/6ad7ac5d520d4f2f030d53e3lJjPb68H07/attachment/xck7TPI9QbIvhQ0b.gzip","module_name":"androidApp","mpid":"0","product_version":"6.6.4.0","token":"39be5121-46eb-4ab7-b655-ff3bedc0e9d4","uuid":"ac67f562-35be-45c9-85a2-666c849b9fd3","version":"6.6.4.0"}
+10-21 02:00:58.880  1465  2102 D Watchdog: upload event: {"architecture":"x86_64","channel":"gw-win","country":"zh-CN","engine":"NEMUX","fchannel":"gw-win","language":"zh-Hans","mpid":"0","package":"mumu","product":"MuMu6.0","product_version":"6.6.4.0","usage":"0","uuid":"ac67f562-35be-45c9-85a2-666c849b9fd3","version":"6.6.4.0","x":{"app_elapse":10318,"app_name":"WakeUp课程表","app_package":"com.kaori.wakeupschedule","error":{"code":0,"msg":"ok"},"extra":{"app_event_type":"Crash","app_version_code":"247","app_version_name":"6.0.06","is_remote_control":0},"log":"https://nemu.fp.ps.netease.com/file/6ad7ac5d774e1275abe61b604Di93yCl07/attachment/flKKy8LsqOThJw7N.txt","logcat":"https://nemu.fp.ps.netease.com/file/6ad7ac5d520d4f2f030d53e3lJjPb68H07/attachment/xck7TPI9QbIvhQ0b.gzip","token":"39be5121-46eb-4ab7-b655-ff3bedc0e9d4"}}	type: APPCrashLog	sign: AkrWPS5bu06FKn1VH40b5yuMhbo=	uid: 1000	json:{"app_elapse":10318,"app_name":"WakeUp课程表","app_package":"com.kaori.wakeupschedule","error":{"code":0,"msg":"ok"},"extra":{"app_event_type":"Crash","app_version_code":"247","app_version_name":"6.0.06","is_remote_control":0},"log":"https://nemu.fp.ps.netease.com/file/6ad7ac5d774e1275abe61b604Di93yCl07/attachment/flKKy8LsqOThJw7N.txt","logcat":"https://nemu.fp.ps.netease.com/file/6ad7ac5d520d4f2f030d53e3lJjPb68H07/attachment/xck7TPI9QbIvhQ0b.gzip","token":"39be5121-46eb-4ab7-b655-ff3bedc0e9d4"}
+10-21 02:00:58.897  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:00:58.944  1465  2102 D Watchdog: upload server response: {"errcode": 100, "errmsg": "ok"}
+10-21 02:00:58.944  1465  2102 D Watchdog: upload result: true
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]: [Event] MSFDDNetworkEngine.cpp(179)::onTcpInfoUpdate->onTcpInfoUpdate:
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_state = 1;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_ca_state = 0;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rto = 203 ms;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_unacked = 0;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttcur = 2 ms;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttvar = 3 ms;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_retrans = 0 bytes;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_notsent_bytes = 0 bytes;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_received = 2132 bytes;
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_sent = 6273 bytes 
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_sent = 40817 ms 
+10-21 02:00:59.138  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_recv = 40767 ms 
+10-21 02:00:59.493  1153  1153 I wifi@1.0-servic: type=1400 audit(0.0:30684): avc: denied { write } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+10-21 02:00:59.493  1153  1153 I wifi@1.0-servic: type=1400 audit(0.0:30685): avc: denied { nlmsg_readpriv } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+10-21 02:00:59.493  1153  1153 I wifi@1.0-servic: type=1400 audit(0.0:30686): avc: denied { read } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+10-21 02:00:59.493  1310  1310 I WifiHandlerThre: type=1400 audit(0.0:30687): avc: denied { map_read } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=bpf permissive=1
+10-21 02:00:59.623  1074 10681 I keystore2: keystore2::watchdog: Watchdog thread idle -> terminating. Have a great day.
+10-21 02:00:59.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:00:59.898  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:00:59.973  3339  3339 I bodr    : type=1400 audit(0.0:30688): avc: denied { connectto } for path="/dev/socket/fwmarkd" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1 app=com.android.vending
+10-21 02:01:00.031  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:00.441  1310  1339 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+10-21 02:01:00.441  1465  1465 D DropboxReceiver: dropbox tag: system_server_wtf
+10-21 02:01:00.441  1465  1465 D DropboxReceiver: dropbox time: 1792519258440
+10-21 02:01:00.441  1465  1465 D DropboxReceiver: dropbox file is not to be trackd
+10-21 02:01:00.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:00.898  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:00.896  2470  2470 I Thread-2: type=1400 audit(0.0:30693): avc: denied { use } for path="/dev/null" dev="tmpfs" ino=9158 scontext=u:r:mediaprovider_app:s0:c33,c256,c512,c768 tcontext=u:r:kernel:s0 tclass=fd permissive=1 app=com.android.providers.media.module
+10-21 02:01:00.898  1760  2058 E         : open file error:2 No such file or directory, path:/sdcard/tencent/msflogs/com/tencent/mobileqq//QQXlog_com.tencent.mobileqq_MSF_2026.10.21.02.qqxlog
+10-21 02:01:01.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:01.898  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]: [Event] MSFDDNetworkEngine.cpp(179)::onTcpInfoUpdate->onTcpInfoUpdate:
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_state = 1;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_ca_state = 0;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rto = 203 ms;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_unacked = 0;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttcur = 2 ms;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttvar = 3 ms;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_retrans = 0 bytes;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_notsent_bytes = 0 bytes;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_received = 2132 bytes;
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_sent = 6273 bytes 
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_sent = 43817 ms 
+10-21 02:01:02.139  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_recv = 43767 ms 
+10-21 02:01:02.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:02.776  1310  1346 E system_server: Cannot read thread CPU times for PID 1310
+10-21 02:01:02.799  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:02.899  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:03.331  1310  1331 D RecentTaskMonitor: task has been removed!
+10-21 02:01:03.331  1310  1331 E ActivityTaskManager: [KeepAlive] TaskDisplayArea#onRootTaskRemoved called, diconnect display 13
+10-21 02:01:03.332  1157  1157 I SurfaceFlinger: onComposerHalHotplug(12, disconnected)
+10-21 02:01:03.332  1157  1157 I SurfaceFlinger: Dispatching display hotplug event displayId=4619827106603731468, connected=0
+10-21 02:01:03.332  1157  1255 W EventThread: Failed dispatching Hotplug{displayId=4619827106603731468, disconnected} for Connection{0x744801e4e110, VSyncRequest::None}
+10-21 02:01:03.332  1157  1256 W EventThread: Failed dispatching Hotplug{displayId=4619827106603731468, disconnected} for Connection{0x744801e4c310, VSyncRequest::None}
+10-21 02:01:03.330  2711  2711 I 1.systemuituner: type=1400 audit(0.0:30694): avc: denied { read } for scontext=u:r:untrusted_app:s0:c49,c256,c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1 app=com.zacharee1.systemuituner
+10-21 02:01:03.333  1310  1331 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=3482 attached=false
+10-21 02:01:03.333  1310  1331 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=3482 attached=false
+10-21 02:01:03.334  1310  1330 I DisplayDeviceRepository: Display device removed: DisplayDeviceInfo{"HDMI 屏幕": uniqueId="local:4619827106603731468", 1080 x 1920, modeId 25, defaultModeId 25, supportedModes [{id=25, width=1080, height=1920, fps=60.000004, alternativeRefreshRates=[15.000001]}, {id=26, width=1080, height=1920, fps=15.000001, alternativeRefreshRates=[60.000004]}], colorMode 0, supportedColorModes [0], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, gameContentTypeSupported false, density 320, 320.0 x 320.0 dpi, appVsyncOff 1000000, presDeadline 16666666, touch EXTERNAL, rotation 0, type EXTERNAL, address {port=12, model=0x401cec46ccd60a, physicalDisplayId=4619827106603731468}, deviceProductInfo DeviceProductInfo{name=mumuscreen012, manufacturerPnpId=GGL, productId=1, modelYear=null, manufactureDate=ManufactureDate{week=27, year=2006}, connectionToSinkType=0}, state ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_OWN_CONTENT_ONLY}
+10-21 02:01:03.333  1310  1310 I android.display: type=1400 audit(0.0:30695): avc: denied { connectto } for path="/dev/socket/property_service" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=unix_stream_socket permissive=1
+10-21 02:01:03.334  1310  1330 I LogicalDisplayMapper: Removing display: 13
+10-21 02:01:03.338  1310  1396 I InputDispatcher: Erasing monitor PointerEventDispatcher13 (server) on display 13, pid=1310
+10-21 02:01:03.338  1310  1310 W WindowManager: removeWindowToken: Attempted to remove token: android.os.Binder@4e23583 for non-exiting displayId=13
+10-21 02:01:03.349  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:03.349  1310  1330 I InputManager-JNI: Viewport [0] to add: local:4619827820427265280, isActive: true
+10-21 02:01:03.349  1310  1330 I InputManager-JNI: Viewport [1] to add: local:4619826992212769800, isActive: true
+10-21 02:01:03.349  1310  1330 I InputManager-JNI: Viewport [2] to add: local:4619827293253378061, isActive: true
+10-21 02:01:03.350  1310  1397 I InputReader: Reconfiguring input devices, changes=DISPLAY_INFO | 
+10-21 02:01:03.350  1310  1397 I InputReader: Device reconfigured: id=3, name='Xiaomi Input', size 1080x1920, orientation 0, mode 1, display id 0
+10-21 02:01:03.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:03.690  1136  1136 I netd    : type=1400 audit(0.0:30696): avc: denied { create } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+10-21 02:01:03.696  1136  1136 I netd    : type=1400 audit(0.0:30697): avc: denied { connect } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+10-21 02:01:03.700  1136  1136 I netd    : type=1400 audit(0.0:30698): avc: denied { write } for path="socket:[68235]" dev="sockfs" ino=68235 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+10-21 02:01:03.700  1136  1136 I netd    : type=1400 audit(0.0:30699): avc: denied { nlmsg_read } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+10-21 02:01:03.700  1136  1136 I netd    : type=1400 audit(0.0:30700): avc: denied { read } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+10-21 02:01:03.706  1713  1713 I CronetNet: type=1400 audit(0.0:30701): avc: denied { connectto } for path="/dev/socket/fwmarkd" scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+10-21 02:01:03.706  1136  1136 I Binder:1136_2: type=1400 audit(0.0:30702): avc: denied { use } for path="socket:[68876]" dev="sockfs" ino=68876 scontext=u:r:init:s0 tcontext=u:r:gmscore_app:s0:c512,c768 tclass=fd permissive=1
+10-21 02:01:03.747  1310  1457 W ProcessStats: Tracking association SourceState{bf70f22 system/1000 BTopFgs #10254} whose proc state 2 is better than process ProcessState{519fdb3 com.pranavpandey.rotation/10085 pkg=com.pranavpandey.rotation} proc state 3 (96 skipped)
+10-21 02:01:03.900  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:04.192  1713  1713 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.aang.events.services.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-21 02:01:04.216  1184  1184 D opengl-gc: Check pid 1713: running 1
+10-21 02:01:04.379  1713  1713 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-21 02:01:04.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:04.901  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]: [Event] MSFDDNetworkEngine.cpp(179)::onTcpInfoUpdate->onTcpInfoUpdate:
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_state = 1;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_ca_state = 0;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rto = 203 ms;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_unacked = 0;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttcur = 2 ms;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttvar = 3 ms;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_retrans = 0 bytes;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_notsent_bytes = 0 bytes;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_received = 2132 bytes;
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_sent = 6273 bytes 
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_sent = 46820 ms 
+10-21 02:01:05.142  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_recv = 46770 ms 
+10-21 02:01:05.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:05.902  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:06.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:06.904  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:07.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:07.904  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]: [Event] MSFDDNetworkEngine.cpp(179)::onTcpInfoUpdate->onTcpInfoUpdate:
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_state = 1;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_ca_state = 0;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rto = 203 ms;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_unacked = 0;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttcur = 2 ms;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttvar = 3 ms;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_retrans = 0 bytes;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_notsent_bytes = 0 bytes;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_received = 2132 bytes;
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_sent = 6273 bytes 
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_sent = 49824 ms 
+10-21 02:01:08.145  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_recv = 49774 ms 
+10-21 02:01:08.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:08.904  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:09.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:09.904  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:10.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:10.905  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:11.025  1149  1149 E android.hardware.power.stats@1.0-service-mock: Failed to getEnergyData
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]: [Event] MSFDDNetworkEngine.cpp(179)::onTcpInfoUpdate->onTcpInfoUpdate:
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_state = 1;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_ca_state = 0;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rto = 203 ms;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_unacked = 0;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttcur = 2 ms;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_rttvar = 3 ms;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_retrans = 0 bytes;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_notsent_bytes = 0 bytes;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_received = 2132 bytes;
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_sent = 6273 bytes 
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_sent = 52827 ms 
+10-21 02:01:11.148  1760  2400 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_recv = 52777 ms 
+10-21 02:01:11.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:11.906  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:12.648  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:12.908  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:13.566  1070  1083 D nemuinit: start name: cmd, operation: 0:pidof com.kaori.wakeupschedule, id: 1610612774
+10-21 02:01:13.566 10822 10822 I nemuinit: type=1400 audit(0.0:30703): avc: denied { execute } for name="sh" dev="sda6" ino=847 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+10-21 02:01:13.566 10822 10822 I nemuinit: type=1400 audit(0.0:30704): avc: denied { execute_no_trans } for path="/system/bin/sh" dev="sda6" ino=847 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+10-21 02:01:13.649  1157  1157 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-21 02:01:13.748  1070  1083 D nemuinit: start name: cmd, operation: 0:dumpsys activity activities, id: 1610612775
+10-21 02:01:13.757 10824 10824 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-21 02:01:13.908  1760  2390 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:143.237
+10-21 02:01:13.952  1070  1083 D nemuinit: start name: cmd, operation: 0:logcat -d -t 3500, id: 1610612776

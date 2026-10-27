@@ -1,0 +1,35 @@
+{
+  "mappings": {
+    "androidx.constraintlayout.core.SolverVariable$Type": "androidx.constraintlayout.core.SolverVariable.Type",
+    "androidx.constraintlayout.core.widgets.ConstraintAnchor$Type": "androidx.constraintlayout.core.widgets.ConstraintAnchor.Type",
+    "androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour": "androidx.constraintlayout.core.widgets.ConstraintWidget.DimensionBehaviour",
+    "androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type": "androidx.constraintlayout.core.widgets.analyzer.DependencyNode.Type",
+    "androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType": "androidx.constraintlayout.core.widgets.analyzer.WidgetRun.RunType",
+    "androidx.fragment.app.Fragment$InstantiationException": "androidx.fragment.app.Fragment.InstantiationException",
+    "androidx.fragment.app.Fragment$SavedState": "androidx.fragment.app.Fragment.SavedState",
+    "androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact": "androidx.fragment.app.SpecialEffectsController.Operation.LifecycleImpact",
+    "androidx.fragment.app.SpecialEffectsController$Operation$State": "androidx.fragment.app.SpecialEffectsController.Operation.State",
+    "androidx.lifecycle.Lifecycle$Event": "androidx.lifecycle.Lifecycle.Event",
+    "androidx.lifecycle.Lifecycle$State": "androidx.lifecycle.Lifecycle.State",
+    "androidx.lifecycle.LiveData$LifecycleBoundObserver": "androidx.lifecycle.LiveData.LifecycleBoundObserver",
+    "androidx.room.RoomDatabase$JournalMode": "androidx.room.RoomDatabase.JournalMode",
+    "androidx.versionedparcelable.VersionedParcel$ParcelException": "androidx.versionedparcelable.VersionedParcel.ParcelException",
+    "androidx.window.core.SpecificationComputer$VerificationMode": "androidx.window.core.SpecificationComputer.VerificationMode",
+    "androidx.work.WorkInfo$State": "androidx.work.WorkInfo.State",
+    "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver": "androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver",
+    "com.google.android.material.snackbar.Snackbar$SnackbarLayout": "com.google.android.material.snackbar.Snackbar.SnackbarLayout",
+    "kotlin.jvm.internal.Ref$BooleanRef": "kotlin.jvm.internal.Ref.BooleanRef",
+    "kotlin.jvm.internal.Ref$CharRef": "kotlin.jvm.internal.Ref.CharRef",
+    "kotlin.jvm.internal.Ref$FloatRef": "kotlin.jvm.internal.Ref.FloatRef",
+    "kotlin.jvm.internal.Ref$IntRef": "kotlin.jvm.internal.Ref.IntRef",
+    "kotlin.jvm.internal.Ref$ObjectRef": "kotlin.jvm.internal.Ref.ObjectRef",
+    "kotlin.random.Random$Default": "kotlin.random.Random.Default",
+    "kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState": "kotlinx.coroutines.scheduling.CoroutineScheduler.WorkerState"
+  },
+  "sources": [
+    {
+      "source": "androidx/lifecycle/o00000.java",
+      "verified_nested_type_references": 3
+    }
+  ]
+}

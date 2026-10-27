@@ -1,0 +1,34 @@
+package o0000OO0;
+
+import android.graphics.Bitmap;
+
+public abstract /* synthetic */ class Oooo000 {
+
+    /* JADX INFO: renamed from: OooO00o, reason: collision with root package name */
+    public static final /* synthetic */ int[] f9937OooO00o;
+
+    static {
+        int[] iArr = new int[Bitmap.Config.values().length];
+        f9937OooO00o = iArr;
+        try {
+            iArr[Bitmap.Config.ALPHA_8.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            f9937OooO00o[Bitmap.Config.RGB_565.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            f9937OooO00o[Bitmap.Config.ARGB_4444.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            f9937OooO00o[Bitmap.Config.RGBA_F16.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            f9937OooO00o[Bitmap.Config.ARGB_8888.ordinal()] = 5;
+        } catch (NoSuchFieldError unused5) {
+        }
+    }
+}

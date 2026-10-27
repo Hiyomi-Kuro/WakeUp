@@ -1,0 +1,4 @@
+
+      topResumedActivity=ActivityRecord{239e863 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+  ResumedActivity: ActivityRecord{239e863 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+

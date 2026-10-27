@@ -1,0 +1,7 @@
+Starting: Intent { cmp=com.kaori.wakeupschedule/.SplashActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.kaori.wakeupschedule/.SplashActivity
+TotalTime: 725
+WaitTime: 727
+Complete

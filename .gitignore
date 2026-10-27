@@ -1,0 +1,21 @@
+# Android Studio / Gradle managed outputs
+.gradle/
+.kotlin/
+local.properties
+app/build/
+build/
+
+# Temporary workspace and legacy workbenches
+.tmp/
+.tools/
+/_codex_disposable/
+
+# Python bytecode and transient diagnostics
+**/__pycache__/
+*.pyc
+*.log
+javac.*.args
+
+# over 100 MB
+artifacts/startup-fix-20261021/current-classes2.dexdump.txt
+artifacts/startup-fix-20261021/dex-temp/classes2-dexdump-full.txt

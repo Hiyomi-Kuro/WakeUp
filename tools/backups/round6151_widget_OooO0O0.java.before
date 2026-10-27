@@ -1,0 +1,14 @@
+package com.kaori.wakeupschedule.widget;
+
+import android.graphics.Rect;
+import androidx.appcompat.app.OooOOOO;
+
+public final class OooO0O0 extends o000O00O.OooO0O0 {
+    @Override // o000O00O.OooO0O0, androidx.appcompat.app.OooOOO
+    public final OooOOOO OooO00o() {
+        Rect rect = this.f10292OooOOOO;
+        rect.top = 0;
+        rect.bottom = 0;
+        return super.OooO00o();
+    }
+}

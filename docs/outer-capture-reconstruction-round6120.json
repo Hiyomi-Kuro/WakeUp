@@ -1,0 +1,160 @@
+{
+  "diagnostic_count": 53,
+  "class_count": 17,
+  "classes": [
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/hust/MobileHub.java",
+      "class": "C00201",
+      "owner": "MobileHub",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub$getCourseSchedule$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/hust/MobileHub.java",
+      "class": "AnonymousClass2",
+      "owner": "MobileHub",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub$getCheckCode$2.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/hust/MobileHub.java",
+      "class": "C00231",
+      "owner": "MobileHub",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub$refreshSession$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/hust/MobileHub.java",
+      "class": "C00221",
+      "owner": "MobileHub",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub$login$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/hust/MobileHub.java",
+      "class": "AnonymousClass1",
+      "owner": "MobileHub",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub$getCheckCode$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hust/MobileHub;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider.java",
+      "class": "C00182",
+      "owner": "AHSTUCourseProvider",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider$getImportOption$2.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider.java",
+      "class": "AnonymousClass2",
+      "owner": "AHSTUCourseProvider",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider$getCaptchaImage$2.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider.java",
+      "class": "C00172",
+      "owner": "AHSTUCourseProvider",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider$getCourseHtml$2.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider;Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/OooO0OO;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider.java",
+      "class": "AnonymousClass1",
+      "owner": "AHSTUCourseProvider",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider$getCourseHtml$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/AHSTUCourseProvider;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/hfu/HFUCourse.java",
+      "class": "AnonymousClass1",
+      "owner": "HFUCourse",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/hfu/HFUCourse$getScheduleJson$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hfu/HFUCourse;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/hfu/HFUCourse;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/jjvu/JJVUCourse.java",
+      "class": "AnonymousClass1",
+      "owner": "JJVUCourse",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/jjvu/JJVUCourse$getScheduleJson$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/jjvu/JJVUCourse;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/jjvu/JJVUCourse;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/jxau/JXAUJk.java",
+      "class": "AnonymousClass1",
+      "owner": "JXAUJk",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/jxau/JXAUJk$getCourseTable$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/jxau/JXAUJk;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/jxau/JXAUJk;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/jxau/JXAUJk.java",
+      "class": "C00391",
+      "owner": "JXAUJk",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/jxau/JXAUJk$getSemesterId$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/jxau/JXAUJk;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/jxau/JXAUJk;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/nau/NAUCourse.java",
+      "class": "AnonymousClass2",
+      "owner": "NAUCourse",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/nau/NAUCourse$getCourseTable$2.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/nau/NAUCourse;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/nau/NAUCourse;Landroid/content/Context;ILkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/nwpu/NWPU.java",
+      "class": "AnonymousClass2",
+      "owner": "NWPU",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/nwpu/NWPU$getWebApi$2.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/nwpu/NWPU;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/nwpu/NWPU;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/sustech/SUSTech.java",
+      "class": "AnonymousClass2",
+      "owner": "SUSTech",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/sustech/SUSTech$getScheduleInfo$2.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/sustech/SUSTech;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/sustech/SUSTech;Ljavax/net/ssl/SSLSocketFactory;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/login_school/sustech/SUSTech.java",
+      "class": "AnonymousClass1",
+      "owner": "SUSTech",
+      "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/login_school/sustech/SUSTech$getScheduleInfo$1.smali",
+      "field_descriptor": "Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/sustech/SUSTech;",
+      "constructor_descriptor": "(Lcom/suda/yzune/wakeupschedule/schedule_import/login_school/sustech/SUSTech;Lkotlin/coroutines/OooO0o;)V",
+      "inner_access_flags": null
+    }
+  ],
+  "school_list_static_reference_count": 2
+}

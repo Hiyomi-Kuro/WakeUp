@@ -1,0 +1,9 @@
+2026-10-24 — JDB diagnostic sample, package process PID 8099 after the final APK was installed. The exact sample timestamp was not retained by the debugger transcript.
+
+Observed main-thread frames:
+  androidx.recyclerview.widget.RecyclerView.onMeasure
+  androidx.constraintlayout.widget.ConstraintLayout.onMeasure
+  android.view.ViewRootImpl.performTraversals
+  android.view.Choreographer (frame scheduling)
+
+At this sample, the main thread was executing view measurement/layout work; it was not shown parked in the unconfined event-loop drain. This does not explain why the Activity window had mViewVisibility=0x4, mHasSurface=false, mDrawState=NO_SURFACE, and isOnScreen=false. Treat it as a diagnostic snapshot, not a root-cause conclusion.

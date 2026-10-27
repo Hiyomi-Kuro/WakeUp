@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-10-24T16:02:41.4389627+08:00",
+  "target_display_id": 7,
+  "pid_before": "8099",
+  "top_activity_before": "    topResumedActivity=ActivityRecord{8315c03 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3540}",
+  "command": "adb shell input -d 7 keyevent 4",
+  "command_output": "",
+  "pid_after": "8099",
+  "top_activity_after": "    topResumedActivity=ActivityRecord{8315c03 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3540}",
+  "window_after": "  Window #1 Window{618bad6 u0 com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity}:",
+  "surface_state_after": ""
+}

@@ -1,0 +1,31 @@
+Compiled from "WorkDatabase.java"
+public final class androidx.work.impl.WorkDatabase$Companion {
+  private androidx.work.impl.WorkDatabase$Companion();
+    descriptor: ()V
+
+  public androidx.work.impl.WorkDatabase create(android.content.Context, java.util.concurrent.Executor, androidx.work.Clock, boolean);
+    descriptor: (Landroid/content/Context;Ljava/util/concurrent/Executor;Landroidx/work/Clock;Z)Landroidx/work/impl/WorkDatabase;
+}
+Compiled from "ad.java"
+public class com.huawei.agconnect.credential.obs.ad {
+  static final long a;
+    descriptor: J
+  private static final java.lang.String b;
+    descriptor: Ljava/lang/String;
+  private com.huawei.agconnect.https.OKHttpBuilder c;
+    descriptor: Lcom/huawei/agconnect/https/OKHttpBuilder;
+  public com.huawei.agconnect.credential.obs.ad(android.content.Context, java.util.List<okhttp3.Interceptor>, boolean);
+    descriptor: (Landroid/content/Context;Ljava/util/List;Z)V
+
+  private com.huawei.agconnect.https.OKHttpBuilder a(android.content.Context);
+    descriptor: (Landroid/content/Context;)Lcom/huawei/agconnect/https/OKHttpBuilder;
+
+  public com.huawei.agconnect.credential.obs.ad a(okhttp3.Authenticator);
+    descriptor: (Lokhttp3/Authenticator;)Lcom/huawei/agconnect/credential/obs/ad;
+
+  public okhttp3.OkHttpClient a();
+    descriptor: ()Lokhttp3/OkHttpClient;
+
+  public okhttp3.OkHttpClient a(long, java.util.concurrent.TimeUnit);
+    descriptor: (JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient;
+}

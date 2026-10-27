@@ -1,0 +1,42 @@
+{
+  "diagnostic_round_before": 6130,
+  "missing_symbol_group": "The imported AndroidX utility type o00O0OOO shadowed the package containing Kotlin Function0 ABI type OooO00o; the original descriptors were checked before changing imports.",
+  "verified_cases": [
+    {
+      "source": "app/src/main/java/o0ooOoO/o00Oo0.java",
+      "smali": "smali/smali/o0ooOoO.1/o00Oo0.smali",
+      "verified_descriptor": "Lo00O0OOO/OooO00o;",
+      "removed_shadowing_import": "import Oooo0o.o00O0OOO;"
+    },
+    {
+      "source": "app/src/main/java/o00000Oo/Oooo0.java",
+      "smali": "smali/smali/o00000Oo.1/Oooo0.smali",
+      "verified_descriptor": "Lo00O0OOO/OooO00o;",
+      "removed_shadowing_import": "import Oooo0o.o00O0OOO;"
+    },
+    {
+      "source": "app/src/main/java/androidx/navigation/OooOOO.java",
+      "smali": "smali/smali/androidx/navigation/OooOOO.smali",
+      "verified_descriptor": "Lo00O0OOO/OooO00o;",
+      "removed_shadowing_import": "import OooooOo.o00O0OOO;"
+    },
+    {
+      "source": "app/src/main/java/androidx/fragment/app/o0000O0O.java",
+      "smali": "smali/smali/androidx/fragment/app/o0000O0O.smali",
+      "verified_descriptor": "Lo00O0OOO/OooO00o;",
+      "removed_shadowing_import": "import OooooOo.o00O0OOO;"
+    },
+    {
+      "source": "app/src/main/java/com/skydoves/balloon/Balloon.java",
+      "smali": "smali/smali/com/skydoves/balloon/Balloon.smali",
+      "verified_descriptor": "Lo00O0OOO/OooO00o;",
+      "removed_shadowing_import": "import Oooo0o.o00O0OOO;"
+    },
+    {
+      "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+      "smali": "smali/smali/me/saket/cascade/HeightAnimatableViewFlipper.smali",
+      "verified_descriptor": "Lo00O0OOO/OooO00o;",
+      "removed_shadowing_import": "import Oooo0o.o00O0OOO;"
+    }
+  ]
+}

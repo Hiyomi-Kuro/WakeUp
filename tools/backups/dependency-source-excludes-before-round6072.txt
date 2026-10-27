@@ -1,0 +1,14 @@
+# This nested enum is already declared in ConstraintAttribute.java; do not compile its duplicate fragment.
+**/androidx/constraintlayout/widget/ConstraintAttribute$AttributeType.java
+
+# Kotlin stdlib reference holders are nested in the official Ref class; standalone JADX files lose that owner metadata.
+**/kotlin/jvm/internal/Ref$ObjectRef.java
+**/kotlin/jvm/internal/Ref$IntRef.java
+
+# Lifecycle Event and State are nested under Lifecycle in androidx.lifecycle:lifecycle-common:2.6.2.
+**/androidx/lifecycle/Lifecycle$Event.java
+**/androidx/lifecycle/Lifecycle$State.java
+# SDK 35 provides these exact android.app platform classes.
+**/android/app/ServiceStartNotAllowedException.java
+# SDK 35 provides these exact android.app platform classes.
+**/android/app/ForegroundServiceStartNotAllowedException.java

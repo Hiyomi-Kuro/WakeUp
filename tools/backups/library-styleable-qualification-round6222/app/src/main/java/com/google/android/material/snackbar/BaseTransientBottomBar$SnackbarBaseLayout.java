@@ -1,0 +1,282 @@
+package com.google.android.material.snackbar;
+import com.google.android.material.R;
+
+import android.content.Context;
+import android.content.res.ColorStateList;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.graphics.PorterDuff;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.os.Build;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowInsets;
+import android.widget.FrameLayout;
+import com.bumptech.glide.OooO0o;
+import com.github.doyaaaaaken.kotlincsv.client.OooO;
+import com.google.android.material.R.attr;
+import com.google.android.material.R.dimen;
+import com.google.android.material.R.styleable;
+import java.util.WeakHashMap;
+import o000OOO.OooOOOO;
+import o000OOO.o0OoOo0;
+import o000OOoO.OooOO0;
+import o000OOoO.OooOO0O;
+import o000OOoO.OooOOO0;
+import o000OOoO.OooOo;
+import o000OOoO.Oooo000;
+import p009OooOo0.o0OO00O;
+import p017OooOooO.o00000OO;
+import p024Oooo0o.o00O0000;
+import p024Oooo0o.o00O000o;
+import p024Oooo0o.o00O00O;
+import p024Oooo0o.o00O0OOO;
+import p035OoooOo0.o0O00o0;
+import p048o00000Oo.Oooo0;
+import p076o000Oo0O.OooO0OO;
+
+public class BaseTransientBottomBar$SnackbarBaseLayout extends FrameLayout {
+
+    /* JADX INFO: renamed from: OooOo0o, reason: collision with root package name */
+    public static final o0OO00O f7129OooOo0o = new o0OO00O();
+
+    /* JADX INFO: renamed from: OooOO0o, reason: collision with root package name */
+    public OooOOO0 f7130OooOO0o;
+
+    /* JADX INFO: renamed from: OooOOO, reason: collision with root package name */
+    public int f7131OooOOO;
+
+    /* JADX INFO: renamed from: OooOOO0, reason: collision with root package name */
+    public final o0OoOo0 f7132OooOOO0;
+
+    /* JADX INFO: renamed from: OooOOOO, reason: collision with root package name */
+    public final float f7133OooOOOO;
+
+    /* JADX INFO: renamed from: OooOOOo, reason: collision with root package name */
+    public final float f7134OooOOOo;
+
+    /* JADX INFO: renamed from: OooOOo, reason: collision with root package name */
+    public final int f7135OooOOo;
+
+    /* JADX INFO: renamed from: OooOOo0, reason: collision with root package name */
+    public final int f7136OooOOo0;
+
+    /* JADX INFO: renamed from: OooOOoo, reason: collision with root package name */
+    public ColorStateList f7137OooOOoo;
+
+    /* JADX INFO: renamed from: OooOo0, reason: collision with root package name */
+    public Rect f7138OooOo0;
+
+    /* JADX INFO: renamed from: OooOo00, reason: collision with root package name */
+    public PorterDuff.Mode f7139OooOo00;
+
+    /* JADX INFO: renamed from: OooOo0O, reason: collision with root package name */
+    public boolean f7140OooOo0O;
+
+    public BaseTransientBottomBar$SnackbarBaseLayout(Context context, AttributeSet attributeSet) {
+        Drawable drawable;
+        Drawable drawableOooOooO;
+        super(OooO0OO.OooO00o(context, attributeSet, 0, 0), attributeSet);
+        Context context2 = getContext();
+        TypedArray typedArrayObtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, R.styleable.SnackbarLayout);
+        int i = R.styleable.SnackbarLayout_elevation;
+        if (typedArrayObtainStyledAttributes.hasValue(i)) {
+            float dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(i, 0);
+            WeakHashMap weakHashMap = o00O0OOO.f1486OooO00o;
+            o00O00O.OooOOoo(this, dimensionPixelSize);
+        }
+        this.f7131OooOOO = typedArrayObtainStyledAttributes.getInt(R.styleable.SnackbarLayout_animationMode, 0);
+        if (typedArrayObtainStyledAttributes.hasValue(R.styleable.SnackbarLayout_shapeAppearance) || typedArrayObtainStyledAttributes.hasValue(R.styleable.SnackbarLayout_shapeAppearanceOverlay)) {
+            this.f7132OooOOO0 = o0OoOo0.OooO0OO(context2, attributeSet, 0, 0).OooO00o();
+        }
+        this.f7133OooOOOO = typedArrayObtainStyledAttributes.getFloat(R.styleable.SnackbarLayout_backgroundOverlayColorAlpha, 1.0f);
+        setBackgroundTintList(Oooo0.Oooo0OO(context2, typedArrayObtainStyledAttributes, R.styleable.SnackbarLayout_backgroundTint));
+        setBackgroundTintMode(OooO.Oooo(typedArrayObtainStyledAttributes.getInt(R.styleable.SnackbarLayout_backgroundTintMode, -1), PorterDuff.Mode.SRC_IN));
+        this.f7134OooOOOo = typedArrayObtainStyledAttributes.getFloat(R.styleable.SnackbarLayout_actionTextColorAlpha, 1.0f);
+        this.f7136OooOOo0 = typedArrayObtainStyledAttributes.getDimensionPixelSize(R.styleable.SnackbarLayout_android_maxWidth, -1);
+        this.f7135OooOOo = typedArrayObtainStyledAttributes.getDimensionPixelSize(R.styleable.SnackbarLayout_maxActionInlineWidth, -1);
+        typedArrayObtainStyledAttributes.recycle();
+        setOnTouchListener(f7129OooOo0o);
+        setFocusable(true);
+        if (getBackground() == null) {
+            int iO0OoOo0 = Oooo0.o0OoOo0(Oooo0.Oooo0O0(this, R.attr.colorSurface), getBackgroundOverlayColorAlpha(), Oooo0.Oooo0O0(this, R.attr.colorOnSurface));
+            o0OoOo0 o0oooo0 = this.f7132OooOOO0;
+            if (o0oooo0 != null) {
+                o0O00o0 o0o00o0 = OooOOO0.f10662OooOo0;
+                OooOOOO oooOOOO = new OooOOOO(o0oooo0);
+                oooOOOO.OooOOOO(ColorStateList.valueOf(iO0OoOo0));
+                drawable = oooOOOO;
+            } else {
+                Resources resources = getResources();
+                o0O00o0 o0o00o1 = OooOOO0.f10662OooOo0;
+                float dimension = resources.getDimension(R.dimen.mtrl_snackbar_background_corner_radius);
+                GradientDrawable gradientDrawable = new GradientDrawable();
+                gradientDrawable.setShape(0);
+                gradientDrawable.setCornerRadius(dimension);
+                gradientDrawable.setColor(iO0OoOo0);
+                drawable = gradientDrawable;
+            }
+            if (this.f7137OooOOoo != null) {
+                drawableOooOooO = OooO0o.OooOooO(drawable);
+                o00000OO.OooO0oo(drawableOooOooO, this.f7137OooOOoo);
+            } else {
+                drawableOooOooO = OooO0o.OooOooO(drawable);
+            }
+            WeakHashMap weakHashMap2 = o00O0OOO.f1486OooO00o;
+            o00O0000.OooOOo0(this, drawableOooOooO);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setBaseTransientBottomBar(OooOOO0 oooOOO0) {
+        this.f7130OooOO0o = oooOOO0;
+    }
+
+    public float getActionTextColorAlpha() {
+        return this.f7134OooOOOo;
+    }
+
+    public int getAnimationMode() {
+        return this.f7131OooOOO;
+    }
+
+    public float getBackgroundOverlayColorAlpha() {
+        return this.f7133OooOOOO;
+    }
+
+    public int getMaxInlineActionWidth() {
+        return this.f7135OooOOo;
+    }
+
+    public int getMaxWidth() {
+        return this.f7136OooOOo0;
+    }
+
+    @Override // android.view.ViewGroup, android.view.View
+    public final void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        OooOOO0 oooOOO0 = this.f7130OooOO0o;
+        if (oooOOO0 != null) {
+            if (Build.VERSION.SDK_INT >= 29) {
+                WindowInsets rootWindowInsets = oooOOO0.f10666OooO.getRootWindowInsets();
+                if (rootWindowInsets != null) {
+                    oooOOO0.f10681OooOOOo = rootWindowInsets.getMandatorySystemGestureInsets().bottom;
+                    oooOOO0.OooO0o0();
+                }
+            } else {
+                oooOOO0.getClass();
+            }
+        }
+        WeakHashMap weakHashMap = o00O0OOO.f1486OooO00o;
+        o00O000o.OooO0OO(this);
+    }
+
+    @Override // android.view.ViewGroup, android.view.View
+    public final void onDetachedFromWindow() {
+        int i;
+        boolean z;
+        OooOo oooOo;
+        super.onDetachedFromWindow();
+        OooOOO0 oooOOO0 = this.f7130OooOO0o;
+        if (oooOOO0 != null) {
+            Oooo000 oooo000OooO0O0 = Oooo000.OooO0O0();
+            OooOO0O oooOO0O = oooOOO0.f10685OooOo00;
+            synchronized (oooo000OooO0O0.f10696OooO00o) {
+                i = 1;
+                z = oooo000OooO0O0.OooO0OO(oooOO0O) || !((oooOo = oooo000OooO0O0.f10699OooO0Oo) == null || oooOO0O == null || oooOo.f10689OooO00o.get() != oooOO0O);
+            }
+            if (z) {
+                OooOOO0.f10661OooOo.post(new OooOO0(oooOOO0, i));
+            }
+        }
+    }
+
+    @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
+    public final void onLayout(boolean z, int i, int i2, int i3, int i4) {
+        super.onLayout(z, i, i2, i3, i4);
+        OooOOO0 oooOOO0 = this.f7130OooOO0o;
+        if (oooOOO0 == null || !oooOOO0.f10682OooOOo) {
+            return;
+        }
+        oooOOO0.OooO0Oo();
+        oooOOO0.f10682OooOOo = false;
+    }
+
+    @Override // android.widget.FrameLayout, android.view.View
+    public void onMeasure(int i, int i2) {
+        super.onMeasure(i, i2);
+        int i3 = this.f7136OooOOo0;
+        if (i3 <= 0 || getMeasuredWidth() <= i3) {
+            return;
+        }
+        super.onMeasure(View.MeasureSpec.makeMeasureSpec(i3, 1073741824), i2);
+    }
+
+    public void setAnimationMode(int i) {
+        this.f7131OooOOO = i;
+    }
+
+    @Override // android.view.View
+    public void setBackground(Drawable drawable) {
+        setBackgroundDrawable(drawable);
+    }
+
+    @Override // android.view.View
+    public void setBackgroundDrawable(Drawable drawable) {
+        if (drawable != null && this.f7137OooOOoo != null) {
+            drawable = OooO0o.OooOooO(drawable.mutate());
+            o00000OO.OooO0oo(drawable, this.f7137OooOOoo);
+            o00000OO.OooO(drawable, this.f7139OooOo00);
+        }
+        super.setBackgroundDrawable(drawable);
+    }
+
+    @Override // android.view.View
+    public void setBackgroundTintList(ColorStateList colorStateList) {
+        this.f7137OooOOoo = colorStateList;
+        if (getBackground() != null) {
+            Drawable drawableOooOooO = OooO0o.OooOooO(getBackground().mutate());
+            o00000OO.OooO0oo(drawableOooOooO, colorStateList);
+            o00000OO.OooO(drawableOooOooO, this.f7139OooOo00);
+            if (drawableOooOooO != getBackground()) {
+                super.setBackgroundDrawable(drawableOooOooO);
+            }
+        }
+    }
+
+    @Override // android.view.View
+    public void setBackgroundTintMode(PorterDuff.Mode mode) {
+        this.f7139OooOo00 = mode;
+        if (getBackground() != null) {
+            Drawable drawableOooOooO = OooO0o.OooOooO(getBackground().mutate());
+            o00000OO.OooO(drawableOooOooO, mode);
+            if (drawableOooOooO != getBackground()) {
+                super.setBackgroundDrawable(drawableOooOooO);
+            }
+        }
+    }
+
+    @Override // android.view.View
+    public void setLayoutParams(ViewGroup.LayoutParams layoutParams) {
+        super.setLayoutParams(layoutParams);
+        if (this.f7140OooOo0O || !(layoutParams instanceof ViewGroup.MarginLayoutParams)) {
+            return;
+        }
+        ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
+        this.f7138OooOo0 = new Rect(marginLayoutParams.leftMargin, marginLayoutParams.topMargin, marginLayoutParams.rightMargin, marginLayoutParams.bottomMargin);
+        OooOOO0 oooOOO0 = this.f7130OooOO0o;
+        if (oooOOO0 != null) {
+            o0O00o0 o0o00o0 = OooOOO0.f10662OooOo0;
+            oooOOO0.OooO0o0();
+        }
+    }
+
+    @Override // android.view.View
+    public void setOnClickListener(View.OnClickListener onClickListener) {
+        setOnTouchListener(onClickListener != null ? null : f7129OooOo0o);
+        super.setOnClickListener(onClickListener);
+    }
+}

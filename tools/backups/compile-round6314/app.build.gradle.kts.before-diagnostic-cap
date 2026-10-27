@@ -1,0 +1,678 @@
+import org.gradle.api.tasks.compile.JavaCompile
+import org.gradle.api.tasks.bundling.Jar
+import java.io.ByteArrayInputStream
+import java.io.ByteArrayOutputStream
+import java.io.File
+import java.util.zip.ZipEntry
+import java.util.zip.ZipFile
+import java.util.zip.ZipInputStream
+import java.util.zip.ZipOutputStream
+
+val dependencySourceExcludes = rootProject.file("tools/dependency-source-excludes.txt")
+    .readLines()
+    .map(String::trim)
+    .filter { it.isNotEmpty() && !it.startsWith("#") }
+val recoveredDependencyCoordinates = rootProject.file("tools/recovered-dependencies.txt")
+    .readLines()
+    .map(String::trim)
+    .filter { it.isNotEmpty() && !it.startsWith("#") }
+val recoveredSourceOwnerRecords = rootProject.file("tools/recovered-source-owners.txt")
+    .readLines()
+    .map(String::trim)
+    .filter { it.isNotEmpty() && !it.startsWith("#") }
+    .map { row ->
+        val fields = row.split('|', limit = 2)
+        require(fields.size == 2 && fields.all { it.isNotBlank() }) {
+            "Malformed recovered-source owner row: $row"
+        }
+        fields[0] to fields[1]
+    }
+val recoveredSourceOwnersByCoordinate = recoveredSourceOwnerRecords
+    .groupBy({ it.first }, { it.second.removeSuffix(".java") })
+val existingRecoveredSourceCoordinates = setOf(
+    "com.google.android.material:material:1.10.0",
+    "org.jetbrains.kotlin:kotlin-stdlib:1.8.22",
+    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1",
+)
+val additionalRecoveredSourceCoordinates = recoveredSourceOwnersByCoordinate.keys
+    .filterNot { it in existingRecoveredSourceCoordinates }
+    .sorted()
+val recoveredKotlinStdlib = configurations.create("recoveredKotlinStdlib") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+recoveredKotlinStdlib.dependencies.add(
+    dependencies.create("org.jetbrains.kotlin:kotlin-stdlib:1.8.22") {
+        isTransitive = false
+    }
+)
+val recoveredCoroutinesCore = configurations.create("recoveredCoroutinesCore") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+recoveredCoroutinesCore.dependencies.add(
+    dependencies.create("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1") {
+        isTransitive = false
+    }
+)
+val recoveredRecyclerView = configurations.create("recoveredRecyclerView") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+recoveredRecyclerView.dependencies.add(
+    dependencies.create("androidx.recyclerview:recyclerview:1.2.1") {
+        isTransitive = false
+    }
+)
+val recoveredCoordinatorLayout = configurations.create("recoveredCoordinatorLayout") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+recoveredCoordinatorLayout.dependencies.add(
+    dependencies.create("androidx.coordinatorlayout:coordinatorlayout:1.1.0") {
+        isTransitive = false
+    }
+)
+val recoveredMaterial = configurations.create("recoveredMaterial") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+recoveredMaterial.dependencies.add(
+    dependencies.create("com.google.android.material:material:1.10.0") {
+        isTransitive = false
+    }
+)
+val recoveredOkHttp = configurations.create("recoveredOkHttp") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+recoveredOkHttp.dependencies.add(
+    dependencies.create("com.squareup.okhttp3:okhttp:3.14.9") {
+        isTransitive = false
+    }
+)
+val recoveredViewPager2 = configurations.create("recoveredViewPager2") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+recoveredViewPager2.dependencies.add(
+    dependencies.create("androidx.viewpager2:viewpager2:1.0.0") {
+        isTransitive = false
+    }
+)
+val recoveredSourceArtifacts = configurations.create("recoveredSourceArtifacts") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+additionalRecoveredSourceCoordinates.forEach { coordinate ->
+    recoveredSourceArtifacts.dependencies.add(
+        dependencies.create(coordinate) {
+            isTransitive = false
+        }
+    )
+}
+
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.kaori.wakeupschedule"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.kaori.wakeupschedule"
+        minSdk = 21
+        targetSdk = 34
+        versionCode = 247
+        versionName = "6.0.06"
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    compilerOptions.jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+}
+
+configurations.configureEach {
+    exclude(group = "androidx.activity", module = "activity")
+    exclude(group = "androidx.activity", module = "activity-ktx")
+    // Recovered minified classes use internal ConstraintLayout members; compile the matching sources.
+    exclude(group = "androidx.constraintlayout", module = "constraintlayout")
+    if (name != recoveredRecyclerView.name) {
+        // The local RecyclerView implementation preserves the app's minified member ABI.
+        exclude(group = "androidx.recyclerview", module = "recyclerview")
+    }
+}
+
+dependencies {
+    implementation("net.sf.biweekly:biweekly:0.6.6")
+    recoveredDependencyCoordinates.forEach { implementation(it) }
+
+    // The app ships an obfuscated Kotlin continuation hierarchy whose class names
+    // overlap kotlin-stdlib 1.8.22 but whose continuation descriptors use the
+    // recovered OooO0o/OooOOOO types. Keep the official stdlib APIs and remove
+    // only the five source-recovered continuation classes from its runtime jar.
+    val recoveredKotlinSourceOwners = recoveredSourceOwnersByCoordinate[
+        "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+    ].orEmpty()
+    val recoveredKotlinSourceClassPatterns = recoveredKotlinSourceOwners.flatMap { owner ->
+        listOf("$owner.class", owner + "\$*.class")
+    }
+    val strippedKotlinStdlib = tasks.register<Jar>("stripRecoveredContinuationClasses") {
+        archiveFileName.set("kotlin-stdlib-1.8.22-recovered.jar")
+        destinationDirectory.set(layout.buildDirectory.dir("generated/recovered-dependencies"))
+        inputs.property("recoveredKotlinSourceClassPatterns", recoveredKotlinSourceClassPatterns)
+        from({ zipTree(recoveredKotlinStdlib.singleFile) }) {
+            exclude(
+                "kotlin/coroutines/jvm/internal/BaseContinuationImpl.class",
+                "kotlin/coroutines/jvm/internal/ContinuationImpl.class",
+                "kotlin/coroutines/jvm/internal/RestrictedContinuationImpl.class",
+                "kotlin/coroutines/jvm/internal/RestrictedSuspendLambda.class",
+                "kotlin/coroutines/jvm/internal/SuspendLambda.class",
+            )
+            exclude(recoveredKotlinSourceClassPatterns)
+        }
+        doLast {
+            ZipFile(archiveFile.get().asFile).use { archive ->
+                recoveredKotlinSourceOwners.forEach { owner ->
+                    check(archive.getEntry("$owner.class") == null) {
+                        "Kotlin stdlib replacement still contains source-recovered $owner"
+                    }
+                    check(archive.entries().asSequence().none {
+                        it.name.startsWith(owner + "\$") && it.name.endsWith(".class")
+                    }) {
+                        "Kotlin stdlib replacement still contains nested source-recovered $owner classes"
+                    }
+                }
+            }
+        }
+    }
+    // Keep the pinned coroutines artifact as the base and remove only the
+    // continuation classes restored from local sources with their app-specific owner ABI.
+    val recoveredFlowContinuationClassPaths = listOf(
+        "kotlinx/coroutines/flow/FlowKt__ChannelsKt\$emitAllImpl\$1.class",
+        "kotlinx/coroutines/flow/StateFlowImpl\$collect\$1.class",
+        "kotlinx/coroutines/flow/SharedFlowImpl\$collect\$1.class",
+    )
+    val strippedFlowContinuation = tasks.register<Jar>("stripRecoveredFlowContinuationClass") {
+        archiveFileName.set("kotlinx-coroutines-core-jvm-1.7.1-recovered.jar")
+        destinationDirectory.set(layout.buildDirectory.dir("generated/recovered-dependencies"))
+        inputs.property("recoveredFlowContinuationClassPaths", recoveredFlowContinuationClassPaths)
+        from({ zipTree(recoveredCoroutinesCore.singleFile) }) {
+            exclude(recoveredFlowContinuationClassPaths)
+        }
+        doLast {
+            ZipFile(archiveFile.get().asFile).use { archive ->
+                recoveredFlowContinuationClassPaths.forEach { classPath ->
+                    check(archive.getEntry(classPath) == null) {
+                        "Coroutines replacement still contains recovered source owner $classPath"
+                    }
+                }
+            }
+        }
+    }
+    val recoveredRecyclerViewClassOwners = listOf(
+        "androidx/recyclerview/widget/RecyclerView",
+        "androidx/recyclerview/widget/GridLayoutManager",
+        "androidx/recyclerview/widget/LinearLayoutManager",
+        "androidx/recyclerview/widget/StaggeredGridLayoutManager",
+    )
+    val recoveredRecyclerViewArchive = layout.buildDirectory.file(
+        "generated/recovered-dependencies/recyclerview-1.2.1-recovered.aar"
+    )
+    val strippedRecyclerView = tasks.register("stripRecoveredRecyclerViewClasses") {
+        inputs.files(recoveredRecyclerView)
+        inputs.property("recoveredRecyclerViewClassOwners", recoveredRecyclerViewClassOwners)
+        outputs.file(recoveredRecyclerViewArchive)
+        doLast {
+            val recoveredRecyclerViewInput = recoveredRecyclerView.singleFile
+            val removedClasses = mutableSetOf<String>()
+            fun shouldStrip(className: String): Boolean {
+                if (!className.endsWith(".class")) return false
+                return recoveredRecyclerViewClassOwners.any { owner ->
+                    className == "$owner.class" || className.startsWith(owner + '$')
+                }
+            }
+            fun stripNestedJar(bytes: ByteArray): ByteArray {
+                val output = ByteArrayOutputStream()
+                ZipInputStream(ByteArrayInputStream(bytes)).use { input ->
+                    ZipOutputStream(output).use { archive ->
+                        while (true) {
+                            val entry = input.nextEntry ?: break
+                            val contents = input.readBytes()
+                            if (!shouldStrip(entry.name)) {
+                                archive.putNextEntry(ZipEntry(entry.name))
+                                if (!entry.isDirectory) archive.write(contents)
+                                archive.closeEntry()
+                            } else {
+                                removedClasses += entry.name
+                            }
+                            input.closeEntry()
+                        }
+                    }
+                }
+                return output.toByteArray()
+            }
+
+            val output = ByteArrayOutputStream()
+            ZipInputStream(recoveredRecyclerViewInput.inputStream().buffered()).use { input ->
+                ZipOutputStream(output).use { archive ->
+                    while (true) {
+                        val entry = input.nextEntry ?: break
+                        val contents = input.readBytes()
+                        archive.putNextEntry(ZipEntry(entry.name))
+                        if (entry.name.endsWith(".jar")) {
+                            archive.write(stripNestedJar(contents))
+                        } else if (!entry.isDirectory) {
+                            archive.write(contents)
+                        }
+                        archive.closeEntry()
+                        input.closeEntry()
+                    }
+                }
+            }
+            val requiredOwners = setOf(
+                "androidx/recyclerview/widget/RecyclerView.class",
+                "androidx/recyclerview/widget/GridLayoutManager.class",
+                "androidx/recyclerview/widget/LinearLayoutManager.class",
+                "androidx/recyclerview/widget/StaggeredGridLayoutManager.class",
+            )
+            check(removedClasses.containsAll(requiredOwners)) {
+                "RecyclerView 1.2.1 replacement did not contain all expected classes: " +
+                    (requiredOwners - removedClasses)
+            }
+            val destination = recoveredRecyclerViewArchive.get().asFile
+            destination.parentFile.mkdirs()
+            destination.writeBytes(output.toByteArray())
+            logger.lifecycle("Removed ${removedClasses.size} RecyclerView class files from RecyclerView 1.2.1")
+        }
+    }
+    val recoveredMaterialSourceOwners = recoveredSourceOwnersByCoordinate[
+        "com.google.android.material:material:1.10.0"
+    ].orEmpty()
+    val recoveredCoordinatorAndMaterialClassOwners = listOf(
+        "androidx/coordinatorlayout/widget/CoordinatorLayout",
+        "com/google/android/material/bottomsheet/BottomSheetBehavior",
+        "com/google/android/material/button/MaterialButton",
+        "com/google/android/material/button/MaterialButtonToggleGroup",
+        "com/google/android/material/floatingactionbutton/FloatingActionButton",
+        "com/google/android/material/floatingactionbutton/ExtendedFloatingActionButton",
+        "com/google/android/material/internal/VisibilityAwareImageButton",
+        "com/google/android/material/behavior/HideBottomViewOnScrollBehavior",
+        "com/google/android/material/bottomappbar/BottomAppBar",
+        "com/google/android/material/timepicker/TimeModel",
+        "com/google/android/material/timepicker/TimePickerView",
+        "com/google/android/material/timepicker/ChipTextInputComboView",
+        "com/google/android/material/timepicker/ClockFaceView",
+        "com/google/android/material/timepicker/ClockHandView",
+        "com/google/android/material/timepicker/RadialViewGroup",
+    ) + recoveredMaterialSourceOwners
+    val recoveredCoordinatorLayoutArchive = layout.buildDirectory.file(
+        "generated/recovered-dependencies/coordinatorlayout-1.1.0-recovered.aar"
+    )
+    val recoveredMaterialArchive = layout.buildDirectory.file(
+        "generated/recovered-dependencies/material-1.10.0-recovered.aar"
+    )
+    val strippedRecoveredContainerClasses = tasks.register("stripRecoveredCoordinatorAndMaterialClasses") {
+        inputs.files(recoveredCoordinatorLayout, recoveredMaterial)
+        inputs.property("recoveredCoordinatorAndMaterialClassOwners", recoveredCoordinatorAndMaterialClassOwners)
+        outputs.files(recoveredCoordinatorLayoutArchive, recoveredMaterialArchive)
+        doLast {
+            fun shouldStrip(className: String): Boolean {
+                if (!className.endsWith(".class")) return false
+                return recoveredCoordinatorAndMaterialClassOwners.any { owner ->
+                    className == "$owner.class" || className.startsWith(owner + '$')
+                }
+            }
+            fun rewriteAar(inputFile: java.io.File, outputFile: java.io.File): Set<String> {
+                val removedClasses = mutableSetOf<String>()
+                fun stripNestedJar(bytes: ByteArray): ByteArray {
+                    val output = ByteArrayOutputStream()
+                    ZipInputStream(ByteArrayInputStream(bytes)).use { input ->
+                        ZipOutputStream(output).use { archive ->
+                            while (true) {
+                                val entry = input.nextEntry ?: break
+                                val contents = input.readBytes()
+                                if (!shouldStrip(entry.name)) {
+                                    archive.putNextEntry(ZipEntry(entry.name))
+                                    if (!entry.isDirectory) archive.write(contents)
+                                    archive.closeEntry()
+                                } else {
+                                    removedClasses += entry.name
+                                }
+                                input.closeEntry()
+                            }
+                        }
+                    }
+                    return output.toByteArray()
+                }
+
+                val output = ByteArrayOutputStream()
+                ZipInputStream(inputFile.inputStream().buffered()).use { input ->
+                    ZipOutputStream(output).use { archive ->
+                        while (true) {
+                            val entry = input.nextEntry ?: break
+                            val contents = input.readBytes()
+                            archive.putNextEntry(ZipEntry(entry.name))
+                            if (entry.name.endsWith(".jar")) {
+                                archive.write(stripNestedJar(contents))
+                            } else if (!entry.isDirectory) {
+                                archive.write(contents)
+                            }
+                            archive.closeEntry()
+                            input.closeEntry()
+                        }
+                    }
+                }
+                outputFile.parentFile.mkdirs()
+                outputFile.writeBytes(output.toByteArray())
+                return removedClasses
+            }
+
+            val coordinatorRemoved = rewriteAar(
+                recoveredCoordinatorLayout.singleFile,
+                recoveredCoordinatorLayoutArchive.get().asFile,
+            )
+            val materialRemoved = rewriteAar(
+                recoveredMaterial.singleFile,
+                recoveredMaterialArchive.get().asFile,
+            )
+            check("androidx/coordinatorlayout/widget/CoordinatorLayout.class" in coordinatorRemoved) {
+                "CoordinatorLayout 1.1.0 replacement did not contain its expected class"
+            }
+            val requiredMaterialOwners = setOf(
+                "com/google/android/material/bottomsheet/BottomSheetBehavior.class",
+                "com/google/android/material/button/MaterialButton.class",
+                "com/google/android/material/button/MaterialButtonToggleGroup.class",
+                "com/google/android/material/floatingactionbutton/FloatingActionButton.class",
+                "com/google/android/material/floatingactionbutton/ExtendedFloatingActionButton.class",
+                "com/google/android/material/internal/VisibilityAwareImageButton.class",
+                "com/google/android/material/behavior/HideBottomViewOnScrollBehavior.class",
+                "com/google/android/material/bottomappbar/BottomAppBar.class",
+                "com/google/android/material/timepicker/TimeModel.class",
+                "com/google/android/material/timepicker/TimePickerView.class",
+                "com/google/android/material/timepicker/ChipTextInputComboView.class",
+                "com/google/android/material/timepicker/ClockFaceView.class",
+                "com/google/android/material/timepicker/ClockHandView.class",
+                "com/google/android/material/timepicker/RadialViewGroup.class",
+            ) + recoveredMaterialSourceOwners.map { "$it.class" }
+            check(materialRemoved.containsAll(requiredMaterialOwners)) {
+                "Material 1.10.0 replacement did not contain all recovered source owners: " +
+                    (requiredMaterialOwners - materialRemoved)
+            }
+            logger.lifecycle(
+                "Removed ${coordinatorRemoved.size} CoordinatorLayout and " +
+                    "${materialRemoved.size} recovered Material class files"
+            )
+        }
+    }
+    val recoveredPublicSuffixClassPath = "okhttp3/internal/publicsuffix/PublicSuffixDatabase.class"
+    val recoveredPublicSuffixArchive = layout.buildDirectory.file(
+        "generated/recovered-dependencies/okhttp-3.14.9-recovered.jar"
+    )
+    val strippedPublicSuffixDatabase = tasks.register("stripRecoveredPublicSuffixDatabase") {
+        inputs.files(recoveredOkHttp)
+        inputs.property("recoveredPublicSuffixClassPath", recoveredPublicSuffixClassPath)
+        outputs.file(recoveredPublicSuffixArchive)
+        doLast {
+            val removedClasses = mutableSetOf<String>()
+            val output = ByteArrayOutputStream()
+            ZipInputStream(recoveredOkHttp.singleFile.inputStream().buffered()).use { input ->
+                ZipOutputStream(output).use { archive ->
+                    while (true) {
+                        val entry = input.nextEntry ?: break
+                        val contents = input.readBytes()
+                        if (entry.name != recoveredPublicSuffixClassPath) {
+                            archive.putNextEntry(ZipEntry(entry.name))
+                            if (!entry.isDirectory) archive.write(contents)
+                            archive.closeEntry()
+                        } else {
+                            removedClasses += entry.name
+                        }
+                        input.closeEntry()
+                    }
+                }
+            }
+            check(removedClasses == setOf(recoveredPublicSuffixClassPath)) {
+                "OkHttp 3.14.9 replacement removed unexpected classes: $removedClasses"
+            }
+            val destination = recoveredPublicSuffixArchive.get().asFile
+            destination.parentFile.mkdirs()
+            destination.writeBytes(output.toByteArray())
+            ZipFile(destination).use { archive ->
+                check(archive.getEntry(recoveredPublicSuffixClassPath) == null) {
+                    "OkHttp 3.14.9 replacement still contains the source-recovered PublicSuffixDatabase"
+                }
+                check(archive.getEntry("okhttp3/internal/publicsuffix/publicsuffixes.gz") != null) {
+                    "OkHttp 3.14.9 replacement lost its public suffix resource"
+                }
+            }
+        }
+    }
+    val recoveredViewPager2ClassOwner = "androidx/viewpager2/widget/ViewPager2"
+    val recoveredViewPager2Archive = layout.buildDirectory.file(
+        "generated/recovered-dependencies/viewpager2-1.0.0-recovered.aar"
+    )
+    val strippedRecoveredViewPager2 = tasks.register("stripRecoveredViewPager2Classes") {
+        inputs.files(recoveredViewPager2)
+        inputs.property("recoveredViewPager2ClassOwner", recoveredViewPager2ClassOwner)
+        outputs.file(recoveredViewPager2Archive)
+        doLast {
+            val removedClasses = mutableSetOf<String>()
+            fun shouldStrip(className: String): Boolean {
+                return className.endsWith(".class") &&
+                    (className == "$recoveredViewPager2ClassOwner.class" ||
+                        className.startsWith(recoveredViewPager2ClassOwner + '$'))
+            }
+            fun stripNestedJar(bytes: ByteArray): ByteArray {
+                val output = ByteArrayOutputStream()
+                ZipInputStream(ByteArrayInputStream(bytes)).use { input ->
+                    ZipOutputStream(output).use { archive ->
+                        while (true) {
+                            val entry = input.nextEntry ?: break
+                            val contents = input.readBytes()
+                            if (!shouldStrip(entry.name)) {
+                                archive.putNextEntry(ZipEntry(entry.name))
+                                if (!entry.isDirectory) archive.write(contents)
+                                archive.closeEntry()
+                            } else {
+                                removedClasses += entry.name
+                            }
+                            input.closeEntry()
+                        }
+                    }
+                }
+                return output.toByteArray()
+            }
+
+            val output = ByteArrayOutputStream()
+            ZipInputStream(recoveredViewPager2.singleFile.inputStream().buffered()).use { input ->
+                ZipOutputStream(output).use { archive ->
+                    while (true) {
+                        val entry = input.nextEntry ?: break
+                        val contents = input.readBytes()
+                        archive.putNextEntry(ZipEntry(entry.name))
+                        if (entry.name.endsWith(".jar")) {
+                            archive.write(stripNestedJar(contents))
+                        } else if (!entry.isDirectory) {
+                            archive.write(contents)
+                        }
+                        archive.closeEntry()
+                        input.closeEntry()
+                    }
+                }
+            }
+            val requiredClasses = setOf(
+                "androidx/viewpager2/widget/ViewPager2.class",
+                "androidx/viewpager2/widget/ViewPager2\$SavedState.class",
+            )
+            check(removedClasses.containsAll(requiredClasses)) {
+                "ViewPager2 1.0.0 replacement did not contain expected classes: " +
+                    (requiredClasses - removedClasses)
+            }
+            val destination = recoveredViewPager2Archive.get().asFile
+            destination.parentFile.mkdirs()
+            destination.writeBytes(output.toByteArray())
+            logger.lifecycle("Removed ${removedClasses.size} ViewPager2 class files from ViewPager2 1.0.0")
+        }
+    }
+    val recoveredSourceArchiveDirectory = layout.buildDirectory.dir(
+        "generated/recovered-dependencies/source-owner-replacements"
+    )
+    val strippedRecoveredSourceOwners = tasks.register("stripRecoveredSourceOwnerClasses") {
+        inputs.files(recoveredSourceArtifacts)
+        inputs.property("recoveredSourceOwnersByCoordinate", recoveredSourceOwnersByCoordinate)
+        outputs.dir(recoveredSourceArchiveDirectory)
+        doLast {
+            val destinationDirectory = recoveredSourceArchiveDirectory.get().asFile
+            destinationDirectory.mkdirs()
+            destinationDirectory.listFiles()?.filter { it.isFile }?.forEach { it.delete() }
+
+            val resolvedArtifacts = recoveredSourceArtifacts.resolvedConfiguration.resolvedArtifacts.associateBy {
+                val id = it.moduleVersion.id
+                "${id.group}:${it.name}:${id.version}"
+            }
+            additionalRecoveredSourceCoordinates.forEach { coordinate ->
+                val artifact = resolvedArtifacts[coordinate]
+                    ?: error("Could not resolve recovered source artifact $coordinate")
+                val inputFile = artifact.file
+                val ownerPaths = recoveredSourceOwnersByCoordinate[coordinate]
+                    ?: error("No recovered source owner list for $coordinate")
+                val expectedClassFiles = ownerPaths.map { "$it.class" }.toSet()
+                val removedClasses = mutableSetOf<String>()
+
+                fun shouldStrip(entryName: String): Boolean {
+                    if (!entryName.endsWith(".class")) return false
+                    return ownerPaths.any { owner ->
+                        entryName == "$owner.class" || entryName.startsWith(owner + '$')
+                    }
+                }
+
+                fun stripJar(bytes: ByteArray): ByteArray {
+                    val output = ByteArrayOutputStream()
+                    ZipInputStream(ByteArrayInputStream(bytes)).use { input ->
+                        ZipOutputStream(output).use { archive ->
+                            while (true) {
+                                val entry = input.nextEntry ?: break
+                                val contents = input.readBytes()
+                                if (!shouldStrip(entry.name)) {
+                                    archive.putNextEntry(ZipEntry(entry.name))
+                                    if (!entry.isDirectory) archive.write(contents)
+                                    archive.closeEntry()
+                                } else {
+                                    removedClasses += entry.name
+                                }
+                                input.closeEntry()
+                            }
+                        }
+                    }
+                    return output.toByteArray()
+                }
+
+                fun stripAar(bytes: ByteArray): ByteArray {
+                    val output = ByteArrayOutputStream()
+                    ZipInputStream(ByteArrayInputStream(bytes)).use { input ->
+                        ZipOutputStream(output).use { archive ->
+                            while (true) {
+                                val entry = input.nextEntry ?: break
+                                val contents = input.readBytes()
+                                archive.putNextEntry(ZipEntry(entry.name))
+                                if (entry.name.endsWith(".jar")) {
+                                    archive.write(stripJar(contents))
+                                } else if (shouldStrip(entry.name)) {
+                                    removedClasses += entry.name
+                                } else if (!entry.isDirectory) {
+                                    archive.write(contents)
+                                }
+                                archive.closeEntry()
+                                input.closeEntry()
+                            }
+                        }
+                    }
+                    return output.toByteArray()
+                }
+
+                val outputBytes = when (inputFile.extension.lowercase()) {
+                    "jar" -> stripJar(inputFile.readBytes())
+                    "aar" -> stripAar(inputFile.readBytes())
+                    else -> error("Unsupported recovered source artifact: $inputFile")
+                }
+                check(removedClasses.containsAll(expectedClassFiles)) {
+                    "$coordinate did not contain every expected recovered source owner: " +
+                        (expectedClassFiles - removedClasses)
+                }
+                val outputFile = File(
+                    destinationDirectory,
+                    "${inputFile.nameWithoutExtension}-recovered.${inputFile.extension}",
+                )
+                outputFile.writeBytes(outputBytes)
+                logger.lifecycle("Removed ${removedClasses.size} recovered source classes from $coordinate")
+            }
+        }
+    }
+    configurations.configureEach {
+        if (name != recoveredSourceArtifacts.name) {
+            additionalRecoveredSourceCoordinates.forEach { coordinate ->
+                val fields = coordinate.split(':')
+                exclude(group = fields[0], module = fields[1])
+            }
+        }
+        if (name != recoveredKotlinStdlib.name && !name.startsWith("kotlin")) {
+            exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
+        }
+        if (name != recoveredCoroutinesCore.name && !name.startsWith("kotlin")) {
+            exclude(group = "org.jetbrains.kotlinx", module = "kotlinx-coroutines-core-jvm")
+        }
+        if (name != recoveredCoordinatorLayout.name) {
+            exclude(group = "androidx.coordinatorlayout", module = "coordinatorlayout")
+        }
+        if (name != recoveredMaterial.name) {
+            exclude(group = "com.google.android.material", module = "material")
+        }
+        if (name != recoveredOkHttp.name) {
+            exclude(group = "com.squareup.okhttp3", module = "okhttp")
+        }
+        if (name != recoveredViewPager2.name) {
+            exclude(group = "androidx.viewpager2", module = "viewpager2")
+        }
+    }
+    add("implementation", files(strippedKotlinStdlib.flatMap { it.archiveFile }).builtBy(strippedKotlinStdlib))
+    add("implementation", files(strippedFlowContinuation.flatMap { it.archiveFile }).builtBy(strippedFlowContinuation))
+    add("implementation", files(recoveredRecyclerViewArchive).builtBy(strippedRecyclerView))
+    add(
+        "implementation",
+        files(recoveredCoordinatorLayoutArchive, recoveredMaterialArchive).builtBy(strippedRecoveredContainerClasses),
+    )
+    add("implementation", files(recoveredPublicSuffixArchive).builtBy(strippedPublicSuffixDatabase))
+    add("implementation", files(recoveredViewPager2Archive).builtBy(strippedRecoveredViewPager2))
+    add(
+        "implementation",
+        files(fileTree(recoveredSourceArchiveDirectory) { include("*.aar", "*.jar") })
+            .builtBy(strippedRecoveredSourceOwners),
+    )
+
+    // These are OEM WindowManager API definitions used by the recovered Window 1.0.0
+    // implementation. The framework/device supplies them at runtime when supported.
+    compileOnly(files("libs/window-sidecar-release-0.1.0-alpha01.aar"))
+    // OEM WindowManager API declarations are device-provided; this local API-only JAR is compile-only.
+    compileOnly(files("libs/window-extensions-beta01-api.jar"))
+}
+
+tasks.withType<JavaCompile>().configureEach {
+    // Exact dependency artifacts replace duplicate decoded Java classes.
+    // The generated list is based on the resolved compile classpath and keeps
+    // non-overlapping source-only compatibility classes in the source tree.
+    dependencySourceExcludes.forEach { exclude(it) }
+    options.compilerArgs.addAll(listOf("-Xmaxerrs", "1000"))
+}

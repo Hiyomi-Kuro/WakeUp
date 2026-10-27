@@ -1,0 +1,1360 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:2:1-226:12
+INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:2:1-226:12
+INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:2:1-226:12
+INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:2:1-226:12
+MERGED from [recyclerview-1.2.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b3e220dd79bfe1cf572cbda4799a3334\transformed\recyclerview-1.2.1-recovered\AndroidManifest.xml:17:1-24:12
+MERGED from [coordinatorlayout-1.1.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\97a3ecabb6411d4316bdca30b4baa912\transformed\coordinatorlayout-1.1.0-recovered\AndroidManifest.xml:17:1-24:12
+MERGED from [material-1.10.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\cede14483d7972181d09d6e166048218\transformed\material-1.10.0-recovered\AndroidManifest.xml:17:1-24:12
+MERGED from [viewpager2-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9af5c2039f9c47f1f57eb50efe0f9cce\transformed\viewpager2-1.0.0-recovered\AndroidManifest.xml:17:1-24:12
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:2:1-21:12
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:2:1-23:12
+MERGED from [appcompat-1.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2355583e80e7c129504f2b0cfe0040fe\transformed\appcompat-1.6.1-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [cardview-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9498c98895401e5d2b36ca592cb2edd4\transformed\cardview-1.0.0-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:17:1-30:12
+MERGED from [customview-1.1.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b577a47ab17071d2777827c70faa6199\transformed\customview-1.1.0-recovered\AndroidManifest.xml:17:1-24:12
+MERGED from [drawerlayout-1.1.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8c2060fc76c6e696db0b12fef82fd01e\transformed\drawerlayout-1.1.1-recovered\AndroidManifest.xml:17:1-24:12
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:17:1-35:12
+MERGED from [fragment-1.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9e4d0c0b79225ec8adabb04104dca041\transformed\fragment-1.6.2-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [glide-4.16.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\06d1510ef7b632a86a865d1be233c0bd\transformed\glide-4.16.0-recovered\AndroidManifest.xml:2:1-9:12
+MERGED from [lifecycle-livedata-core-2.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f4f129d73bec60e118c21b90f7c3ab5f\transformed\lifecycle-livedata-core-2.6.2-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [lifecycle-viewmodel-savedstate-2.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8944d6520b5c1e8cf2771e423038acc3\transformed\lifecycle-viewmodel-savedstate-2.6.2-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [media-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5b13b6ad8be2ab811d485c4a5613fa85\transformed\media-1.0.0-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [navigation-common-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0d8795fe032581f72cd4ea9055977370\transformed\navigation-common-2.7.7-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [navigation-fragment-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\56ded0049257dedad903b2363475135c\transformed\navigation-fragment-2.7.7-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [navigation-runtime-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5f284ae84ec3a958262be08a0d3298f2\transformed\navigation-runtime-2.7.7-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [room-ktx-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e9a494d4419a9f8b8b785b0b52396f93\transformed\room-ktx-2.6.1-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [room-runtime-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a1e5a3690fbfe137433d6270d21bd9c7\transformed\room-runtime-2.6.1-recovered\AndroidManifest.xml:17:1-31:12
+MERGED from [savedstate-1.2.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\65c6b3e91e49943990f05bd43fe5c4df\transformed\savedstate-1.2.1-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [security-base-1.2.0.306-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a9ee477b5e3816956922a8512f727848\transformed\security-base-1.2.0.306-recovered\AndroidManifest.xml:2:1-9:12
+MERGED from [slidingpanelayout-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\3f71272f2391e86edffaa3425ee19aca\transformed\slidingpanelayout-1.2.0-recovered\AndroidManifest.xml:17:1-24:12
+MERGED from [sqlite-framework-2.4.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\fb9549a4b42792506fc0aa935c5d668e\transformed\sqlite-framework-2.4.0-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [swiperefreshlayout-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\84228c13d8a3fdbe90a3ac33d503c5e3\transformed\swiperefreshlayout-1.0.0-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [transition-1.4.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\293661a7bfccc46f1dba197897831955\transformed\transition-1.4.1-recovered\AndroidManifest.xml:17:1-24:12
+MERGED from [viewpager-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c0df7ef6856fc0205077fe20b005c8be\transformed\viewpager-1.0.0-recovered\AndroidManifest.xml:17:1-22:12
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:17:1-33:12
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:17:1-145:12
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.4] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9db397dfac5bf306a4c24ade9d02ecea\transformed\android-database-sqlcipher-4.5.4\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e197d4d625e9ed71b7ac4981e456de28\transformed\navigation-ui-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\db994919d98a9be859a6bc674f9fab13\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e7af324e08b448d100300324c5e60b28\transformed\navigation-fragment-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\598bacfc9e8f64f936fb6f4005663a8d\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8848008137164aa627de0e58cdcfe20\transformed\navigation-ui-2.7.7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f3d94e4ecd6931cd64fb4f3253fec18a\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf2e4ce15c257dcba5460e0a0b13539c\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\73764b0b2f9af6d6c87fd2ffb1df86e6\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b0ab4238e70a5a45e3d29f1bb3b9686f\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\dd78eb2dd1432e6c023a1debddf9538c\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\df53e4fbae357c43606e6ef2fa9c7513\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a36b07e516b029b8f9d7d8330d32e038\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d929cbcd1c362b75a3346f609bdf761d\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bd8e56582a2140f161907d6a3adc1ae1\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d657a4b8892f5244c8f284df625ed905\transformed\lifecycle-service-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\43b548080e4852902b5307ea9433f038\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ab328476da62ed817f4a2d65d6b8be35\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5e98b0b8fdbf306c4a09a9eee96caf96\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ec7b95f20b087151bff18ae30d9fdf11\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7536338b08693052f0c8078d5ae1d27e\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a6ff8ceb28c42bbb0e63318389fe3fca\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5e46f8cf329aa2f70d2896591e8c6548\transformed\core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d0522b6ea6da84c1bac2842c7d1a8e63\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7279e1c4e0c08260f689ccb39c15ab44\transformed\viewbinding-8.2.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\cc0ae75ecaab3fa4125266954a823831\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2836946e16450e237ae58665bedd565e\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d90f0e2fceecf8640f52e3d9633b5b7e\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\4a1fea7a06e1bd90b85fae109dda1e99\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7d1b96a1aed98113b8b6909f8ef82eab\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e5b2c7de2b10b256b8e57b61cb52f198\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6b5ed61b9ffc46e8e15137ab878da3ee\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e82857dc44a3aea2047929ce1241bc7d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d315325bb0724d0cab8ef07f9950641a\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf68082f780d1697236039a20bf412fd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b042e103b4e514d45472381599e8555e\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\4aa2f8b86a92a6d03d0cea5dca228e31\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8adb8949ab73bb1e9d2032ed328360b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c53025f12bae5eeeb58381b71f1f744e\transformed\work-runtime-ktx-2.9.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:3:1-23:12
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:2:1-38:12
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:2:1-24:12
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:2:1-25:12
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:2:1-22:12
+MERGED from [com.huawei.hms:baselegacyapi:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d1fc6481c78ce0909e43b0aba2c7f785\transformed\baselegacyapi-6.7.0.300\AndroidManifest.xml:2:1-9:12
+MERGED from [com.huawei.hms:device:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\418c2ce772ab7963b54da9fd0e4fdd2e\transformed\device-6.7.0.300\AndroidManifest.xml:2:1-23:12
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:2:1-16:12
+MERGED from [com.huawei.hms:hatool:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ea4f67d0d3507ad720260563a9cd1bde\transformed\hatool-6.7.0.300\AndroidManifest.xml:2:1-9:12
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:2:1-29:12
+MERGED from [com.huawei.hms:log:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f605631f3d4f59a09fecc839a797c3b7\transformed\log-6.7.0.300\AndroidManifest.xml:2:1-11:12
+MERGED from [com.huawei.hms:network-grs:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a595025fbd4ea39f6bf39896a7d4f550\transformed\network-grs-6.0.2.300\AndroidManifest.xml:2:1-11:12
+MERGED from [com.huawei.hms:network-framework-compat:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7e104d29f8ede456b93b73847abf8867\transformed\network-framework-compat-6.0.2.300\AndroidManifest.xml:2:1-11:12
+MERGED from [com.huawei.hms:network-common:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\177da8e75b3829569b73c4d754f4100a\transformed\network-common-6.0.2.300\AndroidManifest.xml:2:1-11:12
+MERGED from [com.huawei.agconnect:agconnect-https:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\68ff98937b61cc78ef844a7377fbd54f\transformed\agconnect-https-1.9.1.300\AndroidManifest.xml:3:1-13:12
+MERGED from [com.huawei.agconnect:datastore-core:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\85fc4caffe2a8e9396696fd3865ec865\transformed\datastore-core-1.9.1.300\AndroidManifest.xml:2:1-10:12
+MERGED from [com.huawei.android.hms:security-ssl:1.2.0.308] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\fb25c9f61c35851193c998a6d5b7b52a\transformed\security-ssl-1.2.0.308\AndroidManifest.xml:2:1-9:12
+MERGED from [com.huawei.android.hms:security-encrypt:1.2.0.308] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2aae6c945faa8be4f4966b6345a34b2d\transformed\security-encrypt-1.2.0.308\AndroidManifest.xml:2:1-11:12
+MERGED from [com.huawei.hms:hianalytics-framework:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a21aa3fef8760a6640ef9c0b38a2bb47\transformed\hianalytics-framework-6.10.0.302\AndroidManifest.xml:2:1-11:12
+MERGED from [com.huawei.hms:hianalytics-core:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\91a477b3776efd3e2cade051b2d55fc0\transformed\hianalytics-core-6.10.0.302\AndroidManifest.xml:2:1-11:12
+MERGED from [com.huawei.hms:hianalytics-element:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\94fd2017101e42500129f310e86f994b\transformed\hianalytics-element-6.10.0.302\AndroidManifest.xml:2:1-11:12
+	package
+		INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:4:3-49
+	android:versionCode
+		INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:3:3-61
+uses-permission#android.permission.INTERNET
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:11:5-67
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:11:5-67
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:11:5-67
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:11:5-67
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:10:5-67
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:10:5-67
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:10:5-67
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:10:5-67
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:10:5-67
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:6:22-63
+uses-permission#android.permission.ACCESS_NOTIFICATION_POLICY
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:7:5-85
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:7:22-82
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:9:22-74
+uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:10:5-95
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:10:22-92
+uses-feature#android.hardware.faketouch
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:11:5-87
+	android:required
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:11:61-84
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:11:19-60
+uses-permission#com.hihonor.brain.permission.KIT_SERVICE_ACCESS
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:12:5-87
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:12:22-84
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:13:5-68
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:23:5-68
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:13:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:14:5-79
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:24:5-79
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:24:5-79
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:11:5-79
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:11:5-79
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.hms:device:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\418c2ce772ab7963b54da9fd0e4fdd2e\transformed\device-6.7.0.300\AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.hms:device:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\418c2ce772ab7963b54da9fd0e4fdd2e\transformed\device-6.7.0.300\AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:12:5-79
+MERGED from [com.huawei.agconnect:agconnect-https:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\68ff98937b61cc78ef844a7377fbd54f\transformed\agconnect-https-1.9.1.300\AndroidManifest.xml:11:5-79
+MERGED from [com.huawei.agconnect:agconnect-https:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\68ff98937b61cc78ef844a7377fbd54f\transformed\agconnect-https-1.9.1.300\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:15:5-81
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:25:5-81
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:15:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:16:5-77
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:26:5-77
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:26:5-77
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:16:22-74
+permission#com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:17:5-136
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:17:98-133
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:17:17-97
+uses-permission#com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:18:5-105
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:18:22-102
+uses-permission#com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:19:5-106
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:13:5-106
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:13:5-106
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:19:22-103
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:20:5-79
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:14:5-79
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:20:22-76
+queries
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:21:5-28:15
+MERGED from [com.huawei.hms:device:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\418c2ce772ab7963b54da9fd0e4fdd2e\transformed\device-6.7.0.300\AndroidManifest.xml:14:5-21:15
+MERGED from [com.huawei.hms:device:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\418c2ce772ab7963b54da9fd0e4fdd2e\transformed\device-6.7.0.300\AndroidManifest.xml:14:5-21:15
+intent#action:name:com.huawei.hms.core.aidlservice
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:22:9-24:18
+action#com.huawei.hms.core.aidlservice
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:23:13-70
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:23:21-67
+intent#action:name:com.huawei.hms.core
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:25:9-27:18
+action#com.huawei.hms.core
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:26:13-58
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:26:21-55
+application
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:5-225:19
+MERGED from [material-1.10.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\cede14483d7972181d09d6e166048218\transformed\material-1.10.0-recovered\AndroidManifest.xml:22:5-20
+MERGED from [material-1.10.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\cede14483d7972181d09d6e166048218\transformed\material-1.10.0-recovered\AndroidManifest.xml:22:5-20
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:10:5-19:19
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:10:5-19:19
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:13:5-21:19
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:13:5-21:19
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:28:5-89
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:28:5-89
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:23:5-33:19
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:23:5-33:19
+MERGED from [room-runtime-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a1e5a3690fbfe137433d6270d21bd9c7\transformed\room-runtime-2.6.1-recovered\AndroidManifest.xml:23:5-29:19
+MERGED from [room-runtime-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a1e5a3690fbfe137433d6270d21bd9c7\transformed\room-runtime-2.6.1-recovered\AndroidManifest.xml:23:5-29:19
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:24:5-31:19
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:24:5-31:19
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:28:5-143:19
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf68082f780d1697236039a20bf412fd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf68082f780d1697236039a20bf412fd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8adb8949ab73bb1e9d2032ed328360b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8adb8949ab73bb1e9d2032ed328360b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:13:5-21:19
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:13:5-21:19
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:16:5-36:19
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:16:5-36:19
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:9:5-22:19
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:9:5-22:19
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:12:5-23:19
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:12:5-23:19
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:14:5-20:19
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:14:5-20:19
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:14:5-20
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:14:5-20
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:9:5-27:19
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:9:5-27:19
+MERGED from [com.huawei.hms:log:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f605631f3d4f59a09fecc839a797c3b7\transformed\log-6.7.0.300\AndroidManifest.xml:9:5-20
+MERGED from [com.huawei.hms:log:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f605631f3d4f59a09fecc839a797c3b7\transformed\log-6.7.0.300\AndroidManifest.xml:9:5-20
+	android:extractNativeLibs
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:252-284
+	android:supportsRtl
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:225-251
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:50-82
+	android:appComponentFactory
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:346-414
+	android:icon
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:83-117
+	android:allowBackup
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:162-188
+		REJECTED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:16:18-45
+	android:theme
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:18-49
+	android:networkSecurityConfig
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:285-345
+	tools:replace
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:189-224
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:29:118-161
+meta-data#com.huawei.agconnect.AccessNetwork
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:30:9-94
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:30:70-91
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:30:20-69
+meta-data#miuiWidgetVersion
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:31:9-73
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:31:53-70
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:31:20-52
+meta-data#com.hihonor.hcs.client.appid
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:32:9-92
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:32:64-89
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:32:20-63
+receiver#com.kaori.wakeupschedule.today_appwidget.TodayListAppWidget
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:33:9-39:20
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:33:19-39
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:33:115-138
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:33:40-114
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:34:13-36:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:35:17-84
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:35:25-81
+meta-data#android.appwidget.provider
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:37:13-119
+	android:resource
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:37:66-116
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:37:24-65
+meta-data#com.hihonor.widget.type
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:38:13-91
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:38:63-88
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:38:24-62
+receiver#com.kaori.wakeupschedule.today_appwidget.TodayAndNextDayAppWidget
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:40:9-46:20
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:40:19-39
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:40:121-144
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:40:40-120
+activity#com.kaori.wakeupschedule.settings.ModifyScheduleToolActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:47:9-177
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:47:19-74
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:47:151-174
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:47:75-150
+provider#com.kaori.wakeupschedule.ScheduleContentProvider
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:48:9-188
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:48:83-105
+	android:authorities
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:48:130-185
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:48:106-129
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:48:19-82
+activity#com.kaori.wakeupschedule.clock.ClockActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:49:9-159
+	android:screenOrientation
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:49:113-156
+	android:theme
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:49:19-52
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:49:53-112
+activity#com.kaori.wakeupschedule.schedule_appwidget.WidgetStyleConfigActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:50:9-333
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:50:63-108
+	android:excludeFromRecents
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:50:194-227
+	android:launchMode
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:50:228-263
+	android:configChanges
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:50:264-330
+	android:theme
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:50:19-62
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:50:109-193
+activity#com.kaori.wakeupschedule.suda_life.SudaLifeActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:51:9-128
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:51:19-58
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:51:59-125
+meta-data#CHANNEL
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:52:9-68
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:52:43-65
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:52:20-42
+activity#com.kaori.wakeupschedule.schedule_import.LoginWebActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:53:9-69:20
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:53:92-115
+	android:configChanges
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:53:116-194
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:53:19-91
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:application/octet-stream+data:pathPattern:.*\\.wakeup_schedule
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:54:13-58:29
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:54:28-64
+action#android.intent.action.VIEW
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:55:17-69
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:55:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:56:17-76
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:56:27-73
+data
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:57:17-112
+	android:host
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:94:55-74
+	android:scheme
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:94:23-54
+	android:pathPattern
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:57:67-109
+	android:mimeType
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:57:23-66
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:text/*+data:pathPattern:.*\\.html
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:59:13-63:29
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:59:28-64
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:text/*+data:pathPattern:.*\\.csv
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:64:13-68:29
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:64:28-64
+activity#com.kaori.wakeupschedule.schedule.ScheduleActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:70:9-119
+	android:launchMode
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:70:85-116
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:70:19-84
+activity#com.kaori.wakeupschedule.course_add.AddCourseActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:71:9-174
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:71:19-59
+	android:windowSoftInputMode
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:71:129-171
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:71:60-128
+activity#com.kaori.wakeupschedule.settings.SettingsActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:72:9-126
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:72:19-57
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:72:58-123
+activity#com.kaori.wakeupschedule.settings.TimeSettingsActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:73:9-133
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:73:19-60
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:73:61-130
+receiver#com.kaori.wakeupschedule.schedule_appwidget.ScheduleAppWidget
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:74:9-79:20
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:74:19-60
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:74:138-161
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:74:61-137
+service#com.kaori.wakeupschedule.schedule_appwidget.ScheduleAppWidgetService
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:80:9-209
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:80:159-181
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:80:182-206
+	android:permission
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:80:102-158
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:80:18-101
+service#com.kaori.wakeupschedule.today_appwidget.TodayColorfulService
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:81:9-202
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:81:152-174
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:81:175-199
+	android:permission
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:81:95-151
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:81:18-94
+service#com.kaori.wakeupschedule.today_appwidget.TodayModernService
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:82:9-200
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:82:150-172
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:82:173-197
+	android:permission
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:82:93-149
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:82:18-92
+activity#com.kaori.wakeupschedule.intro.AboutActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:83:9-117
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:83:19-54
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:83:55-114
+activity#com.kaori.wakeupschedule.DonateActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:84:9-113
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:84:19-55
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:84:56-110
+activity#com.kaori.wakeupschedule.SplashActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:85:9-96:20
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:85:109-132
+	android:theme
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:85:19-53
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:85:54-108
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:86:13-89:29
+action#android.intent.action.MAIN
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:87:17-69
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:87:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:88:17-77
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:88:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:main+data:scheme:wakeupschedule
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:90:13-95:29
+category#android.intent.category.BROWSABLE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:93:17-78
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:93:27-75
+activity#com.kaori.wakeupschedule.schedule_manage.ScheduleManageActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:97:9-151
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:97:19-69
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:97:70-148
+activity#com.kaori.wakeupschedule.schedule_settings.ScheduleSettingsActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:98:9-219
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:98:19-66
+	android:configChanges
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:98:150-216
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:98:67-149
+activity#com.kaori.wakeupschedule.schedule_appwidget.WeekScheduleAppWidgetConfigActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:99:9-103:20
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:99:19-43
+	android:launchMode
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:99:163-198
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:99:139-162
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:99:44-138
+intent-filter#action:name:android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:100:13-102:29
+action#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:101:17-87
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:101:25-84
+receiver#com.kaori.wakeupschedule.today_appwidget.TodayCourseAppWidget
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:104:9-109:20
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:104:19-59
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:104:137-160
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:104:60-136
+activity#com.kaori.wakeupschedule.schedule_import.SchoolListActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:110:9-183
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:110:19-62
+	android:windowSoftInputMode
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:110:138-180
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:110:63-137
+activity#com.kaori.wakeupschedule.settings.AdvancedSettingsActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:111:9-143
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:111:19-66
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:111:67-140
+activity#com.kaori.wakeupschedule.intro.IntroYoungActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:112:9-105
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:112:19-37
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:112:38-102
+receiver#com.kaori.wakeupschedule.today_appwidget.TodayListAppWidgetMIUI
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:113:9-122:20
+	android:process
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:113:143-176
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:113:19-39
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:113:119-142
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:113:40-118
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE+action:name:miui.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:114:13-117:29
+action#miui.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:116:17-81
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:116:25-78
+meta-data#miuiWidget
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:119:13-73
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:119:50-70
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:119:24-49
+meta-data#miuiWidgetRefresh
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:120:13-84
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:120:57-81
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:120:24-56
+meta-data#miuiWidgetRefreshMinInterval
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:121:13-92
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:121:68-89
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:121:24-67
+receiver#com.kaori.wakeupschedule.today_appwidget.TodayModernAppWidgetMIUI
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:123:9-132:20
+	android:process
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:123:145-178
+	android:label
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:123:19-39
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:123:121-144
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:123:40-120
+meta-data#com.hihonor.intelligence.suggestion-kit.enableFlag
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:133:9-109
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:133:86-106
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:133:20-85
+provider#androidx.startup.InitializationProvider
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:134:9-139:20
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:24:9-32:20
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:24:9-32:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:29:9-37:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf68082f780d1697236039a20bf412fd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf68082f780d1697236039a20bf412fd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	android:authorities
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:134:99-162
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:134:74-98
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:134:19-73
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:135:13-118
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:29:13-31:52
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:135:83-115
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:135:24-82
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:136:13-111
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:34:13-36:52
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:34:13-36:52
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:136:76-108
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:136:24-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:137:13-121
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:137:86-118
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:137:24-85
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:138:13-128
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:138:93-125
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:138:24-92
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:140:9-213
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:39:9-45:35
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:39:9-45:35
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:140:94-153
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:140:154-178
+	tools:ignore
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:44:13-60
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:45:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:140:179-210
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:140:18-93
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:141:9-263
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:46:9-52:35
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:46:9-52:35
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:141:147-204
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:141:205-228
+	android:permission
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:141:90-146
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:52:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:141:229-260
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:141:18-89
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:142:9-211
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:53:9-59:35
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:53:9-59:35
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:142:87-151
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:142:152-176
+	tools:ignore
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:58:13-60
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:142:177-208
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:142:18-86
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:143:9-177
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:61:9-66:35
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:143:95-117
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:143:118-142
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:143:143-174
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:143:19-94
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:144:9-149:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:67:9-77:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:144:113-136
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:144:137-161
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:144:162-193
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:144:19-112
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:145:13-148:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:146:17-87
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:146:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:147:17-90
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:147:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:150:9-155:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:78:9-88:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:150:111-134
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:150:135-159
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:150:160-191
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:150:19-110
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:151:13-154:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:152:17-77
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:152:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:153:17-76
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:153:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:156:9-161:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:89:9-99:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:156:111-134
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:156:135-159
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:156:160-191
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:156:19-110
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:157:13-160:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:158:17-83
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:158:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:159:17-82
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:159:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:162:9-166:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:100:9-109:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:162:110-133
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:162:134-158
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:162:159-190
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:162:19-109
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:163:13-165:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:164:17-79
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:164:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:167:9-173:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:110:9-121:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:167:95-118
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:167:119-143
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:167:144-175
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:167:19-94
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:168:13-172:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:169:17-79
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:169:25-76
+action#android.intent.action.TIME_SET
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:170:17-73
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:170:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:171:17-81
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:171:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:174:9-178:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:122:9-131:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:174:106-165
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:174:166-190
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:174:191-222
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:174:19-105
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:175:13-177:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:176:17-98
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:176:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:179:9-183:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:132:9-142:20
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:179:130-152
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:179:153-176
+	android:permission
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:179:85-129
+	tools:targetApi
+		ADDED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:179:177-208
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:179:19-84
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:180:13-182:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:181:17-88
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:181:25-85
+uses-library#androidx.window.extensions
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:184:9-92
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:25:9-27:40
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:184:65-89
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:184:23-64
+uses-library#androidx.window.sidecar
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:185:9-89
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:28:9-30:40
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:185:62-86
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:185:23-61
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:186:9-138
+MERGED from [room-runtime-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a1e5a3690fbfe137433d6270d21bd9c7\transformed\room-runtime-2.6.1-recovered\AndroidManifest.xml:24:9-28:63
+MERGED from [room-runtime-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a1e5a3690fbfe137433d6270d21bd9c7\transformed\room-runtime-2.6.1-recovered\AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:186:80-104
+	tools:ignore
+		ADDED from [room-runtime-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a1e5a3690fbfe137433d6270d21bd9c7\transformed\room-runtime-2.6.1-recovered\AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:186:105-135
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:186:18-79
+service#com.huawei.agconnect.core.ServiceDiscovery
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:187:9-190:19
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:16:9-18:40
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:16:9-18:40
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:14:9-20:19
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:14:9-20:19
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:14:9-20:19
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:14:9-20:19
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:187:76-100
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:187:18-75
+meta-data#com.huawei.agconnect.crash.AGConnectCrashRegistrar
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:188:13-151
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:17:13-19:78
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:17:13-19:78
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:188:90-148
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:188:24-89
+meta-data#com.huawei.agconnect.credential.CredentialServiceRegistrar:100
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:189:13-163
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:17:13-19:78
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:17:13-19:78
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:189:102-160
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:189:24-101
+meta-data#com.huawei.hms.client.service.name:hianalytics
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:191:9-123
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:17:9-19:54
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:17:9-19:54
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:191:82-120
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:191:20-81
+meta-data#com.huawei.hms.min_api_level:hianalytics:hianalytics
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:192:9-108
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:20:9-22:33
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:20:9-22:33
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:192:88-105
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:192:20-87
+receiver#com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:193:9-197:20
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:24:9-30:20
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:24:9-30:20
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:193:94-118
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:193:19-93
+intent-filter#action:name:com.huawei.hms.analytics.pps.event
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:194:13-196:29
+action#com.huawei.hms.analytics.pps.event
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:195:17-77
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:195:25-74
+provider#com.huawei.hms.analytics.provider.AnalyticsInitializeProvider
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:198:9-201
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:32:9-35:40
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:32:9-35:40
+	android:authorities
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:198:121-198
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:198:96-120
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:198:19-95
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:199:9-212:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:199:128-150
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:199:151-174
+	android:permission
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:199:83-127
+	android:directBootAware
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:199:175-206
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:199:19-82
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:200:13-202:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:201:17-91
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:201:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:203:13-205:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:204:17-85
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:204:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:206:13-208:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:207:17-88
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:207:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:209:13-211:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:210:17-95
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:210:25-92
+provider#com.huawei.hms.aaid.InitProvider
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:213:9-182
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:10:9-14:39
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:213:92-155
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:213:67-91
+	android:initOrder
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:213:156-179
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:213:19-66
+meta-data#com.huawei.hms.client.service.name:opendevice
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:214:9-120
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:16:9-18:52
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:16:9-18:52
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:214:81-117
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:214:20-80
+meta-data#com.huawei.hms.min_api_level:opendevice:push
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:215:9-100
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:19:9-21:33
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:19:9-21:33
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:215:80-97
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:215:20-79
+meta-data#com.huawei.hms.client.service.name:base
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:216:9-108
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:15:9-17:46
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:15:9-17:46
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:216:75-105
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:216:20-74
+meta-data#com.huawei.hms.min_api_level:base:hmscore
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:217:9-97
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:20:9-22:33
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:20:9-22:33
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:217:77-94
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:217:20-76
+meta-data#availableLoaded
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:218:9-73
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:17:9-19:35
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:17:9-19:35
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:218:51-70
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:218:20-50
+provider#com.huawei.agconnect.core.provider.AGConnectInitializeProvider
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:219:9-193
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:11:9-14:40
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:11:9-14:40
+	android:authorities
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:219:122-190
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:219:97-121
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:219:19-96
+activity#com.huawei.hms.activity.BridgeActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:9-222:20
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:10:9-21:20
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:10:9-21:20
+	android:screenOrientation
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:172-206
+	android:excludeFromRecents
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:138-171
+	android:hardwareAccelerated
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:364-398
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:113-137
+	android:configChanges
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:207-325
+		REJECTED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:12:13-131
+	android:theme
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:19-58
+	tools:replace
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:326-363
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:220:59-112
+meta-data#hwc-theme
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:221:13-109
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:18:13-20:77
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:18:13-20:77
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:221:49-106
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:221:24-48
+activity#com.huawei.hms.activity.EnableServiceActivity
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:223:9-239
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:22:9-26:20
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:22:9-26:20
+	android:exported
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:223:80-104
+	android:configChanges
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:223:105-198
+		REJECTED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:24:13-106
+	tools:replace
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:223:199-236
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:223:19-79
+meta-data#com.huawei.hms.client.appid
+ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:224:9-97
+	android:value
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:224:63-94
+	android:name
+		ADDED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml:224:20-62
+uses-sdk
+INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml
+INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml
+MERGED from [recyclerview-1.2.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b3e220dd79bfe1cf572cbda4799a3334\transformed\recyclerview-1.2.1-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [recyclerview-1.2.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b3e220dd79bfe1cf572cbda4799a3334\transformed\recyclerview-1.2.1-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [coordinatorlayout-1.1.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\97a3ecabb6411d4316bdca30b4baa912\transformed\coordinatorlayout-1.1.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [coordinatorlayout-1.1.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\97a3ecabb6411d4316bdca30b4baa912\transformed\coordinatorlayout-1.1.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [material-1.10.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\cede14483d7972181d09d6e166048218\transformed\material-1.10.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [material-1.10.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\cede14483d7972181d09d6e166048218\transformed\material-1.10.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [viewpager2-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9af5c2039f9c47f1f57eb50efe0f9cce\transformed\viewpager2-1.0.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [viewpager2-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9af5c2039f9c47f1f57eb50efe0f9cce\transformed\viewpager2-1.0.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:6:5-8:41
+MERGED from [agconnect-core-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\eb7ec2f75b0cb7be51d4c8278b77c9b9\transformed\agconnect-core-1.9.1.300-recovered\AndroidManifest.xml:6:5-8:41
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:7:5-9:41
+MERGED from [agconnect-credential-1.9.1.300-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de2e89480ca63fcc8bd3c274e98ca89f\transformed\agconnect-credential-1.9.1.300-recovered\AndroidManifest.xml:7:5-9:41
+MERGED from [appcompat-1.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2355583e80e7c129504f2b0cfe0040fe\transformed\appcompat-1.6.1-recovered\AndroidManifest.xml:20:5-44
+MERGED from [appcompat-1.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2355583e80e7c129504f2b0cfe0040fe\transformed\appcompat-1.6.1-recovered\AndroidManifest.xml:20:5-44
+MERGED from [cardview-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9498c98895401e5d2b36ca592cb2edd4\transformed\cardview-1.0.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [cardview-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9498c98895401e5d2b36ca592cb2edd4\transformed\cardview-1.0.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [customview-1.1.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b577a47ab17071d2777827c70faa6199\transformed\customview-1.1.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [customview-1.1.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b577a47ab17071d2777827c70faa6199\transformed\customview-1.1.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [drawerlayout-1.1.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8c2060fc76c6e696db0b12fef82fd01e\transformed\drawerlayout-1.1.1-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [drawerlayout-1.1.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8c2060fc76c6e696db0b12fef82fd01e\transformed\drawerlayout-1.1.1-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:21:5-44
+MERGED from [emoji2-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c652471c67caaaa111767db95f67a91b\transformed\emoji2-1.2.0-recovered\AndroidManifest.xml:21:5-44
+MERGED from [fragment-1.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9e4d0c0b79225ec8adabb04104dca041\transformed\fragment-1.6.2-recovered\AndroidManifest.xml:20:5-44
+MERGED from [fragment-1.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9e4d0c0b79225ec8adabb04104dca041\transformed\fragment-1.6.2-recovered\AndroidManifest.xml:20:5-44
+MERGED from [glide-4.16.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\06d1510ef7b632a86a865d1be233c0bd\transformed\glide-4.16.0-recovered\AndroidManifest.xml:5:5-7:41
+MERGED from [glide-4.16.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\06d1510ef7b632a86a865d1be233c0bd\transformed\glide-4.16.0-recovered\AndroidManifest.xml:5:5-7:41
+MERGED from [lifecycle-livedata-core-2.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f4f129d73bec60e118c21b90f7c3ab5f\transformed\lifecycle-livedata-core-2.6.2-recovered\AndroidManifest.xml:20:5-44
+MERGED from [lifecycle-livedata-core-2.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f4f129d73bec60e118c21b90f7c3ab5f\transformed\lifecycle-livedata-core-2.6.2-recovered\AndroidManifest.xml:20:5-44
+MERGED from [lifecycle-viewmodel-savedstate-2.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8944d6520b5c1e8cf2771e423038acc3\transformed\lifecycle-viewmodel-savedstate-2.6.2-recovered\AndroidManifest.xml:20:5-44
+MERGED from [lifecycle-viewmodel-savedstate-2.6.2-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8944d6520b5c1e8cf2771e423038acc3\transformed\lifecycle-viewmodel-savedstate-2.6.2-recovered\AndroidManifest.xml:20:5-44
+MERGED from [media-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5b13b6ad8be2ab811d485c4a5613fa85\transformed\media-1.0.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [media-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5b13b6ad8be2ab811d485c4a5613fa85\transformed\media-1.0.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [navigation-common-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0d8795fe032581f72cd4ea9055977370\transformed\navigation-common-2.7.7-recovered\AndroidManifest.xml:20:5-44
+MERGED from [navigation-common-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0d8795fe032581f72cd4ea9055977370\transformed\navigation-common-2.7.7-recovered\AndroidManifest.xml:20:5-44
+MERGED from [navigation-fragment-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\56ded0049257dedad903b2363475135c\transformed\navigation-fragment-2.7.7-recovered\AndroidManifest.xml:20:5-44
+MERGED from [navigation-fragment-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\56ded0049257dedad903b2363475135c\transformed\navigation-fragment-2.7.7-recovered\AndroidManifest.xml:20:5-44
+MERGED from [navigation-runtime-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5f284ae84ec3a958262be08a0d3298f2\transformed\navigation-runtime-2.7.7-recovered\AndroidManifest.xml:20:5-44
+MERGED from [navigation-runtime-2.7.7-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5f284ae84ec3a958262be08a0d3298f2\transformed\navigation-runtime-2.7.7-recovered\AndroidManifest.xml:20:5-44
+MERGED from [room-ktx-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e9a494d4419a9f8b8b785b0b52396f93\transformed\room-ktx-2.6.1-recovered\AndroidManifest.xml:20:5-44
+MERGED from [room-ktx-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e9a494d4419a9f8b8b785b0b52396f93\transformed\room-ktx-2.6.1-recovered\AndroidManifest.xml:20:5-44
+MERGED from [room-runtime-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a1e5a3690fbfe137433d6270d21bd9c7\transformed\room-runtime-2.6.1-recovered\AndroidManifest.xml:21:5-44
+MERGED from [room-runtime-2.6.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a1e5a3690fbfe137433d6270d21bd9c7\transformed\room-runtime-2.6.1-recovered\AndroidManifest.xml:21:5-44
+MERGED from [savedstate-1.2.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\65c6b3e91e49943990f05bd43fe5c4df\transformed\savedstate-1.2.1-recovered\AndroidManifest.xml:20:5-44
+MERGED from [savedstate-1.2.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\65c6b3e91e49943990f05bd43fe5c4df\transformed\savedstate-1.2.1-recovered\AndroidManifest.xml:20:5-44
+MERGED from [security-base-1.2.0.306-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a9ee477b5e3816956922a8512f727848\transformed\security-base-1.2.0.306-recovered\AndroidManifest.xml:7:5-43
+MERGED from [security-base-1.2.0.306-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a9ee477b5e3816956922a8512f727848\transformed\security-base-1.2.0.306-recovered\AndroidManifest.xml:7:5-43
+MERGED from [slidingpanelayout-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\3f71272f2391e86edffaa3425ee19aca\transformed\slidingpanelayout-1.2.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [slidingpanelayout-1.2.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\3f71272f2391e86edffaa3425ee19aca\transformed\slidingpanelayout-1.2.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [sqlite-framework-2.4.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\fb9549a4b42792506fc0aa935c5d668e\transformed\sqlite-framework-2.4.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [sqlite-framework-2.4.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\fb9549a4b42792506fc0aa935c5d668e\transformed\sqlite-framework-2.4.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [swiperefreshlayout-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\84228c13d8a3fdbe90a3ac33d503c5e3\transformed\swiperefreshlayout-1.0.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [swiperefreshlayout-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\84228c13d8a3fdbe90a3ac33d503c5e3\transformed\swiperefreshlayout-1.0.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [transition-1.4.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\293661a7bfccc46f1dba197897831955\transformed\transition-1.4.1-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [transition-1.4.1-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\293661a7bfccc46f1dba197897831955\transformed\transition-1.4.1-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [viewpager-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c0df7ef6856fc0205077fe20b005c8be\transformed\viewpager-1.0.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [viewpager-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c0df7ef6856fc0205077fe20b005c8be\transformed\viewpager-1.0.0-recovered\AndroidManifest.xml:20:5-44
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [window-1.0.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c067cd73622e020fa5d3195bd0a89e4e\transformed\window-1.0.0-recovered\AndroidManifest.xml:20:5-22:41
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:21:5-44
+MERGED from [work-runtime-2.9.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60ee5ad6b9ec81d55f7fb310a39edc6f\transformed\work-runtime-2.9.0-recovered\AndroidManifest.xml:21:5-44
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.4] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9db397dfac5bf306a4c24ade9d02ecea\transformed\android-database-sqlcipher-4.5.4\AndroidManifest.xml:5:5-7:41
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.4] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9db397dfac5bf306a4c24ade9d02ecea\transformed\android-database-sqlcipher-4.5.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e197d4d625e9ed71b7ac4981e456de28\transformed\navigation-ui-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e197d4d625e9ed71b7ac4981e456de28\transformed\navigation-ui-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\db994919d98a9be859a6bc674f9fab13\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\db994919d98a9be859a6bc674f9fab13\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e7af324e08b448d100300324c5e60b28\transformed\navigation-fragment-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e7af324e08b448d100300324c5e60b28\transformed\navigation-fragment-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\598bacfc9e8f64f936fb6f4005663a8d\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\598bacfc9e8f64f936fb6f4005663a8d\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8848008137164aa627de0e58cdcfe20\transformed\navigation-ui-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8848008137164aa627de0e58cdcfe20\transformed\navigation-ui-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f3d94e4ecd6931cd64fb4f3253fec18a\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f3d94e4ecd6931cd64fb4f3253fec18a\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf2e4ce15c257dcba5460e0a0b13539c\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf2e4ce15c257dcba5460e0a0b13539c\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\73764b0b2f9af6d6c87fd2ffb1df86e6\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\73764b0b2f9af6d6c87fd2ffb1df86e6\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b0ab4238e70a5a45e3d29f1bb3b9686f\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b0ab4238e70a5a45e3d29f1bb3b9686f\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\dd78eb2dd1432e6c023a1debddf9538c\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\dd78eb2dd1432e6c023a1debddf9538c\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\df53e4fbae357c43606e6ef2fa9c7513\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\df53e4fbae357c43606e6ef2fa9c7513\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a36b07e516b029b8f9d7d8330d32e038\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a36b07e516b029b8f9d7d8330d32e038\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d929cbcd1c362b75a3346f609bdf761d\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d929cbcd1c362b75a3346f609bdf761d\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bd8e56582a2140f161907d6a3adc1ae1\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bd8e56582a2140f161907d6a3adc1ae1\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d657a4b8892f5244c8f284df625ed905\transformed\lifecycle-service-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d657a4b8892f5244c8f284df625ed905\transformed\lifecycle-service-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\43b548080e4852902b5307ea9433f038\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\43b548080e4852902b5307ea9433f038\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ab328476da62ed817f4a2d65d6b8be35\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ab328476da62ed817f4a2d65d6b8be35\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\20e3fb6a92d5832f21bfede083a933bb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5e98b0b8fdbf306c4a09a9eee96caf96\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5e98b0b8fdbf306c4a09a9eee96caf96\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ec7b95f20b087151bff18ae30d9fdf11\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ec7b95f20b087151bff18ae30d9fdf11\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7536338b08693052f0c8078d5ae1d27e\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7536338b08693052f0c8078d5ae1d27e\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a6ff8ceb28c42bbb0e63318389fe3fca\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a6ff8ceb28c42bbb0e63318389fe3fca\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5e46f8cf329aa2f70d2896591e8c6548\transformed\core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5e46f8cf329aa2f70d2896591e8c6548\transformed\core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d0522b6ea6da84c1bac2842c7d1a8e63\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d0522b6ea6da84c1bac2842c7d1a8e63\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7279e1c4e0c08260f689ccb39c15ab44\transformed\viewbinding-8.2.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7279e1c4e0c08260f689ccb39c15ab44\transformed\viewbinding-8.2.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\cc0ae75ecaab3fa4125266954a823831\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\cc0ae75ecaab3fa4125266954a823831\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2836946e16450e237ae58665bedd565e\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2836946e16450e237ae58665bedd565e\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d90f0e2fceecf8640f52e3d9633b5b7e\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d90f0e2fceecf8640f52e3d9633b5b7e\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\4a1fea7a06e1bd90b85fae109dda1e99\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\4a1fea7a06e1bd90b85fae109dda1e99\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7d1b96a1aed98113b8b6909f8ef82eab\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7d1b96a1aed98113b8b6909f8ef82eab\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e5b2c7de2b10b256b8e57b61cb52f198\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e5b2c7de2b10b256b8e57b61cb52f198\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6b5ed61b9ffc46e8e15137ab878da3ee\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6b5ed61b9ffc46e8e15137ab878da3ee\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d839eab96445f61bf6839ff82c54f9c4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e82857dc44a3aea2047929ce1241bc7d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e82857dc44a3aea2047929ce1241bc7d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d315325bb0724d0cab8ef07f9950641a\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d315325bb0724d0cab8ef07f9950641a\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf68082f780d1697236039a20bf412fd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bf68082f780d1697236039a20bf412fd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b042e103b4e514d45472381599e8555e\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b042e103b4e514d45472381599e8555e\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\4aa2f8b86a92a6d03d0cea5dca228e31\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\4aa2f8b86a92a6d03d0cea5dca228e31\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8adb8949ab73bb1e9d2032ed328360b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8adb8949ab73bb1e9d2032ed328360b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c53025f12bae5eeeb58381b71f1f744e\transformed\work-runtime-ktx-2.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c53025f12bae5eeeb58381b71f1f744e\transformed\work-runtime-ktx-2.9.0\AndroidManifest.xml:20:5-44
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.agconnect:agconnect-crash:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0b251aa16fcb753354839d8f09486a84\transformed\agconnect-crash-1.9.1.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:hianalytics:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\26844d987719eda252cbe9f7eb457de7\transformed\hianalytics-6.10.0.302\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:opendevice:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\29214e757d724fecd9ec6c0a8d20aaf1\transformed\opendevice-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:base:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a715692695d07980458657ca9cc81a51\transformed\base-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:availableupdate:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\de807d9ed43440f09398a0c506fa22f8\transformed\availableupdate-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:baselegacyapi:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d1fc6481c78ce0909e43b0aba2c7f785\transformed\baselegacyapi-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:baselegacyapi:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d1fc6481c78ce0909e43b0aba2c7f785\transformed\baselegacyapi-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:device:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\418c2ce772ab7963b54da9fd0e4fdd2e\transformed\device-6.7.0.300\AndroidManifest.xml:6:5-9:61
+MERGED from [com.huawei.hms:device:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\418c2ce772ab7963b54da9fd0e4fdd2e\transformed\device-6.7.0.300\AndroidManifest.xml:6:5-9:61
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:stats:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8e54634bc7f5be5d6e029eab8aa1c562\transformed\stats-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:hatool:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ea4f67d0d3507ad720260563a9cd1bde\transformed\hatool-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:hatool:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ea4f67d0d3507ad720260563a9cd1bde\transformed\hatool-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:ui:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\611808beebe9fe1d2b1136e0a4cd4894\transformed\ui-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:log:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f605631f3d4f59a09fecc839a797c3b7\transformed\log-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:log:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f605631f3d4f59a09fecc839a797c3b7\transformed\log-6.7.0.300\AndroidManifest.xml:5:5-7:41
+MERGED from [com.huawei.hms:network-grs:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a595025fbd4ea39f6bf39896a7d4f550\transformed\network-grs-6.0.2.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:network-grs:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a595025fbd4ea39f6bf39896a7d4f550\transformed\network-grs-6.0.2.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:network-framework-compat:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7e104d29f8ede456b93b73847abf8867\transformed\network-framework-compat-6.0.2.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:network-framework-compat:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7e104d29f8ede456b93b73847abf8867\transformed\network-framework-compat-6.0.2.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:network-common:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\177da8e75b3829569b73c4d754f4100a\transformed\network-common-6.0.2.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:network-common:6.0.2.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\177da8e75b3829569b73c4d754f4100a\transformed\network-common-6.0.2.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.agconnect:agconnect-https:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\68ff98937b61cc78ef844a7377fbd54f\transformed\agconnect-https-1.9.1.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.agconnect:agconnect-https:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\68ff98937b61cc78ef844a7377fbd54f\transformed\agconnect-https-1.9.1.300\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.agconnect:datastore-core:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\85fc4caffe2a8e9396696fd3865ec865\transformed\datastore-core-1.9.1.300\AndroidManifest.xml:6:5-8:41
+MERGED from [com.huawei.agconnect:datastore-core:1.9.1.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\85fc4caffe2a8e9396696fd3865ec865\transformed\datastore-core-1.9.1.300\AndroidManifest.xml:6:5-8:41
+MERGED from [com.huawei.android.hms:security-ssl:1.2.0.308] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\fb25c9f61c35851193c998a6d5b7b52a\transformed\security-ssl-1.2.0.308\AndroidManifest.xml:7:5-43
+MERGED from [com.huawei.android.hms:security-ssl:1.2.0.308] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\fb25c9f61c35851193c998a6d5b7b52a\transformed\security-ssl-1.2.0.308\AndroidManifest.xml:7:5-43
+MERGED from [com.huawei.android.hms:security-encrypt:1.2.0.308] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2aae6c945faa8be4f4966b6345a34b2d\transformed\security-encrypt-1.2.0.308\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.android.hms:security-encrypt:1.2.0.308] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2aae6c945faa8be4f4966b6345a34b2d\transformed\security-encrypt-1.2.0.308\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:hianalytics-framework:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a21aa3fef8760a6640ef9c0b38a2bb47\transformed\hianalytics-framework-6.10.0.302\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:hianalytics-framework:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a21aa3fef8760a6640ef9c0b38a2bb47\transformed\hianalytics-framework-6.10.0.302\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:hianalytics-core:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\91a477b3776efd3e2cade051b2d55fc0\transformed\hianalytics-core-6.10.0.302\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:hianalytics-core:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\91a477b3776efd3e2cade051b2d55fc0\transformed\hianalytics-core-6.10.0.302\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:hianalytics-element:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\94fd2017101e42500129f310e86f994b\transformed\hianalytics-element-6.10.0.302\AndroidManifest.xml:7:5-9:41
+MERGED from [com.huawei.hms:hianalytics-element:6.10.0.302] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\94fd2017101e42500129f310e86f994b\transformed\hianalytics-element-6.10.0.302\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.huawei.hms:device:6.7.0.300] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\418c2ce772ab7963b54da9fd0e4fdd2e\transformed\device-6.7.0.300\AndroidManifest.xml:9:9-58
+	android:targetSdkVersion
+		INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Download\AndroidStudioProjects\WakeUP\app\src\main\AndroidManifest.xml
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:22:5-24:47
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+MERGED from [core-1.12.0-recovered.aar] C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5c7108ebc4052af718ac476626e8be63\transformed\core-1.12.0-recovered\AndroidManifest.xml:26:5-97

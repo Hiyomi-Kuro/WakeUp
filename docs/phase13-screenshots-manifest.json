@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-27",
+  "screenshots": [
+    {
+      "file": "phase13-baseline-coldstart1.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-bottomsheet-coldstart1-t1000ms.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-bottomsheet-coldstart1-t100ms.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-bottomsheet-coldstart1-t15000ms.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-bottomsheet-coldstart1-t2000ms.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-bottomsheet-coldstart1-t5000ms.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-bottomsheet-coldstart1-t500ms.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-cascade-date-after-5s.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-coldstart3-display19.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    },
+    {
+      "file": "phase13-target-before-interactions.png",
+      "bytes": 85550,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "6C154451EBFF3976E4FA6BB92F5B0C9C3D47FCAA0B462D32D1DBBBF5D7E88516"
+    }
+  ]
+}

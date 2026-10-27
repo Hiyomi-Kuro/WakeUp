@@ -1,0 +1,58 @@
+public class com.huawei.agconnect.credential.obs.ah {
+  private final com.huawei.agconnect.credential.obs.af a;
+    descriptor: Lcom/huawei/agconnect/credential/obs/af;
+  private java.lang.Boolean b;
+    descriptor: Ljava/lang/Boolean;
+  private okhttp3.OkHttpClient c;
+    descriptor: Lokhttp3/OkHttpClient;
+  public com.huawei.agconnect.credential.obs.ah(android.content.Context, com.huawei.agconnect.credential.obs.af);
+    descriptor: (Landroid/content/Context;Lcom/huawei/agconnect/credential/obs/af;)V
+
+  private void a(android.content.Context);
+    descriptor: (Landroid/content/Context;)V
+
+  public okhttp3.OkHttpClient a();
+    descriptor: ()Lokhttp3/OkHttpClient;
+
+  public com.huawei.agconnect.credential.obs.af b();
+    descriptor: ()Lcom/huawei/agconnect/credential/obs/af;
+
+  public java.lang.Boolean c();
+    descriptor: ()Ljava/lang/Boolean;
+
+  static com.huawei.agconnect.credential.obs.af a(com.huawei.agconnect.credential.obs.ah);
+    descriptor: (Lcom/huawei/agconnect/credential/obs/ah;)Lcom/huawei/agconnect/credential/obs/af;
+
+  static java.lang.Boolean b(com.huawei.agconnect.credential.obs.ah);
+    descriptor: (Lcom/huawei/agconnect/credential/obs/ah;)Ljava/lang/Boolean;
+
+  static java.lang.Boolean a(com.huawei.agconnect.credential.obs.ah, java.lang.Boolean);
+    descriptor: (Lcom/huawei/agconnect/credential/obs/ah;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+}
+final class com.huawei.agconnect.credential.obs.ai implements okhttp3.Interceptor {
+  private static final java.lang.String a;
+    descriptor: Ljava/lang/String;
+  private java.util.List<com.huawei.agconnect.credential.obs.af> b;
+    descriptor: Ljava/util/List;
+  public com.huawei.agconnect.credential.obs.ai(com.huawei.agconnect.common.api.BackendService$Options);
+    descriptor: (Lcom/huawei/agconnect/common/api/BackendService$Options;)V
+
+  public com.huawei.agconnect.credential.obs.ai(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)V
+
+  public okhttp3.Response intercept(okhttp3.Interceptor$Chain);
+    descriptor: (Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
+
+  private okhttp3.Response a(okhttp3.Interceptor$Chain, java.lang.String);
+    descriptor: (Lokhttp3/Interceptor$Chain;Ljava/lang/String;)Lokhttp3/Response;
+}
+public class com.huawei.agconnect.common.api.Client {
+  public com.huawei.agconnect.common.api.Client();
+    descriptor: ()V
+
+  public static okhttp3.OkHttpClient build(android.content.Context, java.util.List<okhttp3.Interceptor>);
+    descriptor: (Landroid/content/Context;Ljava/util/List;)Lokhttp3/OkHttpClient;
+
+  public static okhttp3.OkHttpClient build(android.content.Context, java.util.List<okhttp3.Interceptor>, boolean);
+    descriptor: (Landroid/content/Context;Ljava/util/List;Z)Lokhttp3/OkHttpClient;
+}

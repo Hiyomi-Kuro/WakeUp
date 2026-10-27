@@ -1,0 +1,6 @@
+gradle.projectsEvaluated {
+    def app = gradle.rootProject.findProject(':app')
+    def resources = app.android.sourceSets.getByName('main').res
+    resources.exclude('values/attrs.xml')
+    println "PROBE app resource excludes: ${resources.excludes}"
+}

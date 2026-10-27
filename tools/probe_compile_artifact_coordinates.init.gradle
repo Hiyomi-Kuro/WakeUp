@@ -1,0 +1,18 @@
+gradle.projectsEvaluated {
+    def app = gradle.rootProject.findProject(':app')
+    def configuration = app.configurations.getByName('debugCompileClasspath')
+    def wantedGroups = [
+        'androidx.appcompat', 'androidx.lifecycle', 'androidx.recyclerview',
+        'androidx.room', 'androidx.sqlite', 'androidx.versionedparcelable',
+        'androidx.window', 'androidx.work', 'com.google.android.material',
+        'com.huawei.agconnect', 'org.jetbrains.kotlin', 'org.jetbrains.kotlinx'
+    ]
+    println 'RESOLVED COMPILE ARTIFACT COORDINATES'
+    configuration.incoming.artifacts.artifacts.each { artifact ->
+        def coordinate = artifact.id.componentIdentifier.displayName
+        if (wantedGroups.any { coordinate.startsWith(it + ':') }) {
+            def fileName = artifact.file.name
+            println("${fileName}\t${artifact.id.componentIdentifier.displayName}\t${artifact.file.absolutePath}")
+        }
+    }
+}

@@ -1,0 +1,33 @@
+gradle.projectsEvaluated {
+    def app = gradle.rootProject.findProject(':app')
+    def compileTask = app.tasks.named('compileDebugJavaWithJavac').get()
+    def targetEntries = [
+        'kotlinx/coroutines/channels/ProduceKt$awaitClose$1.class',
+        'kotlinx/coroutines/flow/internal/CombineKt$combineInternal$2$1$1$emit$1.class',
+        'kotlinx/coroutines/flow/DistinctFlowImpl$collect$2$emit$1.class'
+    ]
+    def output = []
+    def classpath = compileTask.classpath.files
+    output << "CLASSPATH_ENTRIES=${classpath.size()}"
+    output << "CLASSPATH_DIRECTORIES=${classpath.findAll { it.isDirectory() }.collect { it.absolutePath }}"
+    new File(gradle.rootProject.projectDir, 'docs/javac-classpath-probe.txt').text =
+        classpath.collect { it.absolutePath }.join(System.lineSeparator()) + System.lineSeparator()
+    classpath.each { file ->
+        if (!file.isFile() || !file.name.endsWith('.jar')) return
+        def zip = new java.util.zip.ZipFile(file)
+        try {
+            def found = targetEntries.findAll { zip.getEntry(it) != null }
+            if (found || file.name.toLowerCase().contains('coroutine')) {
+                output << "JAR=${file.absolutePath} TARGETS=${found.join(',')}"
+            }
+        } finally {
+            zip.close()
+        }
+    }
+    output << "SOURCE_FILES=${compileTask.source.files.size()}"
+    output << "TARGET_SOURCES=${compileTask.source.files.findAll { source -> targetEntries.any { source.name == it.substring(it.lastIndexOf('/') + 1).replace('.class', '.java') } }.collect { it.absolutePath }}"
+    output << "SOURCEPATH=${compileTask.options.sourcepath}"
+    output << "COMPILER_ARGS=${compileTask.options.compilerArgs}"
+    println 'PROBE JAVAC DETAILS'
+    output.each { println it }
+}

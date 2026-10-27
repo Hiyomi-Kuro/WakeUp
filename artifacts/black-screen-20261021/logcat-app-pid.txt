@@ -1,0 +1,300 @@
+10-21 08:20:31.901 14288 14344 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_analyticsKit.json, sucess.
+10-21 08:20:31.902 14288 14344 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_opendevicesdk.json, sucess.
+10-21 08:20:31.903 14288 14352 I HMSSDK_HMSPackageManager: enter asyncOnceCheckMDMState
+10-21 08:20:31.903 14288 14344 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_opensdkService.json, sucess.
+10-21 08:20:31.904 14288 14344 I NetworkKit_GrsRequestInfo: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.g.k.c|e|75|post service list is:{"services":["com.huawei.hms.opendevicesdk","com.huawei.cloud.opensdkhianalytics","com.huawei.cloud.hms.analytics"]}
+10-21 08:20:31.904 14288 14344 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.c$a|call|294|postList is:{*s*r*i*e*"*[*c*m*h*a*e*.*m*.*p*n*e*i*e*d*"*"*o*.*u*w*i*c*o*d*o*e*s*k*i*n*l*t*c*"*"*o*.*u*w*i*c*o*d*h*s*a*a*y*i*s*]*
+10-21 08:20:31.904 14288 14344 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.c$a|call|324|currentServices:{*s*r*i*e*"*[*c*m*h*a*e*.*m*.*p*n*e*i*e*d*"*"*o*.*u*w*i*c*o*d*o*e*s*k*i*n*l*t*c*"*"*o*.*u*w*i*c*o*d*h*s*a*a*y*i*s*]*
+10-21 08:20:31.904 14288 14344 I NetworkKit_PLSharedPreferences: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|PLSharedPreferences.java|com.huawei.hms.framework.common.PLSharedPreferences|getAll|234|sp size 4
+10-21 08:20:31.905 14288 14341 I NetworkKit_e: AsyncTask #1|null|com.huawei.hms.framework.network.grs.h.e|a|30|isSpExpire false.
+10-21 08:20:31.905 14288 14341 I NetworkKit_a: AsyncTask #1|null|com.huawei.hms.framework.network.grs.a|a|20|GrsClientManager.getUrlsLocal: Get URL from GRS Server Cache
+10-21 08:20:31.905 14288 14341 I NetworkKit_a: AsyncTask #1|null|com.huawei.hms.framework.network.grs.a|a|66|GrsClientManager.ayncGetGrsUrl：Return [com.huawei.cloud.opensdkhianalytics][ROOTV2] Url: h*t*s*/*m*t*i*s*-*r*n*d*.*b*n*c*o*d*c*:*4*
+10-21 08:20:31.912 14288 14354 D libEGL  : loaded /system/lib64/egl/libEGL_emulation.so
+10-21 08:20:31.912 14288 14341 I HMSSDK_HMSBIInitializer: BI URL acquired successfully
+10-21 08:20:31.917 14288 14354 D .wakeupschedul: Features: 0 0 0
+10-21 08:20:31.917 14288 14354 E .wakeupschedul: vulkan version is 4211003
+10-21 08:20:31.920 14288 14354 D libEGL  : loaded /system/lib64/egl/libGLESv1_CM_emulation.so
+10-21 08:20:31.921 14288 14354 D libEGL  : loaded /system/lib64/egl/libGLESv2_emulation.so
+10-21 08:20:31.924 14288 14339 I SecurityComp10200303: SecureX509SingleInstance: get assets bks
+10-21 08:20:31.931 14288 14354 E GraphicsEnv: Failed to get gpu service
+10-21 08:20:31.936 14288 14288 W .wakeupschedul: Accessing hidden field Landroid/app/Activity;->mReferrer:Ljava/lang/String; (unsupported, reflection, allowed)
+10-21 08:20:31.957 14288 14288 W .wakeupschedul: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+10-21 08:20:31.957 14288 14288 W .wakeupschedul: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+10-21 08:20:31.958 14288 14288 I [AGC_LOG]AGConnectCrashRegistrar: upload appErrorLaunch
+10-21 08:20:31.985 14288 14288 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:31.986 14288 14288 I [AGC_LOG]HaConnector: init HiAnalyticsBridge SDK end.
+10-21 08:20:31.998 14288 14349 D .wakeupschedul: Features: 0 0 0
+10-21 08:20:31.998 14288 14349 E .wakeupschedul: vulkan version is 4211003
+10-21 08:20:32.000 14288 14349 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-21 08:20:32.000 14288 14349 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.configstore@1.0::ISurfaceFlingerConfigs instance: default
+10-21 08:20:32.001 14288 14349 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-21 08:20:32.008 14288 14349 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+10-21 08:20:32.008 14288 14349 I Gralloc4: mapper 4.x is not supported
+10-21 08:20:32.008 14288 14349 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+10-21 08:20:32.008 14288 14349 W Gralloc3: mapper 3.x is not supported
+10-21 08:20:32.008 14288 14349 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+10-21 08:20:32.009 14288 14349 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@4.0::IAllocator instance: default
+10-21 08:20:32.009 14288 14349 W Gralloc4: allocator 4.x is not supported
+10-21 08:20:32.009 14288 14349 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@3.0::IAllocator instance: default
+10-21 08:20:32.009 14288 14349 W Gralloc3: allocator 3.x is not supported
+10-21 08:20:32.009 14288 14349 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@2.0::IAllocator instance: default
+10-21 08:20:32.009 14288 14349 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 08:20:32.022 14288 14378 D .wakeupschedul: Features: 0 0 0
+10-21 08:20:32.022 14288 14378 E .wakeupschedul: vulkan version is 4211003
+10-21 08:20:32.023 14288 14378 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 08:20:32.027 14288 14378 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 08:20:32.040 14288 14288 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:32.040 14288 14288 I [AGC_LOG]HaBridge: init HiAnalyticsBridge SDK end.
+10-21 08:20:32.055 14288 14339 I SecurityComp10200303: EncryptUtil: setBouncycastleFlag: false
+10-21 08:20:32.059 14288 14384 I HMSSDK_o: secretKeyCache not empty.
+10-21 08:20:32.060 14288 14384 I HMSSDK_o: The local secret is already in separate file mode.
+10-21 08:20:32.061 14288 14384 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-21 08:20:32.062 14288 14384 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-21 08:20:32.063 14288 14384 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-21 08:20:32.063 14288 14384 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-21 08:20:32.064 14288 14384 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-21 08:20:32.065 14288 14384 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-21 08:20:32.067 14288 14384 I SecurityComp10200303: GCMKS: load key
+10-21 08:20:32.073 14288 14387 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-21 08:20:32.074 14288 14387 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-21 08:20:32.075 14288 14387 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-21 08:20:32.076 14288 14387 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-21 08:20:32.076 14288 14387 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-21 08:20:32.076 14288 14387 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-21 08:20:32.077 14288 14387 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-21 08:20:32.078 14288 14387 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-21 08:20:32.080 14288 14387 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-21 08:20:32.080 14288 14387 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-21 08:20:32.081 14288 14387 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-21 08:20:32.081 14288 14387 I HMSSDK_HuaweiMobileServicesUtil: hmsPackageName is com.huawei.hwid
+10-21 08:20:32.082 14288 14387 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-21 08:20:32.083 14288 14387 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-21 08:20:32.084 14288 14387 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-21 08:20:32.084 14288 14387 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-21 08:20:32.084 14288 14387 I HMSSDK_HuaweiMobileServicesUtil: HMS is not installed
+10-21 08:20:32.085 14288 14384 I HMSSDK_o: secretKeyCache not empty.
+10-21 08:20:32.086 14288 14384 I HMSSDK_o: The local secret is already in separate file mode.
+10-21 08:20:32.087 14288 14384 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-21 08:20:32.087 14288 14384 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-21 08:20:32.088 14288 14384 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-21 08:20:32.088 14288 14384 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-21 08:20:32.088 14288 14384 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-21 08:20:32.089 14288 14384 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-21 08:20:32.143 14288 14288 W .wakeupschedul: Accessing hidden method Ljava/lang/invoke/MethodHandles$Lookup;-><init>(Ljava/lang/Class;I)V (unsupported, reflection, allowed)
+10-21 08:20:32.150 14288 14288 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (unsupported,core-platform-api, reflection, allowed)
+10-21 08:20:32.150 14288 14288 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (unsupported,core-platform-api, reflection, allowed)
+10-21 08:20:32.150 14288 14288 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (unsupported,core-platform-api, reflection, allowed)
+10-21 08:20:32.180 14288 14384 I HMSSDK_o: secretKeyCache not empty.
+10-21 08:20:32.181 14288 14384 I HMSSDK_o: The local secret is already in separate file mode.
+10-21 08:20:32.182 14288 14384 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-21 08:20:32.182 14288 14384 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-21 08:20:32.183 14288 14384 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-21 08:20:32.183 14288 14384 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-21 08:20:32.184 14288 14384 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-21 08:20:32.184 14288 14384 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-21 08:20:32.246 14288 14349 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 08:20:32.263 14288 14410 D .wakeupschedul: Features: 0 0 0
+10-21 08:20:32.263 14288 14410 E .wakeupschedul: vulkan version is 4211003
+10-21 08:20:32.264 14288 14410 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 08:20:32.266 14288 14410 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-21 08:20:32.279 14288 14299 I .wakeupschedul: JIT allocated 82KB for compiled code of void OooOOo0.o000oOoO.OoooO()
+10-21 08:20:32.280 14288 14299 I .wakeupschedul: Compiler allocated 14MB to compile void OooOOo0.o000oOoO.OoooO()
+10-21 08:20:32.399 14288 14299 I .wakeupschedul: JIT allocated 208KB for compiled code of void OooOOo0.o000oOoO.OoooO()
+10-21 08:20:32.399 14288 14299 I .wakeupschedul: JIT allocated 75KB for stack maps of void OooOOo0.o000oOoO.OoooO()
+10-21 08:20:32.400 14288 14299 I .wakeupschedul: Compiler allocated 16MB to compile void OooOOo0.o000oOoO.OoooO()
+10-21 08:20:32.486 14288 14396 D OkHttp  : Callback failure for call to https://i.wakeup.fun/...
+10-21 08:20:32.486 14288 14396 D OkHttp  : java.io.IOException: Required SETTINGS preface not received
+10-21 08:20:32.486 14288 14396 D OkHttp  : 	at o00O0oOO.o00.OooO0OO(o00.java:119)
+10-21 08:20:32.486 14288 14396 D OkHttp  : 	at o00O0oOO.o00O0O0O.OooOOOo(o00O0O0O.java:231)
+10-21 08:20:32.486 14288 14396 D OkHttp  : 	at o00O0oOO.o00O00o0.OooO0O0(o00O00o0.java:60)
+10-21 08:20:32.486 14288 14396 D OkHttp  : 	at o0OOO0o.OooO0o.run(OooO0o.java:100)
+10-21 08:20:32.486 14288 14396 D OkHttp  : 	at java.lang.Thread.run(Thread.java:920)
+10-21 08:20:32.486 14288 14395 D OkHttp  : Callback failure for call to https://i.wakeup.fun/...
+10-21 08:20:32.486 14288 14395 D OkHttp  : java.io.IOException: Required SETTINGS preface not received
+10-21 08:20:32.486 14288 14395 D OkHttp  : 	at o00O0oOO.o00.OooO0OO(o00.java:119)
+10-21 08:20:32.486 14288 14395 D OkHttp  : 	at o00O0oOO.o00O0O0O.OooOOOo(o00O0O0O.java:231)
+10-21 08:20:32.486 14288 14395 D OkHttp  : 	at o00O0oOO.o00O00o0.OooO0O0(o00O00o0.java:60)
+10-21 08:20:32.486 14288 14395 D OkHttp  : 	at o0OOO0o.OooO0o.run(OooO0o.java:100)
+10-21 08:20:32.486 14288 14395 D OkHttp  : 	at java.lang.Thread.run(Thread.java:920)
+10-21 08:20:32.542 14288 14288 D .wakeupschedul: Features: 0 0 0
+10-21 08:20:32.542 14288 14288 E .wakeupschedul: vulkan version is 4211003
+10-21 08:20:33.412 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:33.412 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:33.412 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:33.412 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:36.828 14288 14288 I [AGC_LOG]HaConnector: Auto onReport
+10-21 08:20:36.991 14288 14372 I [AGC_LOG]UploadFile: upload crash files, size:22
+10-21 08:20:37.007 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.007 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.007 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.010 14288 14372 I SecurityComp10200303: SX509TM: loadBksCA
+10-21 08:20:37.010 14288 14372 I SecurityComp10200303: SX509TM:  get bks from assets 
+10-21 08:20:37.030 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.030 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.030 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.033 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.035 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.035 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.035 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.035 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.037 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.037 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.037 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.038 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.038 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.038 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.039 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.041 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.041 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.041 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.041 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.041 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.041 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.044 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.045 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.045 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.045 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.045 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.046 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.046 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.049 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.049 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.049 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.050 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.054 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.054 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.054 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.054 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.054 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.054 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.056 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.058 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.058 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.058 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.058 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.060 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.060 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.060 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.060 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.060 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.060 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.063 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.064 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.064 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.064 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.068 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.068 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.068 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.068 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.068 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.068 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.073 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.074 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.074 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.074 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.075 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.075 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.075 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.076 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.077 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.077 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.077 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.078 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.078 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.078 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.079 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.079 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.079 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.080 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.082 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.082 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.082 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.082 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.084 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.084 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.084 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.086 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.088 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.088 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.088 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.090 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.090 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.090 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.090 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.092 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.093 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.093 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.093 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.094 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.094 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.094 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.096 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.096 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.096 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.096 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.096 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.096 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.098 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.100 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.100 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.100 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.101 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.101 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.101 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.102 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.102 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.102 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.103 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.103 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.103 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.104 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.105 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.105 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.105 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.106 14288 14372 I [AGC_LOG]UploadFile: uploadTask start
+10-21 08:20:37.106 14288 14372 I [AGC_LOG]UploadFile: getClientToken finished
+10-21 08:20:37.106 14288 14372 D AGC_ConfigImpl: getRoutePolicy
+10-21 08:20:37.107 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.109 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.111 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.111 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.111 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.115 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.117 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.118 14288 14302 W System  : A resource failed to call close. 
+10-21 08:20:37.119 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.120 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.120 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.120 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.122 14288 14436 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-21 08:20:37.123 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.123 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.123 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.125 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.125 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.125 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.127 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.127 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.127 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.128 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.128 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.128 14288 14436 E [AGC_LOG]UploadFile: upload failed
+10-21 08:20:37.130 14288 14437 D ProfileInstaller: Skipping profile installation for com.kaori.wakeupschedule
+10-21 08:20:37.130 14288 14436 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-21 08:20:37.130 14288 14436 I [AGC_LOG]UploadFile: upload finished
+10-21 08:20:37.130 14288 14436 E [AGC_LOG]UploadFile: upload failed

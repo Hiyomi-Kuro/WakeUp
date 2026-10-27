@@ -1,0 +1,101 @@
+package androidx.appcompat.widget;
+
+import android.R;
+import android.graphics.Bitmap;
+import android.graphics.BitmapShader;
+import android.graphics.Shader;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ClipDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.RoundRectShape;
+import android.os.Build;
+import android.util.AttributeSet;
+import android.widget.ProgressBar;
+import com.huawei.hms.android.HwBuildEx;
+
+public class o000000O {
+
+    /* JADX INFO: renamed from: OooO0OO, reason: collision with root package name */
+    public static final int[] f2742OooO0OO = {R.attr.indeterminateDrawable, R.attr.progressDrawable};
+
+    /* JADX INFO: renamed from: OooO00o, reason: collision with root package name */
+    public final ProgressBar f2743OooO00o;
+
+    /* JADX INFO: renamed from: OooO0O0, reason: collision with root package name */
+    public Bitmap f2744OooO0O0;
+
+    public o000000O(ProgressBar progressBar) {
+        this.f2743OooO00o = progressBar;
+    }
+
+    public void OooO00o(AttributeSet attributeSet, int i) {
+        ProgressBar progressBar = this.f2743OooO00o;
+        o0ooOoO.o000OOo o000oooOoooO = o0ooOoO.o000OOo.OoooO(progressBar.getContext(), attributeSet, f2742OooO0OO, i);
+        Drawable drawableOooo00O = o000oooOoooO.Oooo00O(0);
+        if (drawableOooo00O != null) {
+            if (drawableOooo00O instanceof AnimationDrawable) {
+                AnimationDrawable animationDrawable = (AnimationDrawable) drawableOooo00O;
+                int numberOfFrames = animationDrawable.getNumberOfFrames();
+                AnimationDrawable animationDrawable2 = new AnimationDrawable();
+                animationDrawable2.setOneShot(animationDrawable.isOneShot());
+                for (int i2 = 0; i2 < numberOfFrames; i2++) {
+                    Drawable drawableOooO0O0 = OooO0O0(animationDrawable.getFrame(i2), true);
+                    drawableOooO0O0.setLevel(HwBuildEx.VersionCodes.CUR_DEVELOPMENT);
+                    animationDrawable2.addFrame(drawableOooO0O0, animationDrawable.getDuration(i2));
+                }
+                animationDrawable2.setLevel(HwBuildEx.VersionCodes.CUR_DEVELOPMENT);
+                drawableOooo00O = animationDrawable2;
+            }
+            progressBar.setIndeterminateDrawable(drawableOooo00O);
+        }
+        Drawable drawableOooo00O2 = o000oooOoooO.Oooo00O(1);
+        if (drawableOooo00O2 != null) {
+            progressBar.setProgressDrawable(OooO0O0(drawableOooo00O2, false));
+        }
+        o000oooOoooO.OoooOOO();
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public final Drawable OooO0O0(Drawable drawable, boolean z) {
+        if (drawable instanceof OooOooO.o000OO) {
+            OooOooO.o0000O o0000o2 = (OooOooO.o0000O) ((OooOooO.o000OO) drawable);
+            Drawable drawable2 = o0000o2.f1359OooOOo0;
+            if (drawable2 != null) {
+                o0000o2.OooO0OO(OooO0O0(drawable2, z));
+            }
+        } else {
+            if (drawable instanceof LayerDrawable) {
+                LayerDrawable layerDrawable = (LayerDrawable) drawable;
+                int numberOfLayers = layerDrawable.getNumberOfLayers();
+                Drawable[] drawableArr = new Drawable[numberOfLayers];
+                for (int i = 0; i < numberOfLayers; i++) {
+                    int id = layerDrawable.getId(i);
+                    drawableArr[i] = OooO0O0(layerDrawable.getDrawable(i), id == 16908301 || id == 16908303);
+                }
+                LayerDrawable layerDrawable2 = new LayerDrawable(drawableArr);
+                for (int i2 = 0; i2 < numberOfLayers; i2++) {
+                    layerDrawable2.setId(i2, layerDrawable.getId(i2));
+                    if (Build.VERSION.SDK_INT >= 23) {
+                        o000000.OooO00o(layerDrawable, layerDrawable2, i2);
+                    }
+                }
+                return layerDrawable2;
+            }
+            if (drawable instanceof BitmapDrawable) {
+                BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
+                Bitmap bitmap = bitmapDrawable.getBitmap();
+                if (this.f2744OooO0O0 == null) {
+                    this.f2744OooO0O0 = bitmap;
+                }
+                ShapeDrawable shapeDrawable = new ShapeDrawable(new RoundRectShape(new float[]{5.0f, 5.0f, 5.0f, 5.0f, 5.0f, 5.0f, 5.0f, 5.0f}, null, null));
+                shapeDrawable.getPaint().setShader(new BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.CLAMP));
+                shapeDrawable.getPaint().setColorFilter(bitmapDrawable.getPaint().getColorFilter());
+                return z ? new ClipDrawable(shapeDrawable, 3, 1) : shapeDrawable;
+            }
+        }
+        return drawable;
+    }
+}

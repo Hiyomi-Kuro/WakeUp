@@ -1,0 +1,127 @@
+D:\AppData\Local\Android\Sdk\platforms\android-35\android.jar
+D:\AppData\Local\Android\Sdk\build-tools\35.0.0\core-lambda-stubs.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\intermediates\compile_and_runtime_not_namespaced_r_class_jar\debug\processDebugResources\R.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\generated\huawei-system-api-stubs\huawei-system-api-stubs.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6185cdfdaf4005ca03bc2390034e6c75\transformed\window-sidecar-release-0.1.0-alpha01-api.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\libs\window-extensions-beta01-api.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\generated\recovered-dependencies\kotlin-stdlib-1.8.22-recovered.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\generated\recovered-dependencies\kotlinx-coroutines-core-jvm-1.7.1-recovered.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d41f71760f5aeaaa76c8727c327c8cfb\transformed\recyclerview-1.2.1-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\385bfe94b088c7b21fa5dc8463d184f3\transformed\coordinatorlayout-1.1.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\8b7e67ae8401782bf140bd1a3f54a3a0\transformed\material-1.10.0-recovered-api.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\generated\recovered-dependencies\okhttp-3.14.9-recovered.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\12e00790a94ed9929b10e287d13d147b\transformed\viewpager2-1.0.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b9914c1eaa83481d5b3e334afac7bea6\transformed\agconnect-core-1.9.1.300-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b377f85c9e052d8303ebec0752fc4028\transformed\agconnect-credential-1.9.1.300-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\53168b6fa0cd09d871e56fdbf7185772\transformed\appcompat-1.6.1-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\2660ae8ba170f089a0bbe69053a9722f\transformed\cardview-1.0.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\000574ab9b6d88a5866ff591bb818375\transformed\core-1.12.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5db05a2de4746c30831f3fd1f9b5957a\transformed\customview-1.1.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\1fb40fbc462e55e82cf57dc21333ff2a\transformed\drawerlayout-1.1.1-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\844a424781b2424fe70eac2e8150bf1d\transformed\emoji2-1.2.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d8a44fcbe11d3a7dbc5f560dc2151de0\transformed\fragment-1.6.2-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6414169e914a22a99ff51225a2faa465\transformed\glide-4.16.0-recovered-api.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\generated\recovered-dependencies\source-owner-replacements\lifecycle-common-2.6.2-recovered.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\b24f403dbfa290f0d87ef51cdecb4549\transformed\lifecycle-livedata-core-2.6.2-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\19e7298935575d2c7ee7fdd206a447ea\transformed\lifecycle-viewmodel-savedstate-2.6.2-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c9a743e612151af4eb88bec56b793e65\transformed\media-1.0.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f8c48431cad04f675da4613e539099d1\transformed\navigation-common-2.7.7-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\87ec04236c5df6f4f0620b2ad296ff1f\transformed\navigation-fragment-2.7.7-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\97413fd84cdeadb84c7d5583d2130509\transformed\navigation-runtime-2.7.7-recovered-api.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\generated\recovered-dependencies\source-owner-replacements\okio-1.17.2-recovered.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\generated\recovered-dependencies\source-owner-replacements\room-common-2.6.1-recovered.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6f11576b5b0c5b34f6f2f62d5385ffe7\transformed\room-ktx-2.6.1-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\06aef3c81a1de2d4c4711fe67905de64\transformed\room-runtime-2.6.1-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6c0b0f43053a55bf9e0834fb8277a293\transformed\savedstate-1.2.1-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\60af80f289eb749a344e38c7516883e9\transformed\security-base-1.2.0.306-recovered-api.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\generated\recovered-dependencies\source-owner-replacements\slf4j-api-1.7.30-recovered.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\108d94bdfd23bb28d2602625cf8108c3\transformed\slidingpanelayout-1.2.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a2c1b2d1954e287fd592d407c7994a4a\transformed\sqlite-framework-2.4.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6ecca645524257a20193df7470e1c0b1\transformed\swiperefreshlayout-1.0.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\be16b6dd819a9d7f9dd9560f0580835c\transformed\transition-1.4.1-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\98abb4c5113c42f2a1e0468a2b788e75\transformed\viewpager-1.0.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6834db318769d9c2ec576e3f2e147fd4\transformed\window-1.0.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d61837b8bec2021c3519637309e2d327\transformed\work-runtime-2.9.0-recovered-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.3.8\8c192792ad2e65a90867ab418ac49703f44d2baf\rxjava-1.3.8.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\org.conscrypt\conscrypt-openjdk-uber\2.0.0\68ea07c806ad889de05a78a508a73adf69f4c33f\conscrypt-openjdk-uber-2.0.0.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\net.sf.biweekly\biweekly\0.6.6\1c944a843951c9406fb13160850eb04456064845\biweekly-0.6.6.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcprov-jdk15on\1.70\4636a0d01f74acaf28082fb62b317f1080118371\bcprov-jdk15on-1.70.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\5794d9e26d738d9ff55e4e85c826cad1\transformed\android-database-sqlcipher-4.5.4-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-android\1.7.30\dc9c6211986b9ade591fbdcb8ec122c9c3948bb9\slf4j-android-1.7.30.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8d1eefd9324fe1a6a68b33e38876a60\transformed\navigation-ui-ktx-2.7.7-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d502e1d237050c95a8fe18bb153b1812\transformed\navigation-runtime-ktx-2.7.7-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7c8f60943a521160fe1b4749882b87d7\transformed\navigation-fragment-ktx-2.7.7-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\758ce276906934ab61bb1146676e0e14\transformed\navigation-common-ktx-2.7.7-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\7f30d03bb1423f52352513c7ffcd2055\transformed\navigation-ui-2.7.7-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d04a4c34ba6dffdb05b426f85c53cfb8\transformed\annotation-experimental-1.3.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\fcb29e2f2a56e9fc57742d0bbf5e0955\transformed\appcompat-resources-1.6.1-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\3899d1060cd9bc93f76dd7f157532711\transformed\lifecycle-viewmodel-ktx-2.6.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\28d7f7c7526ea4d94b9db29568e88ace\transformed\dynamicanimation-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\1c877ddf6586996466336a93798487c1\transformed\legacy-support-v4-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\25771bdc687c8184bbfdc11350f6c32a\transformed\legacy-support-core-ui-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\94b598e0396fbea196500aaed72b91d2\transformed\legacy-support-core-utils-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\df8d22e176e27c9c54f0a377b4f6f815\transformed\loader-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d897463469fd94962b54f49fbb3194f4\transformed\lifecycle-viewmodel-2.6.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c79c3ebc3f8c3f2824a4c3ef94921711\transformed\lifecycle-service-2.6.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\94b1908794f3cd6fc36ba6e57eeac210\transformed\lifecycle-runtime-ktx-2.6.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6b597c1db24305edb37ed0fc009802b2\transformed\lifecycle-runtime-2.6.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bc24b20791373fbdd11ba241e2c0545f\transformed\lifecycle-process-2.6.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e46d38ab8350cb49533b4ac628e590af\transformed\lifecycle-livedata-core-ktx-2.6.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\43cf138528da3e4a8f83f3cdc7ec0f29\transformed\lifecycle-livedata-2.6.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\42ce7f13e1606a593c366eb80f59890c\transformed\core-runtime-2.2.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\162e8ef53b254b6de81b59ac1c162701\transformed\asynclayoutinflater-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\androidx.constraintlayout\constraintlayout-core\1.1.1\f7ab6170b99b9421bd4942846426ff820b552f7d\constraintlayout-core-1.1.1.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9f28798999667a4039d38aa571a09169\transformed\core-ktx-1.12.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e03430f3e6951b325a9511dc3d722d1b\transformed\cursoradapter-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f5aa584f64327b8502c56d3a02f56546\transformed\viewbinding-8.2.2-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\014604fe78b0d5b8f59af236e2f3c487\transformed\documentfile-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\e8d3635e8ad27a6c884be40fcf9cd978\transformed\emoji2-views-helper-1.2.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\0405c880dc3c57bd8201ed9f75bb23b7\transformed\exifinterface-1.3.3-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\c7fb6623ca5b5183290918bd1fd0c339\transformed\vectordrawable-animated-1.1.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\11ea937ab6875924c870144c5a2856b6\transformed\interpolator-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\48f68fb7627fbf0d1392f1e2ae8734d5\transformed\localbroadcastmanager-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\bed070a9074f13fc9d36496808b48405\transformed\print-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f2f63dde1ab0f921b3c75488b85d8947\transformed\profileinstaller-1.3.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\88709f8c0a682b3c237bb5177b33c357\transformed\savedstate-ktx-1.2.1-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\82b0ec20b7621ffc1a2ce31ad61b2503\transformed\sqlite-2.4.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\158c4402333a1bfe1a84b6454a14bfd2\transformed\startup-runtime-1.1.1-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6d646a9f61fe5ef4f4b31c38cbc433ed\transformed\tracing-1.0.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9cdf6493d389991276f56fb7252a19b2\transformed\vectordrawable-1.1.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\33bacb3853a06d8551927801b07df2ad\transformed\versionedparcelable-1.1.1-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\dd04015246f5dc22705662ea2fecbae3\transformed\work-runtime-ktx-2.9.0-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d78a30507063a8f00f77c55550b95a8e\transformed\agconnect-crash-1.9.1.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\1dc28fc8cb8f0d22c2fa3017fa7e9419\transformed\hianalytics-6.10.0.302-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\4f62901ccc83ddbfa1bfb41aeaae1c3b\transformed\opendevice-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9b1980a9a6740c1c9ebba40e839e95ce\transformed\base-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\08b6b4d20143295abb7b64a82f572c03\transformed\availableupdate-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\47d66a58d79c382801e42dfb138730a4\transformed\baselegacyapi-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f6692d07ebc4f2782f69ed0b70d2ed58\transformed\device-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\1d7020b9f43bcd3c46b984748a6616cd\transformed\stats-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ee255f37289701c729aff79ac1c60489\transformed\hatool-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\02367089a89436008627b503b66e1f50\transformed\ui-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\037ec45dccf570eff0c6b790a421831f\transformed\log-6.7.0.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\3a8c38fc757d526988f5f2256d4b857d\transformed\network-grs-6.0.2.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\f35fd4e8cbfe593a1d0756c7525dc12a\transformed\network-framework-compat-6.0.2.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\6f668bb414375877e91fc9bdf98a3968\transformed\network-common-6.0.2.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-android\1.7.1\c2d86b569f10b7fc7e28d3f50c0eed97897d77a7\kotlinx-coroutines-android-1.7.1.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\com.github.mangstadt\vinnie\2.0.2\c5ac6b631bd5d0fb0a34a14cb51e83283aaff63e\vinnie-2.0.2.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.12.1\7c5493930e439be6fcec80a9afd6516b8e5e8760\jackson-core-2.12.1.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-common\2.2.0\5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3\core-common-2.2.0.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\androidx.collection\collection\1.1.0\1f27220b47669781457de0d600849a5de0e89909\collection-1.1.0.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation-jvm\1.8.1\b8a16fe526014b7941c1debaccaf9c5153692dbb\annotation-jvm-1.8.1.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\1.0\c949a840a6acbc5268d088e47b04177bf90b3cad\listenablefuture-1.0.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk8\1.8.20\73576ddf378c5b4f1f6b449fe6b119b8183fc078\kotlin-stdlib-jdk8-1.8.20.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.8.20\3aa51faf20aae8b31e1a4bc54f8370673d7b7df4\kotlin-stdlib-jdk7-1.8.20.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\d3bf7b1f8987c1f0cbdbe6e75d1753ce\transformed\agconnect-https-1.9.1.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\com.huawei.hmf\tasks\1.5.2.300\78e4f5fa95fe57ac78061d4c818d6637c46bfefa\tasks-1.5.2.300.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\9eced08dcaefdf9f06fc6eb047b8728c\transformed\datastore-core-1.9.1.300-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\com.huawei.agconnect\datastore-annotation\1.9.1.300\bc46d308df3b15227c1a5facd70e7c203305a86c\datastore-annotation-1.9.1.300.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\ac87f2eef7395e44b2130be25764c20e\transformed\security-ssl-1.2.0.308-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\65ea0f8218f8c7f68fa1392c6a2ffae7\transformed\security-encrypt-1.2.0.308-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\34fc48416aaa98c65038d323520da103\transformed\hianalytics-framework-6.10.0.302-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\a4e0beb246762d27ff36a4d721031719\transformed\hianalytics-core-6.10.0.302-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\8.13\transforms\89cef2157638cf5456ff2263a1f591b1\transformed\hianalytics-element-6.10.0.302-api.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\org.greenrobot\greendao\3.3.0\2d3db1b43b78db5514bfd31ee2c75cc65220427d\greendao-3.3.0.jar
+C:\Users\Kaori Izuki\.gradle\caches\modules-2\files-2.1\org.greenrobot\greendao-api\3.3.0\f2275036ddb2ac1812d5bc78e2e877d585b25eaa\greendao-api-3.3.0.jar
+D:\Download\AndroidStudioProjects\WakeUP\app\build\tmp\kotlin-classes\debug

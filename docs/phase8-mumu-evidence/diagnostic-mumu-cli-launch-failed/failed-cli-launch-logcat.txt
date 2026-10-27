@@ -1,0 +1,155 @@
+--------- beginning of main
+10-24 15:27:28.160  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.178  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.194  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.210  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.228  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.244  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.260  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.262  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/apps","method":"POST","params":{"action":"switch","value":"com.kaori.wakeupschedule"}}, id: 119
+10-24 15:27:28.262  1068  7511 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/apps","method":"POST","params":{"action":"switch","value":"com.kaori.wakeupschedule"}}, res: 
+10-24 15:27:28.262  1068  7511 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.263  1459  6344 D AppsManager: AppManager  onAction: action = switch
+10-24 15:27:28.263  1459  6344 D SystemAppInstallManager: checkSystemAppInstallStatus: action = switch  status = 0
+10-24 15:27:28.263  1459  6344 D SystemAppInstallManager: checkSystemAppInstallStatus: INSTANCE = com.netease.nemu_vapi_android.manager.SystemAppInstallManager@2d35a1d
+10-24 15:27:28.263  1459  6344 D SystemAppInstallManager: checkSystemAppInstallStatus: map size = 3
+10-24 15:27:28.263  1068  7511 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/apps","method":"POST","params":{"action":"switch","value":"com.kaori.wakeupschedule"}}, res: 
+10-24 15:27:28.263  1068  7511 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+--------- beginning of system
+10-24 15:27:28.263  1306  4470 D RecentTaskMonitor: handleTabMessage name=vapi params={"uri":"/apps","method":"POST","params":{"action":"switch","value":"com.kaori.wakeupschedule"}}
+10-24 15:27:28.263  1068  7511 D nemuinit: Proxy: use callback: 1306, handleNemuInitMessage, name: vapi, params: {"uri":"/apps","method":"POST","params":{"action":"switch","value":"com.kaori.wakeupschedule"}}, res: 
+10-24 15:27:28.263  1068  7511 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.263  1068  7511 D nemuinit: proxy operation unhandled: {"uri":"/apps","method":"POST","params":{"action":"switch","value":"com.kaori.wakeupschedule"}}
+10-24 15:27:28.268  1459  2051 D Watchdog: upload server response: {"errcode": 100, "errmsg": "ok"}
+10-24 15:27:28.268  1459  2051 D Watchdog: upload result: true
+10-24 15:27:28.277  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.294  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.310  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.328  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.329  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, id: 120
+10-24 15:27:28.329  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 121
+10-24 15:27:28.330  1068  7513 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+10-24 15:27:28.330  1068  7513 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.330  1068  7512 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: 
+10-24 15:27:28.330  1068  7512 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.330  1068  7513 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.330  1068  7513 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.331  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, id: 122
+10-24 15:27:28.332  1068  7514 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: 
+10-24 15:27:28.332  1068  7514 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.332  1068  7512 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.332  1068  7512 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.333  1068  7514 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.333  1068  7514 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.334  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, id: 123
+10-24 15:27:28.335  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 124
+10-24 15:27:28.335  1068  7515 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: 
+10-24 15:27:28.335  1068  7515 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.336  1068  7515 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.336  1068  7515 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.336  1068  7516 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+10-24 15:27:28.336  1068  7516 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.336  1068  7516 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.336  1068  7516 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.337  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, id: 125
+10-24 15:27:28.337  1068  7517 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: 
+10-24 15:27:28.337  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 126
+10-24 15:27:28.337  1068  7517 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.338  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, id: 127
+10-24 15:27:28.338  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 128
+10-24 15:27:28.338  1068  7517 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.338  1068  7517 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.338  1068  7519 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: 
+10-24 15:27:28.338  1068  7519 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.338  1068  1081 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, id: 129
+10-24 15:27:28.338  1068  7518 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+10-24 15:27:28.338  1068  7518 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.338  1068  7519 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.338  1068  7519 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.338  1068  7520 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+10-24 15:27:28.338  1068  7520 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.339  1068  7518 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.339  1068  7518 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.339  1068  7520 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.339  1068  7520 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.339  1068  7521 D nemuinit: Proxy: use callback: 1490, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: 
+10-24 15:27:28.339  1068  7521 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+10-24 15:27:28.339  1068  7521 D nemuinit: Proxy: use callback: 1459, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.teslacoilsw.launcher","pid":1713,"uid":10038}}, res: {"errcode":0,"message":"OK"}
+10-24 15:27:28.339  1068  7521 D nemuinit: Proxy: finish handleNemuInitMessage
+10-24 15:27:28.345  1732  2229 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:79.600
+10-24 15:27:28.660  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]: [Event] MSFDDNetworkEngine.cpp(179)::onTcpInfoUpdate->onTcpInfoUpdate:
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_state = 1;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_ca_state = 0;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rto = 203 ms;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_unacked = 0;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rttcur = 0 ms;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rttvar = 0 ms;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_retrans = 0 bytes;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_notsent_bytes = 0 bytes;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_received = 1359 bytes;
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_sent = 3872 bytes 
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_sent = 50567 ms 
+10-24 15:27:28.972  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_recv = 50527 ms 
+10-24 15:27:29.345  1732  2229 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:79.600
+10-24 15:27:29.660  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:30.345  1732  2229 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:79.600
+10-24 15:27:30.660  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:31.346  1732  2229 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:79.600
+10-24 15:27:31.661  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]: [Event] MSFDDNetworkEngine.cpp(179)::onTcpInfoUpdate->onTcpInfoUpdate:
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_state = 1;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_ca_state = 0;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rto = 203 ms;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_unacked = 0;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rttcur = 0 ms;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rttvar = 0 ms;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_retrans = 0 bytes;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_notsent_bytes = 0 bytes;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_received = 1359 bytes;
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_sent = 3872 bytes 
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_sent = 53570 ms 
+10-24 15:27:31.974  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_recv = 53530 ms 
+10-24 15:27:32.071  1183  1183 D opengl-gc: Check pid 7320: running 0
+10-24 15:27:32.346  1732  2229 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:79.600
+10-24 15:27:32.660  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:33.346  1732  2229 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:79.600
+10-24 15:27:33.660  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:34.284  1147  1147 E android.hardware.power.stats@1.0-service-mock: Failed to getEnergyData
+10-24 15:27:34.346  1732  2229 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:79.600
+10-24 15:27:34.661  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]: [Event] MSFDDNetworkEngine.cpp(179)::onTcpInfoUpdate->onTcpInfoUpdate:
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_state = 1;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_ca_state = 0;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rto = 203 ms;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_unacked = 0;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rttcur = 0 ms;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_rttvar = 0 ms;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_retrans = 0 bytes;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_notsent_bytes = 0 bytes;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_received = 1359 bytes;
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_bytes_sent = 3872 bytes 
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_sent = 56574 ms 
+10-24 15:27:34.979  1732  2335 V MSF.C.MSFCore[@DD]:                      tcpi_last_data_recv = 56534 ms 
+10-24 15:27:35.346  1732  2229 V MSF.C.MSFCore[@PS]: [Event] MSFPacketStatistics.cpp(300)::DoCheckRequestTimeout->current rtts:79.600
+10-24 15:27:35.423  7522  7522 I pidof   : type=1400 audit(0.0:14866): avc: denied { search } for name="1" dev="proc" ino=9180 scontext=u:r:adbd:s0 tcontext=u:r:kernel:s0 tclass=dir permissive=1
+10-24 15:27:35.423  7522  7522 I pidof   : type=1400 audit(0.0:14867): avc: denied { read } for name="cmdline" dev="proc" ino=9824 scontext=u:r:adbd:s0 tcontext=u:r:kernel:s0 tclass=file permissive=1
+10-24 15:27:35.423  7522  7522 I pidof   : type=1400 audit(0.0:14868): avc: denied { open } for path="/proc/1/cmdline" dev="proc" ino=9824 scontext=u:r:adbd:s0 tcontext=u:r:kernel:s0 tclass=file permissive=1
+10-24 15:27:35.423  7522  7522 I pidof   : type=1400 audit(0.0:14869): avc: denied { search } for name="1039" dev="proc" ino=9619 scontext=u:r:adbd:s0 tcontext=u:r:vendor_init:s0 tclass=dir permissive=1
+10-24 15:27:35.423  7522  7522 I pidof   : type=1400 audit(0.0:14870): avc: denied { read } for name="cmdline" dev="proc" ino=16086 scontext=u:r:adbd:s0 tcontext=u:r:vendor_init:s0 tclass=file permissive=1
+10-24 15:27:35.489  7524  7524 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-24 15:27:35.543  7527  7527 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-24 15:27:35.567  1306  1317 W System  : A resource failed to call close. 
+10-24 15:27:35.567  1306  1317 W System  : A resource failed to call close. 
+10-24 15:27:35.567  1306  1317 W System  : A resource failed to call release. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call close. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call release. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call release. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call close. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call close. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call close. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call release. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call release. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call release. 
+10-24 15:27:35.568  1306  1317 W System  : A resource failed to call close. 
+10-24 15:27:35.577  1153  1153 E TimeStats: RenderEngineTimes are already at its maximum size[64]

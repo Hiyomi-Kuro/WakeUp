@@ -1,0 +1,473 @@
+{
+  "apk": "D:\\Download\\AndroidStudioProjects\\WakeUP\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+  "size_bytes": 20609202,
+  "sha256": "377164ba5b5ed37ad1666cb1d4e68e11f65aeb8fa6359d34f39699034f29b6c3",
+  "package": "com.kaori.wakeupschedule",
+  "version_code": "247",
+  "version_name": "6.0.06",
+  "sdk": {
+    "{http://schemas.android.com/apk/res/android}minSdkVersion": "21",
+    "{http://schemas.android.com/apk/res/android}targetSdkVersion": "34"
+  },
+  "dex": {
+    "classes.dex": {
+      "classes": 7610,
+      "sha1_valid": true,
+      "adler32_valid": true,
+      "placeholder_strings": 0
+    },
+    "classes2.dex": {
+      "classes": 6549,
+      "sha1_valid": true,
+      "adler32_valid": true,
+      "placeholder_strings": 0
+    },
+    "classes3.dex": {
+      "classes": 5590,
+      "sha1_valid": true,
+      "adler32_valid": true,
+      "placeholder_strings": 0
+    }
+  },
+  "dex_classes": 19749,
+  "duplicate_dex_descriptors": [],
+  "compiled_classes": 6465,
+  "java_files": 5758,
+  "missing_recovered_source_outputs": [],
+  "mapping_statuses": {
+    "Android 平台提供；不打入 APK": 2,
+    "依赖或生成类已在 DEX 中": 2026,
+    "本地源码已编译且在 DEX 中": 5014,
+    "匿名/合成实现并入已编译源码；独立 binary 名已改变": 417,
+    "固定依赖整体提供宿主与回调；原 R8 wrapper 名不保留": 7,
+    "Java lambda 并入所示宿主；原合成类名不保留": 4,
+    "可选 Harmony 平台源码；Android 构建排除": 8
+  },
+  "placeholders": [
+    {
+      "source": "androidx/transition/Visibility.java",
+      "excluded": true,
+      "count": 1
+    },
+    {
+      "source": "com/huawei/hms/analytics/aj.java",
+      "excluded": true,
+      "count": 1
+    },
+    {
+      "source": "com/huawei/hms/analytics/cw.java",
+      "excluded": true,
+      "count": 1
+    },
+    {
+      "source": "com/huawei/hms/analytics/ed.java",
+      "excluded": true,
+      "count": 1
+    }
+  ],
+  "verified_source_alias_mappings": 87,
+  "reviewed_semantic_mappings": {
+    "Lcom/github/doyaaaaaken/kotlincsv/client/CsvFileReader$readAllAsSequence$2$1;": {
+      "kind": "source-lambda",
+      "owner": "Lcom/github/doyaaaaaken/kotlincsv/client/CsvReader$readAll$1;",
+      "source": "app/src/main/java/com/github/doyaaaaaken/kotlincsv/client/CsvReader$readAll$1.java",
+      "reason": "The row-size mismatch diagnostic Function0 is implemented as a Java lambda inside the sequence mapper; captures row index, row list, and the first-row-size reference."
+    },
+    "Lme/saket/cascade/HeightAnimatableViewFlipper$show$1;": {
+      "kind": "source-lambda",
+      "owner": "Lme/saket/cascade/HeightAnimatableViewFlipper;",
+      "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+      "reason": "Deferred add-and-animate Function0. Implemented by Java lambda in OooO0o0; the original synthetic class name is not retained."
+    },
+    "Lme/saket/cascade/HeightAnimatableViewFlipper$show$1$1;": {
+      "kind": "source-lambda",
+      "owner": "Lme/saket/cascade/HeightAnimatableViewFlipper;",
+      "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+      "reason": "Entering-view translation and animation Function1. Implemented by Java lambda in OooO0o0; the original synthetic class name is not retained."
+    },
+    "Lme/saket/cascade/HeightAnimatableViewFlipper$show$1$2;": {
+      "kind": "source-lambda",
+      "owner": "Lme/saket/cascade/HeightAnimatableViewFlipper;",
+      "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+      "reason": "Exiting-view translation and animation Function1. Implemented by Java lambda in OooO0o0; the original synthetic class name is not retained."
+    },
+    "Landroidx/core/widget/OooO0o;": {
+      "kind": "dependency-synthetic",
+      "owner": "Landroidx/core/widget/ContentLoadingProgressBar;",
+      "coordinate": "androidx.core:core:1.12.0",
+      "reason": "Original R8 Runnable owns delayed show/hide fields; the complete widget is supplied by the pinned dependency with ExternalSyntheticLambda callbacks."
+    },
+    "Lcom/huawei/agconnect/common/api/OooO;": {
+      "kind": "dependency-synthetic",
+      "owner": "Lcom/huawei/agconnect/common/api/HaConnector;",
+      "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+      "reason": "Original R8 callback forwards to HaConnector methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+    },
+    "Lcom/huawei/agconnect/common/api/OooO00o;": {
+      "kind": "dependency-synthetic",
+      "owner": "Lcom/huawei/agconnect/common/api/HaBridge;",
+      "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+      "reason": "Original R8 callback forwards to HaBridge methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+    },
+    "Lcom/huawei/agconnect/common/api/OooO0o;": {
+      "kind": "dependency-synthetic",
+      "owner": "Lcom/huawei/agconnect/common/api/HaConnector;",
+      "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+      "reason": "Original R8 callback forwards to HaConnector methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+    },
+    "Lcom/huawei/agconnect/common/api/OooO0O0;": {
+      "kind": "dependency-synthetic",
+      "owner": "Lcom/huawei/agconnect/common/api/HaBridge;",
+      "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+      "reason": "Original R8 callback forwards to HaBridge methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+    },
+    "Lcom/huawei/agconnect/common/api/OooO0OO;": {
+      "kind": "dependency-synthetic",
+      "owner": "Lcom/huawei/agconnect/common/api/HaBridge;",
+      "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+      "reason": "Original R8 callback forwards to HaBridge methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+    },
+    "Lcom/huawei/agconnect/crash/OooO00o;": {
+      "kind": "dependency-synthetic",
+      "owner": "Lcom/huawei/agconnect/crash/AGConnectCrashRegistrar;",
+      "coordinate": "com.huawei.agconnect:agconnect-crash:1.9.1.300",
+      "reason": "Original R8 Runnable forwards to AGConnectCrashRegistrar$1$1; the complete registrar is supplied by the pinned crash dependency."
+    }
+  },
+  "active_placeholders": 0,
+  "original_resource_ids": 6348,
+  "resource_id_mismatches": [],
+  "components": [
+    {
+      "kind": "receiver",
+      "name": "com.kaori.wakeupschedule.today_appwidget.TodayListAppWidget",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "com.kaori.wakeupschedule.today_appwidget.TodayAndNextDayAppWidget",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.settings.ModifyScheduleToolActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "provider",
+      "name": "com.kaori.wakeupschedule.ScheduleContentProvider",
+      "in_dex": true,
+      "authority": "com.kaori.wakeupschedule.provider"
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.clock.ClockActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.schedule_appwidget.WidgetStyleConfigActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.suda_life.SudaLifeActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.schedule_import.LoginWebActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.schedule.ScheduleActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.course_add.AddCourseActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.settings.SettingsActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.settings.TimeSettingsActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "com.kaori.wakeupschedule.schedule_appwidget.ScheduleAppWidget",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "service",
+      "name": "com.kaori.wakeupschedule.schedule_appwidget.ScheduleAppWidgetService",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "service",
+      "name": "com.kaori.wakeupschedule.today_appwidget.TodayColorfulService",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "service",
+      "name": "com.kaori.wakeupschedule.today_appwidget.TodayModernService",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.intro.AboutActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.DonateActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.SplashActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.schedule_manage.ScheduleManageActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.schedule_settings.ScheduleSettingsActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.schedule_appwidget.WeekScheduleAppWidgetConfigActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "com.kaori.wakeupschedule.today_appwidget.TodayCourseAppWidget",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.schedule_import.SchoolListActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.settings.AdvancedSettingsActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.kaori.wakeupschedule.intro.IntroYoungActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "com.kaori.wakeupschedule.today_appwidget.TodayListAppWidgetMIUI",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "com.kaori.wakeupschedule.today_appwidget.TodayModernAppWidgetMIUI",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "provider",
+      "name": "androidx.startup.InitializationProvider",
+      "in_dex": true,
+      "authority": "com.kaori.wakeupschedule.androidx-startup"
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.background.systemjob.SystemJobService",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "service",
+      "name": "androidx.work.impl.foreground.SystemForegroundService",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "service",
+      "name": "androidx.room.MultiInstanceInvalidationService",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "service",
+      "name": "com.huawei.agconnect.core.ServiceDiscovery",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "receiver",
+      "name": "com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "provider",
+      "name": "com.huawei.hms.analytics.provider.AnalyticsInitializeProvider",
+      "in_dex": true,
+      "authority": "com.kaori.wakeupschedule.AnalyticsKitInitializeProvider"
+    },
+    {
+      "kind": "receiver",
+      "name": "androidx.profileinstaller.ProfileInstallReceiver",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "provider",
+      "name": "com.huawei.hms.aaid.InitProvider",
+      "in_dex": true,
+      "authority": "com.kaori.wakeupschedule.aaidinitprovider"
+    },
+    {
+      "kind": "provider",
+      "name": "com.huawei.agconnect.core.provider.AGConnectInitializeProvider",
+      "in_dex": true,
+      "authority": "com.kaori.wakeupschedule.AGCInitializeProvider"
+    },
+    {
+      "kind": "activity",
+      "name": "com.huawei.hms.activity.BridgeActivity",
+      "in_dex": true,
+      "authority": null
+    },
+    {
+      "kind": "activity",
+      "name": "com.huawei.hms.activity.EnableServiceActivity",
+      "in_dex": true,
+      "authority": null
+    }
+  ],
+  "zip_entries": 1293,
+  "resources_arsc": true,
+  "resources": 1157,
+  "assets": 13,
+  "native_libraries": [
+    "lib/arm64-v8a/libsqlcipher.so",
+    "lib/armeabi-v7a/libsqlcipher.so",
+    "lib/x86/libsqlcipher.so",
+    "lib/x86_64/libsqlcipher.so"
+  ],
+  "application": "com.kaori.wakeupschedule.App",
+  "debuggable": "true",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE",
+    "android.permission.ACCESS_NOTIFICATION_POLICY",
+    "android.permission.SCHEDULE_EXACT_ALARM",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "com.hihonor.brain.permission.KIT_SERVICE_ACCESS",
+    "android.permission.WAKE_LOCK",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.FOREGROUND_SERVICE",
+    "com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "required_classes_in_dex": {
+    "Lcom/kaori/wakeupschedule/App;": true,
+    "Lcom/kaori/wakeupschedule/schedule_import/LoginWebFragment;": true,
+    "Lcom/kaori/wakeupschedule/settings/ModifyScheduleToolActivity$save$1;": true,
+    "Landroidx/window/layout/WindowInfoTrackerImpl$windowLayoutInfo$1;": true,
+    "Lkotlinx/coroutines/flow/internal/CombineKt$combineInternal$2;": true,
+    "Landroidx/fragment/app/strictmode/FragmentStrictMode$Flag;": true
+  },
+  "prebuilt_dex_apk_inputs": []
+}

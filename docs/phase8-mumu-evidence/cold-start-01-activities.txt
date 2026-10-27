@@ -1,0 +1,642 @@
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+Display #3 (activities from top to bottom):
+  * Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+    mLastPausedActivity: ActivityRecord{78ac959 u0 com.kaori.wakeupschedule/.SplashActivity t3536 f}}
+    isSleeping=false
+    topResumedActivity=ActivityRecord{6be6b31 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3536}
+    * Hist  #1: ActivityRecord{6be6b31 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3536}
+      packageName=com.kaori.wakeupschedule processName=com.kaori.wakeupschedule
+      launchedFromUid=10043 launchedFromPackage=com.kaori.wakeupschedule launchedFromFeature=null userId=0
+      app=ProcessRecord{53a35ff 6489:com.kaori.wakeupschedule/u0a43}
+      Intent { flg=0x10000000 cmp=com.kaori.wakeupschedule/.schedule.ScheduleActivity (has extras) }
+      rootOfTask=true task=Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+      taskAffinity=10043:com.kaori.wakeupschedule
+      mActivityComponent=com.kaori.wakeupschedule/.schedule.ScheduleActivity
+      baseDir=/data/app/~~2AJm2mqxQ-WKUwSP3qUwUA==/com.kaori.wakeupschedule-idVkpJpvXA_C-tH2CL7Ibw==/base.apk
+      dataDir=/data/user/0/com.kaori.wakeupschedule
+      stateNotNeeded=false componentSpecified=false mActivityType=standard
+      compat={320dpi always-compat} labelRes=0x7f1200ac icon=0x7f0f0000 theme=0x7f13000b
+      mLastReportedConfigurations:
+        mGlobalConfig={1.0 460mcc65535mnc [zh_CN,en_US] ldltr sw540dp w540dp h960dp 320dpi lrg long port night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.57 fontWeightAdjustment=0}
+        mOverrideConfig={0.0 ?mcc?mnc ?localeList ?layoutDir sw540dp w540dp h960dp 320dpi lrg long port ?uimode ?night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 ?fontWeightAdjustment}
+      CurrentConfiguration={1.0 460mcc65535mnc [zh_CN,en_US] ldltr sw540dp w540dp h960dp 320dpi lrg long port night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.1 fontWeightAdjustment=0}
+      taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ffa8c7ff
+        backgroundColor=ff191c1d statusBarColor=0 navigationBarColor=0
+       backgroundColorFloating=ff424242
+      launchFailed=false launchCount=1 lastLaunchTime=-6s426ms
+      mHaveState=false mIcicle=null
+      state=RESUMED stopped=false delayedResume=false finishing=false
+      keysPaused=false inHistory=true idle=false
+      occludesParent=true noDisplay=false immersive=false launchMode=2
+      frozenBeforeDestroy=false forceNewConfig=false
+      mActivityType=standard
+      mImeInsetsFrozenUntilStartInput=false
+      windows=[Window{39a0afa u0 com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity}]
+      windowType=2 hasVisible=false
+      mOccludesParent=true
+      mOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+      mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=false reportedVisible=false
+      mNumInterestingWindows=1 mNumDrawnWindows=0 allDrawn=false lastAllDrawn=false)
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+      supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
+      configChanges=0x3
+      neverSandboxDisplayApis=false
+      alwaysSandboxDisplayApis=false
+      areBoundsLetterboxed=false
+    * Hist  #0: ActivityRecord{78ac959 u0 com.kaori.wakeupschedule/.SplashActivity t3536 f}}
+      packageName=com.kaori.wakeupschedule processName=com.kaori.wakeupschedule
+      launchedFromUid=2000 launchedFromPackage=com.android.shell launchedFromFeature=null userId=0
+      app=ProcessRecord{53a35ff 6489:com.kaori.wakeupschedule/u0a43}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kaori.wakeupschedule/.SplashActivity }
+      rootOfTask=false task=Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+      taskAffinity=10043:com.kaori.wakeupschedule
+      mActivityComponent=com.kaori.wakeupschedule/.SplashActivity
+      baseDir=/data/app/~~2AJm2mqxQ-WKUwSP3qUwUA==/com.kaori.wakeupschedule-idVkpJpvXA_C-tH2CL7Ibw==/base.apk
+      dataDir=/data/user/0/com.kaori.wakeupschedule
+      stateNotNeeded=false componentSpecified=false mActivityType=standard
+      compat={320dpi always-compat} labelRes=0x7f1200ac icon=0x7f0f0000 theme=0x7f1301a7
+      mLastReportedConfigurations:
+        mGlobalConfig={1.0 460mcc65535mnc [zh_CN,en_US] ldltr sw540dp w540dp h960dp 320dpi lrg long port night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.56 fontWeightAdjustment=0}
+        mOverrideConfig={0.0 ?mcc?mnc ?localeList ?layoutDir sw540dp w540dp h960dp 320dpi lrg long port ?uimode ?night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 ?fontWeightAdjustment}
+      CurrentConfiguration={1.0 460mcc65535mnc [zh_CN,en_US] ldltr sw540dp w540dp h960dp 320dpi lrg long port night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.1 fontWeightAdjustment=0}
+      taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ffd0bcff
+        backgroundColor=ff1c1b1f statusBarColor=ffd0bcff navigationBarColor=ff000000
+       backgroundColorFloating=ff424242
+      launchFailed=false launchCount=1 lastLaunchTime=-7s92ms
+      mHaveState=false mIcicle=null
+      state=STOPPING stopped=false delayedResume=false finishing=true
+      keysPaused=false inHistory=true idle=false
+      occludesParent=false noDisplay=false immersive=false launchMode=0
+      frozenBeforeDestroy=false forceNewConfig=false
+      mActivityType=standard
+      mImeInsetsFrozenUntilStartInput=true
+      windows=[Window{fd44c0 u0 com.kaori.wakeupschedule/com.kaori.wakeupschedule.SplashActivity}]
+      windowType=2 hasVisible=true
+      mOccludesParent=true
+      mOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+      mVisibleRequested=false mVisible=false mClientVisible=false reportedDrawn=true reportedVisible=false
+      mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=true)
+      startingData=null firstWindowDrawn=true mIsExiting=false
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+      supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
+      configChanges=0x3
+      neverSandboxDisplayApis=false
+      alwaysSandboxDisplayApis=false
+      areBoundsLetterboxed=false
+
+  Resumed activities in task display areas (from top to bottom):
+    Resumed: ActivityRecord{6be6b31 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3536}
+
+Display #0 (activities from top to bottom):
+
+  * Task{7e36814 #1 type=home ?? U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+    * Task{468ee9a #2 type=home I=com.teslacoilsw.launcher/.NovaLauncher U=0 rootTaskId=1 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      isSleeping=false
+      topResumedActivity=ActivityRecord{76850b8 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+      * Hist  #0: ActivityRecord{76850b8 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+        packageName=com.teslacoilsw.launcher processName=com.teslacoilsw.launcher
+        launchedFromUid=0 launchedFromPackage=null launchedFromFeature=null userId=0
+        app=ProcessRecord{6e6b4a6 1713:com.teslacoilsw.launcher/u0a38}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.teslacoilsw.launcher/.NovaLauncher (has extras) }
+        rootOfTask=true task=Task{468ee9a #2 type=home I=com.teslacoilsw.launcher/.NovaLauncher U=0 rootTaskId=1 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        taskAffinity=null
+        mActivityComponent=com.teslacoilsw.launcher/.NovaLauncher
+        baseDir=/data/app/~~sYT8-OMB1p0vijE9y9Vm7A==/com.teslacoilsw.launcher-Uv1AGMSU7sCfP4-PppE_Cg==/base.apk
+        dataDir=/data/user/0/com.teslacoilsw.launcher
+        stateNotNeeded=true componentSpecified=false mActivityType=home
+        compat={320dpi always-compat} labelRes=0x7f1400a5 icon=0x7f08010e theme=0x7f150013
+        mLastReportedConfigurations:
+          mGlobalConfig={1.0 460mcc65535mnc [zh_CN,en_US] ldltr sw540dp w540dp h936dp 320dpi lrg long port night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.28 fontWeightAdjustment=0}
+          mOverrideConfig={1.0 460mcc65535mnc [zh_CN,en_US] ldltr sw540dp w540dp h936dp 320dpi lrg long port night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=home mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.5 fontWeightAdjustment=0}
+        CurrentConfiguration={1.0 460mcc65535mnc [zh_CN,en_US] ldltr sw540dp w540dp h936dp 320dpi lrg long port night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=home mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.5 fontWeightAdjustment=0}
+        RequestedOverrideConfiguration={0.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mMaxBounds=Rect(0, 0 - 0, 0) mWindowingMode=undefined mDisplayWindowingMode=undefined mActivityType=home mAlwaysOnTop=undefined mRotation=undefined} as.2 ?fontWeightAdjustment}
+        taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=ff212121
+          backgroundColor=ff303030 statusBarColor=0 navigationBarColor=0
+         backgroundColorFloating=ff424242
+        launchFailed=false launchCount=1 lastLaunchTime=-1h22m53s30ms
+        mHaveState=false mIcicle=null
+        state=RESUMED stopped=false delayedResume=false finishing=false
+        keysPaused=false inHistory=true idle=true
+        occludesParent=true noDisplay=false immersive=false launchMode=2
+        frozenBeforeDestroy=false forceNewConfig=false
+        mActivityType=home
+        mImeInsetsFrozenUntilStartInput=false
+        windows=[Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}]
+        windowType=2 hasVisible=true
+        mOccludesParent=true
+        mOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+        mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
+        mNumInterestingWindows=1 mNumDrawnWindows=0 allDrawn=true lastAllDrawn=true)
+        startingData=null firstWindowDrawn=true mIsExiting=false
+        nowVisible=true lastVisibleTime=-1h22m45s383ms
+        resizeMode=RESIZE_MODE_RESIZEABLE
+        mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+        supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
+        configChanges=0x1df3
+        neverSandboxDisplayApis=false
+        alwaysSandboxDisplayApis=false
+        areBoundsLetterboxed=false
+
+  * Task{e7cb3cb #3 type=undefined ?? U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0}
+    mCreatedByOrganizer=true
+    isSleeping=false
+
+  * Task{3e297a8 #4 type=undefined ?? U=0 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+    mCreatedByOrganizer=true
+    isSleeping=false
+
+  * Task{59ff2c1 #5 type=undefined ?? U=0 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+    mCreatedByOrganizer=true
+    isSleeping=false
+
+  Resumed activities in task display areas (from top to bottom):
+    Resumed: ActivityRecord{76850b8 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+
+Display #4 (activities from top to bottom):
+
+  Activities waiting to stop:
+    Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+      Stop #0: ActivityRecord{78ac959 u0 com.kaori.wakeupschedule/.SplashActivity t3536 f}}
+
+  ResumedActivity: ActivityRecord{6be6b31 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3536}
+
+ActivityTaskSupervisor state:
+  topDisplayFocusedRootTask=Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+  mLastOrientationSource=WindowedMagnification:0:31@228274428
+  deepestLastOrientationSource=ActivityRecord{6be6b31 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3536}
+  overrideConfig={0.0 ?mcc?mnc ?localeList ?layoutDir sw540dp w540dp h960dp 320dpi lrg long port ?uimode ?night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} ?fontWeightAdjustment}
+  Display: mDisplayId=3 rootTasks=1
+    init=1080x1920 320dpi cur=1080x1920 app=1080x1920 rng=1080x1080-1920x1920
+    deferred=false mLayoutNeeded=false mTouchExcludeRegion=SkRegion((0,0,1080,1920))
+
+  mLayoutSeq=21
+  mCurrentFocus=null
+  mFocusedApp=ActivityRecord{6be6b31 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3536}
+
+  displayId=3
+  mWallpaperTarget=null
+  mLastWallpaperX=-1.0 mLastWallpaperY=-1.0
+
+  Display areas in top down Z order:
+    * Leaf:36:36
+    * FullscreenMagnification:33:35
+      * Leaf:33:35
+    * Leaf:32:32
+    * WindowedMagnification:0:31
+      * FullscreenMagnification:29:31
+        * Leaf:29:31
+      * Leaf:28:28
+      * FullscreenMagnification:26:27
+        * Leaf:26:27
+      * Leaf:24:25
+      * FullscreenMagnification:17:23
+        * Leaf:17:23
+      * ImePlaceholder:15:16
+        * ImeContainer
+      * FullscreenMagnification:0:14
+        * Leaf:3:14
+        * DefaultTaskDisplayArea
+        * Leaf:0:1
+
+  Task display areas in top down Z order:
+    TaskDisplayArea DefaultTaskDisplayArea
+      mPreferredTopFocusableRootTask=Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+      mLastFocusedRootTask=Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+      Application tokens in top down Z order:
+      * Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+        bounds=[0,0][1080,1920]
+        * ActivityRecord{6be6b31 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3536}
+        * ActivityRecord{78ac959 u0 com.kaori.wakeupschedule/.SplashActivity t3536 f}}
+
+  no ScreenRotationAnimation 
+
+
+  PinnedTaskController
+    mIsImeShowing=false
+    mImeHeight=0
+    mAspectRatio=-1.0
+    mMinAspectRatio=0.41841003
+    mMaxAspectRatio=2.39
+    mActions=[]
+
+  DisplayFrames w=1080 h=1920 r=0
+
+  DisplayPolicy
+    mCarDockEnablesAccelerometer=true mDeskDockEnablesAccelerometer=true
+    mDockMode=EXTRA_DOCK_STATE_UNDOCKED mLidState=LID_ABSENT
+    mAwake=true mScreenOnEarly=true mScreenOnFully=true
+    mKeyguardDrawComplete=false mWindowManagerDrawComplete=false
+    mHdmiPlugged=false
+    mLastAppearance=LIGHT_STATUS_BARS
+    mLastBehavior=DEFAULT
+    mShowingDream=false mDreamingLockscreen=false
+    isKeyguardShowing=false
+    mTopFullscreenOpaqueWindowState=Window{39a0afa u0 com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity}
+    mTopIsFullscreen=false
+    mForceStatusBar=false mAllowLockscreenWhenOn=false
+    mRemoteInsetsControllerControlsSystemBars=false
+    SystemGestures:
+      mDisplayCutoutTouchableRegionSize=0
+      mSwipeStartThreshold=Rect(48, 48 - 48, 48)
+      mSwipeDistanceThreshold=48
+    Looper state:
+      Looper (android.ui, tid 19) {30b24c1}
+        (Total messages: 0, polling=true, quitting=false)
+
+  DisplayRotation
+    mCurrentAppOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+    mLastOrientation=-1
+    mRotation=0 mDeferredRotationPauseCount=0
+    mLandscapeRotation=ROTATION_90 mSeascapeRotation=ROTATION_270
+    mPortraitRotation=ROTATION_0 mUpsideDownRotation=ROTATION_180
+    mSupportAutoRotation=false
+    WindowOrientationListener
+      mEnabled=false
+      mCurrentRotation=ROTATION_0
+      mSensorType=null
+      mSensor={Sensor name="3-axis Accelerometer", vendor="STMicro", version=1, type=1, maxRange=39.300102, resolution=2.480159E-4, power=3.0, minDelay=10000}
+      mRate=2
+      AccelSensorJudge
+        mProposedRotation=0
+        mPredictedRotation=0
+        mLastFilteredX=0.0
+        mLastFilteredY=0.0
+        mLastFilteredZ=0.0
+        mLastFilteredTimestampNanos=0 (4984462.5ms ago)
+        mTiltHistory={last: 0.0}
+        mFlat=false
+        mSwinging=false
+        mAccelerating=false
+        mOverhead=false
+        mTouched=false
+        mTiltToleranceConfig=[[-25, 70], [-25, 65], [-25, 60], [-25, 65]]
+
+    mCarDockRotation=-1 mDeskDockRotation=-1
+    mUserRotationMode=USER_ROTATION_FREE mUserRotation=ROTATION_0 mCameraRotationMode=0 mAllowAllRotations=unknown
+    mDemoHdmiRotation=ROTATION_90 mDemoHdmiRotationLock=false mUndockedHdmiRotation=-1
+    mLidOpenRotation=-1
+    mFixedToUserRotation=false
+
+
+  WindowInsetsStateController
+    InsetsState
+      mDisplayFrame=Rect(0, 0 - 1080, 1920)
+      mDisplayCutout=DisplayCutout{insets=Rect(0, 0 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=0 displayHeight=0 density={0.0} cutoutSpec={} rotation={0} scale={0.0}}}}
+      mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}
+      mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=null rotation=0}
+        InsetsSource type=ITYPE_IME frame=[0,0][0,0] visible=false
+    Control map:
+    InsetsSourceProviders:
+      ImeInsetsSourceProvider
+        mSource=InsetsSource type=ITYPE_IME frame=[0,0][0,0] visible=false
+        mIsLeashReadyForDispatching=false mImeOverrideFrame=[0,0][0,0]
+        mImeShowing=false
+  mLastOrientationSource=WindowedMagnification:0:31@191643474
+  deepestLastOrientationSource=Window{b13cad7 u0 com.pranavpandey.rotation}
+  overrideConfig={1.0 460mcc65535mnc [zh_CN,en_US] ldltr sw540dp w540dp h936dp 320dpi lrg long port night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.28 fontWeightAdjustment=0}
+  Display: mDisplayId=0 rootTasks=4
+    init=1080x1920 320dpi cur=1080x1920 app=1080x1920 rng=1080x1032-1920x1872
+    deferred=false mLayoutNeeded=false mTouchExcludeRegion=SkRegion((0,0,1080,1920))
+
+  mLayoutSeq=88
+  mCurrentFocus=null
+  mFocusedApp=ActivityRecord{76850b8 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+
+  displayId=0
+  mWallpaperTarget=Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}
+  mLastWallpaperX=0.5 mLastWallpaperY=0.5
+
+  Display areas in top down Z order:
+    * Leaf:36:36
+    * HideDisplayCutout:32:35
+      * OneHanded:32:35
+        * FullscreenMagnification:33:35
+          * Leaf:33:35
+        * Leaf:32:32
+    * WindowedMagnification:0:31
+      * HideDisplayCutout:26:31
+        * OneHanded:26:31
+          * FullscreenMagnification:29:31
+            * Leaf:29:31
+          * Leaf:28:28
+          * FullscreenMagnification:26:27
+            * Leaf:26:27
+      * Leaf:24:25
+      * HideDisplayCutout:20:23
+        * OneHanded:20:23
+          * FullscreenMagnification:20:23
+            * Leaf:20:23
+      * OneHanded:19:19
+        * FullscreenMagnification:19:19
+          * Leaf:19:19
+      * HideDisplayCutout:18:18
+        * OneHanded:18:18
+          * FullscreenMagnification:18:18
+            * Leaf:18:18
+      * OneHanded:17:17
+        * FullscreenMagnification:17:17
+          * Leaf:17:17
+      * HideDisplayCutout:0:16
+        * OneHanded:2:16
+          * ImePlaceholder:15:16
+            * ImeContainer
+          * FullscreenMagnification:2:14
+            * Leaf:3:14
+            * DefaultTaskDisplayArea
+        * OneHandedBackgroundPanel:0:1
+          * OneHanded:0:1
+            * FullscreenMagnification:0:1
+              * Leaf:0:1
+
+  Task display areas in top down Z order:
+    TaskDisplayArea DefaultTaskDisplayArea
+      mPreferredTopFocusableRootTask=Task{7e36814 #1 type=home ?? U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      mLastFocusedRootTask=Task{7e36814 #1 type=home ?? U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      Application tokens in top down Z order:
+      * Task{7e36814 #1 type=home ?? U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        bounds=[0,0][1080,1920]
+        * Task{468ee9a #2 type=home I=com.teslacoilsw.launcher/.NovaLauncher U=0 rootTaskId=1 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+          bounds=[0,0][1080,1920]
+          * ActivityRecord{76850b8 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
+      * Task{e7cb3cb #3 type=undefined ?? U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0}
+        bounds=[0,0][1080,1920]
+      * Task{3e297a8 #4 type=undefined ?? U=0 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+        bounds=[0,0][1080,1920]
+      * Task{59ff2c1 #5 type=undefined ?? U=0 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+        bounds=[0,0][1080,1920]
+
+  no ScreenRotationAnimation 
+
+  rootHomeTask=Task=1
+
+  PinnedTaskController
+    mIsImeShowing=false
+    mImeHeight=0
+    mAspectRatio=-1.0
+    mMinAspectRatio=0.41841003
+    mMaxAspectRatio=2.39
+    mActions=[]
+
+  DisplayFrames w=1080 h=1920 r=0
+
+  DisplayPolicy
+    mCarDockEnablesAccelerometer=true mDeskDockEnablesAccelerometer=true
+    mDockMode=EXTRA_DOCK_STATE_UNDOCKED mLidState=LID_ABSENT
+    mAwake=true mScreenOnEarly=true mScreenOnFully=true
+    mKeyguardDrawComplete=true mWindowManagerDrawComplete=true
+    mHdmiPlugged=false
+    mLastBehavior=DEFAULT
+    mShowingDream=false mDreamingLockscreen=false
+    mStatusBar=Window{886d18f u0 StatusBar}
+    mExpandedPanel=Window{3f0cfb5 u0 NotificationShade}
+    isKeyguardShowing=false
+    mTopFullscreenOpaqueWindowState=Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}
+    mStatusBarColorWindows=
+      Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}
+    mStatusBarBackgroundWindows=
+      Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}
+    mTopIsFullscreen=false
+    mForceStatusBar=false mAllowLockscreenWhenOn=false
+    mRemoteInsetsControllerControlsSystemBars=false
+    SystemGestures:
+      mDisplayCutoutTouchableRegionSize=0
+      mSwipeStartThreshold=Rect(48, 48 - 48, 48)
+      mSwipeDistanceThreshold=48
+    Looper state:
+      Looper (android.ui, tid 19) {30b24c1}
+        (Total messages: 0, polling=true, quitting=false)
+
+  DisplayRotation
+    mCurrentAppOrientation=SCREEN_ORIENTATION_PORTRAIT
+    mLastOrientation=1
+    mRotation=0 mDeferredRotationPauseCount=0
+    mLandscapeRotation=ROTATION_90 mSeascapeRotation=ROTATION_270
+    mPortraitRotation=ROTATION_0 mUpsideDownRotation=ROTATION_180
+    mSupportAutoRotation=false
+    WindowOrientationListener
+      mEnabled=false
+      mCurrentRotation=ROTATION_0
+      mSensorType=null
+      mSensor={Sensor name="3-axis Accelerometer", vendor="STMicro", version=1, type=1, maxRange=39.300102, resolution=2.480159E-4, power=3.0, minDelay=10000}
+      mRate=2
+      AccelSensorJudge
+        mProposedRotation=0
+        mPredictedRotation=0
+        mLastFilteredX=0.0
+        mLastFilteredY=0.0
+        mLastFilteredZ=0.0
+        mLastFilteredTimestampNanos=0 (4984462.5ms ago)
+        mTiltHistory={last: 0.0}
+        mFlat=false
+        mSwinging=false
+        mAccelerating=false
+        mOverhead=false
+        mTouched=false
+        mTiltToleranceConfig=[[-25, 70], [-25, 65], [-25, 60], [-25, 65]]
+
+    mCarDockRotation=-1 mDeskDockRotation=-1
+    mUserRotationMode=USER_ROTATION_FREE mUserRotation=ROTATION_0 mCameraRotationMode=0 mAllowAllRotations=unknown
+    mDemoHdmiRotation=ROTATION_90 mDemoHdmiRotationLock=false mUndockedHdmiRotation=-1
+    mLidOpenRotation=-1
+    mFixedToUserRotation=false
+
+
+  WindowInsetsStateController
+    InsetsState
+      mDisplayFrame=Rect(0, 0 - 1080, 1920)
+      mDisplayCutout=DisplayCutout{insets=Rect(0, 0 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=0 displayHeight=0 density={0.0} cutoutSpec={} rotation={0} scale={0.0}}}}
+      mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}
+      mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(888, 0 - 1052, 48) rotation=0}
+        InsetsSource type=ITYPE_STATUS_BAR frame=[0,0][1080,48] visible=true
+        InsetsSource type=ITYPE_TOP_MANDATORY_GESTURES frame=[0,0][1080,48] visible=true
+        InsetsSource type=ITYPE_TOP_TAPPABLE_ELEMENT frame=[0,0][1080,48] visible=true
+        InsetsSource type=ITYPE_IME frame=[0,0][0,0] visible=false
+    Control map:
+      ITYPE_IME -> Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}
+      ITYPE_STATUS_BAR -> Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}
+    InsetsSourceProviders:
+      ImeInsetsSourceProvider
+        mSource=InsetsSource type=ITYPE_IME frame=[0,0][0,0] visible=false
+        mControl=InsetsSourceControl type=ITYPE_IME mLeash=Surface(name=Surface(name=b4553d7 InputMethod)/@0x6aa5c3a - animation-leash of insets_animation)/@0xf37a466 mSurfacePosition=Point(0, 1920) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0} mSkipAnimationOnce=false
+        mIsLeashReadyForDispatching=true mImeOverrideFrame=[0,0][0,0]
+        mWin=Window{b4553d7 u0 InputMethod}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=b4553d7 InputMethod)/@0x6aa5c3a - animation-leash of insets_animation)/@0xf37a466
+        mControlTarget=Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}
+        mImeShowing=false
+      InsetsSourceProvider
+        mSource=InsetsSource type=ITYPE_TOP_TAPPABLE_ELEMENT frame=[0,0][1080,48] visible=true
+        mIsLeashReadyForDispatching=true mImeOverrideFrame=[0,0][0,0]
+        mWin=Window{886d18f u0 StatusBar}
+      InsetsSourceProvider
+        mSource=InsetsSource type=ITYPE_TOP_MANDATORY_GESTURES frame=[0,0][1080,48] visible=true
+        mIsLeashReadyForDispatching=true mImeOverrideFrame=[0,0][0,0]
+        mWin=Window{886d18f u0 StatusBar}
+      InsetsSourceProvider
+        mSource=InsetsSource type=ITYPE_STATUS_BAR frame=[0,0][1080,48] visible=true
+        mControl=InsetsSourceControl type=ITYPE_STATUS_BAR mLeash=Surface(name=Surface(name=886d18f StatusBar)/@0x1cac6c7 - animation-leash of insets_animation)/@0xbac43a7 mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=48, right=0, bottom=0} mSkipAnimationOnce=false
+        mIsLeashReadyForDispatching=true mImeOverrideFrame=[0,0][0,0]
+        mWin=Window{886d18f u0 StatusBar}
+        mAdapter=ControlAdapter mCapturedLeash=Surface(name=Surface(name=886d18f StatusBar)/@0x1cac6c7 - animation-leash of insets_animation)/@0xbac43a7
+        mControlTarget=Window{e7b30be u0 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher}
+  overrideConfig={0.0 ?mcc?mnc ?localeList ?layoutDir sw540dp w540dp h960dp 320dpi lrg long port ?uimode ?night finger -keyb/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} ?fontWeightAdjustment}
+  Display: mDisplayId=4 rootTasks=0
+    init=1080x1920 320dpi cur=1080x1920 app=1080x1920 rng=1080x1080-1920x1920
+    deferred=false mLayoutNeeded=false mTouchExcludeRegion=SkRegion()
+
+  mLayoutSeq=1
+  mCurrentFocus=null
+  mFocusedApp=null
+
+  displayId=4
+  mWallpaperTarget=null
+  mLastWallpaperX=-1.0 mLastWallpaperY=-1.0
+
+  Display areas in top down Z order:
+    * Leaf:36:36
+    * FullscreenMagnification:33:35
+      * Leaf:33:35
+    * Leaf:32:32
+    * WindowedMagnification:0:31
+      * FullscreenMagnification:29:31
+        * Leaf:29:31
+      * Leaf:28:28
+      * FullscreenMagnification:26:27
+        * Leaf:26:27
+      * Leaf:24:25
+      * FullscreenMagnification:17:23
+        * Leaf:17:23
+      * ImePlaceholder:15:16
+        * ImeContainer
+      * FullscreenMagnification:0:14
+        * Leaf:3:14
+        * DefaultTaskDisplayArea
+        * Leaf:0:1
+
+  Task display areas in top down Z order:
+    TaskDisplayArea DefaultTaskDisplayArea
+      Application tokens in top down Z order:
+
+  no ScreenRotationAnimation 
+
+
+  PinnedTaskController
+    mIsImeShowing=false
+    mImeHeight=0
+    mAspectRatio=-1.0
+    mMinAspectRatio=0.41841003
+    mMaxAspectRatio=2.39
+    mActions=[]
+
+  DisplayFrames w=1080 h=1920 r=0
+
+  DisplayPolicy
+    mCarDockEnablesAccelerometer=true mDeskDockEnablesAccelerometer=true
+    mDockMode=EXTRA_DOCK_STATE_UNDOCKED mLidState=LID_ABSENT
+    mAwake=true mScreenOnEarly=true mScreenOnFully=true
+    mKeyguardDrawComplete=false mWindowManagerDrawComplete=false
+    mHdmiPlugged=false
+    mShowingDream=false mDreamingLockscreen=false
+    isKeyguardShowing=false
+    mTopIsFullscreen=false
+    mForceStatusBar=false mAllowLockscreenWhenOn=false
+    mRemoteInsetsControllerControlsSystemBars=false
+    SystemGestures:
+      mDisplayCutoutTouchableRegionSize=0
+      mSwipeStartThreshold=Rect(48, 48 - 48, 48)
+      mSwipeDistanceThreshold=48
+    Looper state:
+      Looper (android.ui, tid 19) {30b24c1}
+        (Total messages: 0, polling=true, quitting=false)
+
+  DisplayRotation
+    mCurrentAppOrientation=SCREEN_ORIENTATION_UNSPECIFIED
+    mLastOrientation=-1
+    mRotation=0 mDeferredRotationPauseCount=0
+    mLandscapeRotation=ROTATION_90 mSeascapeRotation=ROTATION_270
+    mPortraitRotation=ROTATION_0 mUpsideDownRotation=ROTATION_180
+    mSupportAutoRotation=false
+    WindowOrientationListener
+      mEnabled=false
+      mCurrentRotation=ROTATION_0
+      mSensorType=null
+      mSensor={Sensor name="3-axis Accelerometer", vendor="STMicro", version=1, type=1, maxRange=39.300102, resolution=2.480159E-4, power=3.0, minDelay=10000}
+      mRate=2
+      AccelSensorJudge
+        mProposedRotation=0
+        mPredictedRotation=0
+        mLastFilteredX=0.0
+        mLastFilteredY=0.0
+        mLastFilteredZ=0.0
+        mLastFilteredTimestampNanos=0 (4984463.0ms ago)
+        mTiltHistory={last: 0.0}
+        mFlat=false
+        mSwinging=false
+        mAccelerating=false
+        mOverhead=false
+        mTouched=false
+        mTiltToleranceConfig=[[-25, 70], [-25, 65], [-25, 60], [-25, 65]]
+
+    mCarDockRotation=-1 mDeskDockRotation=-1
+    mUserRotationMode=USER_ROTATION_FREE mUserRotation=ROTATION_0 mCameraRotationMode=0 mAllowAllRotations=unknown
+    mDemoHdmiRotation=ROTATION_90 mDemoHdmiRotationLock=false mUndockedHdmiRotation=-1
+    mLidOpenRotation=-1
+    mFixedToUserRotation=false
+
+
+  WindowInsetsStateController
+    InsetsState
+      mDisplayFrame=Rect(0, 0 - 1080, 1920)
+      mDisplayCutout=DisplayCutout{insets=Rect(0, 0 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=0 displayHeight=0 density={0.0} cutoutSpec={} rotation={0} scale={0.0}}}}
+      mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}
+      mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=null rotation=0}
+        InsetsSource type=ITYPE_IME frame=[0,0][0,0] visible=false
+    Control map:
+    InsetsSourceProviders:
+      ImeInsetsSourceProvider
+        mSource=InsetsSource type=ITYPE_IME frame=[0,0][0,0] visible=false
+        mIsLeashReadyForDispatching=false mImeOverrideFrame=[0,0][0,0]
+        mImeShowing=false
+
+  KeyguardController:
+    mKeyguardShowing=false
+    mAodShowing=false
+    mKeyguardGoingAway=false
+    Occluded=false DismissingKeyguardActivity=null TurnScreenOnActivity=null at display=0
+    Occluded=true DismissingKeyguardActivity=null TurnScreenOnActivity=null at display=3
+    Occluded=false DismissingKeyguardActivity=null TurnScreenOnActivity=null at display=4
+    mDismissalRequested=false
+
+  LockTaskController:
+    mLockTaskModeState=NONE
+    mLockTaskModeTasks=
+    mLockTaskPackages (userId:packages)=
+      u0:[]
+      u10:[]
+      u11:[]
+      u12:[]
+      u13:[]
+      u14:[]
+      u15:[]
+      u16:[]
+      u17:[]
+      u18:[]
+
+  mCurTaskIdForUser={0=3536}
+  mUserRootTaskInFront={}
+  mVisibilityTransactionDepth=0
+  isHomeRecentsComponent=false
+  mNoHistoryActivities=[]
+
+  TaskOrganizerController:
+      android.window.ITaskOrganizer$Stub$Proxy@f1fe054 uid=10028:
+        (fullscreen) Task{468ee9a #2 type=home I=com.teslacoilsw.launcher/.NovaLauncher U=0 rootTaskId=1 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        (fullscreen) Task{7e36814 #1 type=home ?? U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        (fullscreen) Task{e7cb3cb #3 type=undefined ?? U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0}
+        (multi-window) Task{3e297a8 #4 type=undefined ?? U=0 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+        (multi-window) Task{59ff2c1 #5 type=undefined ?? U=0 visible=false visibleRequested=false mode=multi-window translucent=true sz=0}
+        (fullscreen) Task{6182cb8 #3536 type=standard A=10043:com.kaori.wakeupschedule U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=2}
+
+  VisibleActivityProcess:[ ProcessRecord{53a35ff 6489:com.kaori.wakeupschedule/u0a43} ProcessRecord{6e6b4a6 1713:com.teslacoilsw.launcher/u0a38}]
+  NumNonAppVisibleWindowByUid:[ 10085:1 10028:4]

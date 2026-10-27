@@ -1,0 +1,22 @@
+Compiled from "DefaultLifecycleObserverAdapter.java"
+public final class androidx.lifecycle.DefaultLifecycleObserverAdapter implements androidx.lifecycle.o0ooOOo,androidx.lifecycle.LifecycleEventObserver {
+  public final androidx.lifecycle.OooOO0 OooOO0o;
+    descriptor: Landroidx/lifecycle/OooOO0;
+  public final androidx.lifecycle.o0ooOOo OooOOO0;
+    descriptor: Landroidx/lifecycle/o0ooOOo;
+  private final androidx.lifecycle.DefaultLifecycleObserver defaultLifecycleObserver;
+    descriptor: Landroidx/lifecycle/DefaultLifecycleObserver;
+  private final androidx.lifecycle.LifecycleEventObserver lifecycleEventObserver;
+    descriptor: Landroidx/lifecycle/LifecycleEventObserver;
+  public androidx.lifecycle.DefaultLifecycleObserverAdapter(androidx.lifecycle.OooOO0, androidx.lifecycle.o0ooOOo);
+    descriptor: (Landroidx/lifecycle/OooOO0;Landroidx/lifecycle/o0ooOOo;)V
+
+  public androidx.lifecycle.DefaultLifecycleObserverAdapter(androidx.lifecycle.DefaultLifecycleObserver, androidx.lifecycle.LifecycleEventObserver);
+    descriptor: (Landroidx/lifecycle/DefaultLifecycleObserver;Landroidx/lifecycle/LifecycleEventObserver;)V
+
+  public final void OooO0OO(androidx.lifecycle.o0Oo0oo, androidx.lifecycle.Lifecycle$Event);
+    descriptor: (Landroidx/lifecycle/o0Oo0oo;Landroidx/lifecycle/Lifecycle$Event;)V
+
+  public void onStateChanged(androidx.lifecycle.LifecycleOwner, androidx.lifecycle.Lifecycle$Event);
+    descriptor: (Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+}

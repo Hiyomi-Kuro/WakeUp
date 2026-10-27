@@ -1,0 +1,13 @@
+
+>   Class descriptor  : 'Lokhttp3/o00oO0o;'
+    Access flags      : 0x0601 (PUBLIC INTERFACE ABSTRACT)
+    Superclass        : 'Ljava/lang/Object;'
+    Interfaces        -
+    Static fields     -
+    Instance fields   -
+    Direct methods    -
+    Virtual methods   -
+      #0              : (in Lokhttp3/o00oO0o;)
+        name          : 'intercept'
+        type          : '(Lokhttp3/oo000o;)Lokhttp3/o00000O;'
+

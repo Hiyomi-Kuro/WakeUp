@@ -1,0 +1,4 @@
+Startup-error scan (2026-10-24)
+Scope: docs/phase8-mumu-evidence/cold-start-01-logcat.txt through cold-start-03-logcat.txt.
+Patterns: FATAL EXCEPTION, NoSuchMethodError, NoClassDefFoundError, VerifyError, Resources.NotFoundException, ANR in com.kaori.wakeupschedule, Process: com.kaori.wakeupschedule.
+Result: no matches. This scan does not establish that the UI rendered; each captured app display screenshot is black and the app Window has no Surface.

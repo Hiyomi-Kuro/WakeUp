@@ -1,0 +1,4 @@
+
+Verifying alignment of D:\Download\AndroidStudioProjects\WakeUP\app\build\outputs\apk\debug\app-debug.apk (4)...
+Verification successful
+

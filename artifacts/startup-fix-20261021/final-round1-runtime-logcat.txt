@@ -1,0 +1,64 @@
+--------- beginning of system
+10-21 00:45:13.697  1310  2420 E ActivityTaskManager: [KeepAlive] created display id:10 , ph-yid:local:4619827446303777033, for pkg com.kaori.wakeupschedule
+10-21 00:45:13.698  1310  2420 E ActivityTaskManager: [KeepAlive] null options , create options to set displayId for newTask
+10-21 00:45:13.698  1310  2420 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=3479 attached=false
+--------- beginning of crash
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: FATAL EXCEPTION: main
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: Process: com.kaori.wakeupschedule, PID: 9089
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider androidx.startup.InitializationProvider: androidx.startup.StartupException: java.lang.ExceptionInInitializerError
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7679)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7191)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6962)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.app.ActivityThread.access$1600(ActivityThread.java:260)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2140)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8085)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1091)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: Caused by: androidx.startup.StartupException: java.lang.ExceptionInInitializerError
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.startup.AppInitializer.doInitialize(AppInitializer.java:187)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.startup.AppInitializer.discoverAndInitialize(AppInitializer.java:238)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.startup.AppInitializer.discoverAndInitialize(AppInitializer.java:206)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.startup.InitializationProvider.onCreate(InitializationProvider.java:45)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2410)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2380)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7674)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	... 11 more
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: Caused by: java.lang.ExceptionInInitializerError
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at kotlinx.coroutines.ExecutorsKt.from(Executors.kt:100)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.work.impl.utils.taskexecutor.WorkManagerTaskExecutor.<init>(WorkManagerTaskExecutor.java:44)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.work.impl.WorkManagerImplExtKt.createWorkManager$default(WorkManagerImplExt.kt:32)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.work.impl.WorkManagerImplExtKt.createWorkManager(Unknown Source:20)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.work.impl.WorkManagerImpl.initialize(WorkManagerImpl.java:206)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.work.WorkManager.initialize(WorkManager.java:210)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.work.WorkManagerInitializer.create(WorkManagerInitializer.java:39)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.work.WorkManagerInitializer.create(WorkManagerInitializer.java:30)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at androidx.startup.AppInitializer.doInitialize(AppInitializer.java:180)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	... 17 more
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: Caused by: java.lang.ClassCastException: kotlinx.coroutines.ExecutorCoroutineDispatcher$Key$1 cannot be cast to kotlin.jvm.functions.Function1
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at kotlinx.coroutines.ExecutorCoroutineDispatcher$Key.<init>(Executors.kt:25)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at kotlinx.coroutines.ExecutorCoroutineDispatcher$Key.<init>(Unknown Source:0)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	at kotlinx.coroutines.ExecutorCoroutineDispatcher.<clinit>(Unknown Source:3)
+10-21 00:45:14.275  9089  9089 E AndroidRuntime: 	... 26 more
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: FATAL EXCEPTION: pool-3-thread-1
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: Process: com.kaori.wakeupschedule, PID: 9089
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: java.lang.NoSuchMethodError: No virtual method a(Lokhttp3/Authenticator;)Lcom/huawei/agconnect/credential/obs/ad; in class Lcom/huawei/agconnect/credential/obs/ad; or its super classes (declaration of 'com.huawei.agconnect.credential.obs.ad' appears in /data/app/~~-4r7vv6t2X8kDphYNgVjpQ==/com.kaori.wakeupschedule-hXBbmCkQ-4OnRYUB1Ata5Q==/base.apk!classes2.dex)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at com.huawei.agconnect.credential.obs.ab.a(Unknown Source:20)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at com.huawei.agconnect.credential.obs.ab.a(Unknown Source:103)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at com.huawei.agconnect.common.api.Backend.call(Unknown Source:17)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at com.huawei.agconnect.credential.obs.ac.b(Unknown Source:99)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at com.huawei.agconnect.common.api.BackendService.sendRequest(Unknown Source:0)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at com.huawei.agconnect.credential.obs.aq.a(Unknown Source:76)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at com.huawei.agconnect.credential.obs.aq.a(Unknown Source:0)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at com.huawei.agconnect.credential.obs.aq$1.run(Unknown Source:26)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-21 00:45:14.401  9089  9131 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:920)
+10-21 00:45:15.329  1310  5890 W ActivityTaskManager:   Force finishing activity com.kaori.wakeupschedule/.SplashActivity
+10-21 00:45:15.830  1310  1330 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{3ee102f u0 com.kaori.wakeupschedule/.SplashActivity t3479 f} isExiting}
+10-21 00:45:20.348  1310  1331 E ActivityTaskManager: [KeepAlive] TaskDisplayArea#onRootTaskRemoved called, diconnect display 10
+10-21 00:45:20.351  1310  1331 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=3479 attached=false
+10-21 00:45:20.351  1310  1331 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=3479 attached=false

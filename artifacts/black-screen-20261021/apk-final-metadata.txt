@@ -1,0 +1,4 @@
+APK: D:\Download\AndroidStudioProjects\WakeUP\app\build\outputs\apk\debug\app-debug.apk
+Size: 20616704
+SHA256: ACD9697107F66D6C6609F0C6E0E9DCDD2EC06C51D45CE7C6D90DC5B0C3A3EF49
+Modified: 2026-10-21 09:26:46 +08:00

@@ -1,0 +1,29 @@
+[
+  {
+    "round": 1,
+    "processPresent": true,
+    "pid": "9232",
+    "scheduleActivityResumed": true,
+    "runtimeErrors": true,
+    "activity": "ResumedActivity: ActivityRecord{99a9fe9 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3497}",
+    "errors": ""
+  },
+  {
+    "round": 2,
+    "processPresent": true,
+    "pid": "9365",
+    "scheduleActivityResumed": true,
+    "runtimeErrors": true,
+    "activity": "ResumedActivity: ActivityRecord{6cf1e99 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3498}",
+    "errors": ""
+  },
+  {
+    "round": 3,
+    "processPresent": true,
+    "pid": "9485",
+    "scheduleActivityResumed": true,
+    "runtimeErrors": true,
+    "activity": "ResumedActivity: ActivityRecord{958225f u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3499}",
+    "errors": ""
+  }
+]

@@ -1,0 +1,370 @@
+--------- beginning of main
+10-24 15:48:36.550  8099  8099 I Zygote  : fakeProductInfoIfNeed callded! com.kaori.wakeupschedule
+10-24 15:48:36.552  8099  8099 I Zygote  : fake Product info com.kaori.wakeupschedule not matched any pattern
+10-24 15:48:36.552  8099  8099 I Zygote  : fakeProductInfoFromProperties callded! com.kaori.wakeupschedule
+10-24 15:48:36.543  8099  8099 I main    : type=1400 audit(0.0:15838): avc: denied { search } for name="com.android.permission" dev="sda6" ino=435 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+10-24 15:48:36.562  8099  8099 E NemuAppNameUtil: save data success
+10-24 15:48:36.565  8099  8099 E linker  : do_dlopen failed
+10-24 15:48:36.565  8099  8099 E linker  : load selected hp /system/etc/mumu-configs/shared_libs/libhp12_x86_64.so failed
+10-24 15:48:36.565  8099  8099 E linker  : library "/system/etc/mumu-configs/shared_libs/libhp12_x86_64.so" ("/system/etc/mumu-configs/shared_libs/libhp12_x86_64.so") needed or dlopened by "/apex/com.android.art/lib64/libnativebridge.so" is not accessible for the namespace: [name="com_android_art", ld_library_paths="", default_library_paths="/apex/com.android.art/lib64", permitted_paths="/apex/com.android.art/lib64:/system/lib64:/data:/apex/com.android.art/javalib"]
+10-24 15:48:36.565  8099  8099 E linker  : do_dlopen failed
+10-24 15:48:36.565  8099  8099 E linker  : load origin hp /system/etc/mumu-configs/shared_libs/libhp12_x86_64.so failed
+10-24 15:48:36.543  8099  8099 I main    : type=1400 audit(0.0:15839): avc: denied { read } for name="framework-permission-s.jar" dev="sda6" ino=444 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+10-24 15:48:36.567  8099  8099 E linker  : hp entrace has not been loaded, ignored
+10-24 15:48:36.543  8099  8099 I main    : type=1400 audit(0.0:15840): avc: denied { open } for path="/apex/com.android.permission/javalib/framework-permission-s.jar" dev="sda6" ino=444 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+10-24 15:48:36.576  8099  8099 W nativebridge: LLLog DoRedirectTranslator not is_gte
+10-24 15:48:36.578  8099  8099 W nativebridge: Failed to bind-mount /system/etc/cpuinfo.x86_64.txt as /proc/cpuinfo: No such file or directory
+10-24 15:48:36.578  8099  8099 W nativebridge: Failed to bind-mount /system/lib64/x86_64/cpuinfo as /proc/cpuinfo: No such file or directory
+10-24 15:48:36.578  8099  8099 I Zygote  : seccomp disabled by setenforce 0
+10-24 15:48:36.588  8099  8099 I .wakeupschedul: Late-enabling -Xcheck:jni
+10-24 15:48:36.636  8099  8099 W .wakeupschedul: Unexpected CPU variant for X86 using defaults: x86_64
+10-24 15:48:36.637  8099  8099 V libnb   : enter native_bridge2_initialize /data/user/0/com.kaori.wakeupschedule/code_cache arm64
+10-24 15:48:36.648  8099  8099 E libnb   : The translator implementation library has not been set.
+10-24 15:48:36.663  8099  8099 E libnb   : get_callbacks native_handle 0x6f851d9833ccad7d: 1 libnb:/system/lib64/libhoudini.so
+10-24 15:48:36.663  8099  8099 I libnb   : Found /system/lib64/libhoudini.so version 6
+10-24 15:48:36.663  8099  8099 D HP      : no libmumuhooker.so
+10-24 15:48:36.665  8099  8099 D houdini : [8099] Intel Bridge Technology for Netease internal evaluation only, Copyright(C) Intel Corp. 2012-2025.
+10-24 15:48:36.665  8099  8099 D houdini : [8099] Use permitted only under a valid evaluation software license agreement - all other rights reserved.
+10-24 15:48:36.665  8099  8099 D houdini : [8099] Initialize library(version: 12.0.1_z.Netease_ev4 RELEASE)... successfully.
+10-24 15:48:36.665  8099  8099 W HP      : x_initialize private_dir:/data/user/0/com.kaori.wakeupschedule/code_cache instruction_set:arm64 getMethodShorty:0x7d936253c340 ret:1
+10-24 15:48:36.697  8099  8099 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-24 15:48:36.712  8099  8117 E ashmem  : memfd: ro.vndk.version not defined or invalid (), this is mandated since P.
+10-24 15:48:36.724  8099  8099 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10043; state: ENABLED
+10-24 15:48:36.992  8099  8099 I Typeface: Preloading /system/fonts/Roboto-Regular.ttf
+10-24 15:48:37.018  8099  8099 I Typeface: Preloading /system/fonts/NotoSansSC-Regular.otf
+10-24 15:48:37.018  8099  8099 I Typeface: Preloading /system/fonts/NotoSansSC-Bold.otf
+10-24 15:48:37.329  8099  8099 V GraphicsEnvironment: ANGLE Developer option for 'com.kaori.wakeupschedule' set to: 'default'
+10-24 15:48:37.329  8099  8099 V GraphicsEnvironment: ANGLE GameManagerService for com.kaori.wakeupschedule: false
+10-24 15:48:37.330  8099  8099 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-24 15:48:37.331  8099  8099 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+10-24 15:48:37.332  8099  8099 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+10-24 15:48:37.340  8099  8099 W HMSSDK_PushPreferences: get new sharedPreferences failed,start to get from context. 
+10-24 15:48:37.341  8099  8099 I AGConnectProvider: AGConnectInitializeProvider#onCreate
+10-24 15:48:37.341  8099  8099 I AGConnectInstance: AGConnectInstance#initialize
+10-24 15:48:37.341  8099  8099 W AGC_Instance: agc sdk initialize
+10-24 15:48:37.344  8099  8099 I AGC_Registrar: getServices
+10-24 15:48:37.346  8099  8099 I AGC_Registrar: services:3
+10-24 15:48:37.346  8099  8099 D AGC_Instance: AGConnectInstanceImpl init
+10-24 15:48:37.346  8099  8099 D AGC_ServiceRepository: addService start
+10-24 15:48:37.346  8099  8099 D AGC_ServiceRepository: addService end
+10-24 15:48:37.346  8099  8099 D AGC_ServiceRepository: addService start
+10-24 15:48:37.346  8099  8099 D AGC_Instance: AGConnectInstanceImpl init end
+10-24 15:48:37.346  8099  8099 I AGC_Instance: initFinish callback start
+10-24 15:48:37.347  8099  8099 I [AGC_LOG]AGConnectCrashRegistrar: AGCInitFinishCallback
+10-24 15:48:37.349  8099  8099 I AGC_Instance: AGC SDK initialize end
+10-24 15:48:37.358  8099  8099 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+10-24 15:48:37.378  8099  8099 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+10-24 15:48:37.378  8099  8099 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+10-24 15:48:37.402  8099  8146 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10043; state: ENABLED
+10-24 15:48:37.407  8099  8151 D AGC_ConfigImpl: initConfigReader
+10-24 15:48:37.408  8099  8151 D AGC_FlexibleDecrypt: init
+10-24 15:48:37.409  8099  8151 D AGC_Keys: build aes key, iterationCount:1
+10-24 15:48:37.409  8099  8099 I HMSSDK_HianalyticsExist: In isHianalyticsExist, Failed to find class HiAnalyticsConfig.
+10-24 15:48:37.410  8099  8099 I HMSSDK_HianalyticsExist: hianalytics exist: false
+10-24 15:48:37.410  8099  8099 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :false
+10-24 15:48:37.411  8099  8151 D AGC_Keys: build aes key end
+10-24 15:48:37.412  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getVendorCountryCode|41|countryCode by ro.hw.country is: UNKNOWN
+10-24 15:48:37.413  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getSimCountryCode|76|countryCode by SimCountryIso is: 
+10-24 15:48:37.413  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getRegionSettingCountryCode|33|countryCode by system's region setting is: CN
+10-24 15:48:37.413  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getLocaleCountryCode|73|other Android 9.0 upper， get countryCode form Locale.getDefault().getCountry()
+10-24 15:48:37.413  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|init|49|get issue_country code from LOCALE_INFO
+10-24 15:48:37.414  8099  8099 I HMSSDK_HMSBIInitializer: Builder->biInitFlag : start initHaSDK
+10-24 15:48:37.414  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getVendorCountryCode|41|countryCode by ro.hw.country is: UNKNOWN
+10-24 15:48:37.414  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getSimCountryCode|76|countryCode by SimCountryIso is: 
+10-24 15:48:37.414  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getRegionSettingCountryCode|33|countryCode by system's region setting is: CN
+10-24 15:48:37.414  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|getLocaleCountryCode|73|other Android 9.0 upper， get countryCode form Locale.getDefault().getCountry()
+10-24 15:48:37.414  8099  8099 I NetworkKit_CountryCodeBean: main|null|com.huawei.hms.framework.network.grs.local.model.CountryCodeBean|init|49|get issue_country code from LOCALE_INFO
+10-24 15:48:37.415  8099  8152 I HMSSDK_HMSBIInitializer: Start to query GRS
+10-24 15:48:37.420  8099  8152 I NetworkKit_GrsClientManager: AsyncTask #1|null|com.huawei.hms.framework.network.grs.d|a|95|grsClientImpl == null, and new GrsClientImpl
+10-24 15:48:37.422  8099  8152 I NetworkKit_c: AsyncTask #1|null|com.huawei.hms.framework.network.grs.c|<init>|87|GrsClient Instance is init, GRS SDK version: 6.0.2.300, GrsBaseInfoParam: app_name=null, reg_country=null, ser_country=null, issue_country=CN
+10-24 15:48:37.424  8099  8155 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.e.c|a|25|ContextHolder.getAppContext() from GRS is:null
+--------- beginning of system
+10-24 15:48:37.425  8099  8099 E ActivityThread: Failed to find provider info for com.miui.personalassistant.widget.external
+10-24 15:48:37.427  8099  8155 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.e.c|a|25|ContextHolder.getAppContext() from GRS is:null
+10-24 15:48:37.430  8099  8155 I NetworkKit_LocalManagerProxy: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.b|a|55|appConfigName is: null
+10-24 15:48:37.436  8099  8151 I HMSSDK_o: The local secret is already in separate file mode.
+10-24 15:48:37.436  8099  8155 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_analyticsKit.json, sucess.
+10-24 15:48:37.438  8099  8155 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_opendevicesdk.json, sucess.
+10-24 15:48:37.440  8099  8151 W .wakeupschedul: Accessing hidden method Landroid/app/SharedPreferencesImpl;-><init>(Ljava/io/File;I)V (unsupported, reflection, allowed)
+10-24 15:48:37.440  8099  8155 I NetworkKit_AbstractLocalManager: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.f.a|a|79|load SDK_CONFIG_FILE: grs_sdk_global_route_config_opensdkService.json, sucess.
+10-24 15:48:37.441  8099  8155 I NetworkKit_GrsRequestInfo: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.g.k.c|e|75|post service list is:{"services":["com.huawei.hms.opendevicesdk","com.huawei.cloud.opensdkhianalytics","com.huawei.cloud.hms.analytics"]}
+10-24 15:48:37.443  8099  8155 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.c$a|call|294|postList is:{*s*r*i*e*"*[*c*m*h*a*e*.*m*.*p*n*e*i*e*d*"*"*o*.*u*w*i*c*o*d*o*e*s*k*i*n*l*t*c*"*"*o*.*u*w*i*c*o*d*h*s*a*a*y*i*s*]*
+10-24 15:48:37.444  8099  8155 I NetworkKit_c: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|null|com.huawei.hms.framework.network.grs.c$a|call|324|currentServices:{*s*r*i*e*"*[*c*m*h*a*e*.*m*.*p*n*e*i*e*d*"*"*o*.*u*w*i*c*o*d*o*e*s*k*i*n*l*t*c*"*"*o*.*u*w*i*c*o*d*h*s*a*a*y*i*s*]*
+10-24 15:48:37.444  8099  8155 I NetworkKit_PLSharedPreferences: AsyncTask #1 -->NetworkKit_GRS_GrsClient-Init_0|PLSharedPreferences.java|com.huawei.hms.framework.common.PLSharedPreferences|getAll|234|sp size 4
+10-24 15:48:37.445  8099  8151 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.445  8099  8152 I NetworkKit_e: AsyncTask #1|null|com.huawei.hms.framework.network.grs.h.e|a|30|isSpExpire false.
+10-24 15:48:37.445  8099  8152 I NetworkKit_a: AsyncTask #1|null|com.huawei.hms.framework.network.grs.a|a|20|GrsClientManager.getUrlsLocal: Get URL from GRS Server Cache
+10-24 15:48:37.445  8099  8152 I NetworkKit_a: AsyncTask #1|null|com.huawei.hms.framework.network.grs.a|a|66|GrsClientManager.ayncGetGrsUrl：Return [com.huawei.cloud.opensdkhianalytics][ROOTV2] Url: h*t*s*/*m*t*i*s*-*r*n*d*.*b*n*c*o*d*c*:*4*
+10-24 15:48:37.447  8099  8151 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.447  8099  8151 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.448  8099  8151 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.449  8099  8151 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.449  8099  8151 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.450  8099  8152 I HMSSDK_HMSBIInitializer: BI URL acquired successfully
+10-24 15:48:37.450  8099  8151 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.451  8099  8151 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.451  8099  8164 I HMSSDK_HMSPackageManager: enter asyncOnceCheckMDMState
+10-24 15:48:37.451  8099  8151 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.452  8099  8151 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-24 15:48:37.457  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.458  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.458  8099  8165 D libEGL  : loaded /system/lib64/egl/libEGL_emulation.so
+10-24 15:48:37.458  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.458  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.458  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.459  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.459  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.459  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.459  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.459  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.459  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.459  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.463  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.463  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.463  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.463  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.463  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.463  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.463  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.464  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.464  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.464  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.464  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.464  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.464  8099  8165 D .wakeupschedul: Features: 0 0 0
+10-24 15:48:37.464  8099  8165 E .wakeupschedul: vulkan version is 4211003
+10-24 15:48:37.464  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.465  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.465  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.465  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.465  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.466  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.466  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : rpt_api_dist
+10-24 15:48:37.467  8099  8153 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : rpt_api_dist
+10-24 15:48:37.469  8099  8170 I SecurityComp10200303: GCMKS: load key
+10-24 15:48:37.470  8099  8165 D libEGL  : loaded /system/lib64/egl/libGLESv1_CM_emulation.so
+10-24 15:48:37.470  8099  8165 D libEGL  : loaded /system/lib64/egl/libGLESv2_emulation.so
+10-24 15:48:37.486  8099  8165 E GraphicsEnv: Failed to get gpu service
+10-24 15:48:37.505  8099  8151 I SecurityComp10200303: SecureX509SingleInstance: get assets bks
+10-24 15:48:37.505  8099  8099 W .wakeupschedul: Accessing hidden field Landroid/app/Activity;->mReferrer:Ljava/lang/String; (unsupported, reflection, allowed)
+10-24 15:48:37.536  8099  8099 W .wakeupschedul: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+10-24 15:48:37.537  8099  8099 W .wakeupschedul: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+10-24 15:48:37.537  8099  8099 I [AGC_LOG]AGConnectCrashRegistrar: upload appErrorLaunch
+10-24 15:48:37.576  8099  8151 I SecurityComp10200303: EncryptUtil: setBouncycastleFlag: false
+10-24 15:48:37.580  8099  8185 I HMSSDK_o: secretKeyCache not empty.
+10-24 15:48:37.580  8099  8185 I HMSSDK_o: The local secret is already in separate file mode.
+10-24 15:48:37.582  8099  8185 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.585  8099  8185 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.586  8099  8185 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.587  8099  8185 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.588  8099  8185 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.589  8099  8185 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-24 15:48:37.595  8099  8099 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:37.597  8099  8099 I [AGC_LOG]HaConnector: init HiAnalyticsBridge SDK end.
+10-24 15:48:37.602  8099  8188 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.603  8099  8188 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.604  8099  8188 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.606  8099  8188 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.607  8099  8188 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.607  8099  8188 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-24 15:48:37.608  8099  8188 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.609  8099  8188 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.610  8099  8188 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.611  8099  8188 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.611  8099  8188 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.611  8099  8188 I HMSSDK_HuaweiMobileServicesUtil: hmsPackageName is com.huawei.hwid
+10-24 15:48:37.612  8099  8188 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.613  8099  8188 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.613  8099  8188 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.613  8099  8188 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.614  8099  8188 I HMSSDK_HuaweiMobileServicesUtil: HMS is not installed
+10-24 15:48:37.615  8099  8185 I HMSSDK_o: secretKeyCache not empty.
+10-24 15:48:37.616  8099  8185 I HMSSDK_o: The local secret is already in separate file mode.
+10-24 15:48:37.617  8099  8185 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.619  8099  8185 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.619  8099  8185 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.620  8099  8185 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.620  8099  8185 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.621  8099  8185 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-24 15:48:37.625  8099  8160 D .wakeupschedul: Features: 0 0 0
+10-24 15:48:37.625  8099  8160 E .wakeupschedul: vulkan version is 4211003
+10-24 15:48:37.613  8099  8099 I .wakeupschedule: type=1400 audit(0.0:15921): avc: denied { transfer } for scontext=u:r:untrusted_app:s0:c43,c256,c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+10-24 15:48:37.628  8099  8160 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-24 15:48:37.629  8099  8160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.configstore@1.0::ISurfaceFlingerConfigs instance: default
+10-24 15:48:37.630  8099  8160 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-24 15:48:37.637  8099  8188 I HMSSDK_o: secretKeyCache not empty.
+10-24 15:48:37.637  8099  8188 I HMSSDK_o: The local secret is already in separate file mode.
+10-24 15:48:37.638  8099  8188 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.639  8099  8188 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.639  8099  8188 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.640  8099  8188 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.640  8099  8188 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.640  8099  8160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+10-24 15:48:37.641  8099  8188 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-24 15:48:37.643  8099  8160 I Gralloc4: mapper 4.x is not supported
+10-24 15:48:37.643  8099  8160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+10-24 15:48:37.643  8099  8160 W Gralloc3: mapper 3.x is not supported
+10-24 15:48:37.643  8099  8160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+10-24 15:48:37.644  8099  8160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@4.0::IAllocator instance: default
+10-24 15:48:37.644  8099  8160 W Gralloc4: allocator 4.x is not supported
+10-24 15:48:37.645  8099  8160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@3.0::IAllocator instance: default
+10-24 15:48:37.645  8099  8160 W Gralloc3: allocator 3.x is not supported
+10-24 15:48:37.645  8099  8160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@2.0::IAllocator instance: default
+10-24 15:48:37.645  8099  8160 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-24 15:48:37.647  8099  8188 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.649  8099  8188 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.651  8099  8188 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.652  8099  8188 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.653  8099  8188 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.654  8099  8188 I HMSSDK_HuaweiMobileServicesUtil: hmsPackageName is com.huawei.hwid
+10-24 15:48:37.654  8099  8188 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.655  8099  8188 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.655  8099  8188 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.656  8099  8188 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.656  8099  8188 I HMSSDK_HuaweiMobileServicesUtil: HMS is not installed
+10-24 15:48:37.672  8099  8170 I SecurityComp10200303: GCMKS: load key
+10-24 15:48:37.680  8099  8204 D .wakeupschedul: Features: 0 0 0
+10-24 15:48:37.680  8099  8204 E .wakeupschedul: vulkan version is 4211003
+10-24 15:48:37.681  8099  8204 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-24 15:48:37.692  8099  8204 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 8298496
+10-24 15:48:37.725  8099  8099 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:37.725  8099  8099 I [AGC_LOG]HaBridge: init HiAnalyticsBridge SDK end.
+10-24 15:48:37.732  8099  8185 I HMSSDK_o: secretKeyCache not empty.
+10-24 15:48:37.733  8099  8185 I HMSSDK_o: The local secret is already in separate file mode.
+10-24 15:48:37.738  8099  8185 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.739  8099  8185 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.739  8099  8185 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.740  8099  8185 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.741  8099  8185 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.746  8099  8185 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-24 15:48:37.789  8099  8207 I SecurityComp10200303: SecureSSLSocketFactory: createSocket s host port autoClose
+10-24 15:48:37.790  8099  8207 I SecurityComp10200303: SecureSSLSocketFactory: set default protocols
+10-24 15:48:37.790  8099  8207 I SecurityComp10200303: SecureSSLSocketFactory: set default cipher suites
+10-24 15:48:37.872  8099  8207 I SecurityComp10200303: SX509TM: checkServerTrusted begin,size=2,authType=ECDHE_RSA
+10-24 15:48:37.873  8099  8207 I SecurityComp10200303: SX509TM: check server i=0
+10-24 15:48:37.885  8099  8207 I SecurityComp10200303: SX509TM: client root ca size=31
+10-24 15:48:37.889  8099  8099 W .wakeupschedul: Accessing hidden method Ljava/lang/invoke/MethodHandles$Lookup;-><init>(Ljava/lang/Class;I)V (unsupported, reflection, allowed)
+10-24 15:48:37.897  8099  8207 I SecurityComp10200303: SX509TM: checkServerTrusted end, CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3
+10-24 15:48:37.898  8099  8099 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (unsupported,core-platform-api, reflection, allowed)
+10-24 15:48:37.898  8099  8099 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (unsupported,core-platform-api, reflection, allowed)
+10-24 15:48:37.898  8099  8099 W .wakeupschedul: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (unsupported,core-platform-api, reflection, allowed)
+10-24 15:48:37.948  8099  8185 I HMSSDK_o: secretKeyCache not empty.
+10-24 15:48:37.949  8099  8185 I HMSSDK_o: The local secret is already in separate file mode.
+10-24 15:48:37.950  8099  8185 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-24 15:48:37.951  8099  8185 E HMSSDK_HMSPackageManager: query hms action, resolveInfoList is null or empty.
+10-24 15:48:37.952  8099  8185 E HMSSDK_HMSPackageManager: query aglite action, resolveInfoList is null or empty
+10-24 15:48:37.952  8099  8185 E HMSSDK_HMSPackageManager: PackagePriorityInfo list is null
+10-24 15:48:37.952  8099  8185 E HMSSDK_HMSPackageManager: <initHmsPackageInfoForMultiService> Failed to find HMS apk
+10-24 15:48:37.953  8099  8185 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-24 15:48:37.958  8099  8207 I SecurityComp10200303: : verify: certificate is : CN=petalsearch.com,O=Huawei Software Technologies Co.\, Ltd.,L=Nanjing,ST=Jiangsu,C=CN
+10-24 15:48:37.962  8099  8207 I SecurityComp10200303: c: checkUpgradeBks, ignore
+10-24 15:48:38.047  8099  8207 I FormalHASDK: hmsSdk=> events PostRequest sendevent TYPE : oper, TAG : _hms_config_tag, resultCode: 200 ,reqID:aeaae7458e12476180faa8f61f89a87c
+10-24 15:48:38.073  8099  8111 I .wakeupschedul: JIT allocated 82KB for compiled code of void OooOOo0.o000oOoO.OoooO()
+10-24 15:48:38.074  8099  8111 I .wakeupschedul: Compiler allocated 14MB to compile void OooOOo0.o000oOoO.OoooO()
+10-24 15:48:38.109  8099  8207 I SecurityComp10200303: SecureSSLSocketFactory: createSocket s host port autoClose
+10-24 15:48:38.109  8099  8207 I SecurityComp10200303: SecureSSLSocketFactory: set default protocols
+10-24 15:48:38.110  8099  8207 I SecurityComp10200303: SecureSSLSocketFactory: set default cipher suites
+10-24 15:48:38.181  8099  8219 D OkHttp  : Callback failure for call to https://i.wakeup.fun/...
+10-24 15:48:38.181  8099  8219 D OkHttp  : java.io.IOException: Required SETTINGS preface not received
+10-24 15:48:38.181  8099  8219 D OkHttp  : 	at o00O0oOO.o00.OooO0OO(o00.java:119)
+10-24 15:48:38.181  8099  8219 D OkHttp  : 	at o00O0oOO.o00O0O0O.OooOOOo(o00O0O0O.java:231)
+10-24 15:48:38.181  8099  8219 D OkHttp  : 	at o00O0oOO.o00O00o0.OooO0O0(o00O00o0.java:60)
+10-24 15:48:38.181  8099  8219 D OkHttp  : 	at o0OOO0o.OooO0o.run(OooO0o.java:100)
+10-24 15:48:38.181  8099  8219 D OkHttp  : 	at java.lang.Thread.run(Thread.java:920)
+10-24 15:48:38.189  8099  8207 I SecurityComp10200303: : verify: certificate is : CN=petalsearch.com,O=Huawei Software Technologies Co.\, Ltd.,L=Nanjing,ST=Jiangsu,C=CN
+10-24 15:48:38.276  8099  8207 I FormalHASDK: hmsSdk=> events PostRequest sendevent TYPE : maint, TAG : _hms_config_tag, resultCode: 200 ,reqID:9bb4c602233548499d60cc2d17db8967
+10-24 15:48:38.696  8099  8114 W System  : A resource failed to call close. 
+10-24 15:48:38.696  8099  8114 W System  : A resource failed to call close. 
+10-24 15:48:38.696  8099  8114 W System  : A resource failed to call close. 
+10-24 15:48:38.696  8099  8114 W System  : A resource failed to call close. 
+10-24 15:48:42.623  8099  8192 I [AGC_LOG]UploadFile: upload crash files, size:10
+10-24 15:48:42.838  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:42.838  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:42.838  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:42.886  8099  8192 I SecurityComp10200303: SX509TM: loadBksCA
+10-24 15:48:42.887  8099  8192 I SecurityComp10200303: SX509TM:  get bks from assets 
+10-24 15:48:42.928  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:42.928  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:42.928  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:42.946  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:42.946  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:42.946  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:42.954  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:42.954  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:42.954  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:42.999  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:42.999  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:42.999  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:43.019  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:43.019  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:43.019  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:43.025  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:43.025  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:43.025  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:43.053  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.054  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:43.054  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:43.054  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:43.056  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.074  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:43.074  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:43.074  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:43.081  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.140  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.141  8099  8192 I [AGC_LOG]UploadFile: uploadTask start
+10-24 15:48:43.141  8099  8192 I [AGC_LOG]UploadFile: getClientToken finished
+10-24 15:48:43.141  8099  8192 D AGC_ConfigImpl: getRoutePolicy
+10-24 15:48:43.153  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.155  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.157  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.166  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.166  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.166  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.180  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.189  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.189  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.189  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.199  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.205  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.205  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.205  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.208  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.208  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.208  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.220  8099  8245 E [AGC_LOG]CrashBackend: UnknownHostException:datacollector-drcn.dt.hicloud.com
+10-24 15:48:43.222  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.222  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.222  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.228  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.229  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.229  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.239  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.239  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.239  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.246  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.247  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.247  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.252  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.252  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.252  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.264  8099  8245 E [AGC_LOG]CrashBackend: AGCNetworkException:datacollector-drcn.dt.dbankcloud.cn
+10-24 15:48:43.264  8099  8245 I [AGC_LOG]UploadFile: upload finished
+10-24 15:48:43.264  8099  8245 E [AGC_LOG]UploadFile: upload failed
+10-24 15:48:43.349  8099  8220 D OkHttp  : Callback failure for call to https://i.wakeup.fun/...
+10-24 15:48:43.349  8099  8220 D OkHttp  : java.io.IOException: Required SETTINGS preface not received
+10-24 15:48:43.349  8099  8220 D OkHttp  : 	at o00O0oOO.o00.OooO0OO(o00.java:119)
+10-24 15:48:43.349  8099  8220 D OkHttp  : 	at o00O0oOO.o00O0O0O.OooOOOo(o00O0O0O.java:231)
+10-24 15:48:43.349  8099  8220 D OkHttp  : 	at o00O0oOO.o00O00o0.OooO0O0(o00O00o0.java:60)
+10-24 15:48:43.349  8099  8220 D OkHttp  : 	at o0OOO0o.OooO0o.run(OooO0o.java:100)
+10-24 15:48:43.349  8099  8220 D OkHttp  : 	at java.lang.Thread.run(Thread.java:920)
+10-24 15:54:18.485  8099  8108 I .wakeupschedul: Thread[5,tid=8108,WaitingInMainSignalCatcherLoop,Thread*=0x7d94d53292c0,peer=0x15e00000,"Signal Catcher"]: reacting to signal 3
+10-24 15:54:18.485  8099  8108 I .wakeupschedul: 
+10-24 15:54:18.527  8099  8108 I .wakeupschedul: Wrote stack traces to tombstoned

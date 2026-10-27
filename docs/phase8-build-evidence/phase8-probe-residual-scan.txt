@@ -1,0 +1,4 @@
+Probe-removal scan (2026-10-24)
+Scope: app/src and app/build.gradle.kts
+Patterns: WakeUPInitProbe, WakeUPLayoutProbe, WakeUPDimProbe, WakeUPRowsProbe, 0xFF00FF/FF00FF, delayed hierarchy/tree dumps.
+Result: no matches. The real solver method codexApplySimpleRecoveredConstraints() remains in app/src/main/java/OooOOO0/Oooo0.java.

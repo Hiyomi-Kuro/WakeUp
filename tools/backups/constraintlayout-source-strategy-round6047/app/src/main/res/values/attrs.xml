@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="balloon_drawableBottom" format="reference" />
+    <attr name="balloon_drawableEnd" format="reference" />
+    <attr name="balloon_drawableHeight" format="dimension" />
+    <attr name="balloon_drawablePadding" format="dimension" />
+    <attr name="balloon_drawableSquareSize" format="dimension" />
+    <attr name="balloon_drawableStart" format="reference" />
+    <attr name="balloon_drawableTintColor" format="color" />
+    <attr name="balloon_drawableTop" format="reference" />
+    <attr name="balloon_drawableWidth" format="dimension" />
+    <attr name="cpv_allowCustom" format="boolean|reference" />
+    <attr name="cpv_allowPresets" format="boolean|reference" />
+    <attr name="cpv_alphaChannelVisible" format="boolean|reference" />
+    <attr name="cpv_colorPresets" format="reference" />
+    <attr name="cpv_dialogTitle" format="reference" />
+    <attr name="cpv_previewSize">
+        <enum name="regular" value="0" />
+        <enum name="large" value="1" />
+    </attr>
+    <attr name="cpv_showAlphaSlider" format="boolean|reference" />
+    <attr name="cpv_showColorShades" format="boolean|reference" />
+    <attr name="cpv_showDialog" format="boolean|reference" />
+    <attr name="cpv_sliderColor" format="color|reference" />
+    <attr name="npv_AlternativeHint" format="string|reference" />
+    <attr name="npv_AlternativeTextArrayWithMeasureHint" format="reference" />
+    <attr name="npv_AlternativeTextArrayWithoutMeasureHint" format="reference" />
+    <attr name="npv_DividerColor" format="color|reference" />
+    <attr name="npv_DividerHeight" format="dimension|reference" />
+    <attr name="npv_DividerMarginLeft" format="dimension|reference" />
+    <attr name="npv_DividerMarginRight" format="dimension|reference" />
+    <attr name="npv_EmptyItemHint" format="string|reference" />
+    <attr name="npv_HintText" format="string|reference" />
+    <attr name="npv_ItemPaddingHorizontal" format="dimension|reference" />
+    <attr name="npv_ItemPaddingVertical" format="dimension|reference" />
+    <attr name="npv_MarginEndOfHint" format="dimension|reference" />
+    <attr name="npv_MarginStartOfHint" format="dimension|reference" />
+    <attr name="npv_MaxValue" format="integer|reference" />
+    <attr name="npv_MinValue" format="integer|reference" />
+    <attr name="npv_RespondChangeInMainThread" format="boolean|reference" />
+    <attr name="npv_RespondChangeOnDetached" format="boolean|reference" />
+    <attr name="npv_ShowDivider" format="boolean|reference" />
+    <attr name="npv_ShownCount" format="integer|reference" />
+    <attr name="npv_TextArray" format="reference" />
+    <attr name="npv_TextColorHint" format="color|reference" />
+    <attr name="npv_TextColorNormal" format="color|reference" />
+    <attr name="npv_TextColorSelected" format="color|reference" />
+    <attr name="npv_TextEllipsize" format="string|reference" />
+    <attr name="npv_TextSizeHint" format="dimension|reference" />
+    <attr name="npv_TextSizeNormal" format="dimension|reference" />
+    <attr name="npv_TextSizeSelected" format="dimension|reference" />
+    <attr name="npv_WrapSelectorWheel" format="boolean|reference" />
+    <attr name="sidebarBackgroundColor" format="color|reference" />
+    <attr name="sidebarItemHeight" format="dimension" />
+    <attr name="sidebarTextColor" format="color|reference" />
+    <attr name="sidebarTextColorChoose" format="color|reference" />
+    <attr name="sidebarTextSize" format="dimension" />
+    <attr name="sidebarTextSizeChoose" format="dimension" />
+    <attr name="verticalRecyclerViewStyle" format="reference" />
+</resources>

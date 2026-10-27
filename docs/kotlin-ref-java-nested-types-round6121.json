@@ -1,0 +1,29 @@
+{
+  "total_occurrences": 19,
+  "cases": [
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o00000.java",
+      "type": "FloatRef",
+      "count": 8,
+      "smali": "smali/smali/kotlin/jvm/internal/Ref$FloatRef.smali"
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/today_appwidget/TodayCourseAppWidget.java",
+      "type": "BooleanRef",
+      "count": 5,
+      "smali": "smali/smali/kotlin/jvm/internal/Ref$BooleanRef.smali"
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/oo0o0Oo.java",
+      "type": "BooleanRef",
+      "count": 3,
+      "smali": "smali/smali/kotlin/jvm/internal/Ref$BooleanRef.smali"
+    },
+    {
+      "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/OooOo00.java",
+      "type": "CharRef",
+      "count": 3,
+      "smali": "smali/smali/kotlin/jvm/internal/Ref$CharRef.smali"
+    }
+  ]
+}

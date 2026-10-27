@@ -1,0 +1,82 @@
+--------- beginning of main
+10-21 03:56:30.659  7119  7119 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-21 03:56:30.661  7119  7119 I AndroidRuntime: Using default boot image
+10-21 03:56:30.661  7119  7119 I AndroidRuntime: Leaving lock profiling enabled
+10-21 03:56:30.745  7119  7119 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+10-21 03:56:30.791  7119  7119 I AndroidRuntime: VM exiting with result code 0.
+10-21 03:56:31.291  7140  7140 I WUSDebug: Splash onCreate launching initializer
+10-21 03:56:31.296  7140  7140 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@54a60d3, Dispatchers.Main.immediate] block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 03:56:31.296  7140  7140 I WUSDebug: CoroutineStart.invoke block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1 mode=DEFAULT
+10-21 03:56:31.296  7140  7140 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 03:56:31.296  7140  7140 I WUSDebug: startCoroutineCancellable enter block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 03:56:31.297  7140  7140 I WUSDebug: resume dispatch target=Dispatchers.Main.immediate context=[o00O0000{Active}@5db410, Dispatchers.Main.immediate]
+10-21 03:56:31.297  7140  7140 I WUSDebug: startCoroutineCancellable returned block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 03:56:31.297  7140  7140 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 03:56:31.297  7140  7140 I WUSDebug: launch helper returned active=false job=o00O0000{Completed}@5db410
+10-21 03:56:31.297  7140  7140 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@54a60d3, Dispatchers.Main] block=com.kaori.wakeupschedule.SplashActivity$AnonymousClass1
+10-21 03:56:31.297  7140  7140 I WUSDebug: CoroutineStart.invoke block=com.kaori.wakeupschedule.SplashActivity$AnonymousClass1 mode=DEFAULT
+10-21 03:56:31.297  7140  7140 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 03:56:31.297  7140  7140 I WUSDebug: startCoroutineCancellable enter block=com.kaori.wakeupschedule.SplashActivity$AnonymousClass1
+10-21 03:56:31.297  7140  7140 I WUSDebug: resume dispatch target=Dispatchers.Main context=[o00O0000{Active}@abc910e, Dispatchers.Main]
+10-21 03:56:31.297  7140  7140 I WUSDebug: dispatcher queued continuation
+10-21 03:56:31.297  7140  7140 I WUSDebug: startCoroutineCancellable returned block=com.kaori.wakeupschedule.SplashActivity$AnonymousClass1
+10-21 03:56:31.297  7140  7140 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 03:56:31.297  7140  7140 I WUSDebug: launch helper returned active=true job=o00O0000{Active}@abc910e
+10-21 03:56:31.407  7140  7140 I WUSDebug: Splash coroutine entered, label=0
+10-21 03:56:31.413  7140  7140 I WUSDebug: migration method entered, label=0
+10-21 03:56:31.413  7140  7140 I WUSDebug: migration returned, suspended=false
+10-21 03:56:31.568  7140  7140 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@ef4114e, Dispatchers.Main.immediate] block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 03:56:31.568  7140  7140 I WUSDebug: CoroutineStart.invoke block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1 mode=DEFAULT
+10-21 03:56:31.568  7140  7140 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 03:56:31.568  7140  7140 I WUSDebug: startCoroutineCancellable enter block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 03:56:31.568  7140  7140 I WUSDebug: resume dispatch target=Dispatchers.Main.immediate context=[o00O0000{Active}@b85526f, Dispatchers.Main.immediate]
+10-21 03:56:31.568  7140  7140 I WUSDebug: event loop queued continuation
+10-21 03:56:31.568  7140  7140 I WUSDebug: startCoroutineCancellable returned block=androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1
+10-21 03:56:31.568  7140  7140 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 03:56:31.568  7140  7140 I WUSDebug: launch helper returned active=true job=o00O0000{Active}@b85526f
+10-21 03:56:31.568  7140  7140 I WUSDebug: launch helper start=DEFAULT context=[o0O0ooO{Active}@ef4114e, Dispatchers.Main.immediate] block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 03:56:31.568  7140  7140 I WUSDebug: CoroutineStart.invoke block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1 mode=DEFAULT
+10-21 03:56:31.568  7140  7140 I WUSDebug: CoroutineStart DEFAULT startCoroutineCancellable
+10-21 03:56:31.568  7140  7140 I WUSDebug: startCoroutineCancellable enter block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 03:56:31.568  7140  7140 I WUSDebug: resume dispatch target=Dispatchers.Main.immediate context=[o00O0000{Active}@7bc1b7c, Dispatchers.Main.immediate]
+10-21 03:56:31.568  7140  7140 I WUSDebug: event loop queued continuation
+10-21 03:56:31.568  7140  7140 I WUSDebug: startCoroutineCancellable returned block=com.kaori.wakeupschedule.base_view.BaseActivity$lifeLaunch$1
+10-21 03:56:31.568  7140  7140 I WUSDebug: CoroutineStart DEFAULT returned
+10-21 03:56:31.568  7140  7140 I WUSDebug: launch helper returned active=true job=o00O0000{Active}@7bc1b7c
+10-21 03:56:31.614  7140  7140 I WUSDebug: widget init query type=MODERN_COMPACT_MIUI ids=0 dataLength=18 firstCode=123 lastCode=125 data={"has_init":false}
+10-21 03:56:31.615  7140  7140 W WUSDebug: literal has_init JSON failed: JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 4 path $
+10-21 03:56:31.615  7140  7140 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: FATAL EXCEPTION: main
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: Process: com.kaori.wakeupschedule, PID: 7140
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity}: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 4 path $
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3777)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3950)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2302)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8085)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1091)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 4 path $
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at o00000Oo.Oooo0.o0ooOOo(Oooo0.java:1301)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at com.kaori.wakeupschedule.today_appwidget.TodayCourseAppWidget.onUpdate(TodayCourseAppWidget.java:498)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at com.kaori.wakeupschedule.utils.OooO0OO.OooOoOO(OooO0OO.java:1525)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at com.kaori.wakeupschedule.schedule.ScheduleActivity.onCreate(ScheduleActivity.java:21415)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:8058)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:8038)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1345)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3744)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	... 12 more
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 4 path $
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at o000Oooo.o0ooOOo.o0OO00O(o0ooOOo.java:1010)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at o000Oooo.o0ooOOo.OooOOOo(o0ooOOo.java:105)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at o000Oooo.o0ooOOo.OooOOo0(o0ooOOo.java:236)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at o000Oooo.o0ooOOo.o00oO0o(o0ooOOo.java:941)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	at o00000Oo.Oooo0.o0ooOOo(Oooo0.java:1296)
+10-21 03:56:31.615  7140  7140 E AndroidRuntime: 	... 19 more

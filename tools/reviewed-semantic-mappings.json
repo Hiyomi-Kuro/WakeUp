@@ -1,0 +1,68 @@
+{
+  "Lcom/github/doyaaaaaken/kotlincsv/client/CsvFileReader$readAllAsSequence$2$1;": {
+    "kind": "source-lambda",
+    "owner": "Lcom/github/doyaaaaaken/kotlincsv/client/CsvReader$readAll$1;",
+    "source": "app/src/main/java/com/github/doyaaaaaken/kotlincsv/client/CsvReader$readAll$1.java",
+    "reason": "The row-size mismatch diagnostic Function0 is implemented as a Java lambda inside the sequence mapper; captures row index, row list, and the first-row-size reference."
+  },
+  "Lme/saket/cascade/HeightAnimatableViewFlipper$show$1;": {
+    "kind": "source-lambda",
+    "owner": "Lme/saket/cascade/HeightAnimatableViewFlipper;",
+    "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+    "reason": "Deferred add-and-animate Function0. Implemented by Java lambda in OooO0o0; the original synthetic class name is not retained."
+  },
+  "Lme/saket/cascade/HeightAnimatableViewFlipper$show$1$1;": {
+    "kind": "source-lambda",
+    "owner": "Lme/saket/cascade/HeightAnimatableViewFlipper;",
+    "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+    "reason": "Entering-view translation and animation Function1. Implemented by Java lambda in OooO0o0; the original synthetic class name is not retained."
+  },
+  "Lme/saket/cascade/HeightAnimatableViewFlipper$show$1$2;": {
+    "kind": "source-lambda",
+    "owner": "Lme/saket/cascade/HeightAnimatableViewFlipper;",
+    "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+    "reason": "Exiting-view translation and animation Function1. Implemented by Java lambda in OooO0o0; the original synthetic class name is not retained."
+  },
+  "Landroidx/core/widget/OooO0o;": {
+    "kind": "dependency-synthetic",
+    "owner": "Landroidx/core/widget/ContentLoadingProgressBar;",
+    "coordinate": "androidx.core:core:1.12.0",
+    "reason": "Original R8 Runnable owns delayed show/hide fields; the complete widget is supplied by the pinned dependency with ExternalSyntheticLambda callbacks."
+  },
+  "Lcom/huawei/agconnect/common/api/OooO;": {
+    "kind": "dependency-synthetic",
+    "owner": "Lcom/huawei/agconnect/common/api/HaConnector;",
+    "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+    "reason": "Original R8 callback forwards to HaConnector methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+  },
+  "Lcom/huawei/agconnect/common/api/OooO00o;": {
+    "kind": "dependency-synthetic",
+    "owner": "Lcom/huawei/agconnect/common/api/HaBridge;",
+    "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+    "reason": "Original R8 callback forwards to HaBridge methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+  },
+  "Lcom/huawei/agconnect/common/api/OooO0o;": {
+    "kind": "dependency-synthetic",
+    "owner": "Lcom/huawei/agconnect/common/api/HaConnector;",
+    "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+    "reason": "Original R8 callback forwards to HaConnector methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+  },
+  "Lcom/huawei/agconnect/common/api/OooO0O0;": {
+    "kind": "dependency-synthetic",
+    "owner": "Lcom/huawei/agconnect/common/api/HaBridge;",
+    "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+    "reason": "Original R8 callback forwards to HaBridge methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+  },
+  "Lcom/huawei/agconnect/common/api/OooO0OO;": {
+    "kind": "dependency-synthetic",
+    "owner": "Lcom/huawei/agconnect/common/api/HaBridge;",
+    "coordinate": "com.huawei.agconnect:agconnect-credential:1.9.1.300",
+    "reason": "Original R8 callback forwards to HaBridge methods. The complete owning API class and its callbacks are supplied together by the fixed dependency; no app source directly names this original wrapper. This is a replacement-boundary mapping, not a proof of runtime equivalence."
+  },
+  "Lcom/huawei/agconnect/crash/OooO00o;": {
+    "kind": "dependency-synthetic",
+    "owner": "Lcom/huawei/agconnect/crash/AGConnectCrashRegistrar;",
+    "coordinate": "com.huawei.agconnect:agconnect-crash:1.9.1.300",
+    "reason": "Original R8 Runnable forwards to AGConnectCrashRegistrar$1$1; the complete registrar is supplied by the pinned crash dependency."
+  }
+}

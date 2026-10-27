@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-10-24T16:00:18+08:00",
+  "pid": "8099",
+  "resumed": [
+    "topResumedActivity=ActivityRecord{8315c03 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3540}",
+    "Resumed: ActivityRecord{8315c03 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3540}",
+    "ResumedActivity: ActivityRecord{8315c03 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3540}"
+  ],
+  "logical_display_id": 7,
+  "physical_display_id": 4619827052952829958,
+  "screenshot": "D:\\Download\\AndroidStudioProjects\\WakeUP\\docs\\phase8-mumu-evidence\\diagnostic-after-jdb-display-7.png",
+  "screenshot_bytes": 12504,
+  "window_state": [
+    "mDisplayId=7 rootTaskId=3540 mSession=Session{fa11449 8099:u0a10043} mClient=android.os.BinderProxy@61cef1",
+    "mViewVisibility=0x4 mHaveFrame=true mObscured=false",
+    "mHasSurface=false isReadyForDisplay()=false mWindowRemovalAllowed=false",
+    "mDrawState=NO_SURFACE       mLastHidden=false",
+    "isOnScreen=false",
+    "isVisible=false",
+    "mDisplayId=0 rootTaskId=1 mSession=Session{5a0da36 1490:u0a10028} mClient=android.os.BinderProxy@d973ec5"
+  ]
+}

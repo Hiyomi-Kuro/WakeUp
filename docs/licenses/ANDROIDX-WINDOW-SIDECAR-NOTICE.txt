@@ -1,0 +1,8 @@
+AndroidX Window Sidecar compile-time API
+
+Artifact: window-sidecar-release-0.1.0-alpha01.aar
+Upstream: https://android.googlesource.com/platform/frameworks/support/+/androidx-window-release/window/stubs/window-sidecar-release-0.1.0-alpha01.aar
+SHA-256: 1E1C1E7512A37552B9D20266454917001CC678F7318C5EBE00DC7C064ADEC596
+License: Apache License 2.0 (Android Open Source Project)
+
+Purpose: compile-only OEM WindowManager API types referenced by the recovered AndroidX Window 1.0.0 Sidecar implementation. The ABI was checked against the retained Smali references. The AAR is declared with Gradle compileOnly and must not be packaged into the application; an OEM implementation is optional at runtime.

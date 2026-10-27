@@ -1,0 +1,225 @@
+{
+  "captured_at": "2026-10-27T02:20:00+08:00",
+  "gate": "P11-G0",
+  "status": "PASS",
+  "device": {
+    "adb_selected_serial": "127.0.0.1:16384",
+    "adb_aliases": [
+      "127.0.0.1:16384",
+      "emulator-5554"
+    ],
+    "alias_evidence": {
+      "shared_boot_id": "cc355fc0-0efb-4c80-a915-9363086c14f7",
+      "shared_fingerprint": "vivo/PD2309/PD2309:12/V417IR/2535:user/release-keys",
+      "shared_package_path": "/data/app/~~6Dd8QWruqOUMnS9Sr2LAHg==/com.kaori.wakeupschedule-UW2uLdQyI9yoqKKKxLOzCA==/base.apk"
+    },
+    "model": "V2309A / vivo X100",
+    "android_release": "12",
+    "android_device_clock": "2026-10-26 20:29:38 CST",
+    "host_mumu_device_window": {
+      "process": "MuMuNxDevice",
+      "pid": 25088,
+      "visible": true,
+      "minimized": false,
+      "rect": [
+        911,
+        7,
+        1354,
+        822
+      ],
+      "responding": true
+    },
+    "mumu_main_window": {
+      "process": "MuMuNxMain",
+      "pid": 23248,
+      "visible": true,
+      "minimized": true,
+      "rect": [
+        -16000,
+        -16000,
+        -15843,
+        -15975
+      ],
+      "responding": true
+    }
+  },
+  "apk": {
+    "path": "D:\\Download\\AndroidStudioProjects\\WakeUP\\app-debug.apk",
+    "bytes": 20621152,
+    "sha256": "ead4d9eff8c98ac1dc0d97fe6009e04635e2a64b900ed953541cc50446b9ed69",
+    "built_apk_sha256": "ead4d9eff8c98ac1dc0d97fe6009e04635e2a64b900ed953541cc50446b9ed69",
+    "installed_base_sha256": "ead4d9eff8c98ac1dc0d97fe6009e04635e2a64b900ed953541cc50446b9ed69",
+    "package": "com.kaori.wakeupschedule",
+    "version_code": 247,
+    "version_name": "6.0.06",
+    "signer_sha256": "b8849d6e0146f3fa8c95e5911f444372b6693162142e1aa93d1700a2da3be088",
+    "v1_verified": true,
+    "v2_verified": true,
+    "first_install_time": "2026-10-20 23:55:07",
+    "last_update_time": "2026-10-27 00:45:53"
+  },
+  "runtime": {
+    "process_pid": 5321,
+    "uid": 10043,
+    "task_id": 3552,
+    "activity": "com.kaori.wakeupschedule/.schedule.ScheduleActivity",
+    "activity_record": "ActivityRecord{95a86d5 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3552}",
+    "window": "b9e4e90 com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity",
+    "window_token": "ActivityRecord{95a86d5 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3552}",
+    "logical_display_id": 3,
+    "physical_display_id": 4619826888814064386,
+    "display_type": "EXTERNAL",
+    "physical_port": 2,
+    "resolution": "1080x1920",
+    "density_dpi": 320,
+    "rotation": 0,
+    "surface_present": true,
+    "draw_state": "HAS_DRAWN",
+    "is_on_screen": true,
+    "window_visibility": "0x0",
+    "window_focused": true,
+    "input_focused_display_id": 3,
+    "input_window_display_id": 3,
+    "touchable_region": "[0,0][1080,1920]",
+    "not_touchable_flag": false,
+    "activity_top_resumed_on_display": true,
+    "global_top_resumed_activity": "com.teslacoilsw.launcher/.NovaLauncher on display 0",
+    "window_focus_app": "com.kaori.wakeupschedule/.schedule.ScheduleActivity"
+  },
+  "input": {
+    "input_help_supports_display_option": true,
+    "touch_device_name": "Xiaomi Input",
+    "input_device_id": 3,
+    "last_received_nemu_display_id": 3,
+    "associated_display_port": null,
+    "associated_display_unique_id": null,
+    "display_viewports": [
+      {
+        "display_id": 0,
+        "type": "INTERNAL",
+        "port": 0,
+        "unique_id": "local:4619827820427265280"
+      },
+      {
+        "display_id": 3,
+        "type": "EXTERNAL",
+        "port": 2,
+        "unique_id": "local:4619826888814064386"
+      },
+      {
+        "display_id": 4,
+        "type": "EXTERNAL",
+        "port": 3,
+        "unique_id": "local:4619827144452474627"
+      }
+    ],
+    "current_touch_state": "no displays touched"
+  },
+  "screenshot": {
+    "path": "docs/phase11-screenshots/phase11-baseline-target-display-3.png",
+    "logical_display_id": 3,
+    "physical_display_id": 4619826888814064386,
+    "width": 1080,
+    "height": 1920,
+    "sha256": "cfc67722a973c47c92f88ae11257a70646fcad5ec37d7f6f4bbf5b3adb29af9b",
+    "visually_confirmed": [
+      "date 2026/10/26",
+      "top controls",
+      "light gradient",
+      "empty schedule body"
+    ]
+  },
+  "junit": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "suites": [
+      "ConstraintLayoutSolverRegressionTest: 1/1",
+      "RecyclerViewFirstMeasureRegressionTest: 2/2",
+      "UnconfinedEventLoopTest: 5/5"
+    ],
+    "xml_path": "app/build/test-results/testDebugUnitTest"
+  },
+  "recovery": {
+    "path": "recovery/phase11-before-work-20261027-021601",
+    "file_count": 14590,
+    "bytes": 149921976,
+    "restore_manifest_sha256": "1ca630bfd9095f6afc541ff0b9f20ee014e1d6bfd53a61984b05308dde3afbfa",
+    "current_installed_base_copy": "recovery/phase11-before-work-20261027-021601/installed-base-before-work.apk"
+  },
+  "unknowns": [
+    "Visible More/overflow open-close transition; runtime BottomSheetBehavior state after the More tap.",
+    "Pager adapter item count/currentItem and a forward/back transition on an isolated multi-page fixture.",
+    "Physical host input delivered to the WakeUP external-display window; the visible MuMu host surface was not the target display.",
+    "Runtime completion and internal state diff of the More listener; Activity.dispatchTouchEvent and View.performClick were observed."
+  ],
+  "post_baseline_observations": {
+    "captured_at": "2026-10-27T03:06:04+08:00",
+    "host_window_followup": "The MuMu device window was visible and not minimized, but Edge was above it. Once foregrounded, the host child surface matched the internal Display 0 control capture more closely than the WakeUP external-display screenshots. A physical click was skipped because the visible surface did not contain WakeUP.",
+    "adb_touch_trace": "ADB input targeted focused logical Display 5. Android input_interaction and JDI recorded ScheduleActivity.dispatchTouchEvent and View.performClick on anko_ib_more id 0x7f090063 bounds [1000,34][1064,98]. The screenshot did not change; BottomSheet state was not read.",
+    "pager": "One ADB horizontal swipe on focused logical Display 5 produced identical before/after screenshots. The schedule body is empty; currentItem and isolated fixture transition were not measured.",
+    "back": "Two KEYCODE_BACK events returned to NovaLauncher; the WakeUP task was exiting after the second event.",
+    "cold_start_validation": [
+      {
+        "run": 1,
+        "trace": "phase11-trace-026-cold-run-1",
+        "launch_state_cold": true,
+        "activity_pid": "7943",
+        "task_id": "3558",
+        "logical_display_id": "9",
+        "physical_unique_id": "local:4619826992212769800",
+        "physical_port": "8",
+        "target_window": "12ba1",
+        "has_surface_drawn_visible": true,
+        "screenshot": "D:\\Download\\AndroidStudioProjects\\WakeUP\\_codex_disposable\\phase11-20261027\\screenshots\\phase11-trace-026-cold-run-1-display9.png",
+        "screenshot_sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B"
+      },
+      {
+        "run": 2,
+        "trace": "phase11-trace-027-cold-run-2",
+        "launch_state_cold": true,
+        "activity_pid": "8128",
+        "task_id": "3559",
+        "logical_display_id": "10",
+        "physical_unique_id": "local:4619827446303777033",
+        "physical_port": "9",
+        "target_window": "2cbf5f9",
+        "has_surface_drawn_visible": true,
+        "screenshot": "D:\\Download\\AndroidStudioProjects\\WakeUP\\_codex_disposable\\phase11-20261027\\screenshots\\phase11-trace-027-cold-run-2-display10.png",
+        "screenshot_sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B"
+      },
+      {
+        "run": 3,
+        "trace": "phase11-trace-028-cold-run-3",
+        "launch_state_cold": true,
+        "activity_pid": "8305",
+        "task_id": "3560",
+        "logical_display_id": "11",
+        "physical_unique_id": "local:4619826876442645002",
+        "physical_port": "10",
+        "target_window": "1c99d42",
+        "has_surface_drawn_visible": true,
+        "screenshot": "D:\\Download\\AndroidStudioProjects\\WakeUP\\_codex_disposable\\phase11-20261027\\screenshots\\phase11-trace-028-cold-run-3-display11.png",
+        "screenshot_sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B"
+      }
+    ],
+    "final_runtime": {
+      "pid": 8305,
+      "uid": 10043,
+      "task_id": 3560,
+      "activity": "com.kaori.wakeupschedule/.schedule.ScheduleActivity",
+      "logical_display_id": 11,
+      "physical_unique_id": "local:4619826876442645002",
+      "physical_port": 10,
+      "surface_present": true,
+      "draw_state": "HAS_DRAWN",
+      "is_on_screen": true,
+      "is_visible": true,
+      "screenshot": "docs/phase11-screenshots/phase11-cold-start-3.png",
+      "screenshot_sha256": "CFC67722A973C47C92F88AE11257A70646FCAD5EC37D7F6F4BBF5B3ADB29AF9B"
+    },
+    "source_change": "None; ScheduleActivity.java, oo0o0Oo.java, and BottomSheetBehavior.java hashes match the recovery snapshot.",
+    "stale_anr": "The historical WMS last-ANR entry is the JDB-suspended PID 5321/task 3552 on Display 3. Later active processes were responsive and drew successfully."
+  }
+}

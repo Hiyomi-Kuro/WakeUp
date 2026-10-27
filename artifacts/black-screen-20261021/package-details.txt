@@ -1,0 +1,394 @@
+Activity Resolver Table:
+  Full MIME Types:
+      text/*:
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 7e4cfb1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.html}"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 79a8c96
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.csv}"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+      application/octet-stream:
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 94e1258
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.wakeup_schedule}"
+          StaticType: "application/octet-stream"
+
+  Base MIME Types:
+      application:
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 94e1258
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.wakeup_schedule}"
+          StaticType: "application/octet-stream"
+
+  Wild MIME Types:
+      text:
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 7e4cfb1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.html}"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 79a8c96
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.csv}"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+  Schemes:
+      wakeupschedule:
+        dbdfc04 com.kaori.wakeupschedule/.SplashActivity filter 2eadc22
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "wakeupschedule"
+          Authority: "main": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        dbdfc04 com.kaori.wakeupschedule/.SplashActivity filter bc5b5ed
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      android.appwidget.action.APPWIDGET_CONFIGURE:
+        15e46b3 com.kaori.wakeupschedule/.schedule_appwidget.WeekScheduleAppWidgetConfigActivity filter 20d470
+          Action: "android.appwidget.action.APPWIDGET_CONFIGURE"
+
+  MIME Typed Actions:
+      android.intent.action.VIEW:
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 94e1258
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.wakeup_schedule}"
+          StaticType: "application/octet-stream"
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 7e4cfb1
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.html}"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+        4b3ab3b com.kaori.wakeupschedule/.schedule_import.LoginWebActivity filter 79a8c96
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Path: "PatternMatcher{GLOB: .*\.csv}"
+          StaticType: "text"
+          mPriority=0, mOrder=0, mHasStaticPartialTypes=true, mHasDynamicPartialTypes=false
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        1f7f91e com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter fb065ff
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        c0a39a0 com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter fa97959
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        16f4ad0 com.kaori.wakeupschedule/androidx.profileinstaller.ProfileInstallReceiver filter d34ccef
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        f694fcc com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9ef5215
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        726892a com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 9af631b
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.DEVICE_STORAGE_OK:
+        f694fcc com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 9ef5215
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.huawei.hms.analytics.pps.event:
+        9d31382 com.kaori.wakeupschedule/com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver filter 75d1a93
+          Action: "com.huawei.hms.analytics.pps.event"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        16f4ad0 com.kaori.wakeupschedule/androidx.profileinstaller.ProfileInstallReceiver filter 20e6ac9
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      android.intent.action.BATTERY_LOW:
+        1f7f91e com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter fb065ff
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        1c19cb8 com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b7ffa91
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        1c19cb8 com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b7ffa91
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        16f4ad0 com.kaori.wakeupschedule/androidx.profileinstaller.ProfileInstallReceiver filter 522e5ce
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        16f4ad0 com.kaori.wakeupschedule/androidx.profileinstaller.ProfileInstallReceiver filter 5c643fc
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        1c19cb8 com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.RescheduleReceiver filter b7ffa91
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        c0a39a0 com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter fa97959
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      miui.appwidget.action.APPWIDGET_UPDATE:
+        a1a6e34 com.kaori.wakeupschedule/.today_appwidget.TodayListAppWidgetMIUI filter b0cf45d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "miui.appwidget.action.APPWIDGET_UPDATE"
+        3e691d2 com.kaori.wakeupschedule/.today_appwidget.TodayModernAppWidgetMIUI filter 40642a3
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "miui.appwidget.action.APPWIDGET_UPDATE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        4ec9b0f com.kaori.wakeupschedule/.today_appwidget.TodayListAppWidget filter c96c79c
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a7fcd7a com.kaori.wakeupschedule/.today_appwidget.TodayAndNextDayAppWidget filter f61d92b
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        f16c188 com.kaori.wakeupschedule/.schedule_appwidget.ScheduleAppWidget filter 2d80721
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        cad4746 com.kaori.wakeupschedule/.today_appwidget.TodayCourseAppWidget filter 7a2dd07
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        a1a6e34 com.kaori.wakeupschedule/.today_appwidget.TodayListAppWidgetMIUI filter b0cf45d
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "miui.appwidget.action.APPWIDGET_UPDATE"
+        3e691d2 com.kaori.wakeupschedule/.today_appwidget.TodayModernAppWidgetMIUI filter 40642a3
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "miui.appwidget.action.APPWIDGET_UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        d4fcc64 com.kaori.wakeupschedule/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 498aecd
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        fc0df6 com.kaori.wakeupschedule/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 9d715f7
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (6eb341d):
+    sourcePackage=com.kaori.wakeupschedule
+    uid=10043 gids=[] type=0 prot=signature
+    perm=PermissionInfo{86a5543 com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+
+Registered ContentProviders:
+  com.kaori.wakeupschedule/.ScheduleContentProvider:
+    Provider{12e7c0 com.kaori.wakeupschedule/.ScheduleContentProvider}
+  com.kaori.wakeupschedule/com.huawei.hms.aaid.InitProvider:
+    Provider{9295cf9 com.kaori.wakeupschedule/com.huawei.hms.aaid.InitProvider}
+  com.kaori.wakeupschedule/androidx.startup.InitializationProvider:
+    Provider{286a43e com.kaori.wakeupschedule/androidx.startup.InitializationProvider}
+  com.kaori.wakeupschedule/com.huawei.hms.analytics.provider.AnalyticsInitializeProvider:
+    Provider{f53029f com.kaori.wakeupschedule/com.huawei.hms.analytics.provider.AnalyticsInitializeProvider}
+  com.kaori.wakeupschedule/com.huawei.agconnect.core.provider.AGConnectInitializeProvider:
+    Provider{71ebfec com.kaori.wakeupschedule/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+
+ContentProvider Authorities:
+  [com.kaori.wakeupschedule.AGCInitializeProvider]:
+    Provider{71ebfec com.kaori.wakeupschedule/com.huawei.agconnect.core.provider.AGConnectInitializeProvider}
+      applicationInfo=ApplicationInfo{7743692 com.kaori.wakeupschedule}
+  [com.kaori.wakeupschedule.aaidinitprovider]:
+    Provider{9295cf9 com.kaori.wakeupschedule/com.huawei.hms.aaid.InitProvider}
+      applicationInfo=ApplicationInfo{c07e863 com.kaori.wakeupschedule}
+  [com.kaori.wakeupschedule.provider]:
+    Provider{12e7c0 com.kaori.wakeupschedule/.ScheduleContentProvider}
+      applicationInfo=ApplicationInfo{7be4c60 com.kaori.wakeupschedule}
+  [com.kaori.wakeupschedule.androidx-startup]:
+    Provider{286a43e com.kaori.wakeupschedule/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{98bf519 com.kaori.wakeupschedule}
+  [com.kaori.wakeupschedule.AnalyticsKitInitializeProvider]:
+    Provider{f53029f com.kaori.wakeupschedule/com.huawei.hms.analytics.provider.AnalyticsInitializeProvider}
+      applicationInfo=ApplicationInfo{f9b29de com.kaori.wakeupschedule}
+
+Key Set Manager:
+  [com.kaori.wakeupschedule]
+      Signing KeySets: 147
+
+Packages:
+  Package [com.kaori.wakeupschedule] (637269d):
+    userId=10043
+    pkg=Package{510fd16 com.kaori.wakeupschedule}
+    codePath=/data/app/~~g7TJmB8UildzPtwpj0DKlg==/com.kaori.wakeupschedule-doOKBWtcJnM9orZfUM267Q==
+    resourcePath=/data/app/~~g7TJmB8UildzPtwpj0DKlg==/com.kaori.wakeupschedule-doOKBWtcJnM9orZfUM267Q==
+    legacyNativeLibraryDir=/data/app/~~g7TJmB8UildzPtwpj0DKlg==/com.kaori.wakeupschedule-doOKBWtcJnM9orZfUM267Q==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=247 minSdk=21 targetSdk=34
+    minExtensionVersions=[]
+    versionName=6.0.06
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=PackageImpl{510fd16 com.kaori.wakeupschedule}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    queriesIntents=[Intent { act=com.huawei.hms.core.aidlservice }, Intent { act=com.huawei.hms.core }]
+    dataDir=/data/user/0/com.kaori.wakeupschedule
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2026-10-21 04:12:20
+    firstInstallTime=2026-10-20 23:55:07
+    lastUpdateTime=2026-10-21 04:12:20
+    signatures=PackageSignatures{70f5ee3 version:2, signatures:[22c9db29], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.QUERY_ALL_PACKAGES
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      android.permission.ACCESS_NOTIFICATION_POLICY
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.POST_NOTIFICATIONS
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+      com.hihonor.brain.permission.KIT_SERVICE_ACCESS
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      com.google.android.gms.permission.AD_ID
+    install permissions:
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=true
+      com.kaori.wakeupschedule.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=4461904 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-t7M5.frro
+        /data/resource-cache/com.android.systemui-accent-hJ28.frro
+      gids=[3003]
+      runtime permissions:
+      disabledComponents:
+        com.kaori.wakeupschedule.today_appwidget.TodayModernAppWidgetMIUI
+        com.kaori.wakeupschedule.today_appwidget.TodayListAppWidgetMIUI
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+    User 10: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+    User 11: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+    User 12: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+    User 13: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+    User 14: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+    User 15: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+    User 16: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+    User 17: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+    User 18: ceDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+  queryable via interaction:
+    User 0:
+      [com.netease.mumu.cloner,com.android.keychain,com.netease.nemu_vapi_android.nemu,com.android.location.fused,com.android.providers.settings,android,com.mumu.shared.sdk,com.android.settings,com.sohu.inputmethod.sogou.chuizi]:
+        com.kaori.wakeupschedule
+      [com.google.android.gsf,com.google.android.gms,com.google.android.syncadapters.contacts]:
+        com.kaori.wakeupschedule
+    User 10:
+    User 11:
+    User 12:
+    User 13:
+    User 14:
+    User 15:
+    User 16:
+    User 17:
+    User 18:
+  queryable via uses-library:
+
+Package Changes:
+  Sequence number=19
+  User 0:
+    seq=3, package=com.google.android.gms
+    seq=5, package=com.zacharee1.systemuituner
+    seq=18, package=com.kaori.wakeupschedule
+
+
+Dexopt state:
+  [com.kaori.wakeupschedule]
+    path: /data/app/~~g7TJmB8UildzPtwpj0DKlg==/com.kaori.wakeupschedule-doOKBWtcJnM9orZfUM267Q==/base.apk
+      x86_64: [status=run-from-apk] [reason=unknown]
+
+
+Compiler stats:
+  [com.kaori.wakeupschedule]
+     base.apk - 463
+Snapshot statistics
+   Unrecorded-hits: 10970  Cork-level: 0
+   Summary stats               TotBlds     TotUsed     TotCork     BigBlds    ShortLvd     TotTime     MaxTime
+          0:18         now           0           0           0           0           0           0           0
+          1:18        0:18           0           0           0           0           0           0           0
+          2:18        1:18           0           0           0           0           0           0           0
+          3:18        2:18           0           0           0           0           0           0           0
+          4:18        3:18           0           0           0           0           0           0           0
+          5:18        4:18           0           0           0           0           0           0           0
+          6:18        5:18           0           0           0           0           0           0           0
+          7:18        6:18           0           0           0           0           0           0           0
+          8:18        7:18           0           0           0           0           0           0           0
+          9:18        8:18           0           0           0           0           0           0           0
+      05:05:41         now         245      321587           0           1          42         168          19
+
+   Build times                  <= 1ms      <= 2ms      <= 5ms     <= 10ms     <= 20ms     <= 50ms    <= 100ms     > 100ms
+          0:18         now           0           0           0           0           0           0           0           0
+          1:18        0:18           0           0           0           0           0           0           0           0
+          2:18        1:18           0           0           0           0           0           0           0           0
+          3:18        2:18           0           0           0           0           0           0           0           0
+          4:18        3:18           0           0           0           0           0           0           0           0
+          5:18        4:18           0           0           0           0           0           0           0           0
+          6:18        5:18           0           0           0           0           0           0           0           0
+          7:18        6:18           0           0           0           0           0           0           0           0
+          8:18        7:18           0           0           0           0           0           0           0           0
+          9:18        8:18           0           0           0           0           0           0           0           0
+      05:05:41         now         234           5           2           3           1           0           0           0
+
+   Use counters                   <= 1        <= 2        <= 5       <= 10       <= 20       <= 50      <= 100       > 100
+          0:18         now           0           0           0           0           0           0           0           0
+          1:18        0:18           0           0           0           0           0           0           0           0
+          2:18        1:18           0           0           0           0           0           0           0           0
+          3:18        2:18           0           0           0           0           0           0           0           0
+          4:18        3:18           0           0           0           0           0           0           0           0
+          5:18        4:18           0           0           0           0           0           0           0           0
+          6:18        5:18           0           0           0           0           0           0           0           0
+          7:18        6:18           0           0           0           0           0           0           0           0
+          8:18        7:18           0           0           0           0           0           0           0           0
+          9:18        8:18           0           0           0           0           0           0           0           0
+      05:05:41         now          33           4           4           9           4          24          23         143

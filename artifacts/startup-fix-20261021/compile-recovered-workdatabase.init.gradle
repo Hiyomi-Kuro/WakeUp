@@ -1,0 +1,37 @@
+gradle.projectsEvaluated {
+    def app = gradle.rootProject.project(':app')
+    def compileTask = app.tasks.named('compileDebugJavaWithJavac').get()
+    def upstreamClasspath = compileTask.classpath
+    def worktree = gradle.rootProject.projectDir
+    def artifacts = new File(worktree, 'artifacts/startup-fix-20261021')
+    def appSupport = new File(artifacts, 'compiled-app-classpath.jar')
+    def workRuntime = new File(artifacts, 'work-runtime-2.9.0-original-classes.jar')
+    def supportClasses = new File(artifacts, 'recovered-workdatabase-compile-support/classes')
+    def supportTask = app.tasks.register('compileRecoveredWorkDatabaseCompileSupport', org.gradle.api.tasks.compile.JavaCompile) {
+        setSource(app.files(
+            new File(worktree, 'app/src/main/java/androidx/work/impl/WorkDatabase.java'),
+            new File(worktree, 'app/src/main/java/androidx/work/impl/WorkDatabase_Impl.java'),
+            new File(worktree, 'app/src/main/java/androidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1.java'),
+            new File(artifacts, 'compile-only-sources/o0ooOoO/OooOo00.java')
+        ))
+        setExcludes([])
+        classpath = app.files(appSupport, workRuntime, upstreamClasspath)
+        destinationDirectory.set(supportClasses)
+        options.annotationProcessorPath = app.files()
+        options.compilerArgs.addAll(['-proc:none', '-encoding', 'UTF-8'])
+    }
+    def supportJar = app.tasks.register('recoveredWorkDatabaseCompileSupportJar', org.gradle.jvm.tasks.Jar) {
+        dependsOn(supportTask)
+        archiveFileName.set('recovered-workdatabase-compile-support.jar')
+        destinationDirectory.set(new File(artifacts, 'recovered-workdatabase-compile-support'))
+        from(supportTask.flatMap { it.destinationDirectory })
+    }
+    compileTask.dependsOn(supportJar)
+    compileTask.setClasspath(app.files(
+        supportJar.flatMap { it.archiveFile },
+        appSupport,
+        workRuntime,
+        upstreamClasspath
+    ))
+    println 'JAVAC_SUPPORT_ORDER=' + compileTask.classpath.files.take(6).join('|')
+}

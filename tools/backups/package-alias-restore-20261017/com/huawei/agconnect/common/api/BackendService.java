@@ -1,0 +1,192 @@
+package com.huawei.agconnect.common.api;
+
+import com.huawei.agconnect.credential.obs.ac;
+import java.util.concurrent.TimeUnit;
+import p089o000o0O.o0OO00O;
+import p099o000oo.OooOOOO;
+import p107o000ooo0.o0OoOo0;
+
+public class BackendService {
+
+    public enum AccessTokenType {
+        MUST,
+        EXPECT
+    }
+
+    public static class Options {
+        private final boolean accessToken;
+        private final boolean accessTokenExtra;
+        private boolean accessTokenRefreshed;
+        private final AccessTokenType accessTokenType;
+        private final boolean apiKey;
+        private final o0OO00O app;
+        private final boolean clientToken;
+        private boolean clientTokenRefreshed;
+        private final OooOOOO factory;
+        private final RequestThrottle.Throttle throttle;
+        private final TimeUnit timeUnit;
+        private final long timeout;
+
+        public static class Builder {
+            private boolean accessToken;
+            private boolean accessTokenExtra;
+            private AccessTokenType accessTokenType;
+            private boolean apiKey;
+            private o0OO00O app;
+            private boolean clientToken;
+            private OooOOOO factory;
+            private RequestThrottle.Throttle throttle;
+            private TimeUnit timeUnit;
+            private long timeout;
+
+            public Builder() {
+                this.accessTokenType = AccessTokenType.MUST;
+            }
+
+            public Builder accessToken(boolean z) {
+                this.accessToken = z;
+                return this;
+            }
+
+            public Builder accessTokenExtra(boolean z) {
+                this.accessTokenExtra = z;
+                return this;
+            }
+
+            public Builder accessTokenType(AccessTokenType accessTokenType) {
+                this.accessTokenType = accessTokenType;
+                return this;
+            }
+
+            public Builder apiKey(boolean z) {
+                this.apiKey = z;
+                return this;
+            }
+
+            public Builder app(o0OO00O o0oo00o) {
+                this.app = o0oo00o;
+                return this;
+            }
+
+            public Options build() {
+                return new Options(this.apiKey, this.clientToken, this.accessToken, this.throttle, this.accessTokenType, this.factory, this.timeout, this.timeUnit, this.app, this.accessTokenExtra);
+            }
+
+            public Builder clientToken(boolean z) {
+                this.clientToken = z;
+                return this;
+            }
+
+            public Builder factory(OooOOOO oooOOOO) {
+                this.factory = oooOOOO;
+                return this;
+            }
+
+            public Builder throttle(RequestThrottle.Throttle throttle) {
+                this.throttle = throttle;
+                return this;
+            }
+
+            public Builder timeUnit(TimeUnit timeUnit) {
+                this.timeUnit = timeUnit;
+                return this;
+            }
+
+            public Builder timeout(long j) {
+                this.timeout = j;
+                return this;
+            }
+
+            public Builder(Options options) {
+                this.accessTokenType = AccessTokenType.MUST;
+                this.apiKey = options.apiKey;
+                this.clientToken = options.clientToken;
+                this.accessToken = options.accessToken;
+                this.accessTokenExtra = options.accessTokenExtra;
+                this.throttle = options.throttle;
+                this.accessTokenType = options.accessTokenType;
+                this.factory = options.factory;
+                this.timeout = options.timeout;
+                this.timeUnit = options.timeUnit;
+                this.app = options.app;
+            }
+        }
+
+        private Options(boolean z, boolean z2, boolean z3, RequestThrottle.Throttle throttle, AccessTokenType accessTokenType, OooOOOO oooOOOO, long j, TimeUnit timeUnit, o0OO00O o0oo00o, boolean z4) {
+            this.apiKey = z;
+            this.clientToken = z2;
+            this.accessToken = z3;
+            this.throttle = throttle;
+            this.accessTokenType = accessTokenType;
+            this.factory = oooOOOO;
+            this.timeout = j;
+            this.timeUnit = timeUnit;
+            this.app = o0oo00o;
+            this.accessTokenExtra = z4;
+        }
+
+        public AccessTokenType getAccessTokenType() {
+            return this.accessTokenType;
+        }
+
+        public o0OO00O getApp() {
+            return this.app;
+        }
+
+        public OooOOOO getFactory() {
+            return this.factory;
+        }
+
+        public RequestThrottle.Throttle getThrottle() {
+            return this.throttle;
+        }
+
+        public TimeUnit getTimeUnit() {
+            return this.timeUnit;
+        }
+
+        public long getTimeout() {
+            return this.timeout;
+        }
+
+        public boolean isAccessToken() {
+            return this.accessToken;
+        }
+
+        public boolean isAccessTokenExtra() {
+            return this.accessTokenExtra;
+        }
+
+        public boolean isAccessTokenRefreshed() {
+            return this.accessTokenRefreshed;
+        }
+
+        public boolean isApiKey() {
+            return this.apiKey;
+        }
+
+        public boolean isClientToken() {
+            return this.clientToken;
+        }
+
+        public boolean isClientTokenRefreshed() {
+            return this.clientTokenRefreshed;
+        }
+
+        public Builder newBuilder() {
+            return new Builder(this);
+        }
+
+        public void setAccessTokenRefreshed(boolean z) {
+            this.accessTokenRefreshed = z;
+        }
+
+        public void setClientTokenRefreshed(boolean z) {
+            this.clientTokenRefreshed = z;
+        }
+    }
+
+    public static <Rsp> o0OoOo0 sendRequest(BaseRequest baseRequest, int i, Class<Rsp> cls, Options options) {
+        return ac.b(baseRequest, i, cls, options);
+    }
+}

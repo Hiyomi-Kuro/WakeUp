@@ -1,0 +1,130 @@
+Display 0 name="内置屏幕"#0
+WindowedMagnification:0:31#0
+HideDisplayCutout:0:16#0
+OneHandedBackgroundPanel:0:1#0
+OneHanded:0:1#0
+FullscreenMagnification:0:1#0
+Leaf:0:1#0
+WallpaperWindowToken{f3b1356 token=android.os.Binder@6ac3971}#0
+73f25f5 com.android.systemui.ImageWallpaper#0
+com.android.systemui.ImageWallpaper#0
+Wallpaper BBQ wrapper#0
+OneHanded:2:16#0
+FullscreenMagnification:2:14#0
+DefaultTaskDisplayArea#0
+colorBackgroundLayer#0
+Task=1#0
+Task=2#0
+ActivityRecord{3c2ca5d u0 com.teslacoilsw.launcher/.NovaLauncher#0
+3b762c6 com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher#0
+com.teslacoilsw.launcher/com.teslacoilsw.launcher.NovaLauncher#0
+Task=5#0
+Dim layer#0
+Task=4#0
+Dim layer#0
+splitScreenDividerAnchor#0
+Task=3#0
+Leaf:3:14#0
+WindowToken{ccdb383 android.os.BinderProxy@dc8915d}#0
+b36a9a6 ShellDropTarget#0
+ImePlaceholder:15:16#0
+ImeContainer#0
+OneHanded:17:17#0
+FullscreenMagnification:17:17#0
+Leaf:17:17#0
+WindowToken{f2dc2ee android.os.BinderProxy@d85af0}#0
+Surface(name=9f4b38f StatusBar)/@0x13dc3b2 - animation-leash of insets_animation#1
+9f4b38f StatusBar#0
+StatusBar#0
+HideDisplayCutout:18:18#0
+OneHanded:18:18#0
+FullscreenMagnification:18:18#0
+Leaf:18:18#0
+OneHanded:19:19#0
+FullscreenMagnification:19:19#0
+Leaf:19:19#0
+WindowToken{d220431 android.os.BinderProxy@e966ef9}#0
+3a8e716 NotificationShade#0
+HideDisplayCutout:20:23#0
+OneHanded:20:23#0
+FullscreenMagnification:20:23#0
+Leaf:20:23#0
+Leaf:24:25#0
+HideDisplayCutout:26:31#0
+OneHanded:26:31#0
+FullscreenMagnification:26:27#0
+Leaf:26:27#0
+Leaf:28:28#0
+FullscreenMagnification:29:31#0
+Leaf:29:31#0
+WindowToken{d244439 android.os.Binder@197e400}#0
+990d6fb com.pranavpandey.rotation#0
+#0
+HideDisplayCutout:32:35#0
+OneHanded:32:35#0
+Leaf:32:32#0
+FullscreenMagnification:33:35#0
+Leaf:33:35#0
+Leaf:36:36#0
+Display Overlays#0
+WindowToken{1b6594b android.os.BinderProxy@e93ba1a}#0
+4db0f28 ScreenDecorOverlay#0
+ScreenDecorOverlay#0
+WindowToken{4849258 android.os.BinderProxy@8b42b3b}#0
+bc235ed ScreenDecorOverlayBottom#0
+ScreenDecorOverlayBottom#0
+Display 26 name="HDMI 屏幕"#0
+WindowedMagnification:0:31#2
+FullscreenMagnification:0:14#1
+Leaf:0:1#2
+colorBackgroundLayer#2
+DefaultTaskDisplayArea#2
+Task=3503#0
+ActivityRecord{253bb8d u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity#0
+f335fa8 com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity#0
+com.kaori.wakeupschedule/com.kaori.wakeupschedule.schedule.ScheduleActivity#0
+ImeContainer#2
+WindowToken{9070dbb android.os.Binder@bfdba4a}#0
+Surface(name=4ac5425 InputMethod)/@0x292dbab - animation-leash of insets_animation#0
+4ac5425 InputMethod#0
+splitScreenDividerAnchor#2
+Leaf:3:14#2
+ImePlaceholder:15:16#2
+FullscreenMagnification:17:23#1
+Leaf:17:23#1
+Leaf:24:25#2
+FullscreenMagnification:26:27#2
+Leaf:26:27#2
+Leaf:28:28#2
+FullscreenMagnification:29:31#2
+Leaf:29:31#2
+WindowToken{7877b68 android.os.Binder@15bce8b}#0
+Leaf:32:32#2
+FullscreenMagnification:33:35#2
+Leaf:33:35#2
+Leaf:36:36#2
+Display Overlays#2
+Display 27 name="HDMI 屏幕"#0
+WindowedMagnification:0:31#1
+FullscreenMagnification:0:14#0
+Leaf:0:1#1
+DefaultTaskDisplayArea#1
+colorBackgroundLayer#1
+splitScreenDividerAnchor#1
+Leaf:3:14#1
+ImePlaceholder:15:16#1
+ImeContainer#1
+FullscreenMagnification:17:23#0
+Leaf:17:23#0
+Leaf:24:25#1
+FullscreenMagnification:26:27#1
+Leaf:26:27#1
+Leaf:28:28#1
+FullscreenMagnification:29:31#1
+Leaf:29:31#1
+WindowToken{5b72a4 android.os.Binder@34c6d37}#0
+Leaf:32:32#1
+FullscreenMagnification:33:35#1
+Leaf:33:35#1
+Leaf:36:36#1
+Display Overlays#1

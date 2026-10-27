@@ -1,0 +1,3 @@
+# ScheduleActivity name-resolution interim (round 6114)
+
+This is an intermediate diagnostic record for the ScheduleActivity reconstruction work. Its raw Javac count is **5,226**, but the run still reported three name-resolution errors from colliding simple names (`OooOo00` in the app package and menu inflater package), plus the callback expression resolving to the imported functional interface. The original Smali ABI checks and 27 static assertions passed. Those collisions were corrected with fully qualified app types; the superseding clean run is `docs/build-diagnostics-round-6115.log` (**5,222** errors, no ScheduleActivity diagnostics). Do not use this intermediate count as the final result for the patch.

@@ -1,0 +1,18 @@
+{
+  "round": 6128,
+  "diagnostic": "package Ref does not exist",
+  "unique_diagnostic_locations_before_fix": 34,
+  "source_file_count": 9,
+  "import_added": "import kotlin.jvm.internal.Ref;",
+  "files": [
+    "app/src/main/java/androidx/navigation/Oooo000.java",
+    "app/src/main/java/com/github/doyaaaaaken/kotlincsv/client/OooO0OO.java",
+    "app/src/main/java/com/google/android/material/internal/OooO00o.java",
+    "app/src/main/java/kotlin/coroutines/CombinedContext.java",
+    "app/src/main/java/kotlinx/coroutines/flow/OooO.java",
+    "app/src/main/java/kotlinx/coroutines/flow/OooO0o.java",
+    "app/src/main/java/kotlinx/coroutines/o000O0Oo.java",
+    "app/src/main/java/kotlinx/coroutines/o0OOO0o.java",
+    "app/src/main/java/o00O0Ooo/o0000O.java"
+  ]
+}

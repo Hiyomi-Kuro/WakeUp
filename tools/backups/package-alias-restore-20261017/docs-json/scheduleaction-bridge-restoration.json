@@ -1,0 +1,522 @@
+[
+  {
+    "source": "app/src/main/java/androidx/fragment/app/OooOo00.java",
+    "compiler_line": 311,
+    "smali": "smali/smali/androidx/fragment/app/DefaultSpecialEffectsController$retainMatchingViews$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(Map.Entry<String, View>)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/fragment/app/OooOo00.java",
+    "compiler_line": 328,
+    "smali": "smali/smali/androidx/fragment/app/DefaultSpecialEffectsController$retainMatchingViews$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(Map.Entry<String, View>)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/lifecycle/o0000Ooo.java",
+    "compiler_line": 131,
+    "smali": "smali/smali/androidx/lifecycle/SavedStateHandleSupport$savedStateHandlesVM$1$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "o000O00 invoke(p036OoooOoO.o0O0ooO)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/fragment/OooOo.java",
+    "compiler_line": 90,
+    "smali": "smali/smali/androidx/navigation/fragment/FragmentNavigator$fragmentViewObserver$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "o0ooOOo invoke(androidx.navigation.OooOOO)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/fragment/OooOo.java",
+    "compiler_line": 137,
+    "smali": "smali/smali/androidx/navigation/fragment/FragmentNavigator$addPendingOps$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(Pair<String, Boolean>)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/fragment/OooOo.java",
+    "compiler_line": 155,
+    "smali": "smali/smali/androidx/navigation/fragment/FragmentNavigator$attachClearViewModel$viewModel$1$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "OooOO0O invoke(p036OoooOoO.o0O0ooO)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/fragment/OooOo.java",
+    "compiler_line": 227,
+    "smali": "smali/smali/androidx/navigation/fragment/FragmentNavigator$popBackStack$1$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(Pair<String, Boolean>)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/o0000O0.java",
+    "compiler_line": 52,
+    "smali": "smali/smali/androidx/navigation/Navigator$navigate$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "OooOOO invoke(OooOOO)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/o00oO0o.java",
+    "compiler_line": 44,
+    "smali": "smali/smali/androidx/navigation/NavGraph$Companion$findStartDestination$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "oo000o invoke(oo000o)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/o00oO0o.java",
+    "compiler_line": 66,
+    "smali": "smali/smali/androidx/navigation/Navigation$findViewNavController$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "View invoke(View)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/o00oO0o.java",
+    "compiler_line": 77,
+    "smali": "smali/smali/androidx/navigation/Navigation$findViewNavController$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Oooo000 invoke(View)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/oo000o.java",
+    "compiler_line": 69,
+    "smali": "smali/smali/androidx/navigation/NavDestination$addDeepLink$missingRequiredArguments$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(String)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/oo000o.java",
+    "compiler_line": 317,
+    "smali": "smali/smali/androidx/navigation/NavDeepLink$getMatchingArguments$missingRequiredArguments$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(String)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/oo000o.java",
+    "compiler_line": 464,
+    "smali": "smali/smali/androidx/navigation/NavDestination$hasRequiredArguments$missingRequiredArguments$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(String)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/oo000o.java",
+    "compiler_line": 584,
+    "smali": "smali/smali/androidx/navigation/NavDestination$hasRequiredArguments$missingRequiredArguments$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(String)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/oo000o.java",
+    "compiler_line": 618,
+    "smali": "smali/smali/androidx/navigation/NavDestination$hasRequiredArguments$missingRequiredArguments$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(String)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/Oooo000.java",
+    "compiler_line": 128,
+    "smali": "smali/smali/androidx/navigation/NavController$activity$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Context invoke(Context)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/Oooo000.java",
+    "compiler_line": 420,
+    "smali": "smali/smali/androidx/navigation/NavController$executePopOperations$3.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(oo000o)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/Oooo000.java",
+    "compiler_line": 428,
+    "smali": "smali/smali/androidx/navigation/NavController$executePopOperations$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "oo000o invoke(oo000o)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/Oooo000.java",
+    "compiler_line": 447,
+    "smali": "smali/smali/androidx/navigation/NavController$executePopOperations$6.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(oo000o)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/Oooo000.java",
+    "compiler_line": 455,
+    "smali": "smali/smali/androidx/navigation/NavController$executePopOperations$5.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "oo000o invoke(oo000o)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/Oooo000.java",
+    "compiler_line": 1072,
+    "smali": "smali/smali/androidx/navigation/NavController$restoreStateInternal$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(String)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/navigation/OooO0O0.java",
+    "compiler_line": 27,
+    "smali": "smali/smali/androidx/navigation/ActivityNavigator$hostActivity$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Context invoke(Context)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/window/layout/o000oOoO.java",
+    "compiler_line": 108,
+    "smali": "smali/smali/androidx/window/layout/SidecarAdapter$translate$checkedFeature$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(SidecarDisplayFeature)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/window/layout/o000oOoO.java",
+    "compiler_line": 118,
+    "smali": "smali/smali/androidx/window/layout/SidecarAdapter$translate$checkedFeature$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(SidecarDisplayFeature)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/window/layout/o000oOoO.java",
+    "compiler_line": 124,
+    "smali": "smali/smali/androidx/window/layout/SidecarAdapter$translate$checkedFeature$3.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(SidecarDisplayFeature)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/window/layout/o000oOoO.java",
+    "compiler_line": 134,
+    "smali": "smali/smali/androidx/window/layout/SidecarAdapter$translate$checkedFeature$4.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(SidecarDisplayFeature)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/androidx/work/impl/constraints/OooOO0O.java",
+    "compiler_line": 37,
+    "smali": "smali/smali/androidx/work/impl/constraints/WorkConstraintsTracker$areAllConstraintsMet$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "CharSequence invoke(androidx.work.impl.constraints.controllers.OooO0OO)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/github/doyaaaaaken/kotlincsv/client/OooO0OO.java",
+    "compiler_line": 46,
+    "smali": "smali/smali/com/github/doyaaaaaken/kotlincsv/client/CsvReader$readAll$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "List<List<String>> invoke(OooO0O0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/clock/ClockActivity.java",
+    "compiler_line": 358,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/clock/ClockActivity$refresh$3.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(CourseBean)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/course_add/AddCourseViewModel.java",
+    "compiler_line": 120,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/course_add/AddCourseViewModel$initData$detailList$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(CourseDetailBean)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/course_add/AddCourseViewModel.java",
+    "compiler_line": 126,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/course_add/AddCourseViewModel$initData$detailList$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(CourseDetailBean)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/course_add/AddCourseViewModel.java",
+    "compiler_line": 132,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/course_add/AddCourseViewModel$initData$detailList$3.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(CourseDetailBean)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/course_add/AddCourseViewModel.java",
+    "compiler_line": 138,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/course_add/AddCourseViewModel$initData$detailList$4.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(CourseDetailBean)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/course_add/AddCourseViewModel.java",
+    "compiler_line": 144,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/course_add/AddCourseViewModel$initData$detailList$5.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(CourseDetailBean)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/course_add/AddCourseViewModel.java",
+    "compiler_line": 150,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/course_add/AddCourseViewModel$initData$detailList$6.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(CourseDetailBean)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/OooO0O0.java",
+    "compiler_line": 129,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/Common$weekIntList2WeekBeanListString$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "CharSequence invoke(WeekBean)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/SchoolListActivity.java",
+    "compiler_line": 188,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/SchoolListActivity$loadSchoolList$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(SchoolInfo)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_import/SchoolListActivity.java",
+    "compiler_line": 194,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_import/SchoolListActivity$loadSchoolList$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(SchoolInfo)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/base/OooO00o.java",
+    "compiler_line": 211,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/base/Common$mergeWeekCourse$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(Course)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/base/OooO00o.java",
+    "compiler_line": 217,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/base/Common$mergeWeekCourse$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(Course)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/base/OooO00o.java",
+    "compiler_line": 223,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/base/Common$mergeWeekCourse$3.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(Course)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/base/OooO00o.java",
+    "compiler_line": 229,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/base/Common$mergeWeekCourse$4.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(Course)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/base/OooO00o.java",
+    "compiler_line": 235,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/base/Common$mergeWeekCourse$5.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(Course)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o000O0.java",
+    "compiler_line": 25,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/XAUATPostParser$generateCourseList$nodeInfoList$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(kotlin.text.OooOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o000O0.java",
+    "compiler_line": 32,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/XAUATPostParser$generateCourseList$courseInfoList$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(kotlin.text.OooOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o000O0.java",
+    "compiler_line": 39,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/XAUATPostParser$generateCourseList$courseInfoList$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Boolean invoke(String)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o00oO0o.java",
+    "compiler_line": 39,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HFUTParser$generateCourseList$2$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(HFUInfo.Result.Schedule)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o00oO0o.java",
+    "compiler_line": 45,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HFUTParser$generateCourseList$2$3.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(HFUInfo.Result.Schedule)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o00oO0o.java",
+    "compiler_line": 51,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HFUTParser$generateCourseList$2$4.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(HFUInfo.Result.Schedule)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o00oO0o.java",
+    "compiler_line": 57,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HFUTParser$generateCourseList$2$5.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(HFUInfo.Result.Schedule)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o00oO0o.java",
+    "compiler_line": 67,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HFUTParser$generateCourseList$2$6.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Comparable<?> invoke(HFUInfo.Result.Schedule)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o0ooOOo.java",
+    "compiler_line": 30,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HITParser$getCourse$roomList$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(kotlin.text.OooOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o0ooOOo.java",
+    "compiler_line": 37,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HITParser$getCourse$teacherList$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(kotlin.text.OooOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o0ooOOo.java",
+    "compiler_line": 44,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HITParser$getCourse$weekInfoList$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(kotlin.text.OooOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/o0ooOOo.java",
+    "compiler_line": 51,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/HITParser$getCourse$nodeInfoList$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(kotlin.text.OooOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/OooO0OO.java",
+    "compiler_line": 65,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/BFAPostParser$generateCourseList$numbers$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Integer invoke(kotlin.text.OooOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/schedule_parser/parser/supwisdom/OooO00o.java",
+    "compiler_line": 69,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/schedule_parser/parser/supwisdom/SupwisdomParser$generateCourseList$a$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(OooOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/com/kaori/wakeupschedule/today_appwidget/TodayCourseAppWidget.java",
+    "compiler_line": 68,
+    "smali": "smali/smali/com/suda/yzune/wakeupschedule/today_appwidget/TodayCourseAppWidget$onUpdate$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "Object invoke(kotlin.coroutines.OooO0o<? super OooOO0O>)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/kotlin/text/o00O0O.java",
+    "compiler_line": 400,
+    "smali": "smali/smali/kotlin/text/StringsKt__StringsKt$splitToSequence$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(p115o00O0Oo.OooO0o)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/kotlin/text/OooOo.java",
+    "compiler_line": 48,
+    "smali": "smali/smali/kotlin/text/StringsKt__IndentKt$getIndentFunction$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "String invoke(String)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/kotlinx/coroutines/o0000O00.java",
+    "compiler_line": 8,
+    "smali": "smali/smali/kotlinx/coroutines/ExecutorCoroutineDispatcher$Key$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "o0000O00 invoke(kotlin.coroutines.OooOOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/kotlinx/coroutines/o00Oo0.java",
+    "compiler_line": 9,
+    "smali": "smali/smali/kotlinx/coroutines/CoroutineDispatcher$Key$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "o00Oo0 invoke(kotlin.coroutines.OooOOO0)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+    "compiler_line": 110,
+    "smali": "smali/smali/me/saket/cascade/HeightAnimatableViewFlipper$show$1$1.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "ViewPropertyAnimator invoke(View)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  },
+  {
+    "source": "app/src/main/java/me/saket/cascade/HeightAnimatableViewFlipper.java",
+    "compiler_line": 127,
+    "smali": "smali/smali/me/saket/cascade/HeightAnimatableViewFlipper$show$1$2.smali",
+    "smali_bridge": "invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java_typed_invoke": "ViewPropertyAnimator invoke(View)",
+    "bridge_added": "Object invoke(Object) delegates to the typed invoke method"
+  }
+]

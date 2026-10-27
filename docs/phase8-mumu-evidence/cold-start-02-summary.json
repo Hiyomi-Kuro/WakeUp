@@ -1,0 +1,24 @@
+{
+  "run": 2,
+  "started_at": "2026-10-24T15:24:50+08:00",
+  "elapsed_seconds": 8.11,
+  "pid": "7122",
+  "resumed_activity_lines": [
+    "topResumedActivity=ActivityRecord{ec4bd21 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3537}",
+    "Resumed: ActivityRecord{ec4bd21 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3537}",
+    "ResumedActivity: ActivityRecord{ec4bd21 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3537}"
+  ],
+  "logical_display_id": 4,
+  "physical_display_id": "4619827144452474627",
+  "screenshot": "D:\\Download\\AndroidStudioProjects\\WakeUP\\docs\\phase8-mumu-evidence\\cold-start-02-display-4.png",
+  "screenshot_bytes": 12504,
+  "installed_base_apk_path": "/data/app/~~2AJm2mqxQ-WKUwSP3qUwUA==/com.kaori.wakeupschedule-idVkpJpvXA_C-tH2CL7Ibw==/base.apk",
+  "installed_base_apk_sha256_output": "314805b92dd4e2b36d7f790e9fa5b256cb657955dd57d280f8e746eef0e53327  /data/app/~~2AJm2mqxQ-WKUwSP3qUwUA==/com.kaori.wakeupschedule-idVkpJpvXA_C-tH2CL7Ibw==/base.apk",
+  "startup_error_matches": [
+    "10-24 15:24:47.840  7104  7104 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<",
+    "10-24 15:24:47.843  7104  7104 I AndroidRuntime: Using default boot image",
+    "10-24 15:24:47.843  7104  7104 I AndroidRuntime: Leaving lock profiling enabled",
+    "10-24 15:24:47.956  7104  7104 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey",
+    "10-24 15:24:47.984  7104  7104 I AndroidRuntime: VM exiting with result code 0."
+  ]
+}
