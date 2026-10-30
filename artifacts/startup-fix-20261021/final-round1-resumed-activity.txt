@@ -1,5 +1,0 @@
-
-    topResumedActivity=ActivityRecord{89a9057 u0 com.android.markdown/.browser.BrowserHomeActivity t3478}
-      topResumedActivity=ActivityRecord{239e863 u0 com.teslacoilsw.launcher/.NovaLauncher t2}
-  ResumedActivity: ActivityRecord{89a9057 u0 com.android.markdown/.browser.BrowserHomeActivity t3478}
-

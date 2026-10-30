@@ -1,2 +1,0 @@
-/data/user/0/com.kaori.wakeupschedule
-stat: '%i': No such file or directory

@@ -236,7 +236,7 @@ Java 物理目录不一定等于声明包名；内部类通过 SourceFile 关联
 | `Landroidx/activity/result/ActivityResult;` | `smali/smali/androidx/activity/result/ActivityResult.smali` | `Landroidx/activity/result/ActivityResult;` | `app/src/main/java/androidx/activity/result/ActivityResult.java` | 本地源码已编译且在 DEX 中 |
 | `Landroidx/activity/result/ActivityResultRegistry$1;` | `smali/smali/androidx/activity/result/ActivityResultRegistry$1.smali` | `—（嵌入类 binary 别名未逐一对应）` | `app/src/main/java/androidx/activity/result/OooOO0O.java` | 匿名/合成实现并入已编译源码；独立 binary 名已改变 |
 | `Landroidx/activity/result/IntentSenderRequest;` | `smali/smali/androidx/activity/result/IntentSenderRequest.smali` | `Landroidx/activity/result/IntentSenderRequest;` | `app/src/main/java/androidx/activity/result/IntentSenderRequest.java` | 本地源码已编译且在 DEX 中 |
-| `Landroidx/activity/result/OooO;` | `smali/smali/androidx/activity/result/OooO.smali` | `Landroidx/activity/result/OooO;` | `—` | 依赖或生成类已在 DEX 中 |
+| `Landroidx/activity/result/OooO;` | `smali/smali/androidx/activity/result/OooO.smali` | `Landroidx/activity/result/OooO;` | `OooO.kt` | 本地源码已编译且在 DEX 中 |
 | `Landroidx/activity/result/OooO00o;` | `smali/smali/androidx/activity/result/OooO00o.smali` | `Landroidx/activity/result/OooO00o;` | `app/src/main/java/androidx/activity/result/OooO00o.java` | 本地源码已编译且在 DEX 中 |
 | `Landroidx/activity/result/OooO0o;` | `smali/smali/androidx/activity/result/OooO0o.smali` | `Landroidx/activity/result/OooO0o;` | `app/src/main/java/androidx/activity/result/OooO0o.java` | 本地源码已编译且在 DEX 中 |
 | `Landroidx/activity/result/OooO0O0;` | `smali/smali/androidx/activity/result/OooO0O0.smali` | `Landroidx/activity/result/OooO0O0;` | `app/src/main/java/androidx/activity/result/OooO0O0.java` | 本地源码已编译且在 DEX 中 |
@@ -1499,12 +1499,12 @@ Java 物理目录不一定等于声明包名；内部类通过 SourceFile 关联
 | `Landroidx/work/impl/utils/futures/DirectExecutor;` | `smali/smali/androidx/work/impl/utils/futures/DirectExecutor.smali` | `Landroidx/work/impl/utils/futures/DirectExecutor;` | `—` | 依赖或生成类已在 DEX 中 |
 | `Landroidx/work/impl/utils/futures/OooO00o;` | `smali/smali/androidx/work/impl/utils/futures/OooO00o.smali` | `Landroidx/work/impl/utils/futures/OooO00o;` | `app/src/main/java/androidx/work/impl/utils/futures/OooO00o.java` | 本地源码已编译且在 DEX 中 |
 | `Landroidx/work/impl/utils/futures/OooO0O0;` | `smali/smali/androidx/work/impl/utils/futures/OooO0O0.smali` | `Landroidx/work/impl/utils/futures/OooO0O0;` | `app/src/main/java/androidx/work/impl/utils/futures/OooO0O0.java` | 本地源码已编译且在 DEX 中 |
-| `Landroidx/work/impl/WorkDatabase;` | `smali/smali/androidx/work/impl/WorkDatabase.smali` | `Landroidx/work/impl/WorkDatabase;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Landroidx/work/impl/WorkDatabase_Impl;` | `smali/smali/androidx/work/impl/WorkDatabase_Impl.smali` | `Landroidx/work/impl/WorkDatabase_Impl;` | `—` | 依赖或生成类已在 DEX 中 |
+| `Landroidx/work/impl/WorkDatabase;` | `smali/smali/androidx/work/impl/WorkDatabase.smali` | `Landroidx/work/impl/WorkDatabase;` | `app/src/main/java/androidx/work/impl/WorkDatabase.java` | 本地源码已编译且在 DEX 中 |
+| `Landroidx/work/impl/WorkDatabase_Impl;` | `smali/smali/androidx/work/impl/WorkDatabase_Impl.smali` | `Landroidx/work/impl/WorkDatabase_Impl;` | `app/src/main/java/androidx/work/impl/WorkDatabase_Impl.java` | 本地源码已编译且在 DEX 中 |
 | `Landroidx/work/impl/workers/CombineContinuationsWorker;` | `smali/smali/androidx/work/impl/workers/CombineContinuationsWorker.smali` | `Landroidx/work/impl/workers/CombineContinuationsWorker;` | `—` | 依赖或生成类已在 DEX 中 |
 | `Landroidx/work/impl/workers/ConstraintTrackingWorker;` | `smali/smali/androidx/work/impl/workers/ConstraintTrackingWorker.smali` | `Landroidx/work/impl/workers/ConstraintTrackingWorker;` | `app/src/main/java/androidx/work/impl/workers/ConstraintTrackingWorker.java` | 本地源码已编译且在 DEX 中 |
 | `Landroidx/work/impl/workers/DiagnosticsWorker;` | `smali/smali/androidx/work/impl/workers/DiagnosticsWorker.smali` | `Landroidx/work/impl/workers/DiagnosticsWorker;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Landroidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1;` | `smali/smali/androidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1.smali` | `Landroidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1;` | `—` | 依赖或生成类已在 DEX 中 |
+| `Landroidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1;` | `smali/smali/androidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1.smali` | `Landroidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1;` | `app/src/main/java/androidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1.java` | 本地源码已编译且在 DEX 中 |
 | `Landroidx/work/JobListenableFuture$1;` | `smali/smali/androidx/work/JobListenableFuture$1.smali` | `Landroidx/work/JobListenableFuture$1;` | `—` | 依赖或生成类已在 DEX 中 |
 | `Landroidx/work/NetworkType;` | `smali/smali/androidx/work/NetworkType.smali` | `Landroidx/work/NetworkType;` | `—` | 依赖或生成类已在 DEX 中 |
 | `Landroidx/work/o000oOoO;` | `smali/smali/androidx/work/o000oOoO.smali` | `Landroidx/work/o000oOoO;` | `app/src/main/java/androidx/work/o000oOoO.java` | 本地源码已编译且在 DEX 中 |
@@ -3996,26 +3996,26 @@ Java 物理目录不一定等于声明包名；内部类通过 SourceFile 关联
 | `Lcom/suda/yzune/wakeupschedule/OooO0o;` | `smali/smali/com/suda/yzune/wakeupschedule/OooO0o.smali` | `Lcom/kaori/wakeupschedule/OooO0o;` | `app/src/main/java/com/kaori/wakeupschedule/OooO0o.java` | 本地源码已编译且在 DEX 中 |
 | `Lcom/suda/yzune/wakeupschedule/OooO0O0;` | `smali/smali/com/suda/yzune/wakeupschedule/OooO0O0.smali` | `Lcom/kaori/wakeupschedule/OooO0O0;` | `app/src/main/java/com/kaori/wakeupschedule/OooO0O0.java` | 本地源码已编译且在 DEX 中 |
 | `Lcom/suda/yzune/wakeupschedule/OooO0OO;` | `smali/smali/com/suda/yzune/wakeupschedule/OooO0OO.smali` | `—（嵌入类 binary 别名未逐一对应）` | `app/src/main/java/com/kaori/wakeupschedule/OooO0o.java` | 匿名/合成实现并入已编译源码；独立 binary 名已改变 |
-| `Lcom/suda/yzune/wakeupschedule/R$anim;` | `smali/smali/com/suda/yzune/wakeupschedule/R$anim.smali` | `Lcom/kaori/wakeupschedule/R$anim;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$animator;` | `smali/smali/com/suda/yzune/wakeupschedule/R$animator.smali` | `Lcom/kaori/wakeupschedule/R$animator;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$array;` | `smali/smali/com/suda/yzune/wakeupschedule/R$array.smali` | `Lcom/kaori/wakeupschedule/R$array;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$attr;` | `smali/smali/com/suda/yzune/wakeupschedule/R$attr.smali` | `Lcom/kaori/wakeupschedule/R$attr;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$bool;` | `smali/smali/com/suda/yzune/wakeupschedule/R$bool.smali` | `Lcom/kaori/wakeupschedule/R$bool;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$color;` | `smali/smali/com/suda/yzune/wakeupschedule/R$color.smali` | `Lcom/kaori/wakeupschedule/R$color;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$dimen;` | `smali/smali/com/suda/yzune/wakeupschedule/R$dimen.smali` | `Lcom/kaori/wakeupschedule/R$dimen;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$drawable;` | `smali/smali/com/suda/yzune/wakeupschedule/R$drawable.smali` | `Lcom/kaori/wakeupschedule/R$drawable;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$id;` | `smali/smali/com/suda/yzune/wakeupschedule/R$id.smali` | `Lcom/kaori/wakeupschedule/R$id;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$integer;` | `smali/smali/com/suda/yzune/wakeupschedule/R$integer.smali` | `Lcom/kaori/wakeupschedule/R$integer;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$interpolator;` | `smali/smali/com/suda/yzune/wakeupschedule/R$interpolator.smali` | `Lcom/kaori/wakeupschedule/R$interpolator;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$layout;` | `smali/smali/com/suda/yzune/wakeupschedule/R$layout.smali` | `Lcom/kaori/wakeupschedule/R$layout;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$menu;` | `smali/smali/com/suda/yzune/wakeupschedule/R$menu.smali` | `Lcom/kaori/wakeupschedule/R$menu;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$mipmap;` | `smali/smali/com/suda/yzune/wakeupschedule/R$mipmap.smali` | `Lcom/kaori/wakeupschedule/R$mipmap;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$navigation;` | `smali/smali/com/suda/yzune/wakeupschedule/R$navigation.smali` | `Lcom/kaori/wakeupschedule/R$navigation;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$plurals;` | `smali/smali/com/suda/yzune/wakeupschedule/R$plurals.smali` | `Lcom/kaori/wakeupschedule/R$plurals;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$string;` | `smali/smali/com/suda/yzune/wakeupschedule/R$string.smali` | `Lcom/kaori/wakeupschedule/R$string;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$style;` | `smali/smali/com/suda/yzune/wakeupschedule/R$style.smali` | `Lcom/kaori/wakeupschedule/R$style;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$styleable;` | `smali/smali/com/suda/yzune/wakeupschedule/R$styleable.smali` | `Lcom/kaori/wakeupschedule/R$styleable;` | `—` | 依赖或生成类已在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/R$xml;` | `smali/smali/com/suda/yzune/wakeupschedule/R$xml.smali` | `Lcom/kaori/wakeupschedule/R$xml;` | `—` | 依赖或生成类已在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$anim;` | `smali/smali/com/suda/yzune/wakeupschedule/R$anim.smali` | `Lcom/kaori/wakeupschedule/R$anim;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$animator;` | `smali/smali/com/suda/yzune/wakeupschedule/R$animator.smali` | `Lcom/kaori/wakeupschedule/R$animator;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$array;` | `smali/smali/com/suda/yzune/wakeupschedule/R$array.smali` | `Lcom/kaori/wakeupschedule/R$array;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$attr;` | `smali/smali/com/suda/yzune/wakeupschedule/R$attr.smali` | `Lcom/kaori/wakeupschedule/R$attr;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$bool;` | `smali/smali/com/suda/yzune/wakeupschedule/R$bool.smali` | `Lcom/kaori/wakeupschedule/R$bool;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$color;` | `smali/smali/com/suda/yzune/wakeupschedule/R$color.smali` | `Lcom/kaori/wakeupschedule/R$color;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$dimen;` | `smali/smali/com/suda/yzune/wakeupschedule/R$dimen.smali` | `Lcom/kaori/wakeupschedule/R$dimen;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$drawable;` | `smali/smali/com/suda/yzune/wakeupschedule/R$drawable.smali` | `Lcom/kaori/wakeupschedule/R$drawable;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$id;` | `smali/smali/com/suda/yzune/wakeupschedule/R$id.smali` | `Lcom/kaori/wakeupschedule/R$id;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$integer;` | `smali/smali/com/suda/yzune/wakeupschedule/R$integer.smali` | `Lcom/kaori/wakeupschedule/R$integer;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$interpolator;` | `smali/smali/com/suda/yzune/wakeupschedule/R$interpolator.smali` | `Lcom/kaori/wakeupschedule/R$interpolator;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$layout;` | `smali/smali/com/suda/yzune/wakeupschedule/R$layout.smali` | `Lcom/kaori/wakeupschedule/R$layout;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$menu;` | `smali/smali/com/suda/yzune/wakeupschedule/R$menu.smali` | `Lcom/kaori/wakeupschedule/R$menu;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$mipmap;` | `smali/smali/com/suda/yzune/wakeupschedule/R$mipmap.smali` | `Lcom/kaori/wakeupschedule/R$mipmap;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$navigation;` | `smali/smali/com/suda/yzune/wakeupschedule/R$navigation.smali` | `Lcom/kaori/wakeupschedule/R$navigation;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$plurals;` | `smali/smali/com/suda/yzune/wakeupschedule/R$plurals.smali` | `Lcom/kaori/wakeupschedule/R$plurals;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$string;` | `smali/smali/com/suda/yzune/wakeupschedule/R$string.smali` | `Lcom/kaori/wakeupschedule/R$string;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$style;` | `smali/smali/com/suda/yzune/wakeupschedule/R$style.smali` | `Lcom/kaori/wakeupschedule/R$style;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$styleable;` | `smali/smali/com/suda/yzune/wakeupschedule/R$styleable.smali` | `Lcom/kaori/wakeupschedule/R$styleable;` | `` | 本地源码已编译且在 DEX 中 |
+| `Lcom/suda/yzune/wakeupschedule/R$xml;` | `smali/smali/com/suda/yzune/wakeupschedule/R$xml.smali` | `Lcom/kaori/wakeupschedule/R$xml;` | `` | 本地源码已编译且在 DEX 中 |
 | `Lcom/suda/yzune/wakeupschedule/schedule/CourseDetailBottomSheet$clipboardManager$2;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/CourseDetailBottomSheet$clipboardManager$2.smali` | `—（嵌入类 binary 别名未逐一对应）` | `app/src/main/java/com/kaori/wakeupschedule/schedule/CourseDetailBottomSheet.java` | 匿名/合成实现并入已编译源码；独立 binary 名已改变 |
 | `Lcom/suda/yzune/wakeupschedule/schedule/CourseDetailBottomSheet$initEvent$1$1;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/CourseDetailBottomSheet$initEvent$1$1.smali` | `—（嵌入类 binary 别名未逐一对应）` | `app/src/main/java/com/kaori/wakeupschedule/schedule/OooO0OO.java` | 匿名/合成实现并入已编译源码；独立 binary 名已改变 |
 | `Lcom/suda/yzune/wakeupschedule/schedule/CourseDetailBottomSheet$onViewCreated$1$1$2$2;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/CourseDetailBottomSheet$onViewCreated$1$1$2$2.smali` | `Lcom/kaori/wakeupschedule/schedule/CourseDetailBottomSheet$onViewCreated$1$1$2$2;` | `app/src/main/java/com/kaori/wakeupschedule/schedule/CourseDetailBottomSheet$onViewCreated$1$1$2$2.java` | 本地源码已编译且在 DEX 中 |
@@ -4037,7 +4037,7 @@ Java 物理目录不一定等于声明包名；内部类通过 SourceFile 关联
 | `Lcom/suda/yzune/wakeupschedule/schedule/o00oO0o;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/o00oO0o.smali` | `Lcom/kaori/wakeupschedule/schedule/o00oO0o;` | `app/src/main/java/com/kaori/wakeupschedule/schedule/o00oO0o.java` | 本地源码已编译且在 DEX 中 |
 | `Lcom/suda/yzune/wakeupschedule/schedule/o00Ooo;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/o00Ooo.smali` | `Lcom/kaori/wakeupschedule/schedule/o00Ooo;` | `app/src/main/java/com/kaori/wakeupschedule/schedule/o00Ooo.java` | 本地源码已编译且在 DEX 中 |
 | `Lcom/suda/yzune/wakeupschedule/schedule/o0O0O00;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/o0O0O00.smali` | `Lcom/kaori/wakeupschedule/schedule/o0O0O00;` | `app/src/main/java/com/kaori/wakeupschedule/schedule/o0O0O00.java` | 本地源码已编译且在 DEX 中 |
-| `Lcom/suda/yzune/wakeupschedule/schedule/o0OO00O;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/o0OO00O.smali` | `—（嵌入类 binary 别名未逐一对应）` | `app/src/main/java/com/kaori/wakeupschedule/schedule/oo0o0Oo.java` | 匿名/合成实现并入已编译源码；独立 binary 名已改变 |
+| `Lcom/suda/yzune/wakeupschedule/schedule/o0OO00O;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/o0OO00O.smali` | `Lcom/kaori/wakeupschedule/schedule/o0OO00O;` | `—` | 原 descriptor 未在 DEX 中直接出现；需核对合并或依赖替代 |
 | `Lcom/suda/yzune/wakeupschedule/schedule/o0Oo0oo;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/o0Oo0oo.smali` | `Lcom/kaori/wakeupschedule/schedule/o0Oo0oo;` | `app/src/main/java/com/kaori/wakeupschedule/schedule/o0Oo0oo.java` | 本地源码已编译且在 DEX 中 |
 | `Lcom/suda/yzune/wakeupschedule/schedule/o0OOO0o;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/o0OOO0o.smali` | `Lcom/kaori/wakeupschedule/schedule/o0OOO0o;` | `app/src/main/java/com/kaori/wakeupschedule/schedule/o0OOO0o.java` | 本地源码已编译且在 DEX 中 |
 | `Lcom/suda/yzune/wakeupschedule/schedule/o0OoOo0;` | `smali/smali/com/suda/yzune/wakeupschedule/schedule/o0OoOo0.smali` | `—（嵌入类 binary 别名未逐一对应）` | `app/src/main/java/com/kaori/wakeupschedule/schedule/ScheduleActivity.java` | 匿名/合成实现并入已编译源码；独立 binary 名已改变 |
@@ -7487,9 +7487,10 @@ Java 物理目录不一定等于声明包名；内部类通过 SourceFile 关联
 ## 统计
 
 - Android 平台提供；不打入 APK：2
-- 依赖或生成类已在 DEX 中：2028
-- 本地源码已编译且在 DEX 中：5012
-- 匿名/合成实现并入已编译源码；独立 binary 名已改变：417
+- 依赖或生成类已在 DEX 中：2004
+- 本地源码已编译且在 DEX 中：5036
+- 匿名/合成实现并入已编译源码；独立 binary 名已改变：416
 - 固定依赖整体提供宿主与回调；原 R8 wrapper 名不保留：7
 - Java lambda 并入所示宿主；原合成类名不保留：4
+- 原 descriptor 未在 DEX 中直接出现；需核对合并或依赖替代：1
 - 可选 Harmony 平台源码；Android 构建排除：8

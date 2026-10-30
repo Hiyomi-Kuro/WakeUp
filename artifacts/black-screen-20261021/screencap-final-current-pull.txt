@@ -1,1 +1,0 @@
-/sdcard/wakeup-final-current.png: 1 file pulled, 0 skipped. 3.2 MB/s (12504 bytes in 0.004s)

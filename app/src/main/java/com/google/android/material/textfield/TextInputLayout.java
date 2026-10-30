@@ -1547,6 +1547,11 @@ public class TextInputLayout extends LinearLayout {
         return null;
     }
 
+    /** Exposes the hint state expected by the matching TextInputEditText binary. */
+    public boolean isProvidingHint() {
+        return this.Oooo;
+    }
+
     public final float getHintCollapsedTextHeight() {
         return this.o000OOo.OooO0o0();
     }

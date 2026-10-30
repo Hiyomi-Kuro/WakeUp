@@ -165,7 +165,7 @@ public final class OooOOOO extends o0000 implements DialogInterface {
         oooOOO0.f2110OooOo0o = nestedScrollView2;
         nestedScrollView2.setFocusable(false);
         oooOOO0.f2110OooOo0o.setNestedScrollingEnabled(false);
-        TextView textView = (TextView) viewGroupOooO0OO2.findViewById(androidx.appcompat.R.id.message);
+        TextView textView = (TextView) viewGroupOooO0OO2.findViewById(android.R.id.message);
         oooOOO0.f2115OooOoo0 = textView;
         if (textView != null) {
             CharSequence charSequence = oooOOO0.f2092OooO0o;
@@ -296,7 +296,7 @@ public final class OooOOOO extends o0000 implements DialogInterface {
             } else {
                 z = false;
             }
-            if (viewGroupOooO0OO != null || viewGroupOooO0OO.getVisibility() == i3) {
+            if (viewGroupOooO0OO != null && viewGroupOooO0OO.getVisibility() != i3) {
                 i4 = 0;
             } else {
                 i4 = 1;

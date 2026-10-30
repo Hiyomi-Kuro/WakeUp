@@ -154,9 +154,18 @@ public final class OooO0OO {
         return false;
     }
 
+    public static LocalDate parseScheduleDate(String str) {
+        if (!str.matches("[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}")) {
+            throw new org.threeten.bp.format.DateTimeParseException(
+                    "Date must match yyyy-M-d", str, 0);
+        }
+        String[] parts = str.split("-", -1);
+        return LocalDate.of(Integer.parseInt(parts[0]), Integer.parseInt(parts[1]), Integer.parseInt(parts[2]));
+    }
+
     public static int OooO0Oo(String str) {
         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(str, "date");
-        return (int) ChronoUnit.DAYS.between(LocalDate.now(), LocalDate.parse(str, org.threeten.bp.format.OooO00o.OooO0O0("yyyy-M-d")));
+        return (int) ChronoUnit.DAYS.between(LocalDate.now(), parseScheduleDate(str));
     }
 
     public static /* synthetic */ int OooO0o(String str, boolean z, int i) {
@@ -173,7 +182,7 @@ public final class OooO0OO {
             localDateOf = localDateOf.plusDays(1L);
         }
         int value = localDateOf.getDayOfWeek().getValue();
-        LocalDate localDate = LocalDate.parse(str, org.threeten.bp.format.OooO00o.OooO0O0("yyyy-M-d"));
+        LocalDate localDate = parseScheduleDate(str);
         int value2 = localDate.getDayOfWeek().getValue();
         int iBetween = (int) ChronoUnit.DAYS.between(localDate, localDateOf);
         int i4 = value - value2;

@@ -29,10 +29,10 @@ public final class o0000O0O {
         if (!(!z)) {
             throw new IllegalStateException(("Navigator " + o0000o1 + " is replacing an already attached " + o0000o2).toString());
         }
-        if (!o0000o1.f4365OooO0O0) {
-            return;
+        if (o0000o1.f4365OooO0O0) {
+            throw new IllegalStateException(("Navigator " + o0000o1 + " is already attached to another NavController").toString());
         }
-        throw new IllegalStateException(("Navigator " + o0000o1 + " is already attached to another NavController").toString());
+        linkedHashMap.put(strOooO0oO, o0000o1);
     }
 
     public final o0000O0 OooO0O0(String str) {

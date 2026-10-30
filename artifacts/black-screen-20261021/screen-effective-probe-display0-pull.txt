@@ -1,1 +1,0 @@
-/sdcard/wakeup-effective-probe-display0.png: 1 file pulled, 0 skipped. 60.8 MB/s (2757446 bytes in 0.043s)

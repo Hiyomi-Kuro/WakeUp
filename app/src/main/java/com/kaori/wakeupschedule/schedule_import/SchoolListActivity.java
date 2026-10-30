@@ -189,6 +189,11 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(progressBar, "progressBar");
         progressBar.setVisibility(8);
         ArrayList arrayList8 = schoolListActivity.f8478OoooO0O;
+        arrayList8.clear();
+        schoolListActivity.f8475OoooO.clear();
+        schoolListActivity.f8479OoooOO0.clear();
+        schoolListActivity.f8488o000oOoO.clear();
+        schoolListActivity.f8477OoooO00.clear();
         arrayList8.addAll(adapterInfo.getData());
         kotlin.collections.Oooo000.Oooo0o(arrayList8, o00000Oo.Oooo0.OooOo(new OooOo() { // from class: com.kaori.wakeupschedule.schedule_import.SchoolListActivity$loadSchoolList$1
             public final Comparable<?> invoke(SchoolInfo schoolInfo2) {
@@ -351,12 +356,12 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
             arrayList4 = schoolListActivity.f8476OoooO0;
             arrayList4.clear();
             o0oo000o = schoolListActivity.f8482OoooOo0;
-            if (o0oo000o != null) {
+            if (o0oo000o == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                 throw null;
             }
             selectedTabPosition = ((TabLayout) o0oo000o.f2934OooOOoo).getSelectedTabPosition();
-            if (selectedTabPosition != 0) {
+            if (selectedTabPosition == 0) {
                 arrayList5 = new ArrayList();
                 for (Object obj4 : arrayList) {
                     String name = ((SchoolInfo) obj4).getName();
@@ -364,7 +369,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
                     lowerCase = name.toLowerCase(locale);
                     com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(lowerCase, "toLowerCase(...)");
                     searchView = schoolListActivity.f8480OoooOOO;
-                    if (searchView != null) {
+                    if (searchView == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("searchView");
                         throw null;
                     }
@@ -383,7 +388,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
                     lowerCase5 = name2.toLowerCase(locale3);
                     com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(lowerCase5, "toLowerCase(...)");
                     searchView3 = schoolListActivity.f8480OoooOOO;
-                    if (searchView3 != null) {
+                    if (searchView3 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("searchView");
                         throw null;
                     }
@@ -402,7 +407,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
                     lowerCase3 = name3.toLowerCase(locale2);
                     com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(lowerCase3, "toLowerCase(...)");
                     searchView2 = schoolListActivity.f8480OoooOOO;
-                    if (searchView2 != null) {
+                    if (searchView2 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("searchView");
                         throw null;
                     }
@@ -439,7 +444,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
                 }
             }
             o0oo000o2 = schoolListActivity.f8482OoooOo0;
-            if (o0oo000o2 != null) {
+            if (o0oo000o2 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                 throw null;
             }
@@ -447,14 +452,14 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
             o00ooo2 = new o00Ooo(arrayList4);
             o00ooo2.f9952OooOO0 = new o00oO0o(schoolListActivity);
             o0oo000o3 = schoolListActivity.f8482OoooOo0;
-            if (o0oo000o3 != null) {
+            if (o0oo000o3 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                 throw null;
             }
             ((RecyclerView) o0oo000o3.f2933OooOOo0).setAdapter(o00ooo2);
             oooO0OO = new oo00o.OooO0OO(o00ooo2);
             o0oo000o4 = schoolListActivity.f8482OoooOo0;
-            if (o0oo000o4 != null) {
+            if (o0oo000o4 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                 throw null;
             }
@@ -505,7 +510,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
             });
             balloonOooO00o2 = oooOO0.OooO00o();
             o0oo000o5 = schoolListActivity.f8482OoooOo0;
-            if (o0oo000o5 != null) {
+            if (o0oo000o5 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                 throw null;
             }
@@ -522,12 +527,12 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
         arrayList4 = schoolListActivity.f8476OoooO0;
         arrayList4.clear();
         o0oo000o = schoolListActivity.f8482OoooOo0;
-        if (o0oo000o != null) {
+        if (o0oo000o == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
             throw null;
         }
         selectedTabPosition = ((TabLayout) o0oo000o.f2934OooOOoo).getSelectedTabPosition();
-        if (selectedTabPosition != 0) {
+        if (selectedTabPosition == 0) {
             arrayList5 = new ArrayList();
             for (Object obj4 : arrayList) {
                 String name4 = ((SchoolInfo) obj4).getName();
@@ -535,7 +540,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
                 lowerCase = name4.toLowerCase(locale);
                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(lowerCase, "toLowerCase(...)");
                 searchView = schoolListActivity.f8480OoooOOO;
-                if (searchView != null) {
+                if (searchView == null) {
                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("searchView");
                     throw null;
                 }
@@ -554,7 +559,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
                 lowerCase5 = name5.toLowerCase(locale3);
                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(lowerCase5, "toLowerCase(...)");
                 searchView3 = schoolListActivity.f8480OoooOOO;
-                if (searchView3 != null) {
+                if (searchView3 == null) {
                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("searchView");
                     throw null;
                 }
@@ -573,7 +578,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
                 lowerCase3 = name6.toLowerCase(locale2);
                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(lowerCase3, "toLowerCase(...)");
                 searchView2 = schoolListActivity.f8480OoooOOO;
-                if (searchView2 != null) {
+                if (searchView2 == null) {
                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("searchView");
                     throw null;
                 }
@@ -612,7 +617,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
             i2++;
         }
         o0oo000o2 = schoolListActivity.f8482OoooOo0;
-        if (o0oo000o2 != null) {
+        if (o0oo000o2 == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
             throw null;
         }
@@ -620,14 +625,14 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
         o00ooo2 = new o00Ooo(arrayList4);
         o00ooo2.f9952OooOO0 = new o00oO0o(schoolListActivity);
         o0oo000o3 = schoolListActivity.f8482OoooOo0;
-        if (o0oo000o3 != null) {
+        if (o0oo000o3 == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
             throw null;
         }
         ((RecyclerView) o0oo000o3.f2933OooOOo0).setAdapter(o00ooo2);
         oooO0OO = new oo00o.OooO0OO(o00ooo2);
         o0oo000o4 = schoolListActivity.f8482OoooOo0;
-        if (o0oo000o4 != null) {
+        if (o0oo000o4 == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
             throw null;
         }
@@ -678,7 +683,7 @@ public final class SchoolListActivity extends BaseTitleActivity implements o0000
         });
         balloonOooO00o2 = oooOO0.OooO00o();
         o0oo000o5 = schoolListActivity.f8482OoooOo0;
-        if (o0oo000o5 != null) {
+        if (o0oo000o5 == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
             throw null;
         }

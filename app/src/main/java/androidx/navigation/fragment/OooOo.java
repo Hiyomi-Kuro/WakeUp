@@ -214,24 +214,25 @@ public class OooOo extends o0000O0 {
             String str = oooOOO5.f4284OooOOo0;
             Iterator it = oooo000OooooO0.iterator();
             int i2 = 0;
-            while (true) {
-                if (it.hasNext()) {
-                    Object next = it.next();
-                    if (i2 < 0) {
-                        o000Oo0.OooOO0O.Oooo0();
-                        throw null;
-                    }
-                    if (com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo(str, next)) {
-                        if (i2 >= 0) {
-                        }
+            boolean z2 = false;
+            while (it.hasNext()) {
+                Object next = it.next();
+                if (i2 < 0) {
+                    o000Oo0.OooOO0O.Oooo0();
+                    throw null;
+                }
+                if (com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo(str, next)) {
+                    if (i2 >= 0) {
                         arrayList.add(obj);
-                    } else {
-                        i2++;
+                        z2 = true;
                     }
+                    break;
+                } else {
+                    i2++;
                 }
-                if (!com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo(oooOOO5.f4284OooOOo0, oooOOO2.f4284OooOOo0)) {
+            }
+            if (!z2 && !com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo(oooOOO5.f4284OooOOo0, oooOOO2.f4284OooOOo0)) {
                     arrayList.add(obj);
-                }
             }
         }
         Iterator it2 = arrayList.iterator();

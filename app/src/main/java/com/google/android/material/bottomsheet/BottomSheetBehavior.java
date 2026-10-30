@@ -1110,7 +1110,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
     public final void Oooo0oO(View view, int i, boolean z) {
         int iOooo000 = Oooo000(i);
         o00000O o00000o = this.f6181OoooOOo;
-        if (o00000o == null || (!z ? o00000o.OooOo0(view, view.getLeft(), iOooo000) : o00000o.OooOOoo(view.getLeft(), iOooo000))) {
+        if (o00000o == null || (!z ? !o00000o.OooOo0(view, view.getLeft(), iOooo000) : !o00000o.OooOOoo(view.getLeft(), iOooo000))) {
             Oooo0o0(i);
             return;
         }

@@ -1183,20 +1183,21 @@ public final class o0000O0O {
                     i3 = i2;
                     while (true) {
                         arrayList3 = arrayList;
-                        if (i9 < i3) {
-                            Iterator it4 = ((OooO00o) arrayList3.get(i9)).f3806OooO00o.iterator();
-                            while (it4.hasNext()) {
-                                o0OO00O o0oo00o2 = ((o000Oo0) it4.next()).f3963OooO0O0;
-                                if (o0oo00o2 == null || o0oo00o2.f4032OooOooO == null) {
-                                    o000oooo2 = o000oooo6;
-                                } else {
-                                    o000oooo2 = o000oooo6;
-                                    o000oooo2.OooOo00(OooO0o(o0oo00o2));
-                                }
-                                o000oooo6 = o000oooo2;
-                            }
-                            i9++;
+                        if (i9 >= i3) {
+                            break;
                         }
+                        Iterator it4 = ((OooO00o) arrayList3.get(i9)).f3806OooO00o.iterator();
+                        while (it4.hasNext()) {
+                            o0OO00O o0oo00o2 = ((o000Oo0) it4.next()).f3963OooO0O0;
+                            if (o0oo00o2 == null || o0oo00o2.f4032OooOooO == null) {
+                                o000oooo2 = o000oooo6;
+                            } else {
+                                o000oooo2 = o000oooo6;
+                                o000oooo2.OooOo00(OooO0o(o0oo00o2));
+                            }
+                            o000oooo6 = o000oooo2;
+                        }
+                        i9++;
                     }
                 }
                 for (int i10 = i; i10 < i3; i10++) {

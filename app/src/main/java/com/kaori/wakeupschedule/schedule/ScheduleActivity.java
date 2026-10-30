@@ -131,6 +131,8 @@ public final class ScheduleActivity extends BaseActivity {
     /* JADX INFO: renamed from: o000oOoO, reason: collision with root package name */
     public final o00O0O00.OooO0O0 f8251o000oOoO;
 
+    int selectedWeekBeforeTimeSettings;
+
     /* JADX INFO: renamed from: com.kaori.wakeupschedule.schedule.ScheduleActivity$onCreate$2, reason: invalid class name */
     @o00O0O0O.OooO0OO(c = "com.kaori.wakeupschedule.schedule.ScheduleActivity$onCreate$2", f = "ScheduleActivity.kt", l = {279}, m = "invokeSuspend")
     final class AnonymousClass2 extends SuspendLambda implements o0OoOo0 {
@@ -497,12 +499,17 @@ public final class ScheduleActivity extends BaseActivity {
     }
 
     public final void OooOoOO() {
+        OooOoOO(0);
+    }
+
+    public final void OooOoOO(int preferredWeek) {
         o000OOO.OooOO0 o0o00o00;
         AppCompatTextView appCompatTextView;
         Bitmap bitmapCreateBitmap;
         int i = o000Oo0.OooOO0O.OooOo0(this, "config").getInt("show_table_id", 1);
+        this.f8240OoooO0 = false;
         OooOoO0().f8267OooOO0 = new TableConfig(this, i);
-        OooOo0(new ScheduleActivity$initView$1(this, i, null));
+        OooOo0(new ScheduleActivity$initView$1(this, i, preferredWeek, null));
         if (com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo(OooOoO0().OooOOO0().getBackground(), "")) {
             Point point = new Point();
             getWindowManager().getDefaultDisplay().getRealSize(point);
@@ -739,6 +746,10 @@ public final class ScheduleActivity extends BaseActivity {
 
     public final void Oooo00O(Class cls, OooOo oooOo) {
         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(oooOo, "configIntent");
+        oo0o0Oo ui = this.f8236Oooo;
+        this.selectedWeekBeforeTimeSettings = ui != null
+                ? ui.f8321OooO0OO.getCurrentItem() + 1
+                : OooOoO0().f8269OooOO0o;
         Intent intent = new Intent(this, (Class<?>) cls);
         oooOo.invoke(intent);
         this.f8247OoooOoO.OooO00o(intent);
@@ -762,7 +773,10 @@ public final class ScheduleActivity extends BaseActivity {
     public final void onCreate(Bundle bundle) {
         Object obj;
         super.onCreate(bundle);
+        int restoredSelectedWeek = 0;
         if (bundle != null) {
+            this.selectedWeekBeforeTimeSettings = bundle.getInt("saved_state_time_settings_return_week", 0);
+            restoredSelectedWeek = bundle.getInt("saved_state_selected_week", 0);
             Object obj2 = bundle.get("saved_state_table");
             TableBean tableBean = obj2 instanceof TableBean ? (TableBean) obj2 : null;
             if (tableBean != null) {
@@ -797,7 +811,7 @@ public final class ScheduleActivity extends BaseActivity {
             o00O0O00.OooO0O0 oooO0O0 = com.kaori.wakeupschedule.utils.o0OoOo0.f8903OooO00o;
             com.kaori.wakeupschedule.utils.o0OoOo0.OooOO0O(this, new o00oO0o(this, i2), new o00oO0o(this, i3));
         }
-        OooOoOO();
+        OooOoOO(restoredSelectedWeek);
         oo0o0Oo oo0o0oo3 = this.f8236Oooo;
         if (oo0o0oo3 == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
@@ -21496,6 +21510,82 @@ public final class ScheduleActivity extends BaseActivity {
             kotlin.collections.o000oOoO.o0OoOo0(listOooOOO, arrayList);
             bundle.putParcelableArrayList("saved_state_time_list", arrayList);
         }
+        oo0o0Oo ui = this.f8236Oooo;
+        if (ui != null) {
+            bundle.putInt("saved_state_selected_week", ui.f8321OooO0OO.getCurrentItem() + 1);
+        }
+        bundle.putInt("saved_state_time_settings_return_week", this.selectedWeekBeforeTimeSettings);
+    }
+
+    @Override // android.app.Activity
+    public void onRestoreInstanceState(Bundle bundle) {
+        super.onRestoreInstanceState(bundle);
+        if (bundle == null) {
+            return;
+        }
+        int restoredWeek = bundle.getInt("saved_state_selected_week", 0);
+        if (restoredWeek < 1) {
+            return;
+        }
+        applyRestoredSelectedWeek(restoredWeek, 0);
+    }
+
+    void applyRestoredSelectedWeek(final int restoredWeek, final int attempt) {
+        if (isFinishing() || isDestroyed()) {
+            return;
+        }
+        if (!this.f8240OoooO0) {
+            if (attempt < 100) {
+                getWindow().getDecorView().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ScheduleActivity.this.applyRestoredSelectedWeek(restoredWeek, attempt + 1);
+                    }
+                }, 50L);
+            }
+            return;
+        }
+        applyRestoredSelectedWeekAfterLayout(restoredWeek, 0, 0);
+    }
+
+    private void applyRestoredSelectedWeekAfterLayout(
+            final int restoredWeek, final int stableAttempt, final int retryAttempt) {
+        if (isFinishing() || isDestroyed()) {
+            return;
+        }
+        final oo0o0Oo ui = this.f8236Oooo;
+        if (!this.f8240OoooO0 || ui == null || ui.f8321OooO0OO.getAdapter() == null
+                || !ui.f8321OooO0OO.isLaidOut()) {
+            if (retryAttempt < 100) {
+                getWindow().getDecorView().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ScheduleActivity.this.applyRestoredSelectedWeekAfterLayout(
+                                restoredWeek, stableAttempt, retryAttempt + 1);
+                    }
+                }, 50L);
+            }
+            return;
+        }
+        if (stableAttempt < 6) {
+            getWindow().getDecorView().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    ScheduleActivity.this.applyRestoredSelectedWeekAfterLayout(
+                            restoredWeek, stableAttempt + 1, retryAttempt + 1);
+                }
+            }, 50L);
+            return;
+        }
+        int maxWeek = OooOoO0().OooOOO0().getMaxWeek();
+        if (maxWeek < 1) {
+            return;
+        }
+        int selectedWeek = Math.min(restoredWeek, maxWeek);
+        OooOoO0().f8269OooOO0o = selectedWeek;
+        ui.f8335OooOOo0.setValue((float) selectedWeek);
+        ui.f8323OooO0o.setText(getString(com.kaori.wakeupschedule.R.string.week_num, Integer.valueOf(selectedWeek)));
+        ui.f8321OooO0OO.OooO0OO(selectedWeek - 1, false);
     }
 
     @Override // androidx.appcompat.app.AppCompatActivity, androidx.fragment.app.FragmentActivity, android.app.Activity

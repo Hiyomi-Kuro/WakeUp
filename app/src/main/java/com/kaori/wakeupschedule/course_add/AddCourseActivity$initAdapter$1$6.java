@@ -47,6 +47,7 @@ final class AddCourseActivity$initAdapter$1$6 extends SuspendLambda implements o
                 if (serializableOooO0oO == coroutineSingletons) {
                     return coroutineSingletons;
                 }
+                addCourseViewModelOooOoO0.f7984OooO0oo = (ArrayList) serializableOooO0oO;
                 addCourseViewModel = addCourseViewModelOooOoO0;
                 obj = serializableOooO0oO;
             }

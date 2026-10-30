@@ -749,6 +749,18 @@ public final class OooOo00 implements OooOOO0, o000000o.OooOo00, o00000O0, o000,
         }
     }
 
+    public OooOo00(androidx.work.impl.WorkDatabase workDatabase) {
+        this.f12365OooOO0o = 0;
+        this.f12367OooOOO0 = workDatabase;
+        // The canonical WorkManager runtime supplies a WorkDatabase that does
+        // not extend this recovered Room alias. Keep the callback only for the
+        // legacy recovered WorkDatabase_Impl path that still uses this type.
+        Object legacyRoomDatabase = workDatabase;
+        this.f12366OooOOO = legacyRoomDatabase instanceof o0OOO0o
+                ? new o0ooOoO.OooOOO0(this, (o0OOO0o) legacyRoomDatabase, 1)
+                : null;
+    }
+
     public OooOo00(TextView textView) {
         this.f12365OooOO0o = 1;
         textView.getClass();

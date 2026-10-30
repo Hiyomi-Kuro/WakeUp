@@ -4,6 +4,11 @@
 local.properties
 app/build/
 build/
+smali/
+artifacts/
+tools/
+recovery/
+P16-c37-dup-rejected-20261029/
 
 # Temporary workspace and legacy workbenches
 .tmp/

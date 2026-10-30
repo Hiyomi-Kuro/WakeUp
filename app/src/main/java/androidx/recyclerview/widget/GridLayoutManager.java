@@ -778,7 +778,7 @@ public class GridLayoutManager extends LinearLayoutManager {
             int[] iArr2 = this.f4465Oooo00o;
             iOooO0oo2 = o000O.OooO0oo(i2, iArr2[iArr2.length - 1] + iOooo00o, Oooo0o.o00O0000.OooO0Oo(this.f4762OooO0O0));
         }
-        this.f4762OooO0O0.OooOOO(iOooO0oo, iOooO0oo2);
+        RecyclerView.OooO0o0(this.f4762OooO0O0, iOooO0oo, iOooO0oo2);
     }
 
     @Override // androidx.recyclerview.widget.LinearLayoutManager, androidx.recyclerview.widget.o000O

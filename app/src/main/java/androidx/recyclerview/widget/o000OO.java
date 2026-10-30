@@ -111,6 +111,9 @@ public final class o000OO implements Runnable {
                                         oooO3.run();
                                     }
                                 }
+                                // Original Smali exits the pending-animation scan here.
+                                // Without this break, the empty-list pass reschedules forever and ANRs.
+                                break;
                             }
                         }
                     } else {

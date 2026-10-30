@@ -74,6 +74,7 @@ public final /* synthetic */ class OooOO0 implements o0000Oo0.o000oOoO, o0000Oo0
                     com.kaori.wakeupschedule.utils.OooO0OO.OooOo0(settingsActivity);
                     break;
             }
+            return;
         }
         final o00O00o.OooOO0 oooOO0 = (o00O00o.OooOO0) oooO0OOOooo0O0;
         final int i4 = 1;

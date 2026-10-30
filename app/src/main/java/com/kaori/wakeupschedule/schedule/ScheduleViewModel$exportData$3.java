@@ -62,8 +62,10 @@ final class ScheduleViewModel$exportData$3 extends SuspendLambda implements o00O
         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(bytes, "getBytes(...)");
         try {
             outputStream.write(bytes);
-        } catch (IOException exception) {
-            throw codex.recovery.SneakyThrow.rethrow(exception);
+            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOOO(outputStream, null);
+        } catch (Throwable throwable) {
+            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOOO(outputStream, throwable);
+            throw codex.recovery.SneakyThrow.rethrow(throwable);
         }
         return o00O0O00.OooOO0O.f11387OooO00o;
     }

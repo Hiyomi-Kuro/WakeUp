@@ -107,7 +107,7 @@ public final class TableConfigFragment extends com.kaori.wakeupschedule.base_vie
     }
 
     public static String OoooOO0(String str) {
-        String displayName = LocalDate.parse(str, org.threeten.bp.format.OooO00o.OooO0O0("yyyy-M-d")).getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
+        String displayName = com.kaori.wakeupschedule.utils.OooO0OO.parseScheduleDate(str).getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(displayName, "getDisplayName(...)");
         return displayName;
     }

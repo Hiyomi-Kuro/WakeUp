@@ -252,31 +252,13 @@ public final class o00O000 {
             o0000OO0 o0000oo1 = recyclerView.f4573OooOo0o;
             if (o0000oo1.f4747OooO0O0) {
                 long jOooO0OO2 = o0000oo1.OooO0OO(iOooO0o2);
+                o00o0o2 = null;
                 int size5 = arrayList3.size() - 1;
-                while (true) {
-                    if (size5 < 0) {
-                        int size6 = arrayList2.size() - 1;
-                        while (true) {
-                            if (size6 >= 0) {
-                                o00O0O0 o00o0o5 = (o00O0O0) arrayList2.get(size6);
-                                if (o00o0o5.getItemId() != jOooO0OO2 || o00o0o5.isAttachedToTransitionOverlay()) {
-                                    size6--;
-                                } else {
-                                    if (iOooO0Oo == o00o0o5.getItemViewType()) {
-                                        arrayList2.remove(size6);
-                                        o00o0o2 = o00o0o5;
-                                        break;
-                                    }
-                                    OooO0o0(size6);
-                                }
-                            }
-                            o00o0o2 = null;
-                            break;
-                        }
-                    }
-                    o00o0o2 = (o00O0O0) arrayList3.get(size5);
-                    if (o00o0o2.getItemId() == jOooO0OO2 && !o00o0o2.wasReturnedFromScrap()) {
-                        if (iOooO0Oo == o00o0o2.getItemViewType()) {
+                while (size5 >= 0) {
+                    o00O0O0 o00o0o2Candidate = (o00O0O0) arrayList3.get(size5);
+                    if (o00o0o2Candidate.getItemId() == jOooO0OO2 && !o00o0o2Candidate.wasReturnedFromScrap()) {
+                        if (iOooO0Oo == o00o0o2Candidate.getItemViewType()) {
+                            o00o0o2 = o00o0o2Candidate;
                             o00o0o2.addFlags(32);
                             if (!o00o0o2.isRemoved() || oo00oVar.f4927OooO0oO) {
                                 break;
@@ -285,14 +267,30 @@ public final class o00O000 {
                             break;
                         }
                         arrayList3.remove(size5);
-                        recyclerView.removeDetachedView(o00o0o2.itemView, false);
-                        o00O0O0 o00o0o0Oooo0o2 = RecyclerView.Oooo0o0(o00o0o2.itemView);
+                        recyclerView.removeDetachedView(o00o0o2Candidate.itemView, false);
+                        o00O0O0 o00o0o0Oooo0o2 = RecyclerView.Oooo0o0(o00o0o2Candidate.itemView);
                         o00o0o0Oooo0o2.mScrapContainer = null;
                         o00o0o0Oooo0o2.mInChangeScrap = false;
                         o00o0o0Oooo0o2.clearReturnedFromScrapFlag();
                         OooO0oO(o00o0o0Oooo0o2);
                     }
                     size5--;
+                }
+                if (o00o0o2 == null) {
+                    int size6 = arrayList2.size() - 1;
+                    while (size6 >= 0) {
+                        o00O0O0 o00o0o5 = (o00O0O0) arrayList2.get(size6);
+                        if (o00o0o5.getItemId() == jOooO0OO2 && !o00o0o5.isAttachedToTransitionOverlay()) {
+                            if (iOooO0Oo == o00o0o5.getItemViewType()) {
+                                arrayList2.remove(size6);
+                                o00o0o2 = o00o0o5;
+                            } else {
+                                OooO0o0(size6);
+                            }
+                            break;
+                        }
+                        size6--;
+                    }
                 }
                 if (o00o0o2 != null) {
                     o00o0o2.mPosition = iOooO0o2;

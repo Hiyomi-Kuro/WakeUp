@@ -1866,7 +1866,7 @@ public class StaggeredGridLayoutManager extends o000O implements o00O00OO {
             i2 = 0;
         }
         int i3 = i2 < iOooOo0o ? 1 : -1;
-        while (i2 != iOooOo0o) {
+        for (; i2 != iOooOo0o; i2 += i3) {
             View viewOooOo0O = OooOo0O(i2);
             LayoutParams layoutParams = (LayoutParams) viewOooOo0O.getLayoutParams();
             if (bitSet.get(layoutParams.f4666OooO0o0.f4831OooO0o0)) {
@@ -1948,7 +1948,6 @@ public class StaggeredGridLayoutManager extends o000O implements o00O00OO {
                     }
                 }
             }
-            i2 += i3;
         }
         return null;
     }
@@ -2003,7 +2002,7 @@ public class StaggeredGridLayoutManager extends o000O implements o00O00OO {
             iOooO0oo = o000O.OooO0oo(i, iWidth, Oooo0o.o00O0000.OooO0o0(recyclerView2));
             iOooO0oo2 = o000O.OooO0oo(i2, (this.f4646OooOo0 * this.f4641OooOOOo) + iOooo00o, Oooo0o.o00O0000.OooO0Oo(this.f4762OooO0O0));
         }
-        this.f4762OooO0O0.OooOOO(iOooO0oo, iOooO0oo2);
+        RecyclerView.OooO0o0(this.f4762OooO0O0, iOooO0oo, iOooO0oo2);
     }
 
     @Override // androidx.recyclerview.widget.o000O

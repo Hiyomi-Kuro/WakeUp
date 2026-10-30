@@ -181,6 +181,18 @@ val recoveredSourceOwnerRecords = rootProject.file("tools/recovered-source-owner
     }
 val recoveredSourceOwnersByCoordinate = recoveredSourceOwnerRecords
     .groupBy({ it.first }, { it.second.removeSuffix(".java") })
+val recoveredSourceOwnerNestedClassRetainsByCoordinate = mapOf(
+    "androidx.work:work-runtime:2.9.0" to setOf(
+        "androidx/work/impl/WorkDatabase\$Companion",
+    ),
+)
+// Recovered WorkRuntime sources use APK-renamed Room/Kotlin APIs. Keep those
+// sources in Javac's validation pass, but package the pinned AAR owners so its
+// callers see the canonical Room and Kotlin function interfaces at runtime.
+val recoveredSourceOwnerRuntimeClassRetainsByCoordinate = mapOf(
+    "androidx.work:work-runtime:2.9.0" to
+        recoveredSourceOwnersByCoordinate["androidx.work:work-runtime:2.9.0"].orEmpty().toSet(),
+)
 val existingRecoveredSourceCoordinates = setOf(
     "com.google.android.material:material:1.10.0",
     "org.jetbrains.kotlin:kotlin-stdlib:1.8.22",
@@ -845,10 +857,26 @@ dependencies {
     val recoveredSourceArchiveDirectory = layout.buildDirectory.dir(
         "generated/recovered-dependencies/source-owner-replacements"
     )
+    val recoveredWorkDatabaseCompanionCompileJar = layout.buildDirectory.file(
+        "generated/recovered-dependencies/compile-only/work-database-companion-compile.jar"
+    )
     val strippedRecoveredSourceOwners = tasks.register("stripRecoveredSourceOwnerClasses") {
         inputs.files(recoveredSourceArtifacts)
         inputs.property("recoveredSourceOwnersByCoordinate", recoveredSourceOwnersByCoordinate)
+        inputs.property(
+            "recoveredSourceOwnerNestedClassRetainsByCoordinate",
+            recoveredSourceOwnerNestedClassRetainsByCoordinate.flatMap { (coordinate, paths) ->
+                paths.map { "$coordinate|$it" }
+            }.sorted(),
+        )
+        inputs.property(
+            "recoveredSourceOwnerRuntimeClassRetainsByCoordinate",
+            recoveredSourceOwnerRuntimeClassRetainsByCoordinate.flatMap { (coordinate, paths) ->
+                paths.map { "$coordinate|$it" }
+            }.sorted(),
+        )
         outputs.dir(recoveredSourceArchiveDirectory)
+        outputs.file(recoveredWorkDatabaseCompanionCompileJar)
         doLast {
             val destinationDirectory = recoveredSourceArchiveDirectory.get().asFile
             destinationDirectory.mkdirs()
@@ -864,12 +892,40 @@ dependencies {
                 val inputFile = artifact.file
                 val ownerPaths = recoveredSourceOwnersByCoordinate[coordinate]
                     ?: error("No recovered source owner list for $coordinate")
-                val expectedClassFiles = ownerPaths.map { "$it.class" }.toSet()
+                val retainedRuntimeOwnerPaths =
+                    recoveredSourceOwnerRuntimeClassRetainsByCoordinate[coordinate].orEmpty()
+                val expectedClassFiles = ownerPaths
+                    .filterNot { it in retainedRuntimeOwnerPaths }
+                    .map { "$it.class" }
+                    .toSet()
+                val retainedNestedClassPaths =
+                    recoveredSourceOwnerNestedClassRetainsByCoordinate[coordinate].orEmpty()
+                val expectedRetainedNestedClassFiles =
+                    retainedNestedClassPaths.map { "$it.class" }.toSet()
+                val expectedRetainedRuntimeOwnerClassFiles =
+                    retainedRuntimeOwnerPaths.map { "$it.class" }.toSet()
                 val removedClasses = mutableSetOf<String>()
                 val recoveredInnerRowsSeen = mutableSetOf<String>()
+                val retainedNestedClassFilesSeen = mutableSetOf<String>()
+                val retainedRuntimeOwnerClassFilesSeen = mutableSetOf<String>()
+                val retainedNestedClassBytes = mutableMapOf<String, ByteArray>()
 
                 fun shouldStrip(entryName: String): Boolean {
                     if (!entryName.endsWith(".class")) return false
+                    if (retainedNestedClassPaths.any { retainedOwner ->
+                        entryName == "$retainedOwner.class" ||
+                            entryName.startsWith(retainedOwner + '$')
+                    }
+                    ) {
+                        return false
+                    }
+                    if (retainedRuntimeOwnerPaths.any { retainedOwner ->
+                        entryName == "$retainedOwner.class" ||
+                            entryName.startsWith(retainedOwner + '$')
+                    }
+                    ) {
+                        return false
+                    }
                     return ownerPaths.any { owner ->
                         entryName == "$owner.class" || entryName.startsWith(owner + '$')
                     }
@@ -883,6 +939,17 @@ dependencies {
                                 val entry = input.nextEntry ?: break
                                 val contents = input.readBytes()
                                 if (!shouldStrip(entry.name)) {
+                                    if (entry.name in expectedRetainedNestedClassFiles) {
+                                        retainedNestedClassFilesSeen += entry.name
+                                        retainedNestedClassBytes[entry.name] = contents
+                                    }
+                                    if (retainedRuntimeOwnerPaths.any { retainedOwner ->
+                                        entry.name == "$retainedOwner.class" ||
+                                            entry.name.startsWith(retainedOwner + '$')
+                                    }
+                                    ) {
+                                        retainedRuntimeOwnerClassFilesSeen += entry.name
+                                    }
                                     archive.putNextEntry(ZipEntry(entry.name))
                                     if (!entry.isDirectory) {
                                         val recoveredInnerTargets = recoveredDollarTopLevelInnerClassTargetsByCoordinate[coordinate]
@@ -941,6 +1008,29 @@ dependencies {
                 check(removedClasses.containsAll(expectedClassFiles)) {
                     "$coordinate did not contain every expected recovered source owner: " +
                         (expectedClassFiles - removedClasses)
+                }
+                check(retainedNestedClassFilesSeen.containsAll(expectedRetainedNestedClassFiles)) {
+                    "$coordinate did not retain every required nested class: " +
+                        (expectedRetainedNestedClassFiles - retainedNestedClassFilesSeen)
+                }
+                check(retainedRuntimeOwnerClassFilesSeen.containsAll(expectedRetainedRuntimeOwnerClassFiles)) {
+                    "$coordinate did not retain every runtime-compatible recovered owner: " +
+                        (expectedRetainedRuntimeOwnerClassFiles - retainedRuntimeOwnerClassFilesSeen)
+                }
+                if (coordinate == "androidx.work:work-runtime:2.9.0") {
+                    val companionEntry = "androidx/work/impl/WorkDatabase\$Companion.class"
+                    val companionBytes = retainedNestedClassBytes[companionEntry]
+                        ?: error("Could not extract the WorkDatabase companion compile API")
+                    val compileJarBytes = ByteArrayOutputStream()
+                    ZipOutputStream(compileJarBytes).use { archive ->
+                        archive.putNextEntry(ZipEntry(companionEntry))
+                        archive.write(companionBytes)
+                        archive.closeEntry()
+                    }
+                    val compileJar = recoveredWorkDatabaseCompanionCompileJar.get().asFile
+                    compileJar.parentFile.mkdirs()
+                    compileJar.writeBytes(compileJarBytes.toByteArray())
+                    logger.lifecycle("Prepared the WorkDatabase companion compile API")
                 }
                 val expectedRecoveredInnerTypes = recoveredDollarTopLevelInnerClassTargetsByCoordinate[coordinate]
                 if (expectedRecoveredInnerTypes != null) {
@@ -1001,6 +1091,10 @@ dependencies {
         files(fileTree(recoveredSourceArchiveDirectory) { include("*.aar", "*.jar") })
             .builtBy(strippedRecoveredSourceOwners),
     )
+    compileOnly(
+        files(recoveredWorkDatabaseCompanionCompileJar)
+            .builtBy(strippedRecoveredSourceOwners),
+    )
 
     // These are OEM WindowManager API definitions used by the recovered Window 1.0.0
     // implementation. The framework/device supplies them at runtime when supported.
@@ -1024,6 +1118,9 @@ tasks.withType<JavaCompile>().configureEach {
 abstract class CanonicalProjectClasses : DefaultTask() {
     @get:Input
     abstract val requiredSourceOwners: ListProperty<String>
+
+    @get:Input
+    abstract val runtimeSuppliedRecoveredOwnerClasses: ListProperty<String>
 
     @get:InputFiles
     @get:PathSensitive(PathSensitivity.RELATIVE)
@@ -1111,11 +1208,17 @@ abstract class CanonicalProjectClasses : DefaultTask() {
     fun canonicalize() {
         val entries = sortedMapOf<String, ByteArray>()
         val origins = mutableMapOf<String, String>()
+        val runtimeSuppliedOwners = runtimeSuppliedRecoveredOwnerClasses.get().toSet()
+        val compiledRuntimeSuppliedOwners = mutableSetOf<String>()
         var corrected = 0
         var generatedResources = 0
         fun add(path: String, bytes: ByteArray, origin: String, generatedR: Boolean = false) {
             val canonical = if (path.endsWith(".class")) classEntry(bytes) else path
             if (canonical != path) corrected++
+            if (canonical in runtimeSuppliedOwners) {
+                compiledRuntimeSuppliedOwners += canonical
+                return
+            }
             val previous = entries[canonical]
             if (previous != null && !previous.contentEquals(bytes)) {
                 check(generatedR && Regex("(?:.*/)?R(?:\\$[^/]*)?\\.class").matches(canonical)) {
@@ -1158,8 +1261,14 @@ abstract class CanonicalProjectClasses : DefaultTask() {
                 }
             }
         }
-        val missingOwners = requiredSourceOwners.get().filterNot { it in entries }
+        val missingOwners = requiredSourceOwners.get().filterNot {
+            it in entries || (it in runtimeSuppliedOwners && it in compiledRuntimeSuppliedOwners)
+        }
         check(missingOwners.isEmpty()) { "Recovered source owners produced no class: $missingOwners" }
+        val missingRuntimeSuppliedOwners = runtimeSuppliedOwners - compiledRuntimeSuppliedOwners
+        check(missingRuntimeSuppliedOwners.isEmpty()) {
+            "Runtime replacement owners were not compiled from recovered sources: $missingRuntimeSuppliedOwners"
+        }
         val target = outputJar.get().asFile
         target.parentFile.mkdirs()
         ZipOutputStream(target.outputStream().buffered()).use { archive ->
@@ -1169,7 +1278,11 @@ abstract class CanonicalProjectClasses : DefaultTask() {
                 archive.closeEntry()
             }
         }
-        logger.lifecycle("Canonical project classes: ${entries.size} entries, $corrected paths corrected, $generatedResources verified AAPT resource replacements; class bytes unchanged")
+        logger.lifecycle(
+            "Canonical project classes: ${entries.size} entries, $corrected paths corrected, " +
+                "${compiledRuntimeSuppliedOwners.size} dependency-supplied recovered owners replaced source classes, " +
+                "$generatedResources verified AAPT resource replacements; retained class bytes unchanged",
+        )
     }
 }
 
@@ -1179,6 +1292,9 @@ androidComponents {
             "canonicalize${variant.name.replaceFirstChar { it.uppercase() }}ProjectClasses",
         ) {
             requiredSourceOwners.set(recoveredSourceOwnersByCoordinate.values.flatten().map { "$it.class" })
+            runtimeSuppliedRecoveredOwnerClasses.set(
+                recoveredSourceOwnerRuntimeClassRetainsByCoordinate.values.flatten().map { "$it.class" },
+            )
         }
         variant.artifacts.forScope(ScopedArtifacts.Scope.PROJECT).use(task).toTransform(
             ScopedArtifact.CLASSES,

@@ -125,9 +125,6 @@
 **/androidx/work/OverwritingInputMerger.java
 **/androidx/work/WorkInfo$State.java
 **/androidx/work/WorkManagerInitializer.java
-**/androidx/work/impl/WorkDatabase.java
-**/androidx/work/impl/WorkDatabase_Impl.java
-**/androidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1.java
 **/androidx/work/impl/background/systemalarm/RescheduleReceiver.java
 **/androidx/work/impl/constraints/trackers/BroadcastReceiverConstraintTracker$broadcastReceiver$1.java
 **/androidx/work/impl/diagnostics/DiagnosticsReceiver.java

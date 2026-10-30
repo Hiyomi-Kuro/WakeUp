@@ -506,6 +506,10 @@ public class RecyclerView extends ViewGroup implements Oooo0o.o0000O0 {
         setMeasuredDimension(o000O.OooO0oo(i, paddingRight, Oooo0o.o00O0000.OooO0o0(this)), o000O.OooO0oo(i2, getPaddingBottom() + getPaddingTop(), Oooo0o.o00O0000.OooO0Oo(this)));
     }
 
+    public static void OooO0o0(RecyclerView recyclerView, int width, int height) {
+        recyclerView.setMeasuredDimension(width, height);
+    }
+
     public final void OooOOO0() {
         if (!this.f4580OooOooo || this.f4590Oooo0oO) {
             int i = Oooo00O.o00Oo0.f1408OooO00o;
@@ -788,6 +792,10 @@ public class RecyclerView extends ViewGroup implements Oooo0o.o0000O0 {
                     o00OO0OO.f4837OooO0Oo.OooO0O0(o00oo0oo3);
                     i5--;
                     z2 = false;
+                    // The original bytecode jumps to the next record here. Falling
+                    // through also runs the common cleanup below and pools this
+                    // animation record twice.
+                    continue;
                 }
                 o00o0000 = null;
                 o00oo0oo3.f4838OooO00o = r4;

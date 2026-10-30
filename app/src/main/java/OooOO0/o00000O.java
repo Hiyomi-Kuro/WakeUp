@@ -243,9 +243,10 @@ public final class o00000O {
             }
             if (zComputeScrollOffset && currX == overScroller.getFinalX() && currY == overScroller.getFinalY()) {
                 overScroller.abortAnimation();
+                this.f1689OooOo0O.post(this.f1690OooOo0o);
             } else if (!zComputeScrollOffset) {
+                this.f1689OooOo0O.post(this.f1690OooOo0o);
             }
-            this.f1689OooOo0O.post(this.f1690OooOo0o);
         }
         return this.f1669OooO00o == 2;
     }

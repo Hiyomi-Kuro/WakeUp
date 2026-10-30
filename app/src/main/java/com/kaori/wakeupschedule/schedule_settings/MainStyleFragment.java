@@ -230,7 +230,7 @@ public final class MainStyleFragment extends com.kaori.wakeupschedule.base_view.
             }
             for (int i4 = 1; i4 < 8; i4++) {
                 o00000o1 = mainStyleFragment2.f8726OoooooO;
-                if (o00000o1 != null) {
+                if (o00000o1 == null) {
                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("schedule");
                     throw null;
                 }
@@ -345,7 +345,7 @@ public final class MainStyleFragment extends com.kaori.wakeupschedule.base_view.
         int i4 = 1;
         while (i4 < 8) {
             o00000o1 = mainStyleFragment2.f8726OoooooO;
-            if (o00000o1 != null) {
+            if (o00000o1 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("schedule");
                 throw null;
             }

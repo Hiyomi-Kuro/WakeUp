@@ -1,2 +1,0 @@
-    topResumedActivity=ActivityRecord{f8c20ce u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3505}
-      topResumedActivity=ActivityRecord{3c2ca5d u0 com.teslacoilsw.launcher/.NovaLauncher t2}

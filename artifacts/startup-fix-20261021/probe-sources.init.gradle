@@ -1,6 +1,0 @@
-gradle.taskGraph.whenReady { graph ->
-  def task = graph.allTasks.find { it.path == ':app:compileDebugJavaWithJavac' }
-  ['o00O0O0O/OooOO0O.java','o00O0O/o0ooOOo.java','OoooOoO/o00O000.java'].each { rel ->
-    println('SOURCE_' + rel + '=' + task.source.files.find { it.path.replace('\\','/').endsWith(rel) })
-  }
-}

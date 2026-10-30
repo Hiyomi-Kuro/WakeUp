@@ -128,7 +128,7 @@ final class ScheduleActivity$shareScheduleOnline$1 extends SuspendLambda impleme
                 }
                 myResponse = (MyResponse) obj;
                 r1.OooO00o(3);
-                if (!kotlin.text.o0OoOo0.OoooO((CharSequence) myResponse.getData())) {
+                if (kotlin.text.o0OoOo0.OoooO((CharSequence) myResponse.getData())) {
                     throw new Exception(this.this$0.getString(com.kaori.wakeupschedule.R.string.export_exception_share_empty));
                 }
                 if (com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo(myResponse.getStatus(), "1") && com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo(myResponse.getMessage(), "success")) {
@@ -176,7 +176,7 @@ final class ScheduleActivity$shareScheduleOnline$1 extends SuspendLambda impleme
                     r1 = oooOo00;
                     myResponse = (MyResponse) obj;
                     r1.OooO00o(3);
-                    if (!kotlin.text.o0OoOo0.OoooO((CharSequence) myResponse.getData())) {
+                    if (kotlin.text.o0OoOo0.OoooO((CharSequence) myResponse.getData())) {
                         throw new Exception(this.this$0.getString(com.kaori.wakeupschedule.R.string.export_exception_share_empty));
                     }
                     if (com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo(myResponse.getStatus(), "1")) {

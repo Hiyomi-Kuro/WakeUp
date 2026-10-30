@@ -3,10 +3,13 @@ package com.kaori.wakeupschedule.schedule;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Typeface;
+import android.graphics.Color;
 import android.os.Build;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowInsets;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.appcompat.widget.AppCompatImageButton;
@@ -14,6 +17,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
@@ -92,7 +96,6 @@ public final class oo0o0Oo {
 
     public oo0o0Oo(Context context) {
         char c;
-        LinearLayout linearLayout;
         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(context, "ctx");
         this.f8319OooO00o = context;
         o00O0O00.OooO0O0 OooO0O1 = kotlin.OooO00o.OooO0O0(LazyThreadSafetyMode.NONE, new com.kaori.wakeupschedule.reconstruction.DecodedLambda0_101c58132e() { // from class: com.kaori.wakeupschedule.schedule.ScheduleActivityUI$outValue$2
@@ -407,114 +410,8 @@ public final class oo0o0Oo {
             constraintLayout3.addView(linearLayoutOooO00o9, layoutParams25);
         }
         this.f8334OooOOo = constraintLayout3;
-        if (com.kaori.wakeupschedule.utils.OooO0OO.OooOOO0(context)[c].intValue() < context.getResources().getDimensionPixelSize(com.kaori.wakeupschedule.R.dimen.wide_screen)) {
-            LinearLayout linearLayout2 = new LinearLayout(context);
-            linearLayout2.setId(com.kaori.wakeupschedule.R.id.anko_bottom_sheet);
-            Context context18 = linearLayout2.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context18, "getContext(...)");
-            int i = (int) (context18.getResources().getDisplayMetrics().density * f);
-            linearLayout2.setGravity(80);
-            Context context19 = linearLayout2.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context19, "getContext(...)");
-            int iOooO0o0 = OooOoo.o0Oo0oo.OooO0o0(kotlinx.coroutines.flow.OooOOO0.OooOOo(context19, com.kaori.wakeupschedule.R.attr.colorSurface), 240);
-            linearLayout2.setOrientation(1);
-            MaterialCardView materialCardView = new MaterialCardView(linearLayout2.getContext());
-            materialCardView.setCardBackgroundColor(iOooO0o0);
-            materialCardView.setRadius(48.0f);
-            Context context20 = materialCardView.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context20, "getContext(...)");
-            float f6 = 0;
-            materialCardView.setCardElevation(context20.getResources().getDisplayMetrics().density * f6);
-            materialCardView.addView(constraintLayout2, new ViewGroup.LayoutParams(-1, -2));
-            LinearLayout.LayoutParams layoutParams26 = new LinearLayout.LayoutParams(-1, -2);
-            layoutParams26.setMargins(i, 0, i, 0);
-            linearLayout2.addView(materialCardView, layoutParams26);
-            MaterialCardView materialCardView2 = new MaterialCardView(linearLayout2.getContext());
-            materialCardView2.setCardBackgroundColor(iOooO0o0);
-            materialCardView2.setRadius(48.0f);
-            Context context21 = materialCardView2.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context21, "getContext(...)");
-            materialCardView2.setCardElevation(f6 * context21.getResources().getDisplayMetrics().density);
-            materialCardView2.addView(constraintLayout3, new ViewGroup.LayoutParams(-1, -2));
-            LinearLayout.LayoutParams layoutParams27 = new LinearLayout.LayoutParams(-1, -2);
-            Context context22 = linearLayout2.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context22, "getContext(...)");
-            int i2 = (int) (f * context22.getResources().getDisplayMetrics().density);
-            layoutParams27.setMargins(i2, i2, i2, i2);
-            linearLayout2.addView(materialCardView2, layoutParams27);
-            final int i3 = 0;
-            o00O00O.OooOo0(linearLayout2, new o000() { // from class: com.kaori.wakeupschedule.schedule.o0OO00O
-                @Override // Oooo0o.o000
-                public final o0O00OOO OooO0oo(View view, o0O00OOO o0o00ooo) {
-                    o0O00O o0o00o = o0o00ooo.f1538OooO00o;
-                    switch (i3) {
-                        case 0:
-                            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(view, "v");
-                            view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), o0o00o.OooO0o(7).f1303OooO0Oo);
-                            break;
-                        default:
-                            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(view, "v");
-                            view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), o0o00o.OooO0o(7).f1303OooO0Oo);
-                            break;
-                    }
-                    return o0o00ooo;
-                }
-            });
-            linearLayout = linearLayout2;
-        } else {
-            LinearLayout linearLayout3 = new LinearLayout(context);
-            linearLayout3.setId(com.kaori.wakeupschedule.R.id.anko_bottom_sheet);
-            Context context23 = linearLayout3.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context23, "getContext(...)");
-            int i4 = (int) (context23.getResources().getDisplayMetrics().density * f3);
-            linearLayout3.setGravity(80);
-            Context context24 = linearLayout3.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context24, "getContext(...)");
-            int iOooO0o1 = OooOoo.o0Oo0oo.OooO0o0(kotlinx.coroutines.flow.OooOOO0.OooOOo(context24, com.kaori.wakeupschedule.R.attr.colorSurface), 240);
-            MaterialCardView materialCardView3 = new MaterialCardView(linearLayout3.getContext());
-            materialCardView3.setCardBackgroundColor(iOooO0o1);
-            materialCardView3.setRadius(48.0f);
-            Context context25 = materialCardView3.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context25, "getContext(...)");
-            materialCardView3.setCardElevation(context25.getResources().getDisplayMetrics().density * f3);
-            materialCardView3.addView(constraintLayout2, new ViewGroup.LayoutParams(-1, -2));
-            LinearLayout.LayoutParams layoutParams28 = new LinearLayout.LayoutParams(0, -2);
-            int i5 = i4 / 2;
-            layoutParams28.setMargins(i4, 0, i5, i4);
-            layoutParams28.weight = 1.0f;
-            linearLayout3.addView(materialCardView3, layoutParams28);
-            MaterialCardView materialCardView4 = new MaterialCardView(linearLayout3.getContext());
-            materialCardView4.setCardBackgroundColor(iOooO0o1);
-            materialCardView4.setRadius(48.0f);
-            Context context26 = materialCardView4.getContext();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context26, "getContext(...)");
-            materialCardView4.setCardElevation(f3 * context26.getResources().getDisplayMetrics().density);
-            materialCardView4.addView(constraintLayout3, new ViewGroup.LayoutParams(-1, -2));
-            LinearLayout.LayoutParams layoutParams29 = new LinearLayout.LayoutParams(0, -2);
-            layoutParams29.setMargins(i5, 0, i4, i4);
-            layoutParams29.weight = 1.0f;
-            linearLayout3.addView(materialCardView4, layoutParams29);
-            final int i6 = 1;
-            o00O00O.OooOo0(linearLayout3, new o000() { // from class: com.kaori.wakeupschedule.schedule.o0OO00O
-                @Override // Oooo0o.o000
-                public final o0O00OOO OooO0oo(View view, o0O00OOO o0o00ooo) {
-                    o0O00O o0o00o = o0o00ooo.f1538OooO00o;
-                    switch (i6) {
-                        case 0:
-                            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(view, "v");
-                            view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), o0o00o.OooO0o(7).f1303OooO0Oo);
-                            break;
-                        default:
-                            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(view, "v");
-                            view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), o0o00o.OooO0o(7).f1303OooO0Oo);
-                            break;
-                    }
-                    return o0o00ooo;
-                }
-            });
-            linearLayout = linearLayout3;
-        }
-        this.f8336OooOOoo = linearLayout;
+        int navigationHeight = configureNavigationGrid(context, constraintLayout3);
+        this.f8336OooOOoo = createUnifiedBottomSheet(context, constraintLayout2, constraintLayout3, navigationHeight);
         CoordinatorLayout coordinatorLayout = new CoordinatorLayout(context);
         coordinatorLayout.setId(com.kaori.wakeupschedule.R.id.anko_root);
         coordinatorLayout.addView(constraintLayout, new androidx.coordinatorlayout.widget.OooO0OO(-1, -1));
@@ -525,8 +422,172 @@ public final class oo0o0Oo {
         bottomSheetBehavior.f6179OoooOO0 = true;
         bottomSheetBehavior.f6144OooOO0o = -1;
         oooO0OO2.OooO0O0(bottomSheetBehavior);
-        coordinatorLayout.addView(linearLayout, oooO0OO2);
+        coordinatorLayout.addView(this.f8336OooOOoo, oooO0OO2);
         this.f8337OooOo00 = coordinatorLayout;
+    }
+
+    private static int dp(Context context, float value) {
+        return (int) ((value * context.getResources().getDisplayMetrics().density) + 0.5f);
+    }
+
+    private int configureNavigationGrid(Context context, ConstraintLayout grid) {
+        int[] ids = {
+                com.kaori.wakeupschedule.R.id.main_nav_time,
+                com.kaori.wakeupschedule.R.id.main_nav_schedule_setting,
+                com.kaori.wakeupschedule.R.id.main_nav_course,
+                com.kaori.wakeupschedule.R.id.main_nav_help,
+                com.kaori.wakeupschedule.R.id.main_nav_about,
+                com.kaori.wakeupschedule.R.id.main_nav_feedback,
+                com.kaori.wakeupschedule.R.id.main_nav_settings,
+                com.kaori.wakeupschedule.R.id.main_nav_suda
+        };
+        float fontScale = context.getResources().getConfiguration().fontScale;
+        int screenWidthDp = context.getResources().getConfiguration().screenWidthDp;
+        int columns = screenWidthDp >= 600 && fontScale <= 1.3f ? 4 : 2;
+        int rows = (ids.length + columns - 1) / columns;
+        int rowHeight = dp(context, fontScale > 1.3f ? 104.0f : 88.0f);
+        int itemMargin = dp(context, 4.0f);
+        int tileHeight = rowHeight - (itemMargin * 2);
+
+        for (int i = 0; i < ids.length; i++) {
+            View child = grid.findViewById(ids[i]);
+            if (!(child instanceof LinearLayout)) {
+                throw new IllegalStateException("Missing More navigation item id=" + ids[i]);
+            }
+            int row = i / columns;
+            int column = i % columns;
+            ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams) child.getLayoutParams();
+            params.width = 0;
+            params.height = tileHeight;
+            params.f3375OooOo00 = column == 0 ? 0 : -1;
+            params.f3372OooOOoo = column == 0 ? -1 : ids[i - 1];
+            params.f3374OooOo0 = column == columns - 1 ? -1 : ids[i + 1];
+            params.f3376OooOo0O = column == columns - 1 ? 0 : -1;
+            params.f3354OooO = row == 0 ? 0 : -1;
+            params.f3363OooOO0 = row == 0 ? -1 : ids[i - columns];
+            params.f3364OooOO0O = row == rows - 1 ? -1 : ids[i + columns];
+            params.f3365OooOO0o = row == rows - 1 ? 0 : -1;
+            params.setMargins(itemMargin, itemMargin, itemMargin, itemMargin);
+            child.setLayoutParams(params);
+        }
+        int height = rows * rowHeight;
+        grid.setMinimumHeight(height);
+        return height;
+    }
+
+    private LinearLayout createUnifiedBottomSheet(Context context, ConstraintLayout scheduleSection,
+            ConstraintLayout navigationSection, int navigationHeight) {
+        LinearLayout sheet = new LinearLayout(context);
+        sheet.setId(com.kaori.wakeupschedule.R.id.anko_bottom_sheet);
+        sheet.setOrientation(LinearLayout.VERTICAL);
+        sheet.setGravity(80 | 1);
+        sheet.setClipChildren(false);
+        sheet.setClipToPadding(false);
+
+        MaterialCardView surface = new MaterialCardView(context);
+        surface.setCardBackgroundColor(kotlinx.coroutines.flow.OooOOO0.OooOOo(
+                context, com.kaori.wakeupschedule.R.attr.colorSurface));
+        surface.setRadius(dp(context, 28.0f));
+        surface.setCardElevation(0.0f);
+
+        MaxHeightFrameLayout scrollViewport = new MaxHeightFrameLayout(context);
+        NestedScrollView scroll = new NestedScrollView(context);
+        scroll.setFillViewport(true);
+        scroll.setNestedScrollingEnabled(true);
+        scroll.setClipToPadding(false);
+        scroll.setVerticalScrollBarEnabled(true);
+        scrollViewport.addView(scroll, new FrameLayout.LayoutParams(-1, -1));
+
+        LinearLayout content = new LinearLayout(context);
+        content.setOrientation(LinearLayout.VERTICAL);
+        content.setPadding(dp(context, 12.0f), dp(context, 8.0f),
+                dp(context, 12.0f), dp(context, 8.0f));
+        content.addView(scheduleSection, new LinearLayout.LayoutParams(-1, -2));
+
+        int onSurface = kotlinx.coroutines.flow.OooOOO0.OooOOo(
+                context, com.kaori.wakeupschedule.R.attr.colorOnSurface);
+        View divider = new View(context);
+        divider.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        divider.setBackgroundColor(Color.argb(40, Color.red(onSurface),
+                Color.green(onSurface), Color.blue(onSurface)));
+        LinearLayout.LayoutParams dividerParams = new LinearLayout.LayoutParams(-1, dp(context, 1.0f));
+        dividerParams.setMargins(dp(context, 8.0f), dp(context, 8.0f),
+                dp(context, 8.0f), dp(context, 4.0f));
+        content.addView(divider, dividerParams);
+
+        AppCompatTextView navigationTitle = new AppCompatTextView(context);
+        navigationTitle.setText(com.kaori.wakeupschedule.R.string.abc_action_menu_overflow_description);
+        navigationTitle.setTextSize(14.0f);
+        navigationTitle.setTextColor(onSurface);
+        navigationTitle.setTypeface(Typeface.create("sans-serif-medium", Typeface.NORMAL));
+        navigationTitle.setPadding(dp(context, 8.0f), dp(context, 4.0f),
+                dp(context, 8.0f), dp(context, 4.0f));
+        content.addView(navigationTitle, new LinearLayout.LayoutParams(-1, -2));
+        content.addView(navigationSection, new LinearLayout.LayoutParams(-1, navigationHeight));
+        scroll.addView(content, new ViewGroup.LayoutParams(-1, -2));
+        surface.addView(scrollViewport, new ViewGroup.LayoutParams(-1, -2));
+
+        int screenWidthDp = context.getResources().getConfiguration().screenWidthDp;
+        int surfaceWidth = screenWidthDp >= 744 ? dp(context, 720.0f) : -1;
+        LinearLayout.LayoutParams surfaceParams = new LinearLayout.LayoutParams(surfaceWidth, -2);
+        surfaceParams.setMargins(dp(context, 12.0f), 0, dp(context, 12.0f), dp(context, 8.0f));
+        sheet.addView(surface, surfaceParams);
+        o00O00O.OooOo0(sheet, new o000() {
+            @Override
+            public o0O00OOO OooO0oo(View view, o0O00OOO insets) {
+                o0O00O systemInsets = insets.f1538OooO00o;
+                view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(),
+                        systemInsets.OooO0o(7).f1303OooO0Oo);
+                return insets;
+            }
+        });
+
+        sheet.addOnLayoutChangeListener((view, left, top, right, bottom,
+                oldLeft, oldTop, oldRight, oldBottom) -> {
+            int topInset = 0;
+            int bottomInset = 0;
+            if (Build.VERSION.SDK_INT >= 23) {
+                WindowInsets insets = view.getRootWindowInsets();
+                if (insets != null) {
+                    topInset = insets.getSystemWindowInsetTop();
+                    bottomInset = insets.getSystemWindowInsetBottom();
+                }
+            }
+            int safeHeight = view.getHeight() - topInset - bottomInset
+                    - view.getPaddingTop() - view.getPaddingBottom() - dp(context, 24.0f);
+            if (safeHeight > 0) {
+                scrollViewport.setMaxHeightPx(safeHeight);
+            }
+        });
+        return sheet;
+    }
+
+    private static final class MaxHeightFrameLayout extends FrameLayout {
+        private int maxHeightPx;
+
+        MaxHeightFrameLayout(Context context) {
+            super(context);
+        }
+
+        void setMaxHeightPx(int height) {
+            if (height > 0 && this.maxHeightPx != height) {
+                this.maxHeightPx = height;
+                requestLayout();
+            }
+        }
+
+        @Override
+        protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+            if (this.maxHeightPx > 0) {
+                int mode = View.MeasureSpec.getMode(heightMeasureSpec);
+                int size = View.MeasureSpec.getSize(heightMeasureSpec);
+                if (mode == View.MeasureSpec.UNSPECIFIED || size > this.maxHeightPx) {
+                    heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(
+                            this.maxHeightPx, View.MeasureSpec.AT_MOST);
+                }
+            }
+            super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        }
     }
 
     public final LinearLayout OooO00o(int i, int i2, int i3) {
@@ -537,15 +598,27 @@ public final class oo0o0Oo {
         linearLayout.setBackgroundResource(((TypedValue) this.f8320OooO0O0.getValue()).resourceId);
         AppCompatImageView appCompatImageView = new AppCompatImageView(linearLayout.getContext());
         appCompatImageView.setImageResource(i3);
-        linearLayout.addView(appCompatImageView);
+        appCompatImageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        appCompatImageView.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        LinearLayout.LayoutParams iconParams = new LinearLayout.LayoutParams(dp(linearLayout.getContext(), 24.0f),
+                dp(linearLayout.getContext(), 24.0f));
+        linearLayout.addView(appCompatImageView, iconParams);
         AppCompatTextView appCompatTextView = new AppCompatTextView(linearLayout.getContext());
-        appCompatTextView.setTextSize(10.0f);
+        appCompatTextView.setTextSize(12.0f);
         appCompatTextView.setText(i2);
+        appCompatTextView.setGravity(17);
+        appCompatTextView.setMaxLines(2);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -2);
         Context context = linearLayout.getContext();
         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context, "getContext(...)");
         layoutParams.topMargin = (int) (4 * context.getResources().getDisplayMetrics().density);
         linearLayout.addView(appCompatTextView, layoutParams);
+        int padding = dp(linearLayout.getContext(), 8.0f);
+        linearLayout.setPadding(padding, padding, padding, padding);
+        linearLayout.setMinimumWidth(dp(linearLayout.getContext(), 48.0f));
+        linearLayout.setMinimumHeight(dp(linearLayout.getContext(), 48.0f));
+        linearLayout.setContentDescription(appCompatTextView.getText());
+        linearLayout.setFocusable(true);
         return linearLayout;
     }
 

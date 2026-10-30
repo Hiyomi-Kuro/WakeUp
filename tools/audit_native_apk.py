@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import collections
+import argparse
 import fnmatch
 import hashlib
 import json
@@ -106,6 +107,15 @@ def dex_info(data: bytes):
 
 
 def main():
+    global APK, DOCS
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--apk", type=Path, default=APK, help="APK to inspect (defaults to the standard debug APK)")
+    parser.add_argument("--output-dir", type=Path, default=DOCS,
+                        help="directory for generated audit JSON and class mapping")
+    args = parser.parse_args()
+    APK = args.apk.resolve()
+    DOCS = args.output_dir.resolve()
+    DOCS.mkdir(parents=True, exist_ok=True)
     assert APK.is_file(), "Build the APK first"
     sys.path.insert(0, str(ROOT))
     from tools.generate_dependency_source_excludes import _masked_java, source_declarations

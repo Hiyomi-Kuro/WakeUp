@@ -244,6 +244,40 @@ public final class o000OOo extends o0000OO0 {
                 o000OOO.OooOO0.OooOoo0(i11, courseBean, listOoooooO).OoooOo0(o000OOo.this.f8291OooO0o0.Oooo00O.OooO0OO(), "courseDetail");
             }
         };
+        constraintLayout.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+            @Override
+            public void onLayoutChange(View view, int left, int top, int right, int bottom,
+                    int oldLeft, int oldTop, int oldRight, int oldBottom) {
+                if (right <= left || bottom <= top) {
+                    return;
+                }
+                constraintLayout.removeOnLayoutChangeListener(this);
+                constraintLayout.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        for (int day = 1; day <= 7; day++) {
+                            int panelId = o00000o3.f8285OooOOO0[day - 1] + com.kaori.wakeupschedule.R.id.anko_ll_week_panel_0;
+                            View panelView = constraintLayout.findViewById(panelId);
+                            if (panelView instanceof android.widget.FrameLayout) {
+                                android.widget.FrameLayout panel = (android.widget.FrameLayout) panelView;
+                                int panelWidth = panel.getWidth();
+                                int panelHeight = panel.getHeight();
+                                if (panelWidth > 0 && panelHeight > 0) {
+                                    for (int childIndex = 0; childIndex < panel.getChildCount(); childIndex++) {
+                                        panel.getChildAt(childIndex).forceLayout();
+                                    }
+                                    panel.forceLayout();
+                                    panel.measure(
+                                            View.MeasureSpec.makeMeasureSpec(panelWidth, View.MeasureSpec.EXACTLY),
+                                            View.MeasureSpec.makeMeasureSpec(panelHeight, View.MeasureSpec.EXACTLY));
+                                    panel.layout(panel.getLeft(), panel.getTop(), panel.getRight(), panel.getBottom());
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
         viewGroup.addView(constraintLayout, new ViewGroup.LayoutParams(-1, -1));
     }
 

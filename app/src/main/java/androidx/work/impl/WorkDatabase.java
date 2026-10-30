@@ -10,6 +10,20 @@ import o0ooOoO.oo000o;
 import o0ooOoO.oo0o0Oo;
 
 public abstract class WorkDatabase extends o0OOO0o {
+    public static final WorkDatabase$Companion Companion =
+            createWorkDatabaseCompanion();
+
+    @SuppressWarnings("unchecked")
+    private static <T> T createWorkDatabaseCompanion() {
+        try {
+            Class<?> companionClass = Class.forName("androidx.work.impl.WorkDatabase$Companion");
+            Class<?> markerClass = Class.forName("kotlin.jvm.internal.DefaultConstructorMarker");
+            return (T) companionClass.getConstructor(markerClass).newInstance(new Object[] {null});
+        } catch (ReflectiveOperationException failure) {
+            throw new ExceptionInInitializerError(failure);
+        }
+    }
+
     public abstract OooOo00 OooOOo();
 
     public abstract OooOOO OooOOo0();

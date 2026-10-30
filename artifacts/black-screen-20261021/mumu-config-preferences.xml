@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
-<map>
-    <boolean name="has_adjust" value="true" />
-    <boolean name="has_feedback_honor" value="false" />
-    <int name="show_table_id" value="1" />
-    <boolean name="has_intro" value="true" />
-    <int name="last_version_code" value="247" />
-    <int name="open_times" value="11" />
-</map>

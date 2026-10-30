@@ -122,6 +122,8 @@ public final class OooOOOO implements Runnable {
                                 OooO oooO = (OooO) it;
                                 if (oooO.hasNext()) {
                                     ((androidx.room.OooOo00) ((Map.Entry) oooO.next()).getValue()).OooO00o(setOooO00o);
+                                } else {
+                                    break;
                                 }
                             }
                         }

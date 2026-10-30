@@ -23,7 +23,7 @@ public final class Oooo000 extends o00O0O0 {
     public Oooo000(View view) {
         super(view);
         this.f9361OooO00o = view;
-        View viewFindViewById = view.findViewById(me.saket.cascade.R.id.title);
+        View viewFindViewById = view.findViewById(android.R.id.title);
         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(viewFindViewById, "view.findViewById(android.R.id.title)");
         TextView textView = (TextView) viewFindViewById;
         this.f9362OooO0O0 = textView;

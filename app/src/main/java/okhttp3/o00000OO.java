@@ -7,7 +7,7 @@ import o00O0ooo.o0oOOo;
 public final class o00000OO extends o0000Ooo {
 
     /* JADX INFO: renamed from: OooOO0o, reason: collision with root package name */
-    public final /* synthetic */ int f12607OooOO0o = 1;
+    public final /* synthetic */ int f12607OooOO0o;
 
     /* JADX INFO: renamed from: OooOOO, reason: collision with root package name */
     public final o0 f12608OooOOO;
@@ -19,6 +19,7 @@ public final class o00000OO extends o0000Ooo {
     public final Object f12610OooOOOO;
 
     public o00000OO(String str, long j, o0OoO00O o0ooo00o) {
+        this.f12607OooOO0o = 1;
         this.f12610OooOOOO = str;
         this.f12609OooOOO0 = j;
         this.f12608OooOOO = o0ooo00o;
@@ -51,6 +52,7 @@ public final class o00000OO extends o0000Ooo {
     }
 
     public o00000OO(o0ooOOo o0ooooo, long j, o0oOOo o0oooo) {
+        this.f12607OooOO0o = 0;
         this.f12610OooOOOO = o0ooooo;
         this.f12609OooOOO0 = j;
         this.f12608OooOOO = o0oooo;

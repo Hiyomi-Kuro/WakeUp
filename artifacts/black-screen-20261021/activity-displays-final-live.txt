@@ -1,3 +1,0 @@
-Unknown command: displays
-Bad activity command, or no activities match: displays
-Use -h for help.

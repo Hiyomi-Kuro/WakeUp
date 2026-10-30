@@ -3519,41 +3519,39 @@ public final class OooOOOO extends androidx.lifecycle.OooO0O0 {
         Object objO00000oo = importViewModel$importFromFile$1.result;
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
         int i2 = importViewModel$importFromFile$1.label;
-        if (i2 != 0) {
-            if (i2 == 1) {
-                oooOOOO = (OooOOOO) importViewModel$importFromFile$1.L$0;
-                kotlin.OooO0O0.OooO0O0(objO00000oo);
-            } else {
-                if (i2 != 2) {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        if (i2 == 0) {
+            kotlin.OooO0O0.OooO0O0(objO00000oo);
+            if (uri == null) {
+                throw new IllegalStateException("读取文件失败");
+            }
+            String path = uri.getPath();
+            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(path);
+            if (!path.toLowerCase(Locale.ROOT).endsWith("wakeup_schedule")) {
+                String string = uri.toString();
+                com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(string, "toString(...)");
+                if (kotlin.text.o0OoOo0.OoooOOo(string, "content://com.android.providers")) {
+                    throw new IllegalStateException("请不要从「最近」或「下载」等文件夹中选择，应去具体的路径选择。如果仍有问题，建议分享到QQ，然后在QQ的界面点击文件，选择「导入到课程表」。");
                 }
-                kotlin.OooO0O0.OooO0O0(objO00000oo);
+                throw new IllegalStateException("请确保文件类型正确");
             }
+            o000 o000Var = kotlinx.coroutines.o000000.f9250OooO0O0;
+            ImportViewModel$importFromFile$list$1 importViewModel$importFromFile$list$1 = new ImportViewModel$importFromFile$list$1(this, uri, null);
+            importViewModel$importFromFile$1.L$0 = this;
+            importViewModel$importFromFile$1.label = 1;
+            objO00000oo = o00000Oo.Oooo0.o00000oo(o000Var, importViewModel$importFromFile$list$1, importViewModel$importFromFile$1);
+            if (objO00000oo == coroutineSingletons) {
+                return coroutineSingletons;
+            }
+            oooOOOO = this;
+        } else if (i2 == 1) {
+            oooOOOO = (OooOOOO) importViewModel$importFromFile$1.L$0;
+            kotlin.OooO0O0.OooO0O0(objO00000oo);
+        } else if (i2 == 2) {
+            kotlin.OooO0O0.OooO0O0(objO00000oo);
             return o00O0O00.OooOO0O.f11387OooO00o;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        kotlin.OooO0O0.OooO0O0(objO00000oo);
-        if (uri == null) {
-            throw new IllegalStateException("读取文件失败");
-        }
-        String path = uri.getPath();
-        com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(path);
-        if (!kotlin.text.o00O0O.OoooOo0(path, "wakeup_schedule", true)) {
-            String string = uri.toString();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(string, "toString(...)");
-            if (kotlin.text.o0OoOo0.OoooOOo(string, "content://com.android.providers")) {
-                throw new IllegalStateException("请不要从「最近」或「下载」等文件夹中选择，应去具体的路径选择。如果仍有问题，建议分享到QQ，然后在QQ的界面点击文件，选择「导入到课程表」。");
-            }
-            throw new IllegalStateException("请确保文件类型正确");
-        }
-        o000 o000Var = kotlinx.coroutines.o000000.f9250OooO0O0;
-        ImportViewModel$importFromFile$list$1 importViewModel$importFromFile$list$1 = new ImportViewModel$importFromFile$list$1(this, uri, null);
-        importViewModel$importFromFile$1.L$0 = this;
-        importViewModel$importFromFile$1.label = 1;
-        objO00000oo = o00000Oo.Oooo0.o00000oo(o000Var, importViewModel$importFromFile$list$1, importViewModel$importFromFile$1);
-        if (objO00000oo == coroutineSingletons) {
-            return coroutineSingletons;
-        }
-        oooOOOO = this;
         importViewModel$importFromFile$1.L$0 = null;
         importViewModel$importFromFile$1.label = 2;
         if (oooOOOO.OooOOOo((List) objO00000oo, importViewModel$importFromFile$1) == coroutineSingletons) {

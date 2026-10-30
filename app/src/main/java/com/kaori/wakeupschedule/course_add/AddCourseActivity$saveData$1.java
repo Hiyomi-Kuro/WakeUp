@@ -30,15 +30,8 @@ final class AddCourseActivity$saveData$1 extends SuspendLambda implements o00O0O
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
         int i = this.label;
         try {
-            if (i != 0) {
-                if (i == 1) {
-                    kotlin.OooO0O0.OooO0O0(obj);
-                } else {
-                    if (i != 2) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                    }
-                    kotlin.OooO0O0.OooO0O0(obj);
-                }
+            if (i == 2) {
+                kotlin.OooO0O0.OooO0O0(obj);
                 com.kaori.wakeupschedule.utils.OooO0OO.OooOoOO(AppWidgetManager.getInstance(this.this$0.getApplicationContext()), this.this$0);
                 com.kaori.wakeupschedule.utils.OooO0OO.OooOo00(this.this$0, true);
                 AddCourseActivity addCourseActivity = this.this$0;
@@ -48,18 +41,25 @@ final class AddCourseActivity$saveData$1 extends SuspendLambda implements o00O0O
                 this.this$0.finish();
                 return o00O0O00.OooOO0O.f11387OooO00o;
             }
-            kotlin.OooO0O0.OooO0O0(obj);
-            AddCourseActivity addCourseActivity2 = this.this$0;
-            int i2 = AddCourseActivity.f7974o000oOoO;
-            AddCourseViewModel addCourseViewModelOooOoO0 = addCourseActivity2.OooOoO0();
-            this.label = 1;
-            int i3 = addCourseViewModelOooOoO0.f7989OooOOO0;
-            com.kaori.wakeupschedule.dao.o00Ooo o00ooo2 = (com.kaori.wakeupschedule.dao.o00Ooo) addCourseViewModelOooOoO0.f7980OooO;
-            o00ooo2.getClass();
-            o0O0O00 o0o0o00OooOOOo = o0O0O00.OooOOOo(1, "select max(id) from coursebasebean where tableId = ?");
-            obj = androidx.room.OooO0O0.OooO0O0(o00ooo2.f8158OooO00o, OooO0OO.OooOo00.OooO0OO(o0o0o00OooOOOo, i3, 1), new com.kaori.wakeupschedule.dao.o00O0O(o00ooo2, o0o0o00OooOOOo, 4), this);
-            if (obj == coroutineSingletons) {
-                return coroutineSingletons;
+            if (i == 1) {
+                // The max(id) query resumed. Continue with its result below.
+                kotlin.OooO0O0.OooO0O0(obj);
+            } else if (i == 0) {
+                kotlin.OooO0O0.OooO0O0(obj);
+                AddCourseActivity addCourseActivity2 = this.this$0;
+                int i2 = AddCourseActivity.f7974o000oOoO;
+                AddCourseViewModel addCourseViewModelOooOoO0 = addCourseActivity2.OooOoO0();
+                this.label = 1;
+                int i3 = addCourseViewModelOooOoO0.f7989OooOOO0;
+                com.kaori.wakeupschedule.dao.o00Ooo o00ooo2 = (com.kaori.wakeupschedule.dao.o00Ooo) addCourseViewModelOooOoO0.f7980OooO;
+                o00ooo2.getClass();
+                o0O0O00 o0o0o00OooOOOo = o0O0O00.OooOOOo(1, "select max(id) from coursebasebean where tableId = ?");
+                obj = androidx.room.OooO0O0.OooO0O0(o00ooo2.f8158OooO00o, OooO0OO.OooOo00.OooO0OO(o0o0o00OooOOOo, i3, 1), new com.kaori.wakeupschedule.dao.o00O0O(o00ooo2, o0o0o00OooOOOo, 4), this);
+                if (obj == coroutineSingletons) {
+                    return coroutineSingletons;
+                }
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             Integer num = (Integer) obj;
             AddCourseActivity addCourseActivity3 = this.this$0;

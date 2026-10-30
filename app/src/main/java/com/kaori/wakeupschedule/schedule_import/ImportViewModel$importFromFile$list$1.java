@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.ArrayList;
 import java.util.List;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
@@ -37,10 +38,26 @@ final class ImportViewModel$importFromFile$list$1 extends SuspendLambda implemen
         }
         kotlin.OooO0O0.OooO0O0(obj);
         try {
+            android.util.Log.i("P16IMPORT", "read coroutine enter");
             InputStream inputStreamOpenInputStream = ((App) this.this$0.OooO0Oo()).getContentResolver().openInputStream(this.$uri);
             com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(inputStreamOpenInputStream);
+            android.util.Log.i("P16IMPORT", "content stream opened");
             Reader inputStreamReader = new InputStreamReader(inputStreamOpenInputStream, kotlin.text.OooO00o.f9047OooO00o);
-            return kotlin.io.OooO0O0.OooO00o(inputStreamReader instanceof BufferedReader ? (BufferedReader) inputStreamReader : new BufferedReader(inputStreamReader, 8192));
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader, 8192);
+            try {
+                ArrayList<String> lines = new ArrayList<>(5);
+                for (int i = 0; i < 5; i++) {
+                    String line = bufferedReader.readLine();
+                    if (line == null) {
+                        throw new IllegalStateException("备份文件内容不完整：应包含 5 行，实际只有 " + i + " 行");
+                    }
+                    lines.add(line);
+                    android.util.Log.i("P16IMPORT", "read backup line " + (i + 1) + " chars=" + line.length());
+                }
+                return lines;
+            } finally {
+                bufferedReader.close();
+            }
         } catch (IOException failure) {
             throw codex.recovery.SneakyThrow.rethrow(failure);
         }

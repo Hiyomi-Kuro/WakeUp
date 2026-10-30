@@ -7,7 +7,7 @@ import o00O0OOO.OooO00o;
 public final class o00OO0O0 implements Animator.AnimatorListener {
 
     /* JADX INFO: renamed from: OooO00o, reason: collision with root package name */
-    public final /* synthetic */ int f1889OooO00o = 0;
+    public final /* synthetic */ int f1889OooO00o;
 
     /* JADX INFO: renamed from: OooO0O0, reason: collision with root package name */
     public final /* synthetic */ Object f1890OooO0O0;
@@ -16,6 +16,7 @@ public final class o00OO0O0 implements Animator.AnimatorListener {
     public final /* synthetic */ Object f1891OooO0OO;
 
     public o00OO0O0(OooO00o oooO00o, OooO00o oooO00o2) {
+        this.f1889OooO00o = 1;
         this.f1890OooO0O0 = oooO00o;
         this.f1891OooO0OO = oooO00o2;
     }
@@ -88,6 +89,7 @@ public final class o00OO0O0 implements Animator.AnimatorListener {
     }
 
     public o00OO0O0(oo0O oo0o, o00OO0OO o00oo0oo) {
+        this.f1889OooO00o = 0;
         this.f1891OooO0OO = oo0o;
         this.f1890OooO0O0 = o00oo0oo;
     }

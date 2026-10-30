@@ -1,5 +1,0 @@
-
-    topResumedActivity=ActivityRecord{f5191b6 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3481}
-      topResumedActivity=ActivityRecord{3c2ca5d u0 com.teslacoilsw.launcher/.NovaLauncher t2}
-  ResumedActivity: ActivityRecord{f5191b6 u0 com.kaori.wakeupschedule/.schedule.ScheduleActivity t3481}
-

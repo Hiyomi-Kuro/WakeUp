@@ -1261,34 +1261,34 @@ public class TabLayout extends HorizontalScrollView {
                                     int i6 = i + 1;
                                     sortKey = ((SchoolInfo) it.next()).getSortKey();
                                     num2 = (Integer) map.get(sortKey);
-                                    if (num2 != null) {
+                                    if (num2 != null && num2.intValue() == -1) {
                                         map.put(sortKey, Integer.valueOf(i));
                                     }
                                     i = i6;
                                 }
                                 o0oo000o = schoolListActivity.f8482OoooOo0;
-                                if (o0oo000o != null) {
+                                if (o0oo000o == null) {
                                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                                     throw null;
                                 }
                                 size = ((QuickSideBarView) o0oo000o.f2931OooOOOo).getLetters().size();
                                 for (i2 = 1; i2 < size; i2++) {
                                     o0oo000o2 = schoolListActivity.f8482OoooOo0;
-                                    if (o0oo000o2 != null) {
+                                    if (o0oo000o2 == null) {
                                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                                         throw null;
                                     }
                                     num = (Integer) map.get(((QuickSideBarView) o0oo000o2.f2931OooOOOo).getLetters().get(i2));
-                                    if (num != null) {
+                                    if (num != null && num.intValue() == -1) {
                                         o0oo000o3 = schoolListActivity.f8482OoooOo0;
-                                        if (o0oo000o3 != null) {
+                                        if (o0oo000o3 == null) {
                                             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                                             throw null;
                                         }
                                         str = ((QuickSideBarView) o0oo000o3.f2931OooOOOo).getLetters().get(i2);
                                         com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(str, "get(...)");
                                         o0oo000o4 = schoolListActivity.f8482OoooOo0;
-                                        if (o0oo000o4 != null) {
+                                        if (o0oo000o4 == null) {
                                             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                                             throw null;
                                         }
@@ -1330,7 +1330,7 @@ public class TabLayout extends HorizontalScrollView {
                                 i = i7;
                             }
                             o0oo000o = schoolListActivity.f8482OoooOo0;
-                            if (o0oo000o != null) {
+                            if (o0oo000o == null) {
                                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                                 throw null;
                             }
@@ -1338,21 +1338,21 @@ public class TabLayout extends HorizontalScrollView {
                             i2 = 1;
                             while (i2 < size) {
                                 o0oo000o2 = schoolListActivity.f8482OoooOo0;
-                                if (o0oo000o2 != null) {
+                                if (o0oo000o2 == null) {
                                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                                     throw null;
                                 }
                                 num = (Integer) map.get(((QuickSideBarView) o0oo000o2.f2931OooOOOo).getLetters().get(i2));
                                 if (num != null && num.intValue() == -1) {
                                     o0oo000o3 = schoolListActivity.f8482OoooOo0;
-                                    if (o0oo000o3 != null) {
+                                    if (o0oo000o3 == null) {
                                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                                         throw null;
                                     }
                                     str = ((QuickSideBarView) o0oo000o3.f2931OooOOOo).getLetters().get(i2);
                                     com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(str, "get(...)");
                                     o0oo000o4 = schoolListActivity.f8482OoooOo0;
-                                    if (o0oo000o4 != null) {
+                                    if (o0oo000o4 == null) {
                                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
                                         throw null;
                                     }
@@ -1362,6 +1362,7 @@ public class TabLayout extends HorizontalScrollView {
                                     }
                                     map.put(str, i3);
                                 }
+                                i2++;
                             }
                         }
                         break;

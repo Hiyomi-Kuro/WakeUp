@@ -6,8 +6,10 @@ import biweekly.ICalendar;
 import biweekly.io.TimezoneAssignment;
 import biweekly.io.TimezoneInfo;
 import com.kaori.wakeupschedule.App;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.TimeZone;
 import kotlin.coroutines.intrinsics.CoroutineSingletons;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
@@ -47,13 +49,49 @@ final class ScheduleViewModel$exportICS$4 extends SuspendLambda implements o00O0
         OutputStream outputStreamOpenOutputStream = null;
         try {
             outputStreamOpenOutputStream = ((App) this.this$0.OooO0Oo()).getContentResolver().openOutputStream(this.$uri);
-            Biweekly.write(this.$ical).go(outputStreamOpenOutputStream);
+            ByteArrayOutputStream serialized = new ByteArrayOutputStream();
+            Biweekly.write(this.$ical).go(serialized);
+            outputStreamOpenOutputStream.write(foldIcalLines(serialized.toByteArray()));
             com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOOO(outputStreamOpenOutputStream, null);
             return o00O0O00.OooOO0O.f11387OooO00o;
         } catch (Throwable th) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOOO(outputStreamOpenOutputStream, th);
             throw codex.recovery.SneakyThrow.rethrow(th);
         }
+    }
+
+    /** Re-fold library output by UTF-8 octets so each RFC 5545 content line stays within 75 octets. */
+    private static byte[] foldIcalLines(byte[] serialized) throws IOException {
+        String text = new String(serialized, StandardCharsets.UTF_8)
+                .replace("\r\n ", "")
+                .replace("\r\n\t", "");
+        if (!text.contains("\r\n")) {
+            text = text.replace("\n", "\r\n");
+        }
+        if (text.endsWith("\r\n")) {
+            text = text.substring(0, text.length() - 2);
+        }
+
+        StringBuilder folded = new StringBuilder(text.length() + 256);
+        String[] lines = text.split("\r\n", -1);
+        for (String line : lines) {
+            int offset = 0;
+            int octets = 0;
+            while (offset < line.length()) {
+                int codePoint = line.codePointAt(offset);
+                String value = new String(Character.toChars(codePoint));
+                int valueOctets = value.getBytes(StandardCharsets.UTF_8).length;
+                if (octets + valueOctets > 75) {
+                    folded.append("\r\n ");
+                    octets = 1;
+                }
+                folded.append(value);
+                octets += valueOctets;
+                offset += Character.charCount(codePoint);
+            }
+            folded.append("\r\n");
+        }
+        return folded.toString().getBytes(StandardCharsets.UTF_8);
     }
 
     public final Object invoke(kotlinx.coroutines.o00oO0o o00oo0o, kotlin.coroutines.OooO0o<? super o00O0O00.OooOO0O> oooO0o) {

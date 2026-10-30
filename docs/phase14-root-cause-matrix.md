@@ -1,0 +1,59 @@
+# Phase 14 root-cause matrix
+
+Date: 2026-10-28  
+Project: D:\Download\AndroidStudioProjects\WakeUP
+
+## Gate findings
+
+| Candidate | Evidence | Finding and limit |
+| --- | --- | --- |
+| BottomSheet successful-slide branch | Recovered Java inverted the helper-result check in BottomSheetBehavior.Oooo0oO(View,int,boolean). Smali at smali/smali/com/google/android/material/bottomsheet/BottomSheetBehavior.smali:5851 sends a true helper result to state 2, accessibility updates, and the settling scheduler. The source was corrected. | Confirmed source-recovery defect. |
+| BottomSheet frame continuation | r2 pre-armed JDI trace G1-R2-PREARMED-20261028T0052 recorded the More listener, state 3, a running OverScroller and intermediate sheet positions. Recovered OooO0oo() posted its idle runnable unconditionally after each helper frame, although Smali method OooO0oo()Z at smali/smali/OoooO0.2/o00000O.smali:1350-1531 posts only after computeScrollOffset returns false or the current coordinates reach the final coordinates and the scroller is aborted. That premature post let the helper become idle before the scroller reached its target. The Java continuation now follows those Smali finish conditions. r3 reached stable top 0/state 3, then Back moved it to hide top 1920/state 5 on the same Display. | Confirmed second recovery defect; G1 passes on r3 with both geometry and matching screenshots. The earlier r2 failure is not evidence against the corrected r3 result. |
+| External frame/display failure | G1 r3 used one resolved app window/task/display for the input, JDI geometry, and screenshots. The More input and subsequent Back produced corresponding geometry changes on Display 9; no system-wide frame starvation was observed. | Not supported as the cause of the r3 BottomSheet behavior. This does not establish identical behavior on every MuMu display. |
+| Coroutine label-1 resume omitted | The original live trace showed label 0 suspending in OooOO0o, resuming with TableBean at label 1, and no second DAO query. Smali invokeSuspend at lines 225-319 restores the bean and proceeds to the timetable query. | Confirmed source-recovery defect and fixed. It accounts for incomplete initialization in the original APK, not for any particular real course contents. |
+| Reversed UI null guards | Thirty-two recovered guards threw when the bound UI reference was non-null. Smali uses if-eqz before the missing-UI throw path; representative checks are ScheduleActivity$initView$1.smali:529-540 and :1304-1316. | Confirmed individual control-flow defects and fixed one by one. Conditions were not globally inverted. |
+| Cascade adapter data empty | The actual Cascade adapter had two models. A live method-event trace also recorded two holder creations, two binds, and repeated item-count queries. | Excluded as the direct explanation for the empty popup. Model count and callbacks still do not prove visible rows. |
+| Cascade height/RecyclerView layout | On r3, the actual Cascade popup was 408x8 with a 392x0 flipper and 0x0 RecyclerView, even though the adapter created and bound two rows. A measure-stage trace saw two 392x96 rows and a 392x192 decorated union under EXACTLY-392 / AT_MOST-1912 while the RecyclerView height remained 0. Static source comparison then exposed the mismatch: Smali `o000O.smali:4388`, `GridLayoutManager.smali:4746`, and `StaggeredGridLayoutManager.smali:11335` invoke the synthetic static `RecyclerView.OooO0o0(RecyclerView,int,int)` bridge; `RecyclerView.smali:1520-1524` shows that bridge directly calling `View.setMeasuredDimension`. The recovered Java had instead called instance `RecyclerView.OooOOO(int,int)`, which decodes the selected pixel dimensions as MeasureSpecs and chooses 0 in UNSPECIFIED mode. | Confirmed source-recovery defect, corrected in all three LayoutManagers. r5 DEX preserves the direct bridge calls. On Display 12 the real date popup measured 408x200, the cropped screenshot shows two menu rows, and one Back closed it. G2 PASS; no menu row was tapped. |
+| Date parser | The first fixed-source APK crashed on the displayed date 2024-2-26 because the recovered formatter rejected the unpadded month. The parser now splits and validates the components with LocalDate.of. | Confirmed launch blocker for the earlier artifact and fixed. Focused valid/invalid date tests pass 2/2. The separate Cascade sizing mismatch was subsequently identified and fixed in r5. |
+| Real Pager state | The original APK had initFlag=false and pageAdapter=null after the coroutine failed to proceed. The corrected app reaches ScheduleActivity with its adapter initialized. Course rows were not read. Phase 12’s isolated two-page fixture had already passed bidirectional swipes. | Coroutine recovery is confirmed. Real course page count/content/swipe behavior remains DATA_UNKNOWN; reuse the prior fixture result without claiming real-data behavior. |
+| Build and APK integrity | r5 has 19,758 DEX classes, no diagnostic fixture descriptors, no duplicate descriptors, no missing recovered-source outputs, no active placeholders, all 6,348 original resource IDs with no mismatch, and valid v1/v2 signatures. The installed base.apk hash matches the r5 artifact. | APK packaging and installation checks pass. Normal full-source javac fails with 8,037 recovered-source compile errors, so the full test suite did not run; the separately targeted RecyclerView compile and staged assembly pass. G4 remains PARTIAL. |
+| Other Activity crash | An earlier ActivityManager sample recorded TimeSettingsActivity failing during Navigation layout inflation with a Kotlin sequence ClassCastException; its initiating action is unknown. | Separate, unlinked observation. It was not reproduced or changed as part of these UI gates. |
+
+## Event timeline and display evidence
+
+### G1 — More, stable expansion, and Back on r3
+
+Target: PID 14571, Task 3559, app Activity ScheduleActivity on logical Display 9. The More view bounds were resolved in that live window. Input and screenshots were captured from the same target display.
+
+| UTC | Event |
+| --- | --- |
+| 2026-10-27T16:15:08.239Z | One tap on More at (1032,66). |
+| After 1.4 seconds | Behavior state 3; sheet top 0, bottom 1920, expandedTop 0; helper idle; scroller current/final 0 and finished. The expanded screenshot shows the sheet. |
+| 2026-10-27T16:15:17.509Z | One Back input after the stable expanded state. |
+| After 1.4 seconds | Behavior state 5; sheet top 1920, bottom 3840; helper idle; scroller current/final 1920 and finished. The after-Back screenshot hash equals the pre-tap screenshot hash. |
+
+Raw summary: .tmp/phase14-diagnostics/G1-R3-MORE-20261027T1615.txt. Images: G1-R3-before-display9.png (SHA-256 2CE7A36FF9559E0E3060DBD814C5DE49E70DC2452A0DD4884740F5A4FD2CA0E7), G1-R3-expanded-display9.png (042019A8E4DDB3E826B19585DD8A0FE29226A5816EBA724680F134E7CD3A5799), and G1-R3-afterback-display9.png (same hash as before).
+
+### G2 — Actual Cascade date popup and isolated comparisons
+
+The r3 date label was resolved by ID `0x7f09007e` and listener `ScheduleActivity$14`. On Display 11, one tap at `(139,43)` opened the actual popup in the same ScheduleActivity. WMS reported `[32,16][440,24]` (408x8), with a 392x0 flipper and 0x0 RecyclerView; the adapter trace recorded two creates and two binds. A later measure-stage probe found the positive row union while RecyclerView height was zero. The source-to-Smali call mismatch described above explained the zero: already-selected pixel dimensions were passed to the MeasureSpec-decoding instance helper instead of the direct measured-dimension bridge.
+
+The measure-stage trace is retained as pre-fix runtime evidence: `.tmp/phase14-diagnostics/G2-R3-measure-stages-20261027T1657.txt`. The post-fix r5 validation used PID 16586 / Task 3562 / Display 12. JDI reconfirmed the date label ID/listener/bounds; one tap at `(139,43)` produced a WMS PopupWindow `[32,16]-[440,216]` (408x200). Cropped evidence `.tmp/phase14-diagnostics/screenshots/G2-R5-popup-crop.png` shows two rows. No row was selected; one Back removed the popup and left ScheduleActivity resumed.
+
+Evidence: .tmp/phase14-diagnostics/G2-R3-date-adapter-callbacks.txt, G2-R3-instrumented-date-popup-WMS.txt, G2-R3-instrumented-date-window-tree.txt, G2-R3-instrumented-date-afterback-WMS.txt, and screenshots/G2-R3-instrumented-date-popup-display11.png / G2-R3-instrumented-date-afterback-display11.png. Display 11 mapped to physical port 10, mumuscreen010, unique ID local:4619826876442645002.
+
+The comparison fixture ran in one debug-only Activity on logical Display 10 / physical port 9, Task 3560, with two synthetic safe rows. A: ordinary TextView PopupWindow, visible and measured 440x91. B: static two-row RecyclerView PopupWindow, frame 440x16 but RecyclerView 0x0/zero children. C: Cascade, frame 408x8, flipper 392x0, RecyclerView 0x0/zero children. The fixture source and temporary manifest were removed from app/src/debug after the run; no production probe remains. Screenshots are G2-popup-fixture-A-display10.png, G2-popup-fixture-B-display10.png, and G2-popup-fixture-C-display10.png. Fixture JDI/WMS traces are in .tmp/phase14-diagnostics/G2-popup-fixture-*-JDI.txt and corresponding WMS files.
+
+### G3 — Coroutine and Pager
+
+The original APK trace is in .tmp/phase14-diagnostics/g3-init-lifecycle-trace.txt. The fixed r3 state is in G1-R3-final-collapsed-state.txt: initFlag=true and a non-null pageAdapter were observed after installation. No course rows/text were read; real Pager content is DATA_UNKNOWN. Phase 12's independent double-page fixture remains the only two-page gesture PASS.
+
+### G4 — Build and device packaging
+
+The r5 APK SHA-256 is `58F2C913F7E6D22ADEAFE7078D5C2C3D121EEEE936D3D526962E7BCC10C08DF4`; a read-only pull of installed `base.apk` has the same hash. Package/version are `com.kaori.wakeupschedule`, 247 / 6.0.06; v1/v2 signatures verify with signer SHA-256 `b8849d6e0146f3fa8c95e5911f444372b6693162142e1aa93d1700a2da3be088`. `firstInstallTime` remained `2026-10-20 23:55:07`. Root and standard Gradle APK paths remain at baseline SHA-256 `EAD4D9EFF8C98AC1DC0D97FE6009E04635E2A64B900ED953541CC50446B9ED69`. The staged APK assembly reused canonical project outputs and overlaid the successful targeted compile because full-source javac currently reports 8,037 errors.
+
+## Upstream references and unresolved scope
+
+The project pins Material Components 1.10.0, RecyclerView 1.2.1, and ViewPager2 1.0.0. References: [Material Components 1.10.0 BottomSheetBehavior](https://github.com/material-components/material-components-android/blob/1.10.0/lib/java/com/google/android/material/bottomsheet/BottomSheetBehavior.java), [AndroidX RecyclerView source](https://android.googlesource.com/platform/frameworks/support/%2B/f2e05c341382db64d127118a13451dcaa554b702/recyclerview/recyclerview/src/main/java/androidx/recyclerview/widget/RecyclerView.java), [AndroidX ViewPager2 source](https://android.googlesource.com/platform/frameworks/support/%2B/f2e05c341382db64d127118a13451dcaa554b702/viewpager2/viewpager2/src/main/java/androidx/viewpager2/widget/ViewPager2.java), and the [official Cascade repository](https://github.com/saket/cascade). Cascade is vendored and its exact upstream tag is unknown. These are API/control-flow checks, not replacement sources; Smali remains the authority for recovered behavior.
+
+G2 is complete for the requested Cascade behavior. G3 remains partial because real Pager page count, course content, and swipe behavior are `DATA_UNKNOWN`; no timetable entries were inspected. G4 remains partial because full-source compilation has 8,037 errors in the recovered source/type state, preventing the full test suite from starting. The targeted AndroidX compile, staged assembly, APK audit, signature verification, in-place install, and r5 UI validation passed.

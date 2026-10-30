@@ -9,20 +9,22 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 @o00O0O0O.OooO0OO(c = "com.kaori.wakeupschedule.schedule.ScheduleActivity$initView$1", f = "ScheduleActivity.kt", l = {1083, 1084, 1122}, m = "invokeSuspend")
 final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OOO.o0OoOo0 {
     final /* synthetic */ int $tableId;
+    final /* synthetic */ int $preferredWeek;
     Object L$0;
     int label;
     final /* synthetic */ ScheduleActivity this$0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ScheduleActivity$initView$1(ScheduleActivity scheduleActivity, int i, kotlin.coroutines.OooO0o<?> oooO0o) {
+    public ScheduleActivity$initView$1(ScheduleActivity scheduleActivity, int i, int preferredWeek, kotlin.coroutines.OooO0o<?> oooO0o) {
         super(2, oooO0o);
         this.this$0 = scheduleActivity;
         this.$tableId = i;
+        this.$preferredWeek = preferredWeek;
     }
 
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final kotlin.coroutines.OooO0o<o00O0O00.OooOO0O> create(Object obj, kotlin.coroutines.OooO0o<?> oooO0o) {
-        return (kotlin.coroutines.OooO0o) (new ScheduleActivity$initView$1(this.this$0, this.$tableId, oooO0o));
+        return (kotlin.coroutines.OooO0o) (new ScheduleActivity$initView$1(this.this$0, this.$tableId, this.$preferredWeek, oooO0o));
     }
 
     /* JADX WARN: Code duplicated, block: B:101:0x02a0  */
@@ -111,6 +113,19 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
             if (i == 1) {
                 o00000oOooOoO0 = (o00000O) this.L$0;
                 kotlin.OooO0O0.OooO0O0(obj);
+                TableBean resumedTable = (TableBean) obj;
+                o00000oOooOoO0.getClass();
+                com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(resumedTable, "<set-?>");
+                o00000oOooOoO0.f8262OooO = resumedTable;
+                o00000O resumedViewModel = this.this$0.OooOoO0();
+                int resumedTimeTable = this.this$0.OooOoO0().OooOO0O().getTimeTable();
+                this.L$0 = resumedViewModel;
+                this.label = 2;
+                obj = ((com.kaori.wakeupschedule.dao.o0O0O00) resumedViewModel.f8266OooO0oo).OooO00o(resumedTimeTable, this);
+                if (obj == coroutineSingletons) {
+                    return coroutineSingletons;
+                }
+                return invokeSuspend(obj);
             } else if (i == 2) {
                 o00000oOooOoO1 = (o00000O) this.L$0;
                 kotlin.OooO0O0.OooO0O0(obj);
@@ -120,11 +135,17 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
                 o00000oOooOoO1.f8268OooOO0O = list;
                 ScheduleActivity scheduleActivity9 = this.this$0;
                 scheduleActivity9.f8240OoooO0 = true;
-                scheduleActivity9.OooOoO0().f8270OooOOO = com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(this.this$0.OooOoO0().OooOOO0().getStartDate(), false, 30);
-                this.this$0.OooOoO0().f8269OooOO0o = this.this$0.OooOoO0().f8270OooOOO;
+                int currentWeek = com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(this.this$0.OooOoO0().OooOOO0().getStartDate(), false, 30);
+                int maxWeekForRefresh = this.this$0.OooOoO0().OooOOO0().getMaxWeek();
+                int selectedWeekForRefresh = currentWeek;
+                if (this.$preferredWeek > 0 && maxWeekForRefresh > 0) {
+                    selectedWeekForRefresh = Math.min(this.$preferredWeek, maxWeekForRefresh);
+                }
+                scheduleActivity9.OooOoO0().f8270OooOOO = currentWeek;
+                this.this$0.OooOoO0().f8269OooOO0o = selectedWeekForRefresh;
                 scheduleActivity = this.this$0;
                 oo0o0oo = scheduleActivity.f8236Oooo;
-                if (oo0o0oo != null) {
+                if (oo0o0oo == null) {
                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                     throw null;
                 }
@@ -132,14 +153,14 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
                 if (this.this$0.OooOoO0().f8270OooOOO > 0) {
                     scheduleActivity2 = this.this$0;
                     oo0o0oo2 = scheduleActivity2.f8236Oooo;
-                    if (oo0o0oo2 != null) {
+                    if (oo0o0oo2 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
                     oo0o0oo2.f8323OooO0o.setText(scheduleActivity2.getString(com.kaori.wakeupschedule.R.string.week_num, new Integer(1)));
                     scheduleActivity3 = this.this$0;
                     oo0o0oo3 = scheduleActivity3.f8236Oooo;
-                    if (oo0o0oo3 != null) {
+                    if (oo0o0oo3 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
@@ -147,7 +168,7 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
                 } else if (this.this$0.OooOoO0().f8270OooOOO <= this.this$0.OooOoO0().OooOOO0().getMaxWeek()) {
                     scheduleActivity8 = this.this$0;
                     oo0o0oo16 = scheduleActivity8.f8236Oooo;
-                    if (oo0o0oo16 != null) {
+                    if (oo0o0oo16 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
@@ -155,14 +176,14 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
                 } else {
                     scheduleActivity7 = this.this$0;
                     oo0o0oo15 = scheduleActivity7.f8236Oooo;
-                    if (oo0o0oo15 != null) {
+                    if (oo0o0oo15 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
                     oo0o0oo15.f8325OooO0oO.setText(scheduleActivity7.getString(com.kaori.wakeupschedule.R.string.semester_ended));
                 }
                 oo0o0oo4 = this.this$0.f8236Oooo;
-                if (oo0o0oo4 != null) {
+                if (oo0o0oo4 == null) {
                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                     throw null;
                 }
@@ -171,26 +192,26 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
                 if (this.this$0.OooOoO0().OooOOO0().getMaxWeek() > 1) {
                     scheduleActivity6 = this.this$0;
                     oo0o0oo13 = scheduleActivity6.f8236Oooo;
-                    if (oo0o0oo13 != null) {
+                    if (oo0o0oo13 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
                     oo0o0oo13.f8335OooOOo0.setValueTo(scheduleActivity6.OooOoO0().OooOOO0().getMaxWeek());
                     oo0o0oo14 = this.this$0.f8236Oooo;
-                    if (oo0o0oo14 != null) {
+                    if (oo0o0oo14 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
                     oo0o0oo14.f8335OooOOo0.setValueFrom(1.0f);
                 } else {
                     oo0o0oo5 = this.this$0.f8236Oooo;
-                    if (oo0o0oo5 != null) {
+                    if (oo0o0oo5 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
                     oo0o0oo5.f8335OooOOo0.setValueFrom(0.0f);
                     oo0o0oo6 = this.this$0.f8236Oooo;
-                    if (oo0o0oo6 != null) {
+                    if (oo0o0oo6 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
@@ -198,15 +219,15 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
                 }
                 scheduleActivity4 = this.this$0;
                 oo0o0oo7 = scheduleActivity4.f8236Oooo;
-                if (oo0o0oo7 != null) {
+                if (oo0o0oo7 == null) {
                     com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                     throw null;
                 }
-                if (scheduleActivity4.OooOoO0().f8270OooOOO >= 1) {
-                    if (this.this$0.OooOoO0().f8270OooOOO > this.this$0.OooOoO0().OooOOO0().getMaxWeek()) {
+                if (scheduleActivity4.OooOoO0().f8269OooOO0o >= 1) {
+                    if (this.this$0.OooOoO0().f8269OooOO0o > this.this$0.OooOoO0().OooOOO0().getMaxWeek()) {
                         maxWeek = this.this$0.OooOoO0().OooOOO0().getMaxWeek();
                     } else {
-                        maxWeek = this.this$0.OooOoO0().f8270OooOOO;
+                        maxWeek = this.this$0.OooOoO0().f8269OooOO0o;
                     }
                     f = maxWeek;
                 }
@@ -242,34 +263,38 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
                     });
                     scheduleActivity5.f8238Oooo0oo = o000ooo2;
                     oo0o0oo11 = scheduleActivity5.f8236Oooo;
-                    if (oo0o0oo11 != null) {
+                    if (oo0o0oo11 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
                     oo0o0oo11.f8321OooO0OO.setAdapter(o000ooo2);
                     oo0o0oo12 = scheduleActivity5.f8236Oooo;
-                    if (oo0o0oo12 != null) {
+                    if (oo0o0oo12 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
                     oo0o0oo12.f8321OooO0OO.setOffscreenPageLimit(1);
                 }
-                if (com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(tableConfigOooOOO0.getStartDate(), false, 30) > 0) {
+                int pageWeekForRefresh = com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(tableConfigOooOOO0.getStartDate(), false, 30);
+                if (this.$preferredWeek > 0 && tableConfigOooOOO0.getMaxWeek() > 0) {
+                    pageWeekForRefresh = Math.min(this.$preferredWeek, tableConfigOooOOO0.getMaxWeek());
+                }
+                if (pageWeekForRefresh > 0) {
                     oo0o0oo10 = scheduleActivity5.f8236Oooo;
-                    if (oo0o0oo10 != null) {
+                    if (oo0o0oo10 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
-                    oo0o0oo10.f8321OooO0OO.OooO0OO(com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(tableConfigOooOOO0.getStartDate(), false, 30) - 1, false);
+                    oo0o0oo10.f8321OooO0OO.OooO0OO(pageWeekForRefresh - 1, false);
                 } else {
                     oo0o0oo8 = scheduleActivity5.f8236Oooo;
-                    if (oo0o0oo8 != null) {
+                    if (oo0o0oo8 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
                     oo0o0oo8.f8321OooO0OO.OooO0OO(0, false);
                     oo0o0oo9 = scheduleActivity5.f8236Oooo;
-                    if (oo0o0oo9 != null) {
+                    if (oo0o0oo9 == null) {
                         com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                         throw null;
                     }
@@ -323,11 +348,17 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
         o00000oOooOoO1.f8268OooOO0O = list2;
         ScheduleActivity scheduleActivity12 = this.this$0;
         scheduleActivity12.f8240OoooO0 = true;
-        scheduleActivity12.OooOoO0().f8270OooOOO = com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(this.this$0.OooOoO0().OooOOO0().getStartDate(), false, 30);
-        this.this$0.OooOoO0().f8269OooOO0o = this.this$0.OooOoO0().f8270OooOOO;
+                int currentWeek2 = com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(this.this$0.OooOoO0().OooOOO0().getStartDate(), false, 30);
+                int maxWeekForRefresh2 = this.this$0.OooOoO0().OooOOO0().getMaxWeek();
+                int selectedWeekForRefresh2 = currentWeek2;
+                if (this.$preferredWeek > 0 && maxWeekForRefresh2 > 0) {
+                    selectedWeekForRefresh2 = Math.min(this.$preferredWeek, maxWeekForRefresh2);
+                }
+                scheduleActivity12.OooOoO0().f8270OooOOO = currentWeek2;
+        this.this$0.OooOoO0().f8269OooOO0o = selectedWeekForRefresh2;
         scheduleActivity = this.this$0;
         oo0o0oo = scheduleActivity.f8236Oooo;
-        if (oo0o0oo != null) {
+        if (oo0o0oo == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
             throw null;
         }
@@ -335,14 +366,14 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
         if (this.this$0.OooOoO0().f8270OooOOO > 0) {
             scheduleActivity2 = this.this$0;
             oo0o0oo2 = scheduleActivity2.f8236Oooo;
-            if (oo0o0oo2 != null) {
+            if (oo0o0oo2 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
             oo0o0oo2.f8323OooO0o.setText(scheduleActivity2.getString(com.kaori.wakeupschedule.R.string.week_num, new Integer(1)));
             scheduleActivity3 = this.this$0;
             oo0o0oo3 = scheduleActivity3.f8236Oooo;
-            if (oo0o0oo3 != null) {
+            if (oo0o0oo3 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
@@ -350,7 +381,7 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
         } else if (this.this$0.OooOoO0().f8270OooOOO <= this.this$0.OooOoO0().OooOOO0().getMaxWeek()) {
             scheduleActivity8 = this.this$0;
             oo0o0oo16 = scheduleActivity8.f8236Oooo;
-            if (oo0o0oo16 != null) {
+            if (oo0o0oo16 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
@@ -358,14 +389,14 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
         } else {
             scheduleActivity7 = this.this$0;
             oo0o0oo15 = scheduleActivity7.f8236Oooo;
-            if (oo0o0oo15 != null) {
+            if (oo0o0oo15 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
             oo0o0oo15.f8325OooO0oO.setText(scheduleActivity7.getString(com.kaori.wakeupschedule.R.string.semester_ended));
         }
         oo0o0oo4 = this.this$0.f8236Oooo;
-        if (oo0o0oo4 != null) {
+        if (oo0o0oo4 == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
             throw null;
         }
@@ -374,26 +405,26 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
         if (this.this$0.OooOoO0().OooOOO0().getMaxWeek() > 1) {
             scheduleActivity6 = this.this$0;
             oo0o0oo13 = scheduleActivity6.f8236Oooo;
-            if (oo0o0oo13 != null) {
+            if (oo0o0oo13 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
             oo0o0oo13.f8335OooOOo0.setValueTo(scheduleActivity6.OooOoO0().OooOOO0().getMaxWeek());
             oo0o0oo14 = this.this$0.f8236Oooo;
-            if (oo0o0oo14 != null) {
+            if (oo0o0oo14 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
             oo0o0oo14.f8335OooOOo0.setValueFrom(1.0f);
         } else {
             oo0o0oo5 = this.this$0.f8236Oooo;
-            if (oo0o0oo5 != null) {
+            if (oo0o0oo5 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
             oo0o0oo5.f8335OooOOo0.setValueFrom(0.0f);
             oo0o0oo6 = this.this$0.f8236Oooo;
-            if (oo0o0oo6 != null) {
+            if (oo0o0oo6 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
@@ -401,15 +432,15 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
         }
         scheduleActivity4 = this.this$0;
         oo0o0oo7 = scheduleActivity4.f8236Oooo;
-        if (oo0o0oo7 != null) {
+        if (oo0o0oo7 == null) {
             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
             throw null;
         }
-        if (scheduleActivity4.OooOoO0().f8270OooOOO >= 1) {
-            if (this.this$0.OooOoO0().f8270OooOOO > this.this$0.OooOoO0().OooOOO0().getMaxWeek()) {
+        if (scheduleActivity4.OooOoO0().f8269OooOO0o >= 1) {
+            if (this.this$0.OooOoO0().f8269OooOO0o > this.this$0.OooOoO0().OooOOO0().getMaxWeek()) {
                 maxWeek = this.this$0.OooOoO0().OooOOO0().getMaxWeek();
             } else {
-                maxWeek = this.this$0.OooOoO0().f8270OooOOO;
+                maxWeek = this.this$0.OooOoO0().f8269OooOO0o;
             }
             f = maxWeek;
         }
@@ -445,34 +476,38 @@ final class ScheduleActivity$initView$1 extends SuspendLambda implements o00O0OO
             });
             scheduleActivity5.f8238Oooo0oo = o000ooo2;
             oo0o0oo11 = scheduleActivity5.f8236Oooo;
-            if (oo0o0oo11 != null) {
+            if (oo0o0oo11 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
             oo0o0oo11.f8321OooO0OO.setAdapter(o000ooo2);
             oo0o0oo12 = scheduleActivity5.f8236Oooo;
-            if (oo0o0oo12 != null) {
+            if (oo0o0oo12 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
             oo0o0oo12.f8321OooO0OO.setOffscreenPageLimit(1);
         }
-        if (com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(tableConfigOooOOO0.getStartDate(), false, 30) > 0) {
+        int pageWeekForRefresh2 = com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(tableConfigOooOOO0.getStartDate(), false, 30);
+        if (this.$preferredWeek > 0 && tableConfigOooOOO0.getMaxWeek() > 0) {
+            pageWeekForRefresh2 = Math.min(this.$preferredWeek, tableConfigOooOOO0.getMaxWeek());
+        }
+        if (pageWeekForRefresh2 > 0) {
             oo0o0oo10 = scheduleActivity5.f8236Oooo;
-            if (oo0o0oo10 != null) {
+            if (oo0o0oo10 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
-            oo0o0oo10.f8321OooO0OO.OooO0OO(com.kaori.wakeupschedule.utils.OooO0OO.OooO0o(tableConfigOooOOO0.getStartDate(), false, 30) - 1, false);
+            oo0o0oo10.f8321OooO0OO.OooO0OO(pageWeekForRefresh2 - 1, false);
         } else {
             oo0o0oo8 = scheduleActivity5.f8236Oooo;
-            if (oo0o0oo8 != null) {
+            if (oo0o0oo8 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }
             oo0o0oo8.f8321OooO0OO.OooO0OO(0, false);
             oo0o0oo9 = scheduleActivity5.f8236Oooo;
-            if (oo0o0oo9 != null) {
+            if (oo0o0oo9 == null) {
                 com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                 throw null;
             }

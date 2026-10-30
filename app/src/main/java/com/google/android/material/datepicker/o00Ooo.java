@@ -26,7 +26,6 @@ import com.kaori.wakeupschedule.schedule_manage.CourseManageFragment;
 import com.kaori.wakeupschedule.schedule_manage.ScheduleManageFragment;
 import com.kaori.wakeupschedule.widget.EditDetailFragment;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public final /* synthetic */ class o00Ooo implements View.OnClickListener {
 
@@ -188,19 +187,8 @@ public final /* synthetic */ class o00Ooo implements View.OnClickListener {
                             ((CourseEditBean) addCourseActivity.OooOoO0().f7982OooO0o0.get(i13)).setTeacher(string);
                             ArrayList arrayList = addCourseActivity.OooOoO0().f7983OooO0oO;
                             com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(arrayList);
-                            if (arrayList.isEmpty()) {
-                                ArrayList arrayList2 = addCourseActivity.OooOoO0().f7983OooO0oO;
-                                com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(arrayList2);
-                                arrayList2.add(string);
-                            } else {
-                                Iterator it = arrayList.iterator();
-                                do {
-                                    if (!it.hasNext()) {
-                                        ArrayList arrayList3 = addCourseActivity.OooOoO0().f7983OooO0oO;
-                                        com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(arrayList3);
-                                        arrayList3.add(string);
-                                    }
-                                } while (!com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo((String) it.next(), string));
+                            if (!arrayList.contains(string)) {
+                                arrayList.add(string);
                             }
                             com.kaori.wakeupschedule.course_add.OooOo oooOo = addCourseActivity.f7979OoooOO0;
                             if (oooOo == null) {
@@ -216,19 +204,8 @@ public final /* synthetic */ class o00Ooo implements View.OnClickListener {
                             ((CourseEditBean) addCourseActivity.OooOoO0().f7982OooO0o0.get(i13)).setRoom(string2);
                             ArrayList arrayList4 = addCourseActivity.OooOoO0().f7984OooO0oo;
                             com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(arrayList4);
-                            if (arrayList4.isEmpty()) {
-                                ArrayList arrayList5 = addCourseActivity.OooOoO0().f7984OooO0oo;
-                                com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(arrayList5);
-                                arrayList5.add(string2);
-                            } else {
-                                Iterator it2 = arrayList4.iterator();
-                                do {
-                                    if (!it2.hasNext()) {
-                                        ArrayList arrayList6 = addCourseActivity.OooOoO0().f7984OooO0oo;
-                                        com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(arrayList6);
-                                        arrayList6.add(string2);
-                                    }
-                                } while (!com.github.doyaaaaaken.kotlincsv.client.OooO.OooO0Oo((String) it2.next(), string2));
+                            if (!arrayList4.contains(string2)) {
+                                arrayList4.add(string2);
                             }
                             com.kaori.wakeupschedule.course_add.OooOo oooOo2 = addCourseActivity.f7979OoooOO0;
                             if (oooOo2 == null) {

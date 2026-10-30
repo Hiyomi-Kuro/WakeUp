@@ -1,6 +1,0 @@
-Starting: Intent { cmp=com.kaori.wakeupschedule/.SplashActivity }
-Status: ok
-LaunchState: UNKNOWN (0)
-Activity: com.kaori.wakeupschedule/.SplashActivity
-WaitTime: 960
-Complete

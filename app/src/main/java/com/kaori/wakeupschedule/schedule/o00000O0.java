@@ -17,6 +17,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.fragment.app.FragmentActivity;
 import com.huawei.hms.framework.common.NetworkUtil;
 import com.kaori.wakeupschedule.bean.CourseBean;
@@ -83,6 +84,22 @@ public final class o00000O0 {
 
     /* JADX INFO: renamed from: OooOOo0, reason: collision with root package name */
     public final ConstraintLayout f8288OooOOo0;
+
+    private static int[] addColumnGuidelines(ConstraintLayout parent, int columnCount) {
+        int[] boundaries = new int[columnCount + 1];
+        float totalWeight = 0.64f + (columnCount - 1);
+        for (int boundary = 1; boundary < columnCount; boundary++) {
+            Guideline guideline = new Guideline(parent.getContext());
+            int id = View.generateViewId();
+            guideline.setId(id);
+            ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(0, 0);
+            params.f3415o000oOoO = 1;
+            parent.addView(guideline, params);
+            guideline.setGuidelinePercent((0.64f + (boundary - 1)) / totalWeight);
+            boundaries[boundary] = id;
+        }
+        return boundaries;
+    }
 
     public o00000O0(Context context, TableConfig tableConfig, ScheduleStyleConfig scheduleStyleConfig, boolean z, o00O0OOO.OooO00o oooO00o, int i) {
         float f;
@@ -157,6 +174,8 @@ public final class o00000O0 {
         ConstraintLayout constraintLayout = new ConstraintLayout(this.f8273OooO00o);
         constraintLayout.setId(com.kaori.wakeupschedule.R.id.anko_cl_content_panel);
         constraintLayout.setMotionEventSplittingEnabled(false);
+        constraintLayout.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+        int[] contentColumnBoundaries = addColumnGuidelines(constraintLayout, this.f8277OooO0o);
         int i7 = this.f8277OooO0o;
         float f7 = i7 != 6 ? i7 != 7 ? 10.0f : 11.0f : 12.0f;
         int nodes = this.f8274OooO0O0.getNodes();
@@ -194,9 +213,8 @@ public final class o00000O0 {
                 }
                 ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(0, this.f8280OooO0oo);
                 ((ViewGroup.MarginLayoutParams) layoutParams).topMargin = this.f8279OooO0oO;
-                layoutParams.f3374OooOo0 = com.kaori.wakeupschedule.R.id.anko_ll_week_panel_0;
-                layoutParams.f3389Oooo00o = 0.64f;
                 layoutParams.f3375OooOo00 = 0;
+                layoutParams.f3374OooOo0 = contentColumnBoundaries[1];
                 if (i12 == 1) {
                     layoutParams.f3364OooOO0O = i13;
                     layoutParams.f3354OooO = 0;
@@ -245,7 +263,7 @@ public final class o00000O0 {
             ConstraintLayout.LayoutParams layoutParams3 = new ConstraintLayout.LayoutParams(0, 0);
             layoutParams3.f3354OooO = 0;
             layoutParams3.f3365OooOO0o = this.f8274OooO0O0.getNodes() + com.kaori.wakeupschedule.R.id.anko_tv_description;
-            layoutParams3.f3372OooOOoo = com.kaori.wakeupschedule.R.id.anko_tv_node1;
+            layoutParams3.f3372OooOOoo = contentColumnBoundaries[1];
             layoutParams3.f3376OooOo0O = 0;
             if (!this.f8276OooO0Oo) {
                 if (this.f8277OooO0o < 8) {
@@ -273,18 +291,25 @@ public final class o00000O0 {
             frameLayout.setId(i15 + i8);
             frameLayout.setMotionEventSplittingEnabled(false);
             ConstraintLayout.LayoutParams layoutParams4 = new ConstraintLayout.LayoutParams(0, 0);
-            layoutParams4.f3389Oooo00o = 1.0f;
             layoutParams4.f3354OooO = 0;
             layoutParams4.f3365OooOO0o = this.f8274OooO0O0.getNodes() + com.kaori.wakeupschedule.R.id.anko_tv_description;
+            int leftBoundary = contentColumnBoundaries[i15 + 1];
+            int rightBoundary = contentColumnBoundaries[i15 + 2];
+            if (leftBoundary == 0) {
+                layoutParams4.f3375OooOo00 = 0;
+            } else {
+                layoutParams4.f3372OooOOoo = leftBoundary;
+            }
+            if (rightBoundary == 0) {
+                layoutParams4.f3376OooOo0O = 0;
+            } else {
+                layoutParams4.f3374OooOo0 = rightBoundary;
+            }
             if (i15 == 0) {
-                layoutParams4.f3372OooOOoo = com.kaori.wakeupschedule.R.id.anko_tv_node1;
-                layoutParams4.f3374OooOo0 = com.kaori.wakeupschedule.R.id.anko_ll_week_panel_1 + i15;
                 Context context7 = constraintLayout.getContext();
                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context7, "getContext(...)");
                 layoutParams4.setMarginEnd((int) (1 * context7.getResources().getDisplayMetrics().density));
             } else if (i15 == this.f8277OooO0o - 2) {
-                layoutParams4.f3372OooOOoo = i15 + com.kaori.wakeupschedule.R.id.anko_layout;
-                layoutParams4.f3376OooOo0O = 0;
                 Context context8 = constraintLayout.getContext();
                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context8, "getContext(...)");
                 layoutParams4.setMarginStart((int) (1 * context8.getResources().getDisplayMetrics().density));
@@ -303,8 +328,6 @@ public final class o00000O0 {
                     layoutParams4.setMarginEnd((int) (f2 * f3));
                 }
             } else {
-                layoutParams4.f3372OooOOoo = i15 + com.kaori.wakeupschedule.R.id.anko_layout;
-                layoutParams4.f3374OooOo0 = com.kaori.wakeupschedule.R.id.anko_ll_week_panel_1 + i15;
                 Context context11 = constraintLayout.getContext();
                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context11, "getContext(...)");
                 float f8 = 1;
@@ -327,6 +350,8 @@ public final class o00000O0 {
         scrollView.addView(constraintLayout);
         this.f8287OooOOOo = scrollView;
         ConstraintLayout constraintLayout2 = new ConstraintLayout(this.f8273OooO00o);
+        constraintLayout2.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+        int[] headerColumnBoundaries = addColumnGuidelines(constraintLayout2, this.f8277OooO0o);
         int i16 = this.f8277OooO0o;
         int i17 = 0;
         while (i17 < i16) {
@@ -353,16 +378,22 @@ public final class o00000O0 {
                 textView4.setTextColor(this.f8281OooOO0);
             }
             ConstraintLayout.LayoutParams layoutParams5 = new ConstraintLayout.LayoutParams(0, i11);
-            if (i17 == 0) {
-                layoutParams5.f3389Oooo00o = 0.64f;
+            int headerLeftBoundary = headerColumnBoundaries[i17];
+            int headerRightBoundary = headerColumnBoundaries[i17 + 1];
+            if (headerLeftBoundary == 0) {
                 layoutParams5.f3375OooOo00 = 0;
+            } else {
+                layoutParams5.f3372OooOOoo = headerLeftBoundary;
+            }
+            if (headerRightBoundary == 0) {
+                layoutParams5.f3376OooOo0O = 0;
+            } else {
+                layoutParams5.f3374OooOo0 = headerRightBoundary;
+            }
+            if (i17 == 0) {
                 layoutParams5.f3354OooO = com.kaori.wakeupschedule.R.id.anko_tv_title1;
                 layoutParams5.f3365OooOO0o = com.kaori.wakeupschedule.R.id.anko_tv_title1;
-                layoutParams5.f3374OooOo0 = com.kaori.wakeupschedule.R.id.anko_tv_title0_1 + i17;
             } else if (i17 == this.f8277OooO0o - 1) {
-                layoutParams5.f3389Oooo00o = 1.0f;
-                layoutParams5.f3372OooOOoo = i17 + com.kaori.wakeupschedule.R.id.anko_tv_prefix;
-                layoutParams5.f3376OooOo0O = 0;
                 Context context16 = constraintLayout2.getContext();
                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context16, "getContext(...)");
                 layoutParams5.setMarginStart((int) (1 * context16.getResources().getDisplayMetrics().density));
@@ -378,9 +409,6 @@ public final class o00000O0 {
                     layoutParams5.setMarginEnd((int) (f9 * f));
                 }
             } else {
-                layoutParams5.f3389Oooo00o = 1.0f;
-                layoutParams5.f3372OooOOoo = i17 + com.kaori.wakeupschedule.R.id.anko_tv_prefix;
-                layoutParams5.f3374OooOo0 = com.kaori.wakeupschedule.R.id.anko_tv_title0_1 + i17;
                 if (i17 != 1) {
                     Context context18 = constraintLayout2.getContext();
                     com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0o(context18, "getContext(...)");

@@ -57,8 +57,16 @@ public final /* synthetic */ class o0ooOOo implements o00OOO0O, o0000Oo0.o000oOo
             case 4:
                 int i4 = ScheduleActivity.f8235OooooO0;
                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(scheduleActivity, "this$0");
-                if (((ActivityResult) obj).f2010OooOO0o == -1) {
-                    scheduleActivity.OooOoOO();
+                ActivityResult settingsResult = (ActivityResult) obj;
+                if (settingsResult.f2010OooOO0o == -1) {
+                    int selectedWeek = scheduleActivity.selectedWeekBeforeTimeSettings;
+                    scheduleActivity.selectedWeekBeforeTimeSettings = 0;
+                    if (selectedWeek > 0) {
+                        scheduleActivity.OooOoOO(selectedWeek);
+                        scheduleActivity.applyRestoredSelectedWeek(selectedWeek, 0);
+                    } else {
+                        scheduleActivity.OooOoOO();
+                    }
                     return;
                 }
                 return;

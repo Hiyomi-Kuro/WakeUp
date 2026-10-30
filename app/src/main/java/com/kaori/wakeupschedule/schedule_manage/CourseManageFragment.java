@@ -51,7 +51,13 @@ public final class CourseManageFragment extends com.kaori.wakeupschedule.base_vi
         @Override // o00O0OOO.OooO00o
         public final TableConfig invoke() {
             Bundle bundle = CourseManageFragment.this.f4020OooOOo0;
-            if (bundle == null) {
+            if (bundle == null || !bundle.containsKey("selectedTableId")) {
+                Bundle intentExtras = CourseManageFragment.this.Oooo0OO().getIntent().getExtras();
+                if (intentExtras != null && intentExtras.containsKey("selectedTableId")) {
+                    bundle = intentExtras;
+                }
+            }
+            if (bundle == null || !bundle.containsKey("selectedTableId")) {
                 return null;
             }
             return new TableConfig(CourseManageFragment.this.Oooo0o(), bundle.getInt("selectedTableId"));

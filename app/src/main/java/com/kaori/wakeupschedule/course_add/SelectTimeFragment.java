@@ -512,6 +512,21 @@ public final class SelectTimeFragment extends androidx.fragment.app.OooO0OO {
                                             default:
                                                 int i8 = SelectTimeFragment.f8042o00000;
                                                 com.github.doyaaaaaken.kotlincsv.client.OooO.OooOOO0(selectTimeFragment, "this$0");
+                                                androidx.appcompat.widget.o0Oo0oo binding = selectTimeFragment.f8046o000OOo;
+                                                if (binding == null) {
+                                                    com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("binding");
+                                                    throw null;
+                                                }
+                                                NumberPickerView dayPicker = (NumberPickerView) binding.f2951OooOOOo;
+                                                NumberPickerView startPicker = (NumberPickerView) binding.f2952OooOOo;
+                                                NumberPickerView endPicker = (NumberPickerView) binding.f2953OooOOo0;
+                                                selectTimeFragment.f8043o000000 = dayPicker.getValue() + 1;
+                                                selectTimeFragment.f8044o000000O = startPicker.getValue() + 1;
+                                                selectTimeFragment.f8045o000000o = endPicker.getValue() + 1;
+                                                if (selectTimeFragment.f8045o000000o < selectTimeFragment.f8044o000000O) {
+                                                    selectTimeFragment.f8045o000000o = selectTimeFragment.f8044o000000O;
+                                                    endPicker.setValue(selectTimeFragment.f8045o000000o - 1);
+                                                }
                                                 ((CourseEditBean) selectTimeFragment.Ooooo00().f7982OooO0o0.get(selectTimeFragment.f8049o0OOO0o)).getTime().OooO0oO(new TimeBean(selectTimeFragment.f8043o000000, selectTimeFragment.f8044o000000O, selectTimeFragment.f8045o000000o));
                                                 selectTimeFragment.OoooO(false, false);
                                                 break;

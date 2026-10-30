@@ -1,8 +1,0 @@
-
-    versionCode=247 minSdk=21 targetSdk=34
-    versionName=6.0.06
-    dataDir=/data/user/0/com.kaori.wakeupschedule
-    firstInstallTime=2026-10-20 23:55:07
-    lastUpdateTime=2026-10-21 00:29:19
-    User 0: ceDataInode=4461904 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
-

@@ -223,6 +223,8 @@ public final class OooO0o implements OooOOO, o0000OO.OooO0O0 {
     }
 
     public final void OooO0oO() {
+        OooOo key;
+        ArrayList<o0OoOo0> callbacks;
         synchronized (this) {
             try {
                 this.f5791OooOOO0.OooO00o();
@@ -237,23 +239,27 @@ public final class OooO0o implements OooOOO, o0000OO.OooO0O0 {
                     throw new IllegalStateException("Already failed once");
                 }
                 this.f5810Oooo000 = true;
-                OooOo oooOo = this.f5801OooOo0o;
+                key = this.f5801OooOo0o;
                 o00O0O o00o0o = this.f5789OooOO0o;
                 o00o0o.getClass();
-                ArrayList<o0OoOo0> arrayList = new ArrayList(o00o0o.f9588OooOO0o);
-                OooO0o0(arrayList.size() + 1);
-                ((o00000O0.o000oOoO) this.f5795OooOOo0).OooO0Oo(this, oooOo, null);
-                for (o0OoOo0 o0oooo0 : arrayList) {
-                    o0oooo0.f9624OooO0O0.execute(new OooO0OO(this, o0oooo0.f9623OooO00o, 0));
-                }
-                OooO0Oo();
+                callbacks = new ArrayList(o00o0o.f9588OooOO0o);
+                OooO0o0(callbacks.size() + 1);
             } catch (Throwable th) {
                 throw th;
             }
         }
+        // Match the original Smali lock order: notify Engine after releasing this job monitor.
+        ((o00000O0.o000oOoO) this.f5795OooOOo0).OooO0Oo(this, key, null);
+        for (o0OoOo0 callback : callbacks) {
+            callback.f9624OooO0O0.execute(new OooO0OO(this, callback.f9623OooO00o, 0));
+        }
+        OooO0Oo();
     }
 
     public final void OooO0oo() {
+        OooOo key;
+        o00oO0o resource;
+        ArrayList<o0OoOo0> callbacks;
         synchronized (this) {
             try {
                 this.f5791OooOOO0.OooO00o();
@@ -279,17 +285,21 @@ public final class OooO0o implements OooOOO, o0000OO.OooO0O0 {
                 this.f5807OooOooO = true;
                 o00O0O o00o0o = this.f5789OooOO0o;
                 o00o0o.getClass();
-                ArrayList<o0OoOo0> arrayList = new ArrayList(o00o0o.f9588OooOO0o);
-                OooO0o0(arrayList.size() + 1);
-                ((o00000O0.o000oOoO) this.f5795OooOOo0).OooO0Oo(this, this.f5801OooOo0o, this.f5811Oooo00O);
-                for (o0OoOo0 o0oooo0 : arrayList) {
-                    o0oooo0.f9624OooO0O0.execute(new OooO0OO(this, o0oooo0.f9623OooO00o, i));
-                }
-                OooO0Oo();
+                callbacks = new ArrayList(o00o0o.f9588OooOO0o);
+                OooO0o0(callbacks.size() + 1);
+                key = this.f5801OooOo0o;
+                resource = this.f5811Oooo00O;
             } catch (Throwable th) {
                 throw th;
             }
         }
+        // Match the original Smali lock order: notify Engine after releasing this job monitor.
+        ((o00000O0.o000oOoO) this.f5795OooOOo0).OooO0Oo(this, key, resource);
+        int i = 1;
+        for (o0OoOo0 callback : callbacks) {
+            callback.f9624OooO0O0.execute(new OooO0OO(this, callback.f9623OooO00o, i));
+        }
+        OooO0Oo();
     }
 
     public final synchronized void OooOO0(OooOO0 oooOO0) {

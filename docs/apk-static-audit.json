@@ -31,16 +31,17 @@
   },
   "dex_classes": 19758,
   "duplicate_dex_descriptors": [],
-  "compiled_classes": 6466,
+  "compiled_classes": 6536,
   "java_files": 5759,
   "missing_recovered_source_outputs": [],
   "mapping_statuses": {
     "Android 平台提供；不打入 APK": 2,
-    "依赖或生成类已在 DEX 中": 2028,
-    "本地源码已编译且在 DEX 中": 5012,
-    "匿名/合成实现并入已编译源码；独立 binary 名已改变": 417,
+    "依赖或生成类已在 DEX 中": 2004,
+    "本地源码已编译且在 DEX 中": 5036,
+    "匿名/合成实现并入已编译源码；独立 binary 名已改变": 416,
     "固定依赖整体提供宿主与回调；原 R8 wrapper 名不保留": 7,
     "Java lambda 并入所示宿主；原合成类名不保留": 4,
+    "原 descriptor 未在 DEX 中直接出现；需核对合并或依赖替代": 1,
     "可选 Harmony 平台源码；Android 构建排除": 8
   },
   "placeholders": [

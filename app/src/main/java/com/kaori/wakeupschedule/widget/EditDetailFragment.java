@@ -129,38 +129,29 @@ public final class EditDetailFragment extends androidx.fragment.app.OooO0OO {
                             ((AppCompatEditText) o0oo0oo4.f2950OooOOOO).setSelection(((String) oooO0O0.getValue()).length());
                             o00O0O00.OooO0O0 oooO0O1 = this.f8908o0OOO0o;
                             ArrayList arrayList = (ArrayList) oooO0O1.getValue();
-                            if (arrayList == null || arrayList.isEmpty()) {
+                            boolean hasNonBlankSuggestion = false;
+                            if (arrayList != null) {
+                                Iterator it = arrayList.iterator();
+                                while (it.hasNext()) {
+                                    if (!kotlin.text.o0OoOo0.OoooO((String) it.next())) {
+                                        hasNonBlankSuggestion = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (!hasNonBlankSuggestion) {
                                 o0oo0oo = this.f8910oo0o0Oo;
-                                if (o0oo0oo != null) {
+                                if (o0oo0oo == null) {
                                     OooO.o000oOoO("binding");
                                     throw null;
                                 }
                                 ((ScrollView) o0oo0oo.f2951OooOOOo).setVisibility(8);
                                 o0oo0oo2 = this.f8910oo0o0Oo;
-                                if (o0oo0oo2 != null) {
+                                if (o0oo0oo2 == null) {
                                     OooO.o000oOoO("binding");
                                     throw null;
                                 }
                                 ((AppCompatEditText) o0oo0oo2.f2950OooOOOO).setHint("请输入…");
-                            } else {
-                                Iterator it = arrayList.iterator();
-                                while (true) {
-                                    if (!it.hasNext()) {
-                                        o0oo0oo = this.f8910oo0o0Oo;
-                                        if (o0oo0oo != null) {
-                                            OooO.o000oOoO("binding");
-                                            throw null;
-                                        }
-                                        ((ScrollView) o0oo0oo.f2951OooOOOo).setVisibility(8);
-                                        o0oo0oo2 = this.f8910oo0o0Oo;
-                                        if (o0oo0oo2 != null) {
-                                            OooO.o000oOoO("binding");
-                                            throw null;
-                                        }
-                                        ((AppCompatEditText) o0oo0oo2.f2950OooOOOO).setHint("请输入…");
-                                    } else if (!kotlin.text.o0OoOo0.OoooO((String) it.next())) {
-                                    }
-                                }
                             }
                             ArrayList<String> arrayList2 = (ArrayList) oooO0O1.getValue();
                             if (arrayList2 != null) {

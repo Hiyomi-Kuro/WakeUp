@@ -1318,7 +1318,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends OooOo, T exte
                         oo000oVar.getClass();
                         scheduleActivity = oo000oVar.f8317OooO00o;
                         oo0o0oo = scheduleActivity.f8236Oooo;
-                        if (oo0o0oo != null) {
+                        if (oo0o0oo == null) {
                             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                             throw null;
                         }
@@ -1358,7 +1358,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends OooOo, T exte
                         oo000oVar.getClass();
                         scheduleActivity = oo000oVar.f8317OooO00o;
                         oo0o0oo = scheduleActivity.f8236Oooo;
-                        if (oo0o0oo != null) {
+                        if (oo0o0oo == null) {
                             com.github.doyaaaaaken.kotlincsv.client.OooO.o000oOoO("ui");
                             throw null;
                         }

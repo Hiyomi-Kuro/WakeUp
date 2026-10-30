@@ -154,7 +154,6 @@ public final class o00O0O implements Callable {
                             arrayList2.add(new CourseBean(i3, string, i5, string4, string5, i6, i7, i8, i9, i11, string2, i4, f, string3, i14, z, string6, cursorOooOooO2.getString(i15)));
                             iOooOOO14 = i12;
                             i2 = i10;
-                            break;
                         }
                         cursorOooOooO2.close();
                         o0o0o00.OooOOo0();
@@ -224,7 +223,6 @@ public final class o00O0O implements Callable {
                             arrayList3.add(new CourseBean(i17, string7, i22, string10, string11, i23, i24, i25, i26, i27, string8, i20, f2, string9, i28, z2, string12, cursorOooOooO3.getString(i29)));
                             iOooOOO32 = iOooOOO32;
                             iOooOOO29 = i21;
-                            break;
                         }
                         cursorOooOooO3.close();
                         o0o0o01.OooOOo0();
@@ -284,7 +282,6 @@ public final class o00O0O implements Callable {
                             arrayList5.add(new CourseDetailBean(cursorOooOooO5.getInt(iOooOOO43), cursorOooOooO5.getInt(iOooOOO44), cursorOooOooO5.isNull(iOooOOO45) ? null : cursorOooOooO5.getString(iOooOOO45), cursorOooOooO5.isNull(iOooOOO46) ? null : cursorOooOooO5.getString(iOooOOO46), cursorOooOooO5.getInt(iOooOOO47), cursorOooOooO5.getInt(iOooOOO48), cursorOooOooO5.getInt(iOooOOO49), cursorOooOooO5.getInt(iOooOOO50), cursorOooOooO5.getInt(iOooOOO51), cursorOooOooO5.getInt(iOooOOO52), cursorOooOooO5.getInt(iOooOOO53), cursorOooOooO5.getInt(iOooOOO54) != 0, cursorOooOooO5.getString(iOooOOO55), cursorOooOooO5.getString(i30)));
                             iOooOOO45 = i31;
                             iOooOOO56 = i30;
-                            break;
                         }
                         cursorOooOooO5.close();
                         o0o0o02.OooOOo0();
@@ -326,7 +323,6 @@ public final class o00O0O implements Callable {
                             arrayList6.add(new CourseDetailBean(cursorOooOooO6.getInt(iOooOOO57), cursorOooOooO6.getInt(iOooOOO58), cursorOooOooO6.isNull(iOooOOO59) ? null : cursorOooOooO6.getString(iOooOOO59), cursorOooOooO6.isNull(iOooOOO60) ? null : cursorOooOooO6.getString(iOooOOO60), cursorOooOooO6.getInt(iOooOOO61), cursorOooOooO6.getInt(iOooOOO62), cursorOooOooO6.getInt(iOooOOO63), cursorOooOooO6.getInt(iOooOOO64), cursorOooOooO6.getInt(iOooOOO65), cursorOooOooO6.getInt(iOooOOO66), cursorOooOooO6.getInt(iOooOOO67), cursorOooOooO6.getInt(iOooOOO68) != 0, cursorOooOooO6.getString(iOooOOO69), cursorOooOooO6.getString(i32)));
                             iOooOOO59 = i33;
                             iOooOOO70 = i32;
-                            break;
                         }
                         cursorOooOooO6.close();
                         o0o0o03.OooOOo0();

@@ -89,6 +89,9 @@ androidx.work:work-runtime:2.9.0|androidx/work/CoroutineWorker$startWork$1.java
 androidx.work:work-runtime:2.9.0|androidx/work/CoroutineWorker.java
 androidx.work:work-runtime:2.9.0|androidx/work/WorkerParameters.java
 androidx.work:work-runtime:2.9.0|androidx/work/Worker.java
+androidx.work:work-runtime:2.9.0|androidx/work/impl/WorkDatabase.java
+androidx.work:work-runtime:2.9.0|androidx/work/impl/WorkDatabase_Impl.java
+androidx.work:work-runtime:2.9.0|androidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1.java
 androidx.work:work-runtime:2.9.0|androidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$2.java
 androidx.work:work-runtime:2.9.0|androidx/work/impl/constraints/WorkConstraintsTracker$track$$inlined$combine$1$3.java
 androidx.work:work-runtime:2.9.0|androidx/work/impl/foreground/SystemForegroundService.java

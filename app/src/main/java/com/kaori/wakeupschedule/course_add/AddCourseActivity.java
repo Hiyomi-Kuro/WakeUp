@@ -84,15 +84,8 @@ public final class AddCourseActivity extends BaseListActivity implements o00O00o
             o00O0O00.OooOO0O oooOO0O;
             CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
             int i = this.label;
-            if (i != 0) {
-                if (i == 1) {
-                    kotlin.OooO0O0.OooO0O0(obj);
-                } else {
-                    if (i != 2) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                    }
-                    kotlin.OooO0O0.OooO0O0(obj);
-                }
+            if (i == 2) {
+                kotlin.OooO0O0.OooO0O0(obj);
                 courseBaseBean = (CourseBaseBean) obj;
                 oooOO0O = o00O0O00.OooOO0O.f11387OooO00o;
                 if (courseBaseBean == null) {
@@ -111,18 +104,24 @@ public final class AddCourseActivity extends BaseListActivity implements o00O00o
                 AddCourseActivity addCourseActivity2 = AddCourseActivity.this;
                 addCourseActivity2.OooOoO(addCourseActivity2.OooOoO0().OooO0o());
                 return oooOO0O;
-            }
-            kotlin.OooO0O0.OooO0O0(obj);
-            AddCourseActivity addCourseActivity3 = AddCourseActivity.this;
-            int i3 = AddCourseActivity.f7974o000oOoO;
-            AddCourseViewModel addCourseViewModelOooOoO0 = addCourseActivity3.OooOoO0();
-            Bundle extras = AddCourseActivity.this.getIntent().getExtras();
-            com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(extras);
-            int i4 = extras.getInt("id");
-            int i5 = AddCourseActivity.this.OooOoO0().f7989OooOOO0;
-            this.label = 1;
-            if (addCourseViewModelOooOoO0.OooO(i4, i5, this) == coroutineSingletons) {
-                return coroutineSingletons;
+            } else if (i == 1) {
+                // initData returns Unit. Resume by loading the base course below.
+                kotlin.OooO0O0.OooO0O0(obj);
+            } else if (i == 0) {
+                kotlin.OooO0O0.OooO0O0(obj);
+                AddCourseActivity addCourseActivity3 = AddCourseActivity.this;
+                int i3 = AddCourseActivity.f7974o000oOoO;
+                AddCourseViewModel addCourseViewModelOooOoO0 = addCourseActivity3.OooOoO0();
+                Bundle extras = AddCourseActivity.this.getIntent().getExtras();
+                com.github.doyaaaaaken.kotlincsv.client.OooO.OooOO0(extras);
+                int i4 = extras.getInt("id");
+                int i5 = AddCourseActivity.this.OooOoO0().f7989OooOOO0;
+                this.label = 1;
+                if (addCourseViewModelOooOoO0.OooO(i4, i5, this) == coroutineSingletons) {
+                    return coroutineSingletons;
+                }
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             AddCourseActivity addCourseActivity4 = AddCourseActivity.this;
             int i6 = AddCourseActivity.f7974o000oOoO;

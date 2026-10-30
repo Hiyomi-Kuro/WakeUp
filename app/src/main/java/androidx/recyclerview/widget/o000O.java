@@ -727,7 +727,7 @@ public abstract class o000O {
         int iOooo00o = Oooo00o() + Oooo0OO() + rect.height();
         RecyclerView recyclerView = this.f4762OooO0O0;
         WeakHashMap weakHashMap = Oooo0o.o00O0OOO.f1486OooO00o;
-        this.f4762OooO0O0.OooOOO(OooO0oo(i, iOooo0O0, Oooo0o.o00O0000.OooO0o0(recyclerView)), OooO0oo(i2, iOooo00o, Oooo0o.o00O0000.OooO0Oo(this.f4762OooO0O0)));
+        RecyclerView.OooO0o0(this.f4762OooO0O0, OooO0oo(i, iOooo0O0, Oooo0o.o00O0000.OooO0o0(recyclerView)), OooO0oo(i2, iOooo00o, Oooo0o.o00O0000.OooO0Oo(this.f4762OooO0O0)));
     }
 
     public final void o0Oo0oo(int i, int i2) {
