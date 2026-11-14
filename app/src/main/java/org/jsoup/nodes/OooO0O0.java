@@ -79,13 +79,18 @@ public class OooO0O0 extends OooOo {
         if (oooOo instanceof OooO0O0) {
             OooO0O0 oooO0O0 = (OooO0O0) oooOo;
             int i = 0;
-            while (!oooO0O0.f12889OooOOO.f12983OooOOo) {
+            while (true) {
+                if (oooO0O0.f12889OooOOO.f12983OooOOo) {
+                    return true;
+                }
                 oooO0O0 = (OooO0O0) oooO0O0.f11892OooOO0o;
                 i++;
+                // Restored from OooO0O0.smali: `if-ge v0, v2, :cond_2` + `if-nez p0, :cond_0`;
+                // the recovered empty branch both spun forever and returned true on exhaustion.
                 if (i >= 6 || oooO0O0 == null) {
+                    return false;
                 }
             }
-            return true;
         }
         return false;
     }

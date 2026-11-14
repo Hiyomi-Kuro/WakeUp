@@ -1,7 +1,7 @@
 {
   "apk": "D:\\Download\\AndroidStudioProjects\\WakeUP\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
-  "size_bytes": 20621152,
-  "sha256": "ead4d9eff8c98ac1dc0d97fe6009e04635e2a64b900ed953541cc50446b9ed69",
+  "size_bytes": 20632892,
+  "sha256": "ea2bd6eb875a3071b88e3541a53f402b92f73f81b76d9580f6a2b025f926b3d8",
   "package": "com.kaori.wakeupschedule",
   "version_code": "247",
   "version_name": "6.0.06",
@@ -11,13 +11,13 @@
   },
   "dex": {
     "classes.dex": {
-      "classes": 7615,
+      "classes": 7652,
       "sha1_valid": true,
       "adler32_valid": true,
       "placeholder_strings": 0
     },
     "classes2.dex": {
-      "classes": 6553,
+      "classes": 6540,
       "sha1_valid": true,
       "adler32_valid": true,
       "placeholder_strings": 0
@@ -29,9 +29,9 @@
       "placeholder_strings": 0
     }
   },
-  "dex_classes": 19758,
+  "dex_classes": 19782,
   "duplicate_dex_descriptors": [],
-  "compiled_classes": 6536,
+  "compiled_classes": 6537,
   "java_files": 5759,
   "missing_recovered_source_outputs": [],
   "mapping_statuses": {

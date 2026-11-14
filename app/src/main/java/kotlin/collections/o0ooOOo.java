@@ -6,13 +6,22 @@ import java.util.ListIterator;
 
 public final class o0ooOOo extends OooO0o {
 
+    /*
+     * smali/smali/kotlin/collections/o0ooOOo.smali: the disambiguation tag is written by *each*
+     * constructor (`<init>(List)` stores 0, `<init>(OooOOO0)` stores 1) before the super call.
+     * The previous reconstruction only had a field initialiser `= 0`, so the group-values
+     * variant built from a MatchResult kept tag 0 and `getSize()`/`get()` cast the MatchResult
+     * to java.util.List -> ClassCastException on every qz week range such as "3-14".
+     */
+
     /* JADX INFO: renamed from: OooOO0o, reason: collision with root package name */
-    public final /* synthetic */ int f8994OooOO0o = 0;
+    public final /* synthetic */ int f8994OooOO0o;
 
     /* JADX INFO: renamed from: OooOOO0, reason: collision with root package name */
     public final Object f8995OooOOO0;
 
     public o0ooOOo(List list) {
+        this.f8994OooOO0o = 0;
         this.f8995OooOOO0 = list;
     }
 
@@ -101,6 +110,7 @@ public final class o0ooOOo extends OooO0o {
     }
 
     public o0ooOOo(kotlin.text.OooOOO0 oooOOO0) {
+        this.f8994OooOO0o = 1;
         this.f8995OooOOO0 = oooOOO0;
     }
 

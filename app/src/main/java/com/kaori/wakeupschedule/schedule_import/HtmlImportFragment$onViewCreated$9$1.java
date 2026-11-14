@@ -27,52 +27,50 @@ final class HtmlImportFragment$onViewCreated$9$1 extends SuspendLambda implement
         String str;
         CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
         int i = this.label;
+        // Restored from HtmlImportFragment$onViewCreated$9$1.smali: the "call to 'resume' before 'invoke'"
+        // throw sits outside the catch range (bci before :try_start_2), so it must not be swallowed by
+        // the import-failure handler below.
+        if (i != 0 && i != 1 && i != 2) {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
         try {
-            if (i != 0) {
+            int iIntValue;
+            if (i == 2) {
+                // smali: label==2 -> :cond_1 -> :goto_1 -> check-cast Number -> intValue (course count)
+                kotlin.OooO0O0.OooO0O0(obj);
+                iIntValue = ((Number) obj).intValue();
+            } else {
                 if (i == 1) {
+                    // smali: label==1 -> :cond_1 -> :goto_0 -> check-cast String (HTML text collected by
+                    // withContext(IO)); the parse request below must still run, exactly like :goto_0 does.
                     kotlin.OooO0O0.OooO0O0(obj);
                 } else {
-                    if (i != 2) {
-                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    kotlin.OooO0O0.OooO0O0(obj);
+                    o000 o000Var = kotlinx.coroutines.o000000.f9250OooO0O0;
+                    HtmlImportFragment$onViewCreated$9$1$html$1 htmlImportFragment$onViewCreated$9$1$html$1 = new HtmlImportFragment$onViewCreated$9$1$html$1(this.this$0, null);
+                    this.label = 1;
+                    obj = o00000Oo.Oooo0.o00000oo(o000Var, htmlImportFragment$onViewCreated$9$1$html$1, this);
+                    if (obj == coroutineSingletons) {
+                        return coroutineSingletons;
                     }
-                    kotlin.OooO0O0.OooO0O0(obj);
                 }
-                int iIntValue = ((Number) obj).intValue();
-                o000O00O.OooO0O0 oooO0O0 = new o000O00O.OooO0O0(this.this$0.Oooo0o());
-                if (this.this$0.OoooO().f8445OooO0oo) {
-                    str = "\n请点击右上角三个点切换后查看";
-                } else {
-                    str = "";
+                HtmlImportFragment htmlImportFragment = this.this$0;
+                int i2 = HtmlImportFragment.f8409ooOO;
+                OooOOOO oooOOOOOoooO = htmlImportFragment.OoooO();
+                this.label = 2;
+                obj = oooOOOOOoooO.OooOOo((String) obj, this);
+                if (obj == coroutineSingletons) {
+                    return coroutineSingletons;
                 }
-                oooO0O0.OooO0oO("成功导入 " + iIntValue + " 门课程(ﾟ▽ﾟ)/" + str);
-                oooO0O0.OooOO0o(com.kaori.wakeupschedule.R.string.ok, new OooO(this.this$0, 1));
-                oooO0O0.OooO0o0();
-                return o00O0O00.OooOO0O.f11387OooO00o;
+                iIntValue = ((Number) obj).intValue();
             }
-            kotlin.OooO0O0.OooO0O0(obj);
-            o000 o000Var = kotlinx.coroutines.o000000.f9250OooO0O0;
-            HtmlImportFragment$onViewCreated$9$1$html$1 htmlImportFragment$onViewCreated$9$1$html$1 = new HtmlImportFragment$onViewCreated$9$1$html$1(this.this$0, null);
-            this.label = 1;
-            obj = o00000Oo.Oooo0.o00000oo(o000Var, htmlImportFragment$onViewCreated$9$1$html$1, this);
-            if (obj == coroutineSingletons) {
-                return coroutineSingletons;
-            }
-            HtmlImportFragment htmlImportFragment = this.this$0;
-            int i2 = HtmlImportFragment.f8409ooOO;
-            OooOOOO oooOOOOOoooO = htmlImportFragment.OoooO();
-            this.label = 2;
-            obj = oooOOOOOoooO.OooOOo((String) obj, this);
-            if (obj == coroutineSingletons) {
-                return coroutineSingletons;
-            }
-            int iIntValue2 = ((Number) obj).intValue();
             o000O00O.OooO0O0 oooO0O1 = new o000O00O.OooO0O0(this.this$0.Oooo0o());
             if (this.this$0.OoooO().f8445OooO0oo) {
                 str = "\n请点击右上角三个点切换后查看";
             } else {
                 str = "";
             }
-            oooO0O1.OooO0oO("成功导入 " + iIntValue2 + " 门课程(ﾟ▽ﾟ)/" + str);
+            oooO0O1.OooO0oO("成功导入 " + iIntValue + " 门课程(ﾟ▽ﾟ)/" + str);
             oooO0O1.OooOO0o(com.kaori.wakeupschedule.R.string.ok, new OooO(this.this$0, 1));
             oooO0O1.OooO0o0();
         } catch (Exception e) {

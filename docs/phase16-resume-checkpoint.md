@@ -73,6 +73,11 @@
 - **candidateSha**: `C7EE5B67…E381B`。
 - **device/display**: MuMu Android 12；`LoginWebActivity`（HtmlImportFragment）+ `SchoolListActivity`；全程本地文件，无网络导入、无凭据。
 - **passed**: 真实入口已完整驱动并留证：`↓ → 从文件导入 → 从 HTML` → 导入方式选 `新建课表再导入` → `选择学校/教务类型`（通用教务 → 强智教务）→ `选择 HTML 文件`（SAF，`text/*`，选中 1,691 B 本地 mock）→ `UTF-8` → 圆形导入按钮。mock 依据生产解析器契约（`parser/qz/OooO00o.java`：`#kbtable` + `div.kbcontent` + `font[title=周次(节次)/老师/教室]`、`-----` 分段）编写。解析器确实运行，并给出**用户可见的失败提示** `导入失败>_< java.lang.String cannot be cast to java.lang.Number`；应用未崩溃、无 FATAL/ANR，且**没有创建任何新课表**（面板仍为 7 个），即失败路径无部分写入。
+  > **2026-11-14 更正**：本行「解析器确实运行」与「mock 未被接受」都是错的。JDWP 实测证明该 CCE 抛在
+  > `HtmlImportFragment$onViewCreated$9$1.invokeSuspend` 的**续体恢复分支**，解析器当时根本没被调用；
+  > 三处修复之后解析器才真正执行，随后又在 `o00O00o0.OooO0O0.OooO` 的回退块里 25 s ANR。
+  > 换言之：**旧 CCE 在解析器调用之前，解析器 ANR 是后续修复才暴露的**。完整链路见
+  > [phase17-html-import-root-cause.md](phase17-html-import-root-cause.md)，最终结论见其 §9。
 - **blocked**: 该 mock 结构未被所选择的强智解析器接受，未取得成功导入与字段比对；另外选择教务类型后按钮文字不更新，只能通过实际导入结果反推生效类型。`ActivityResult` 层的 URI 注入仍受 Phase17 记录的框架限制。
 - **next_action**: 若需闭合，应逐个教务类型/解析器试配 mock 结构（可先用 JVM 直接驱动解析器快速试错），或改用 instrumentation 注入真实 `ActivityResult`。
 - **evidence_paths**: `.tmp/phase16-resume-20261114/b/P16MOCK_qz_fspt.html`、`gB-html-screen.png`、`gB-generic-tab.png`、`gB-html-picker2.png`、`gB-import-result.png`、`gB-tables-after.png`
@@ -99,3 +104,16 @@
 
 - 设备：MuMu index 0 运行中，Wi-Fi `wifi_on=1`；应用 `ScheduleActivity` 已恢复到 **table3（`P16_TEST_20W`）/ 第 1 周**，与 Phase16 既有交接一致；`未命名` 原始表未动；本次新建 table 7 与导出文件保留。
 - 产物：`/sdcard/Download/P16_TEST_20W.wakeup_schedule`、`/sdcard/Download/日历-P16_TEST_20W.ics`、`/sdcard/Download/P16MOCK_qz_fspt.html` 均留在设备共享目录，便于复查。
+
+## G-E — G3 HTML 导入「String→Number」根因更正（2026-11-14T15:00–15:56+08:00）
+
+> 本节**更正**上文 G-B 的结论「解析器确实运行」。
+
+- **candidateSha**: `C7EE5B67…E381B`（起点/终点）；中间临时安装 Candidate68 `EA2AD12A…C732`、Candidate69 `8F419FA1…A237`，结束时回装 Candidate67 并从设备 `base.apk` 回读同哈希（`device/restore-c67.txt`）。
+- **device/display**: MuMu index 0 / Android 12；起点 Task 3775 / Display 6 / 第 1 周 / table3；结束 Task 3778 / ScheduleActivity / 第 1 周 / table3；`adb root` 仅在读 `/data/anr` 期间使用，已 `unroot`。
+- **passed**: JDWP catchpoint 证明异常在 `HtmlImportFragment$onViewCreated$9$1.invokeSuspend` 第 40 行（续体恢复），解析器未执行；smali 显示 label 1/2 应分别 `check-cast String` / `check-cast Number`；修复三处后解析器确实进入（见 `docs/phase17-html-import-root-cause.md`）。单测 27/27、编译 7 warnings/0 errors、assemble、audit、签名均通过。
+- **blocked**: `o00O00o0.OooO0O0.OooO` 的「选课人数」回退块在复原源码中无出口 → 25 s ANR；需按 `o00O00o0/OooO0O0.smali` 的 `OooO(...)` 逐标签还原。fixture 契约（`qz` 需 `-----` 分段）亦待定。G3 保持 PARTIAL。
+- **next_action**: 修复上述循环 → 决定 fixture（`qz` 重写 or 选 `qz_fspt`）→ App 导入 → App 导出 → 逐字段比对 → 再产出正式候选。
+- **evidence_paths**: `.tmp/phase17-g3-20261114/`（`jdb-session.log`、`device/12-result-2s.png`、`device/27-result-1.2s.png`、`device/36-result-5s.png`、`device/anr-c69-1545.txt`、`device/backtrace-1..4.txt`、`device/40-final-state.png`）；`recovery/phase17-html-import-resume-20261114-151113/`。
+
+**测试计数与证据层级更正**：本仓库当前全量单测为 **27 项**（9 suites），不是 Phase16 多份文档沿用的 21 项；21 项是 Candidate67 的 XML 快照，Phase17 新增 6 项 URI 守卫测试。Phase17 计划文档里的「21（历史）+6=27」表述正确，Phase16 报告里的「21」应理解为历史快照。

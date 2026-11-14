@@ -145,42 +145,45 @@ public class OooO0O0 extends OooOO0O {
                 O00oO0O = o00O0O.o00oO0O(o00O0O.o000000O(o00O0O.oo0o0Oo(o00O0O.o0OO00O((String) o00O0O.o0ooOO0(strHtml3, new String[]{"<br>"}).get(1), ')'), "["), "]"), new char[]{'-'});
             }
         } else {
+            /*
+             * Restored from smali/smali/o00O00o0/OooO0O0.smali OooO(IILjava/lang/String;Ljava/util/ArrayList;)V:
+             *   :goto_4  list.isEmpty() -> :cond_d (:goto_7)
+             *            (iterable !instanceof Collection || !isEmpty) -> :cond_9 iterate
+             *            blank element -> :goto_7 ; exhausted -> :cond_b == :goto_5
+             *   :goto_5  toIntOrNull(substringBefore(first, '节')) == null -> :goto_7
+             *            else -> :cond_c (:goto_6) -> :goto_9
+             *   :goto_7  "选课人数" fallback, one shot, then :cond_e/:cond_c -> :goto_9
+             * The fallback is a join block, never a loop body. The previous reconstruction wrapped it
+             * in `while (true)` with two empty branches, so it never reached :goto_9 and re-ran
+             * Elements.html() forever (device: 25 s ANR, JVM probe: TIMEOUT at OooO0O0.java:162).
+             */
             Iterable iterable = (Iterable) O00oO0O;
+            boolean zSectionFallback = false;
             if (!(iterable instanceof Collection) || !((Collection) iterable).isEmpty()) {
                 Iterator it = iterable.iterator();
-                while (true) {
-                    if (it.hasNext()) {
-                        if (o0OoOo0.OoooO((String) it.next())) {
-                        }
-                    } else if (o000oOoO.OoooO00(o00O0O.o000000((String) kotlin.collections.o000oOoO.OoooOOO(O00oO0O), (char) 33410)) == null) {
-                    }
-                    strHtml = oooOO0OOoooOO0.OoooOO0("title", "选课人数").html();
-                    OooO.OooOO0o(strHtml, "html(...)");
-                    if (o00O0O.o0ooOO0(strHtml, new String[]{"<br>"}).size() < 2) {
-                        int[] iArrOooOO0O2 = OooOO0O(i2);
-                        O00oO0O = new ArrayList(iArrOooOO0O2.length);
-                    for (int i10 : iArrOooOO0O2) {
-                        O00oO0O.add(String.valueOf(i10));
-                    }
-                    } else {
-                        String strHtml4 = oooOO0OOoooOO0.OoooOO0("title", "选课人数").html();
-                        OooO.OooOO0o(strHtml4, "html(...)");
-                        O00oO0O = o00O0O.o00oO0O(o00O0O.o000000O(o00O0O.oo0o0Oo(o00O0O.o0OO00O((String) o00O0O.o0ooOO0(strHtml4, new String[]{"<br>"}).get(1), ')'), "["), "]"), new char[]{'-'});
+                while (it.hasNext()) {
+                    if (o0OoOo0.OoooO((String) it.next())) {
+                        zSectionFallback = true;
+                        break;
                     }
                 }
-            } else if (o000oOoO.OoooO00(o00O0O.o000000((String) kotlin.collections.o000oOoO.OoooOOO(O00oO0O), (char) 33410)) == null) {
+            }
+            if (!zSectionFallback && o000oOoO.OoooO00(o00O0O.o000000((String) kotlin.collections.o000oOoO.OoooOOO(O00oO0O), (char) 33410)) == null) {
+                zSectionFallback = true;
+            }
+            if (zSectionFallback) {
                 strHtml = oooOO0OOoooOO0.OoooOO0("title", "选课人数").html();
                 OooO.OooOO0o(strHtml, "html(...)");
                 if (o00O0O.o0ooOO0(strHtml, new String[]{"<br>"}).size() < 2) {
-                    int[] iArrOooOO0O3 = OooOO0O(i2);
-                    O00oO0O = new ArrayList(iArrOooOO0O3.length);
-                    for (int i10 : iArrOooOO0O3) {
+                    int[] iArrOooOO0O2 = OooOO0O(i2);
+                    O00oO0O = new ArrayList(iArrOooOO0O2.length);
+                    for (int i10 : iArrOooOO0O2) {
                         O00oO0O.add(String.valueOf(i10));
                     }
                 } else {
-                    String strHtml5 = oooOO0OOoooOO0.OoooOO0("title", "选课人数").html();
-                    OooO.OooOO0o(strHtml5, "html(...)");
-                    O00oO0O = o00O0O.o00oO0O(o00O0O.o000000O(o00O0O.oo0o0Oo(o00O0O.o0OO00O((String) o00O0O.o0ooOO0(strHtml5, new String[]{"<br>"}).get(1), ')'), "["), "]"), new char[]{'-'});
+                    String strHtml4 = oooOO0OOoooOO0.OoooOO0("title", "选课人数").html();
+                    OooO.OooOO0o(strHtml4, "html(...)");
+                    O00oO0O = o00O0O.o00oO0O(o00O0O.o000000O(o00O0O.oo0o0Oo(o00O0O.o0OO00O((String) o00O0O.o0ooOO0(strHtml4, new String[]{"<br>"}).get(1), ')'), "["), "]"), new char[]{'-'});
                 }
             }
         }

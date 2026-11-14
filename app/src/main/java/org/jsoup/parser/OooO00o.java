@@ -78,6 +78,10 @@ public final class OooO00o {
                     i8 = i11;
                     i9 = i10;
                     i4 = i12;
+                } else {
+                    // Restored from OooO00o.smali: `if-eq v4, v1, :cond_4` / `goto :goto_2`.
+                    // Without this exit a same-length cache collision spins forever.
+                    break;
                 }
             }
         }

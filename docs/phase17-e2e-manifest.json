@@ -1,0 +1,78 @@
+{
+  "phase": "phase17",
+  "gate": "G17-6",
+  "purpose": "App 端到端（HTML 导入 → 新建隔离课表 → App 导出备份 → 主机逐字段比对）的独立预期；写在设备运行之前，不从 App 输出回填。",
+  "fixture": {
+    "host_path": "app/src/test/resources/phase17-fixtures/qz-e2e-device.html",
+    "device_path": "/sdcard/Download/P17E2E_qz.html",
+    "sha256": "C487D7F48EC9EBED7B284DFCFB5D89DBC85C11213833F368F03528518E09826F",
+    "size_bytes": 1385
+  },
+  "preserved_failing_fixture": {
+    "path": ".tmp/phase16-resume-20261114/b/P16MOCK_qz_fspt.html",
+    "sha256": "66EA750B413E827B62741736DCCD454DDB6F88DA13EC8F18BE4F534BBCFA6E4F",
+    "note": "保持原样，不覆盖；它是 qz_fspt 形状，不是 qz 契约。"
+  },
+  "route": {
+    "school_label": "强智教务 1",
+    "import_type": "qz",
+    "qzType": 0,
+    "parser_class": "o00O00o0.OooO0O0",
+    "evidence": "ImportViewModel.OooOOo 按 qzType 分流；qzType=0 才映射到 o00O00o0.OooO0O0（与 OooOOOO.smali :sswitch_6f 一致）"
+  },
+  "fixture_contract": {
+    "table": "id=kbtable（或 class=timetable）",
+    "cell": "div.kbcontent；一个单元格即一门课，多门课需用 <br>----- 分隔",
+    "week_period_font": "font[title='周次(节次)']，形如 `<周次> <[起-止]>` 或 `<周次>(节次)`",
+    "teacher_font": "font[title='老师']",
+    "room_font": "font[title='教室']",
+    "enrollment_font": "font[title='选课人数']，第二段 `[起-止]` 可提供节次",
+    "week_forms": {
+      "1-16周 [1-2]": "节次显式给出（继续解析，不回退）",
+      "1-15单周 [3-4]": "单周：type=1，节次显式",
+      "2-16双周(5-6节)": "双周：type=2，节次由 选课人数 回退给出"
+    }
+  },
+  "courses": [
+    {
+      "name": "P17E2E_高等数学",
+      "teacher": "张三",
+      "room": "A101",
+      "day": 1,
+      "startNode": 1,
+      "endNode": 2,
+      "startWeek": 1,
+      "endWeek": 16,
+      "type": 0
+    },
+    {
+      "name": "P17E2E_大学英语",
+      "teacher": "李四",
+      "room": "B202",
+      "day": 3,
+      "startNode": 3,
+      "endNode": 4,
+      "startWeek": 1,
+      "endWeek": 15,
+      "type": 1
+    },
+    {
+      "name": "P17E2E_数据结构",
+      "teacher": "王五",
+      "room": "C303",
+      "day": 5,
+      "startNode": 7,
+      "endNode": 8,
+      "startWeek": 2,
+      "endWeek": 16,
+      "type": 2
+    }
+  ],
+  "field_semantics": {
+    "day": "1=星期一 … 7=星期日（表头含「星期一」时按列序；表头缺「星期日」会走 numArr 方向分支）",
+    "type": "0=每周，1=单周，2=双周",
+    "startNode/endNode": "节次（当天第几节）；导出里 endNode = startNode + step - 1",
+    "startWeek/endWeek": "周次范围"
+  },
+  "export_expectation": "App 导出的 .wakeup_schedule 备份是 5 行 JSON：header / 时间表 / 课表信息 / 课程 / 课程详情。主机侧只断言 3 门课的字段与上表一致，且 tableId 指向同一张导出课表。"
+}
