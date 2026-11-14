@@ -1,0 +1,5 @@
+2026-10-30T16:34:29.483834300Z : ready compact 'D:\Program Files\MuMuPlayer\vms\\MuMuPlayer-12.0-0\data.vdi'
+cBlocksAllocated: 31623, afterCompact: 31350
+new compact method compact success
+2026-10-30T16:35:10.710405500Z : write 'Finished' to name pipe
+compacted 273 MB, defragment 31350 MB, elapsed: 41218 ms.

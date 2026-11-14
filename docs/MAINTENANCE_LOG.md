@@ -1,3 +1,40 @@
+## 2026-11-14 — Phase 16 第二次续接：seed 全链路读回、HTML mock 尝试、ANR trace 审计
+
+### 现场与基线
+- MuMu VM0 已重启（uptime ≈10 h），应用未运行、前台为 NovaLauncher；交接中的 Display 47 / Task 3773 / PID 31535 / `SchoolListActivity` / `wifi_on=0` 全部失效。重新发现后经 launcher 启动为 **ScheduleActivity / Task 3775 / PID 14182 / logical Display 6 / 第 1 周**，`P16_TEST_20W` 20 门课网格正常。Wi-Fi 本身已为 `wifi_on=1`，无需重新开启，仅记录。
+- 重新 `pm path` 并拉回设备 `base.apk`：20,632,510 B、SHA-256 `C7EE5B6791206C2FED6796639B7266AD1F3D9E45DC08A25507672C88EDEE381B` = Candidate67；`firstInstallTime`/`lastUpdateTime` 未变。**未重建、未重装、未新开候选编号**，沿用既有 JDK17 编译、21 项单测与静态审计证据。
+
+### 新增可复现结果
+- **seed 202610281658 全字段核对**：以 seed 在内存重跑生成器，与 `phase16-random-timetable.json`、CSV、5 行导入夹具在 20 课 × 17 字段、255 次展开出现、0 重叠、5–7 周空档、周类型 0/1/2、emoji/CJK/中英逗号/换行用例上完全一致（23 项检查 0 失配）。
+- **App 保存 → App 读回闭环**：通过 `从文件导入 → 从备份`（先勾选免责声明）SAF 导入 12,150 B 夹具（`0E865D3E…88C722`）到**新 table id 7**（`P16_TEST_20W`，2024-2-26 起 20 周、每天 20 节），再由 App `导出为备份` 写出 12,216 B 备份（`4FCA14D6…B692C9`）。读回比对 **240/240 manifest 字段一致**，项目校验器 360 课程字段 + 24 配置字段 0 失配、`table_ids=[7]`；与既有 Candidate55 导出仅 table/config 标识不同，课程载荷一致。原始 `未命名` 课表未被触碰，未做任何 DB 注入。
+- **ICS 导出复验**：79,224 B（`E79BB2E4…C1D91C`），128 VEVENT / 128 唯一 UID / 255 次出现，0 失配；与 Candidate55 ICS 差异仅 `DTSTAMP` 与随机 UID。已记录 ICS 表达限制（无颜色/学分/节数/周类型/table id；`LOCATION` 单空格拼接教室与教师；单双周摊平为逐周 `INTERVAL=1` 事件 ⇒ 20 门课 128 个 VEVENT）。
+- **从 HTML 本地 mock 教务导入**：真实入口 `↓ → 从文件导入 → 从 HTML → 新建课表再导入 → 通用教务/强智教务 → SAF HTML → UTF-8 → 导入按钮` 全流程驱动，自写 1,691 B `#kbtable` + `div.kbcontent` mock（依 `parser/qz/OooO00o.java` 契约）被解析器处理后给出用户可见失败提示 `导入失败>_< java.lang.String cannot be cast to java.lang.Number`；无崩溃、无 FATAL/ANR、未创建任何课表（失败路径零部分写入）。仍未取得成功的 mock 解析与字段比对，故 G3 保持 PARTIAL。
+- **历史清空 ANR trace 审计**：临时 `adb root` 读取 `/data/anr` 后立即 `adb unroot`。保留的 5 个 trace（均 2026-10-30）全部是 `ContentProvider not responding` / `com.android.externalstorage`，逐文件检索 `com.kaori.wakeupschedule` 命中 0 行；文档引用的 Candidate27 logcat 已不存在。历史根因无法确认也无法否证，未做批量清空受控复现，G2 保持 PARTIAL。
+- **URI 负向证据升级（引用 Phase17）**：`P17ImportUriGuardTest` 在生产方法 `ImportViewModel.OooOOo0` / `importFromFile$list$1` 上 6/6 通过（null / 错误扩展名 / 最近下载 provider / 无 grant / 3 行截断备份 / provider IO 失败），每例断言 Room 数据库文件前后都不存在；6/6 与全量 27/27 均 exit 0。设备侧 `ActivityResult` 注入仍受框架限制。
+
+### 矩阵与状态
+- `docs/phase16-feature-matrix.csv` 由 61 行增至 **63 行**（新增 2 行：G2 seed 全链路读回、G4 table7 备份/ICS 复验；G3“本地 mock 解析/导入”由 NOT TESTED 改判 PARTIAL 并补运行证据；G0/G2/G3 相关行补记本轮事实）。逐项重算：**49 PASS / 11 PARTIAL / 2 FAIL / 0 NOT TESTED / 1 LIVE_BLOCKED**，加权完成度 (49 + 0.5×11) / 63 = **86.51%**；去重（4 行旧候选重复验证）后 59 行 = **85.59%**。历史候选证据归属保留，未把旧结果改写成本轮实测。
+- 设备最终状态：Wi-Fi 保持开启；应用位于 `ScheduleActivity`、**table3（`P16_TEST_20W`）/ 第 1 周**、More 面板已关闭；本轮新建 table 7 与设备端导出文件保留；未执行 `pm clear`、uninstall、`git clean`/`reset`，未修改生产源码，未产生新 APK。
+
+## 2026-11-01 — Phase 16 续接：Candidate67 现场核对 + G1/G3/G4 增量
+
+### 现场事实与恢复
+- 交接记为 STOPPED 的 MuMu VM0 在信息查询时 `is_android_started=true`（Android 12 运行态）；ADB 未自动识别，`adb connect 127.0.0.1:16384` 后识别为 PD2309/V2309A（SDK 32）。交接中的 Display 47 / Task 3773 / PID 31535 / `SchoolListActivity` / `wifi_on=0` 全部为历史状态，已失效；本轮重新解析为 **Display 2 / Task 3726 / PID 4834 / ScheduleActivity / 第 1 周**。
+- Candidate67（`C7EE5B67…E381B`，20,632,510 bytes）的归档包、`app/build/outputs/apk/debug/app-debug.apk` 与设备 `/data/app/…/base.apk` 三者 SHA-256 一致，因此**未重装、未 uninstall、未 pm clear**。
+- `.tmp/phase16-diagnostics/` 已整体不存在且无归档，旧候选日志/审计/截图均无法复核；`artifacts/phase16/` 仅余 Candidate67 APK，其余候选 APK 已不在本地。相关行已标注 `EVIDENCE_MISSING`，未补造历史日志。
+
+### 增量验证
+- G0：复测第1周→全局设置→返回仍为第 1 周（PASS）；Wi-Fi 关闭时学校列表离线加载 `+144ms` 无 ANR，Back 回课表且课程表未变（PASS）；随后恢复 `wifi_on=1`。
+- G1：More Sheet 定量断言 —— 顶边 692 px（346 dp）、高 1180 px、底隙 48 px；8 入口 2×4 网格，行距 168 px、列距 376 px，0 重叠；开 sheet 时应用窗口仅 1 个（`BASE_APPLICATION`），无额外 overlay。
+- G3：invalid/null URI 与缺 grant 守卫经源码核实（`FileImportFragment$importLauncher$1$1` → `OooOOOO.OooOOo0` 3505-3561），错误在读表/写表前抛出并由对话框呈现；但解析 mock 与 URI 动态注入需 test-only 构建，仍 PARTIAL。
+- G4：复用归档资产与现有 validator —— 备份 12,216 B / seed 202610281658 / 20+20 / 360+24 字段 0 mismatch；ICS 79,224 B / 128 VEVENT / 255=255 occurrences 0 mismatch。
+- 静态审计在 Candidate67 上重跑（19,782 DEX / 6,537 compiled / 0 duplicate / 0 placeholder / 0 resource mismatch），输出 `.tmp/phase16-resume-20261101/audit/`。
+
+### 文档与统计
+- 更新 `docs/phase16-final-report.md`、`docs/phase16-feature-matrix.csv`（57→61 行）、`docs/phase16-build-and-apk.md`、新增 `docs/phase16-resume-checkpoint.md`。
+- 全矩阵加权：47 PASS + 10 PARTIAL / 61 = **85.25%**；按最新候选去重 57 行 = **84.21%**。历史 2 FAIL、1 LIVE_BLOCKED、1 NOT TESTED 保留原状，不伪造全绿。
+
+
 ## 2026-10-28 — Phase 14 r3 device regression and Cascade measurement isolation
 
 ### 已完成

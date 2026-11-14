@@ -1,13 +1,24 @@
 # Phase16 build and APK status
 
-## Latest staged and installed candidate66
+## Latest staged and installed candidate67
 
-- Artifact: [WakeUP-phase16-candidate66-20261030.apk](../artifacts/phase16/WakeUP-phase16-candidate66-20261030.apk), 20,632,466 bytes; SHA-256 `CEDCBDC516908EF111254354F20A299BFA814C20F4BB7DF49732AD0F179FA7FE`.
-- Package/version: `com.kaori.wakeupschedule`, versionCode 247, versionName 6.0.06, minSdk 21, targetSdk 34. Signing certificate SHA-256 `b8849d6e0146f3fa8c95e5911f444372b6693162142e1aa93d1700a2da3be088`; v1/v2 verification passed.
-- Static audit: 19,782 DEX classes and 6,537 compiled classes; zero duplicate descriptors, missing recovered outputs, active placeholders, or resource ID mismatches. Audit: `.tmp/phase16-diagnostics/candidate66-production/apk-audit/apk-static-audit.json`.
-- MuMu Android 12 installed-base readback exactly matches the artifact. `firstInstallTime` remains `2026-10-20 23:55:07`; `lastUpdateTime` is `2026-10-30 20:59:14`. A read-only SQLite check after install found tables3/4/5 each still have 20 base and 20 detail rows, with zero `P16_TEST_C55_MULTI` marker rows. The package was installed with `adb install -r`; three independent cold starts were then completed with MuMu Wi-Fi disabled. Candidate66's SAF import and table6 clear were also exercised offline; tables3/4/5 remain unchanged. The public online-share endpoint was never called. APK and runtime evidence are under `.tmp/phase16-diagnostics/candidate66-production/`.
-- Separate JDK17 `compileDebugJavaWithJavac --rerun-tasks`, `testDebugUnitTest --rerun-tasks`, and `assembleDebug` passed. Javac reported 7 warnings and 0 errors; the unit suite passed 21 tests with 0 failures/errors. The isolated assemble output matches the staged artifact. Logs and exit records are under `.tmp/phase16-diagnostics/candidate66-production/`. Candidate65, a separate loopback-only test APK, supplied the runtime mock evidence; Candidate66 contains the production URL and both source fixes.
-- Root `app-debug.apk` and standard `app/build/outputs/apk/debug/app-debug.apk` remain SHA-256 `EAD4D9EFF8C98AC1DC0D97FE6009E04635E2A64B900ED953541CC50446B9ED69`.
+- Artifact: [WakeUP-phase16-candidate67-20261031.apk](../artifacts/phase16/WakeUP-phase16-candidate67-20261031.apk), 20,632,510 bytes; SHA-256 `C7EE5B6791206C2FED6796639B7266AD1F3D9E45DC08A25507672C88EDEE381B`.
+- Package/version: `com.kaori.wakeupschedule`, versionCode 247, versionName 6.0.06, minSdk 21, targetSdk 34, `primaryCpuAbi=x86_64`. Signing certificate SHA-256 `b8849d6e0146f3fa8c95e5911f444372b6693162142e1aa93d1700a2da3be088`; `apksigner verify` reports one signer with the v2 scheme true and v3 false (same key as Candidate66).
+- Three byte identities: archived APK, `app/build/outputs/apk/debug/app-debug.apk` (mtime 2026-10-30 23:57:47), and the device-installed `base.apk` at `/data/app/~~BIthWQcE4sBs-KAuZqk9YQ==/com.kaori.wakeupschedule-XNxsrMJMViX6XfnL-Q66Rg==/base.apk` all hash to `C7EE5B67…E381B` at 20,632,510 bytes. Because they matched, the resume session performed **no reinstall**.
+- Static audit re-run on 2026-11-01 against the archived APK (`python tools/audit_native_apk.py --apk artifacts/phase16/WakeUP-phase16-candidate67-20261031.apk`): 19,782 DEX classes, 6,537 compiled classes, 0 duplicate descriptors, 0 missing recovered outputs, 0 active placeholders, 0 resource-ID mismatches, 1,294 zip entries, `debuggable=true`. JSON and logs: `.tmp/phase16-resume-20261101/audit/` (`apk-static-audit.json` sha256 recorded in `evidence-index.csv`).
+- Build/test evidence that survived from Candidate67's own run: `app/build/test-results/testDebugUnitTest/*.xml` = 21 tests / 0 failures / 0 errors across 8 suites (timestamps `2026-10-30T15:57:0xZ`, i.e. 23:57 +08:00), matching the assemble output timestamp. The handoff's `.tmp/phase16-diagnostics/candidate67-production/` log folder **does not exist** and has no archive, so its compile log and install readback are `EVIDENCE_MISSING`; this gap is not back-filled.
+- Runtime re-verification (2026-11-01, MuMu Android 12 PD2309): fresh coordinates Display 2 / Task 3726 / PID 4834 after a VM restart; week 1 preserved across `全局设置` round trip; bundled school list loaded with `wifi_on=0` in `+144 ms` with no ANR and Back returned to the schedule unchanged; Wi-Fi then restored to `wifi_on=1`. Evidence: `.tmp/phase16-resume-20261101/` with `evidence-index.csv`.
+- Candidate67 differs from Candidate66 (SHA-256 `CEDCBDC5…FA7FE`, 20,632,466 bytes) by 44 bytes and by the week-preserve `ScheduleActivity.java` repair; the pre-repair snapshot is `recovery/phase16-before-settings-week-preserve-candidate67-20261030/ScheduleActivity.java`. Candidate66's APK bytes are no longer present under `artifacts/phase16/`, so only its recorded hash remains as history.
+- Root `app-debug.apk` is unchanged at SHA-256 `EAD4D9EFF8C98AC1DC0D97FE6009E04635E2A64B900ED953541CC50446B9ED69` (20,621,152 bytes). The standard `app/build/outputs/apk/debug/app-debug.apk` path now holds Candidate67.
+
+## 2026-11-14 continuation: no build was required
+
+- No production source, resource, manifest or Gradle file was changed this round, so no compile/assemble/audit was re-run and **no new candidate number was consumed**; Candidate67 stays the only current artifact.
+- The installed `base.apk` was re-pulled from `/data/app/~~BIthWQcE4sBs-KAuZqk9YQ==/com.kaori.wakeupschedule-XNxsrMJMViX6XfnL-Q66Rg==/base.apk` and re-hashed to `C7EE5B6791206C2FED6796639B7266AD1F3D9E45DC08A25507672C88EDEE381B` (20,632,510 bytes); `firstInstallTime`/`lastUpdateTime` were unchanged, so the reinstall-free baseline still holds.
+- Work this round was device/runtime verification only: seeded-fixture App import → App export readback, ICS re-validation, a from-HTML local mock attempt and a `/data/anr` trace audit. Evidence is under `.tmp/phase16-resume-20261114/`; see the [resume checkpoint](phase16-resume-checkpoint.md) and [final report](phase16-final-report.md).
+- Phase17's `app/src/test/java/com/kaori/wakeupschedule/schedule_import/P17ImportUriGuardTest.java` remains the only uncommitted source addition in the tree (test-only, 6 cases, 27/27 full-suite pass); it is not part of any APK.
+
+## Candidate66 previous staged and installed checkpoint
 
 ## Candidate62 historical staged and installed checkpoint
 

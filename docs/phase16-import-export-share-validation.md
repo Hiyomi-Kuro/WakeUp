@@ -18,6 +18,18 @@ Candidate65 was a test-only APK pointed only at a mock bound to `127.0.0.1:8765`
 Candidate56 is the earlier diagnostic that exposed the `okhttp3.o0000Ooo` cast failure for HTTP 200. Candidate65's loopback mock passed the success and rejection UI paths after source fixes. Candidate27's single public endpoint attempt remains LIVE_BLOCKED / unconfirmed; no later public request was made.
 
 
+## Candidate67 table7 export re-validation (2026-11-14, no rebuild)
+
+The seed-202610281658 fixture was imported through the installed Candidate67 into a new timetable (id 7, name `P16_TEST_20W`, startDate 2024-2-26, 20 weeks / 20 sections) and then exported again by the app itself, so this section covers the App save → App read-back chain rather than archived files.
+
+- Import path: `↓ → 从文件导入 → 从备份`, disclaimer checkbox `我已经仔细阅读过上面的说明`, SAF picker, fixture `/sdcard/Download/P16_TEST_20W_c67resume.wakeup_schedule` (12,150 B, SHA-256 `0E865D3E643E4F07A356BEAD6F67F5FCD6D87B8A78DD72917585999B6888C722`, device and host agree). The app showed `导入成功(°▽°)/`.
+- Backup export: `导出为备份` → SAF `CreateDocument` in Download with the suggested name kept → `/sdcard/Download/P16_TEST_20W.wakeup_schedule`, 12,216 B, SHA-256 `4FCA14D63E1172114819060ED2CBEBB7EB5966FD7EB143800E7D22ED8FB692C9`. Five JSON rows: config dict, 60 time nodes, table dict (`id 7`, `startDate 2024-2-26`, `maxWeek 20`, `nodes 20`), 20 base rows, 20 detail rows (ids 1600–1619, `tableId 7`).
+- Read-back comparison: 240/240 manifest fields equal (course name, colour, credit, note, day, start node, step, start/end week, week type, teacher, room). `tools/phase16/validate_phase16_backup.py` reports 360 course fields + 24 configuration fields with 0 mismatches and `table_ids=[7]`. Against the Candidate55 export the new file differs only in identifiers (`config.id 6 vs 2`, `time-nodes.timeTable 6 vs 2`, `table.id 7 vs 3`, row `tableId 7 vs 3`); the course payload is identical when `tableId` is ignored.
+- ICS export: `导出为日历文件` → `/sdcard/Download/日历-P16_TEST_20W.ics`, 79,224 B, SHA-256 `E79BB2E4A976AE521007BB60DEDB61BE4B06D0465587C3BD7114525710C1D91C`. `tools/phase16/validate_phase16_ical.py`: 2,115 physical lines, CRLF, max 75 octets, 179 folded lines, 128 VEVENT, 128 unique UIDs, `Asia/Shanghai`, 255/255 expanded occurrences, 0 mismatches, 0 unexpected courses. The diff against the Candidate55 ICS is only the per-export `DTSTAMP` lines and the 128 random UID lines.
+- Observed export behaviour: after Save the app shows a `分享` dialog (`成功导出至你指定的路径啦，是否还要分享出去呢?`). Cancelling it sends nothing. The SAF-created `.ics` was 0 bytes for a moment and only reached its final size asynchronously, so the file size must be polled before pulling.
+- ICS format limits (not defects, but the reason read-back is not field-identical): no colour, credit, step, week-type name or table id; `LOCATION` joins room and teacher with a single space, so the room/teacher boundary is not recoverable; the period range survives only inside `DESCRIPTION`; odd/even weeks are emitted as one single-week `VEVENT` per active week (`INTERVAL=1` with a per-event `UNTIL`) instead of a single `INTERVAL=2` rule, which is why 20 courses expand to 128 VEVENTs.
+- Unchanged this round: SAF cancel/read-only/conflict destinations and the empty-calendar case remain untested, and online sharing stays LIVE_BLOCKED with no public request.
+
 ## Candidate55 validated export, import, and app-share evidence
 
 - Backup: artifacts/phase16/device-exports/P16_TEST_20W_candidate55.wakeup_schedule, 12,216 bytes, SHA-256 dea322f02c8ce203654178cf0bea9d0d3bc46af96f51a7c2931ec0fdc8de0a76. Five JSON lines; 20 base and 20 detail rows; 360 course fields and 24 config fields matched with no mismatch. Validator: .tmp/phase16-diagnostics/candidate55-workruntime-cluster/candidate55-backup-validation.json.
@@ -108,3 +120,28 @@ Invalid URI and missing-grant imports remain untested. Candidate51 exercised bac
 | Calendar export | **PASS** — candidate37 SAF export passed event-field, line-folding, recurrence, timezone, and 255-date expansion checks. | **PARTIAL** — candidate51 backed out of the picker without Save and returned to ScheduleActivity. Empty calendar and failed URI grant remain untested. |
 | App share | **PASS** — candidate37 ACTION_SEND delivered the generic text/link payload to an isolated local receiver and the exact payload was read back. | External recipient delivery was not attempted; no timetable payload was sent. |
 | Online share | **LIVE_BLOCKED / UNCONFIRMED** — Candidate27's synthetic-only public attempt stopped at the endpoint protocol error; no URL/response or confirmed transmission. | **PARTIAL** — Candidate65 sent local-only requests. HTTP 200 success displayed a mock key, business rejection displayed its message, and HTTP 503 was handled. Timeout, network loss, duplicate-share, cancellation, and public URL readback remain untested. |
+
+## 2026-11-01 resume re-validation (Candidate67, host-side reuse)
+
+Archived seed assets were re-validated with the existing validators instead of re-importing anything, so no synthetic table
+was created or cleared:
+
+- `python tools/phase16/validate_phase16_backup.py artifacts/phase16/device-exports/P16_TEST_20W_candidate55.wakeup_schedule`
+  → 12,216 B, SHA-256 `dea322f02c8ce203654178cf0bea9d0d3bc46af96f51a7c2931ec0fdc8de0a76`, seed 202610281658, 5 JSON lines,
+  20 base + 20 detail rows, table 3, 360 course fields and 24 configuration fields compared, **0 mismatches**, 0 errors.
+- `python tools/phase16/validate_phase16_ical.py artifacts/phase16/device-exports/P16_TEST_20W_candidate55.ics`
+  → 79,224 B, 179 folded lines, calendar boundaries ok, 128 VEVENT with 128 unique UIDs, `Asia/Shanghai`,
+  20 expected courses present, 255 expected = 255 expanded occurrences, **0 mismatches**, 0 unexpected courses, 0 parse or
+  expansion errors.
+- Raw outputs: `.tmp/phase16-resume-20261101/g4/backup-validation.json` and `g4/ics-validation.json`.
+
+Import-negative findings (source-verified, not device-injected): the SAF result URI flows from
+`FileImportFragment$importLauncher$1$1.invokeSuspend` into `OooOOOO.OooOOo0` (`ImportViewModel.importFromFile`,
+lines 3505-3561). A null URI raises `IllegalStateException("读取文件失败")`, a `content://com.android.providers…` document URI is
+rejected with the "不要从「最近」或「下载」中选择" message, a wrong extension raises `IllegalStateException("请确保文件类型正确")`,
+and a null `Uri.getPath()` raises an NPE. Every branch fails before the course list is read and before any table write, and the
+fragment converts `Exception` into the `发生异常>_<` dialog — but only when the host Activity is `LoginWebActivity`; other hosts
+swallow the error. Dynamic verification stays PARTIAL because the picker result cannot be injected from adb.
+
+Still open, unchanged: SAF cancel / read-only destination / filename conflict / empty calendar, and online share
+(`LIVE_BLOCKED`, no public receipt, no real credentials used).
